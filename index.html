@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CholloCesta | Ofertas y chollos para ahorrar</title>
+
+  <meta name="description" content="CholloCesta: descubre ofertas, descuentos y chollos para llenar tu cesta gastando menos. Alimentación, hogar, limpieza y mucho más.">
+
+  <meta name="keywords" content="chollos, ofertas, descuentos, supermercado, alimentación, ahorro, ofertas Amazon">
+
+  <meta name="theme-color" content="#111827">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 22px 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      color: #d1d5db;
+      font-size: 15px;
+    }
+
+    .hero {
+      background: white;
+      padding: 30px 18px;
+      text-align: center;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .hero h2 {
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .hero p {
+      color: #6b7280;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .telegram {
+      display: inline-block;
+      margin-top: 20px;
+      background: #229ed9;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 25px 16px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 35px;
+    }
+
+    .category {
+      background: white;
+      padding: 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #111827;
+      font-weight: bold;
+      text-align: center;
+      border: 1px solid #e5e7eb;
+    }
+
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .offer {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .offer-image {
+      height: 180px;
+      background: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    .offer-content {
+      padding: 16px;
+    }
+
+    .offer h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 24px;
+      font-weight: bold;
+      color: #dc2626;
+    }
+
+    .old-price {
+      color: #9ca3af;
+      text-decoration: line-through;
+      margin-left: 6px;
+    }
+
+    .discount {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      padding: 4px 8px;
+      border-radius: 5px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+
+    .offer-button {
+      display: block;
+      background: #f59e0b;
+      color: #111827;
+      text-align: center;
+      text-decoration: none;
+      padding: 11px;
+      margin-top: 15px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    .info {
+      background: white;
+      padding: 22px;
+      border-radius: 10px;
+      margin-top: 35px;
+      border: 1px solid #e5e7eb;
+    }
+
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 25px 15px;
+      margin-top: 40px;
+      font-size: 13px;
+    }
+
+    footer a {
+      color: #d1d5db;
+    }
+
+    @media (min-width: 700px) {
+      .categories {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      header h1 {
+        font-size: 40px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🛒 CholloCesta</h1>
+  <p>Ofertas y chollos para llenar tu cesta gastando menos</p>
+</header>
+
+<section class="hero">
+  <h2>🔥 Los mejores chollos, en un solo sitio</h2>
+
+  <p>
+    Buscamos ofertas interesantes en alimentación, hogar, limpieza,
+    mascotas y otros productos para ayudarte a ahorrar.
+  </p>
+
+  <a class="telegram" href="https://t.me/CholloCesta">
+    📲 Únete a nuestro Telegram
+  </a>
+</section>
+
+<main class="container">
+
+  <h2 class="section-title">🛍️ Categorías</h2>
+
+  <div class="categories">
+
+    <a class="category" href="#">
+      ☕ Café
+    </a>
+
+    <a class="category" href="#">
+      🥫 Alimentación
+    </a>
+
+    <a class="category" href="#">
+      🫒 Aceite
+    </a>
+
+    <a class="category" href="#">
+      🍫 Snacks
+    </a>
+
+    <a class="category" href="#">
+      🧼 Limpieza
+    </a>
+
+    <a class="category" href="#">
+      🧻 Hogar
+    </a>
+
+    <a class="category" href="#">
+      🐶 Mascotas
+    </a>
+
+    <a class="category" href="#">
+      🔥 Ofertas
+    </a>
+
+  </div>
+
+  <h2 class="section-title">🔥 Ofertas destacadas</h2>
+
+  <div class="offers">
+
+    <article class="offer">
+
+      <div class="offer-image">
+        Próximamente
+      </div>
+
+      <div class="offer-content">
+
+        <h3>☕ Oferta de café</h3>
+
+        <p>
+          Aquí aparecerán nuestras mejores ofertas de café.
+        </p>
+
+        <p>
+          <span class="price">--,-- €</span>
+          <span class="old-price">--,-- €</span>
+        </p>
+
+        <span class="discount">
+          OFERTA
+        </span>
+
+        <a class="offer-button" href="#">
+          Ver oferta
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="offer">
+
+      <div class="offer-image">
+        Próximamente
+      </div>
+
+      <div class="offer-content">
+
+        <h3>🥫 Oferta de alimentación</h3>
+
+        <p>
+          Aquí aparecerán productos con precios especialmente interesantes.
+        </p>
+
+        <p>
+          <span class="price">--,-- €</span>
+          <span class="old-price">--,-- €</span>
+        </p>
+
+        <span class="discount">
+          OFERTA
+        </span>
+
+        <a class="offer-button" href="#">
+          Ver oferta
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <article class="offer">
+
+      <div class="offer-image">
+        Próximamente
+      </div>
+
+      <div class="offer-content">
+
+        <h3>🧼 Oferta para el hogar</h3>
+
+        <p>
+          Productos de limpieza y hogar a precios interesantes.
+        </p>
+
+        <p>
+          <span class="price">--,-- €</span>
+          <span class="old-price">--,-- €</span>
+        </p>
+
+        <span class="discount">
+          OFERTA
+        </span>
+
+        <a class="offer-button" href="#">
+          Ver oferta
+        </a>
+
+      </div>
+
+    </article>
+
+  </div>
+
+
+  <section class="info">
+
+    <h2>💡 ¿Qué es CholloCesta?</h2>
+
+    <p>
+      CholloCesta nace para encontrar ofertas y oportunidades de ahorro
+      en productos que compramos habitualmente.
+    </p>
+
+    <br>
+
+    <p>
+      Nuestro objetivo es localizar precios interesantes y compartirlos
+      de una forma sencilla para que puedas decidir si realmente merece
+      la pena comprar.
+    </p>
+
+    <br>
+
+    <p>
+      📲 También puedes seguir nuestras ofertas a través de nuestro
+      canal de Telegram.
+    </p>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <p>
+    © 2026 CholloCesta
+  </p>
+
+  <p>
+    Las ofertas y precios pueden cambiar. Comprueba siempre el precio
+    final antes de realizar una compra.
+  </p>
+
+  <br>
+
+  <p>
+    Algunos enlaces de esta web podrán ser enlaces de afiliado.
+  </p>
+
+</footer>
+
+</body>
+</html>
