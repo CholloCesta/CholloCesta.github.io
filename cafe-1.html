@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Café en grano 1 kg | Radar CholloCesta</title>
+
+  <meta name="description" content="Comparamos cafés en grano de 1 kg para encontrar los mejores precios. By Amazon, Bonka y Marcilla.">
+
+  <meta name="theme-color" content="#111827">
+
+  <style>
+
+    :root{
+      --dark:#111827;
+      --dark2:#253247;
+      --muted:#667085;
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --line:#e5e7eb;
+      --accent:#f59e0b;
+      --green:#16a34a;
+      --red:#dc2626;
+      --blue:#229ed9;
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0;
+    }
+
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:#172033;
+      line-height:1.5;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .top{
+      background:var(--dark);
+      color:white;
+    }
+
+    .nav{
+      max-width:1120px;
+      margin:auto;
+      padding:16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .brand{
+      font-size:25px;
+      font-weight:900;
+      letter-spacing:-.7px;
+    }
+
+    .brand span{
+      color:var(--accent);
+    }
+
+    .nav small{
+      color:#cbd5e1;
+    }
+
+    .hero{
+      background:linear-gradient(145deg,var(--dark) 0%,var(--dark2) 100%);
+      color:white;
+      padding:40px 16px 46px;
+    }
+
+    .hero-inner{
+      max-width:900px;
+      margin:auto;
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      background:rgba(245,158,11,.16);
+      color:#fbbf24;
+      border:1px solid rgba(245,158,11,.3);
+      padding:6px 11px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:800;
+      margin-bottom:14px;
+    }
+
+    h1{
+      font-size:clamp(34px,8vw,56px);
+      line-height:1.03;
+      letter-spacing:-1.8px;
+      margin-bottom:14px;
+    }
+
+    .hero p{
+      max-width:700px;
+      margin:auto;
+      color:#dbe4ef;
+      font-size:17px;
+    }
+
+    main{
+      max-width:1050px;
+      margin:auto;
+      padding:30px 16px 55px;
+    }
+
+    .intro{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:15px;
+      padding:22px;
+      margin-bottom:25px;
+    }
+
+    .intro h2{
+      font-size:23px;
+      margin-bottom:8px;
+    }
+
+    .intro p{
+      color:#596579;
+      font-size:14px;
+      margin-top:7px;
+    }
+
+    .warning{
+      margin-top:15px;
+      background:#fff7ed;
+      border:1px solid #fed7aa;
+      border-radius:10px;
+      padding:12px;
+      font-size:13px;
+      color:#7c2d12;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .product{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 4px 14px rgba(16,24,40,.05);
+    }
+
+    .product-top{
+      height:150px;
+      background:#eef1f5;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:55px;
+    }
+
+    .product-body{
+      padding:18px;
+    }
+
+    .badge{
+      display:inline-block;
+      border-radius:999px;
+      padding:5px 9px;
+      font-size:11px;
+      font-weight:900;
+      margin-bottom:10px;
+    }
+
+    .badge.green{
+      background:#dcfce7;
+      color:#166534;
+    }
+
+    .badge.blue{
+      background:#dbeafe;
+      color:#1e40af;
+    }
+
+    .badge.orange{
+      background:#ffedd5;
+      color:#9a3412;
+    }
+
+    .product h3{
+      font-size:18px;
+      line-height:1.3;
+      margin-bottom:8px;
+    }
+
+    .product-desc{
+      color:var(--muted);
+      font-size:13px;
+      min-height:58px;
+    }
+
+    .price-box{
+      margin-top:15px;
+      padding-top:14px;
+      border-top:1px solid var(--line);
+    }
+
+    .price{
+      font-size:29px;
+      font-weight:900;
+      color:var(--red);
+    }
+
+    .unit{
+      font-size:13px;
+      color:var(--muted);
+      margin-top:1px;
+    }
+
+    .rating{
+      margin-top:9px;
+      font-size:13px;
+      color:#596579;
+    }
+
+    .button{
+      display:block;
+      text-align:center;
+      background:var(--accent);
+      color:#171717;
+      font-weight:900;
+      padding:11px;
+      border-radius:9px;
+      margin-top:16px;
+    }
+
+    .button:hover{
+      opacity:.9;
+    }
+
+    .comparison{
+      margin-top:30px;
+      background:white;
+      border:1px solid var(--line);
+      border-radius:15px;
+      overflow:hidden;
+    }
+
+    .comparison h2{
+      padding:20px 20px 10px;
+      font-size:22px;
+    }
+
+    .comparison p{
+      padding:0 20px 18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+    }
+
+    th,td{
+      padding:13px 15px;
+      border-top:1px solid var(--line);
+      text-align:left;
+      font-size:13px;
+    }
+
+    th{
+      background:#f8fafc;
+      font-weight:900;
+    }
+
+    .best{
+      color:var(--green);
+      font-weight:900;
+    }
+
+    .verdict{
+      margin-top:30px;
+      background:#111827;
+      color:white;
+      border-radius:15px;
+      padding:23px;
+    }
+
+    .verdict h2{
+      font-size:22px;
+      margin-bottom:12px;
+    }
+
+    .verdict p{
+      color:#dbe4ef;
+      font-size:14px;
+      margin-top:8px;
+    }
+
+    .telegram{
+      margin-top:25px;
+      background:#e8f6fc;
+      border:1px solid #c7eaf8;
+      border-radius:13px;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:15px;
+    }
+
+    .telegram strong{
+      display:block;
+    }
+
+    .telegram span{
+      font-size:13px;
+      color:#526273;
+    }
+
+    .telegram-btn{
+      background:var(--blue);
+      color:white;
+      padding:10px 14px;
+      border-radius:9px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    footer{
+      background:var(--dark);
+      color:#aeb8c6;
+      padding:28px 16px;
+      font-size:12px;
+      text-align:center;
+    }
+
+    footer p{
+      max-width:800px;
+      margin:6px auto;
+    }
+
+    @media(max-width:800px){
+
+      .products{
+        grid-template-columns:1fr;
+      }
+
+      .nav{
+        align-items:flex-start;
+      }
+
+      .nav small{
+        display:none;
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      table{
+        font-size:12px;
+      }
+
+      th,td{
+        padding:10px 8px;
+      }
+
+      .telegram{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+
+      .telegram-btn{
+        width:100%;
+        text-align:center;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<header class="top">
+
+  <nav class="nav">
+
+    <a href="index.html" class="brand">
+      🛒 Chollo<span>Cesta</span>
+    </a>
+
+    <small>
+      Encuentra el chollo. Llena la cesta. Paga menos.
+    </small>
+
+  </nav>
+
+</header>
+
+
+
+<section class="hero">
+
+  <div class="hero-inner">
+
+    <span class="eyebrow">
+      ☕ RADAR CHOLLOCESTA
+    </span>
+
+    <h1>
+      Café en grano: 1 kg
+    </h1>
+
+    <p>
+      Comparamos diferentes marcas y precios para descubrir
+      cuándo un café realmente merece la pena.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<main>
+
+
+<section class="intro">
+
+  <h2>
+    ☕ ¿Cuál es el mejor precio?
+  </h2>
+
+  <p>
+    Hemos seleccionado tres opciones de café en grano de 1 kg
+    para comparar precio por kilo y marca.
+  </p>
+
+  <p>
+    El objetivo de CholloCesta no es recomendar automáticamente
+    el producto más barato, sino ayudarte a saber cuándo
+    estás ante una buena oportunidad.
+  </p>
+
+  <div class="warning">
+
+    ⚠️ <strong>Importante:</strong>
+    los precios de Amazon pueden cambiar en cualquier momento.
+    El precio definitivo es el que aparece en Amazon antes de realizar
+    la compra.
+
+  </div>
+
+</section>
+
+
+
+<section class="products">
+
+
+<!-- BY AMAZON -->
+
+<article class="product">
+
+  <div class="product-top">
+    💰
+  </div>
+
+  <div class="product-body">
+
+    <span class="badge green">
+      💰 OPCIÓN ECONÓMICA
+    </span>
+
+    <h3>
+      by Amazon Café en Grano Natural 1 kg
+    </h3>
+
+    <p class="product-desc">
+      Café en grano 100% Arábica, tueste medio.
+      Una de las opciones más económicas encontradas.
+    </p>
+
+    <div class="price-box">
+
+      <div class="price">
+        13,80 €
+      </div>
+
+      <div class="unit">
+        13,80 €/kg
+      </div>
+
+      <div class="rating">
+        ⭐ 5,0/5 · 1 valoración
+      </div>
+
+    </div>
+
+    <a class="button" href="#AFILIADO-BY-AMAZON#">
+      Ver producto →
+    </a>
+
+  </div>
+
+</article>
+
+
+
+<!-- BONKA -->
+
+<article class="product">
+
+  <div class="product-top">
+    🇪🇸
+  </div>
+
+  <div class="product-body">
+
+    <span class="badge blue">
+      🇪🇸 MARCA CONOCIDA
+    </span>
+
+    <h3>
+      Bonka Café Natural en Grano 1 kg
+    </h3>
+
+    <p class="product-desc">
+      Café natural en grano de una marca muy conocida
+      en España.
+    </p>
+
+    <div class="price-box">
+
+      <div class="price">
+        15,75 €
+      </div>
+
+      <div class="unit">
+        15,75 €/kg
+      </div>
+
+      <div class="rating">
+        ⭐ 4,7/5 · valoraciones verificadas
+      </div>
+
+    </div>
+
+    <a class="button" href="#AFILIADO-BONKA#">
+      Ver producto →
+    </a>
+
+  </div>
+
+</article>
+
+
+
+<!-- MARCILLA -->
+
+<article class="product">
+
+  <div class="product-top">
+    ⭐
+  </div>
+
+  <div class="product-body">
+
+    <span class="badge orange">
+      ⭐ MARCA RECONOCIDA
+    </span>
+
+    <h3>
+      Marcilla Gran Aroma Natural 1 kg
+    </h3>
+
+    <p class="product-desc">
+      Una alternativa de marca reconocida para quienes
+      prefieren Marcilla.
+    </p>
+
+    <div class="price-box">
+
+      <div class="price">
+        17,93 €
+      </div>
+
+      <div class="unit">
+        17,93 €/kg
+      </div>
+
+      <div class="rating">
+        ⭐ 4,7/5 · valoraciones verificadas
+      </div>
+
+    </div>
+
+    <a class="button" href="#AFILIADO-MARCILLA#">
+      Ver producto →
+    </a>
+
+  </div>
+
+</article>
+
+
+</section>
+
+
+
+<section class="comparison">
+
+  <h2>
+    📊 Comparativa rápida
+  </h2>
+
+  <p>
+    Precios consultados en Amazon España. Todos los productos
+    comparados son de aproximadamente 1 kg.
+  </p>
+
+  <table>
+
+    <thead>
+
+      <tr>
+        <th>Producto</th>
+        <th>Precio</th>
+        <th>€/kg</th>
+        <th>Valoración</th>
+      </tr>
+
+    </thead>
+
+    <tbody>
+
+      <tr>
+
+        <td>
+          💰 by Amazon
+        </td>
+
+        <td class="best">
+          13,80 €
+        </td>
+
+        <td class="best">
+          13,80 €
+        </td>
+
+        <td>
+          ⭐ 5,0
+        </td>
+
+      </tr>
+
+
+      <tr>
+
+        <td>
+          🇪🇸 Bonka
+        </td>
+
+        <td>
+          15,75 €
+        </td>
+
+        <td>
+          15,75 €
+        </td>
+
+        <td>
+          ⭐ 4,7
+        </td>
+
+      </tr>
+
+
+      <tr>
+
+        <td>
+          ⭐ Marcilla
+        </td>
+
+        <td>
+          17,93 €
+        </td>
+
+        <td>
+          17,93 €
+        </td>
+
+        <td>
+          ⭐ 4,7
+        </td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</section>
+
+
+
+<section class="verdict">
+
+  <h2>
+    🏆 Veredicto CholloCesta
+  </h2>
+
+  <p>
+    💰 <strong>Si buscas el precio más bajo:</strong>
+    by Amazon es actualmente la opción más económica
+    de esta comparativa.
+  </p>
+
+  <p>
+    🇪🇸 <strong>Si prefieres una marca conocida:</strong>
+    Bonka ofrece una alternativa reconocida por un precio
+    intermedio.
+  </p>
+
+  <p>
+    ⭐ <strong>Si prefieres Marcilla:</strong>
+    actualmente tiene el precio más elevado de las tres
+    opciones comparadas.
+  </p>
+
+  <p>
+    🔥 <strong>¿Es un CHOLLO?</strong>
+    Todavía no lo clasificamos como tal. Necesitamos conocer
+    mejor el precio habitual y observar su evolución.
+  </p>
+
+</section>
+
+
+
+<section class="telegram">
+
+  <div>
+
+    <strong>
+      📲 ¿Quieres enterarte cuando aparezca un auténtico chollo?
+    </strong>
+
+    <span>
+      Únete gratis al canal de Telegram de CholloCesta.
+    </span>
+
+  </div>
+
+  <a class="telegram-btn" href="https://t.me/CholloCesta">
+    Unirme al canal
+  </a>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+  <p>
+    © 2026 CholloCesta · Encuentra el chollo.
+    Llena la cesta. Paga menos.
+  </p>
+
+  <p>
+    Los precios y la disponibilidad pueden cambiar.
+    Comprueba siempre las condiciones y el precio final antes de comprar.
+  </p>
+
+  <p>
+    Algunos enlaces de esta web podrán ser enlaces de afiliado.
+    Si realizas una compra a través de ellos, CholloCesta podría recibir
+    una comisión.
+  </p>
+
+</footer>
+
+
+</body>
+</html>
