@@ -3,584 +3,344 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Café en grano 1 kg | Guía de Precios y Chollos | CholloCesta</title>
-
-  <meta name="description" content="Comparamos precios de café en grano de 1 kg: Ubago, Bonka, Marcilla, DIA Cafetería y Nescafé para encontrar el mejor precio/kg.">
-
-  <meta name="theme-color" content="#111827">
-
+  <title>Café en grano 1 kg - CholloCesta</title>
   <style>
-    :root{
-      --dark:#111827;
-      --dark2:#253247;
-      --muted:#667085;
-      --bg:#f6f7f9;
-      --card:#ffffff;
-      --line:#e5e7eb;
-      --accent:#f59e0b;
-      --green:#16a34a;
-      --red:#dc2626;
-      --blue:#229ed9;
+    :root {
+      --primary: #d97706;
+      --primary-hover: #b45309;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     }
 
-    *{
-      box-sizing:border-box;
-      margin:0;
-      padding:0;
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
-    body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:var(--bg);
-      color:#172033;
-      line-height:1.5;
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding-bottom: 40px;
     }
 
-    a{
-      text-decoration:none;
-      color:inherit;
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px;
+      text-align: center;
     }
 
-    .top{
-      background:var(--dark);
-      color:white;
+    nav a {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--text);
+      text-decoration: none;
     }
 
-    .nav{
-      max-width:1120px;
-      margin:auto;
-      padding:16px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
+    nav span {
+      color: var(--primary);
     }
 
-    .brand{
-      font-size:25px;
-      font-weight:900;
-      letter-spacing:-.7px;
+    nav small {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+      font-weight: normal;
     }
 
-    .brand span{
-      color:var(--accent);
+    .hero {
+      background: linear-gradient(135deg, #78350f 0%, #451a03 100%);
+      color: #ffffff;
+      padding: 32px 20px;
+      text-align: center;
     }
 
-    .nav small{
-      color:#cbd5e1;
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
-    .hero{
-      background:linear-gradient(145deg,var(--dark) 0%,var(--dark2) 100%);
-      color:white;
-      padding:40px 16px 46px;
+    .hero h1 {
+      font-size: 1.8rem;
+      margin-bottom: 8px;
     }
 
-    .hero-inner{
-      max-width:900px;
-      margin:auto;
-      text-align:center;
+    .hero p {
+      font-size: 0.95rem;
+      color: #fef3c7;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
-    .eyebrow{
-      display:inline-block;
-      background:rgba(245,158,11,.16);
-      color:#fbbf24;
-      border:1px solid rgba(245,158,11,.3);
-      padding:6px 11px;
-      border-radius:999px;
-      font-size:13px;
-      font-weight:800;
-      margin-bottom:14px;
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
-    h1{
-      font-size:clamp(34px,8vw,56px);
-      line-height:1.03;
-      letter-spacing:-1.8px;
-      margin-bottom:14px;
+    section {
+      margin-bottom: 32px;
     }
 
-    .hero p{
-      max-width:700px;
-      margin:auto;
-      color:#dbe4ef;
-      font-size:17px;
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+      color: var(--text);
     }
 
-    main{
-      max-width:1120px;
-      margin:auto;
-      padding:30px 16px 55px;
+    p {
+      margin-bottom: 12px;
+      color: #334155;
+      font-size: 0.95rem;
     }
 
-    .intro{
-      background:white;
-      border:1px solid var(--line);
-      border-radius:15px;
-      padding:22px;
-      margin-bottom:25px;
+    .note {
+      background-color: #fffbebf8;
+      border-left: 4px solid #f59e0b;
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-size: 0.88rem;
+      color: #b45309;
+      margin-top: 16px;
     }
 
-    .intro h2{
-      font-size:23px;
-      margin-bottom:8px;
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
 
-    .intro p{
-      color:#596579;
-      font-size:14px;
-      margin-top:7px;
+    .product {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
-    .warning{
-      margin-top:15px;
-      background:#fff7ed;
-      border:1px solid #fed7aa;
-      border-radius:10px;
-      padding:12px;
-      font-size:13px;
-      color:#7c2d12;
+    .product-top {
+      height: 200px;
+      background-color: #f1f5f9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
 
-    .products{
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-      gap:20px;
+    .product-top img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 12px;
     }
 
-    .product{
-      background:white;
-      border:1px solid var(--line);
-      border-radius:16px;
-      overflow:hidden;
-      box-shadow:0 4px 14px rgba(16,24,40,.05);
-      display:flex;
-      flex-direction:column;
+    .product-body {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
     }
 
-    .product-top{
-      height:200px;
-      background:#ffffff;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      overflow:hidden;
-      padding:15px;
-      border-bottom:1px solid var(--line);
+    .badge {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+      text-transform: uppercase;
     }
 
-    .product-top img{
-      max-width:100%;
-      max-height:100%;
-      object-fit:contain;
+    .badge.green {
+      background-color: #dcfce7;
+      color: #166534;
     }
 
-    .product-body{
-      padding:18px;
-      display:flex;
-      flex-direction:column;
-      flex-grow:1;
+    .badge.blue {
+      background-color: #dbeafe;
+      color: #1e40af;
     }
 
-    .badge{
-      display:inline-block;
-      align-self:flex-start;
-      border-radius:999px;
-      padding:5px 9px;
-      font-size:11px;
-      font-weight:900;
-      margin-bottom:10px;
+    .badge.orange {
+      background-color: #ffedd5;
+      color: #9a3412;
     }
 
-    .badge.green{ background:#dcfce7; color:#166534; }
-    .badge.blue{ background:#dbeafe; color:#1e40af; }
-    .badge.orange{ background:#ffedd5; color:#9a3412; }
-
-    .product h3{
-      font-size:18px;
-      line-height:1.3;
-      margin-bottom:8px;
+    .product h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+      color: var(--text);
     }
 
-    .product-desc{
-      color:var(--muted);
-      font-size:13px;
-      flex-grow:1;
+    .product-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      flex-grow: 1;
     }
 
-    .price-box{
-      margin-top:15px;
-      padding-top:14px;
-      border-top:1px solid var(--line);
+    .price-box {
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+      margin-bottom: 16px;
     }
 
-    .price{
-      font-size:26px;
-      font-weight:900;
-      color:var(--red);
+    .price {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: #dc2626;
     }
 
-    .unit{
-      font-size:13px;
-      color:var(--muted);
-      margin-top:1px;
+    .unit {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 600;
     }
 
-    .reference-label{
-      font-size:11px;
-      color:#8898aa;
-      margin-top:2px;
-      font-style:italic;
+    .reference-label {
+      font-size: 0.75rem;
+      color: #94a3b8;
+      font-style: italic;
     }
 
-    .button{
-      display:block;
-      text-align:center;
-      background:var(--accent);
-      color:#171717;
-      font-weight:900;
-      padding:11px;
-      border-radius:999px;
-      margin-top:16px;
-      transition:background 0.2s;
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: var(--primary);
+      color: #ffffff;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 8px;
+      transition: background-color 0.2s;
     }
 
-    .button:hover{
-      background:#e08e0b;
+    .button:hover {
+      background-color: var(--primary-hover);
     }
 
-    .comparison{
-      margin-top:35px;
-      background:white;
-      border:1px solid var(--line);
-      border-radius:15px;
-      overflow:hidden;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      margin-top: 12px;
     }
 
-    .comparison h2{
-      padding:20px 20px 10px;
-      font-size:22px;
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      font-size: 0.9rem;
     }
 
-    .comparison p{
-      padding:0 20px 18px;
-      color:var(--muted);
-      font-size:13px;
+    th {
+      background-color: #f1f5f9;
+      font-weight: 700;
+      color: var(--text);
     }
 
-    table{
-      width:100%;
-      border-collapse:collapse;
+    tr:not(:last-child) {
+      border-bottom: 1px solid var(--border);
     }
 
-    th,td{
-      padding:13px 15px;
-      border-top:1px solid var(--line);
-      text-align:left;
-      font-size:13px;
+    .cta-telegram {
+      background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
+      color: #ffffff;
+      padding: 20px;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      text-align: center;
     }
 
-    th{
-      background:#f8fafc;
-      font-weight:900;
+    .cta-telegram strong {
+      font-size: 1.05rem;
     }
 
-    .best{
-      color:var(--green);
-      font-weight:900;
+    .cta-telegram span {
+      font-size: 0.85rem;
+      opacity: 0.9;
     }
 
-    .verdict{
-      margin-top:30px;
-      background:#111827;
-      color:white;
-      border-radius:15px;
-      padding:23px;
+    .button.telegram {
+      background-color: #ffffff;
+      color: #0088cc;
+      width: auto;
+      padding: 10px 24px;
     }
 
-    .verdict h2{
-      font-size:22px;
-      margin-bottom:12px;
+    .button.telegram:hover {
+      background-color: #f8fafc;
     }
 
-    .verdict p{
-      color:#dbe4ef;
-      font-size:14px;
-      margin-top:8px;
+    footer {
+      text-align: center;
+      padding: 24px 20px 0;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      margin-top: 40px;
     }
 
-    .telegram{
-      margin-top:25px;
-      background:#e8f6fc;
-      border:1px solid #c7eaf8;
-      border-radius:13px;
-      padding:18px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:15px;
-    }
-
-    .telegram strong{
-      display:block;
-    }
-
-    .telegram span{
-      font-size:13px;
-      color:#526273;
-    }
-
-    .telegram-btn{
-      background:var(--blue);
-      color:white;
-      padding:10px 14px;
-      border-radius:999px;
-      font-weight:800;
-      white-space:nowrap;
-    }
-
-    footer{
-      background:var(--dark);
-      color:#aeb8c6;
-      padding:28px 16px;
-      font-size:12px;
-      text-align:center;
-    }
-
-    footer p{
-      max-width:800px;
-      margin:6px auto;
-    }
-
-    @media(max-width:800px){
-      .nav{
-        align-items:flex-start;
-      }
-      .nav small{
-        display:none;
-      }
-    }
-
-    @media(max-width:600px){
-      table{
-        font-size:12px;
-      }
-      th,td{
-        padding:10px 8px;
-      }
-      .telegram{
-        flex-direction:column;
-        align-items:flex-start;
-      }
-      .telegram-btn{
-        width:100%;
-        text-align:center;
-      }
+    footer p {
+      margin-bottom: 6px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
     }
   </style>
 </head>
-
 <body>
 
-<header class="top">
-  <nav class="nav">
-    <a href="index.html" class="brand">
-      🛒 Chollo<span>Cesta</span>
-    </a>
-    <small>
-      Encuentra el chollo. Llena la cesta. Paga menos.
-    </small>
+<header>
+  <nav>
+    <a href="index.html">🛒 Chollo<span>Cesta</span></a>
+    <small>Encuentra el chollo. Llena la cesta. Paga menos.</small>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <span class="eyebrow">
-      ☕ RADAR CHOLLOCESTA
-    </span>
-    <h1>
-      Café en grano: 1 kg
-    </h1>
-    <p>
-      Comparamos marcas líderes y opciones de supermercado para detectar las mejores ofertas y relación calidad/precio.
-    </p>
-  </div>
+  <span class="hero-badge">☕ RADAR CHOLLOCESTA</span>
+  <h1>Café en grano: 1 kg</h1>
+  <p>Comparamos marcas líderes y opciones de supermercado para detectar las mejores ofertas y relación calidad/precio.</p>
 </section>
 
 <main>
 
-<section class="intro">
-  <h2>
-    ☕ ¿Cuál es la opción más conveniente?
-  </h2>
-  <p>
-    Hemos seleccionado 5 opciones clave de café en grano de 1 kg para analizar su precio por kilo, tomando como referencia base los precios de DIA frente al mercado general.
-  </p>
-  <p>
-    El objetivo de CholloCesta es darte la referencia real de supermercado y ayudarte a pulsar en «Buscar mejor precio» para cazar ofertas puntuales más baratas online.
-  </p>
-  <div class="warning">
+<section>
+  <h2>☕ ¿Cuál es la opción más conveniente?</h2>
+  <p>Hemos seleccionado 5 opciones clave de café en grano de 1 kg para analizar su precio por kilo, tomando como referencia base los precios de DIA frente al mercado general.</p>
+  <p>El objetivo de CholloCesta es darte la referencia real de supermercado y ayudarte a pulsar en «Buscar mejor precio» para cazar ofertas puntuales más baratas online.</p>
+  <div class="note">
     ⚠️ <strong>Nota sobre precios:</strong> Los precios listados abajo sirven como referencia base de supermercado. Al pulsar en «Buscar mejor precio» podrás comprobar si existe una oferta activa en Amazon u otras tiendas.
   </div>
 </section>
 
-<section class="products">
-
-  <!-- TARJETA 1: DIA CAFETERÍA -->
-  <article class="product">
-    <div class="product-top">
-      <svg width="120" height="150" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="20" width="80" height="110" rx="8" fill="#e5e7eb" stroke="#cbd5e1" stroke-width="2"/>
-        <rect x="20" y="45" width="80" height="35" fill="#dc2626"/>
-        <text x="60" y="67" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">DIA</text>
-        <text x="60" y="100" fill="#334155" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Cafetería</text>
-        <circle cx="60" cy="118" r="5" fill="#78350f"/>
-      </svg>
-    </div>
-    <div class="product-body">
-      <span class="badge green">💰 MARCA BLANCA REFERENCIA</span>
-      <h3>Café en Grano DIA Cafetería 1 kg</h3>
-      <p class="product-desc">Opción económica de referencia diaria para consumo habitual en hogar u oficina.</p>
-      <div class="price-box">
-        <div class="price">10,25 €</div>
-        <div class="unit">10,25 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=cafe+en+grano+1kg+molido+natural" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- TARJETA 2: UBAGO -->
-  <article class="product">
-    <div class="product-top">
-      <svg width="120" height="150" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="20" width="80" height="110" rx="8" fill="#fef3c7" stroke="#fde68a" stroke-width="2"/>
-        <rect x="20" y="45" width="80" height="35" fill="#d97706"/>
-        <text x="60" y="67" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">UBAGO</text>
-        <text x="60" y="100" fill="#78350f" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">Natural</text>
-        <circle cx="60" cy="118" r="5" fill="#78350f"/>
-      </svg>
-    </div>
-    <div class="product-body">
-      <span class="badge green">👍 EQUILIBRIO PRECIO</span>
-      <h3>Café en Grano Ubago Natural 1 kg</h3>
-      <p class="product-desc">Tueste natural equilibrado. Una alternativa de gran rendimiento a precio ajustado.</p>
-      <div class="price-box">
-        <div class="price">11,90 €</div>
-        <div class="unit">11,90 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=cafe+ubago+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- TARJETA 3: BONKA -->
-  <article class="product">
-    <div class="product-top">
-      <svg width="120" height="150" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="20" width="80" height="110" rx="8" fill="#78350f" stroke="#451a03" stroke-width="2"/>
-        <rect x="20" y="45" width="80" height="35" fill="#b45309"/>
-        <text x="60" y="68" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="900" text-anchor="middle">BONKA</text>
-        <text x="60" y="100" fill="#fef3c7" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Natural 1kg</text>
-        <circle cx="60" cy="118" r="5" fill="#fef3c7"/>
-      </svg>
-    </div>
-    <div class="product-body">
-      <span class="badge blue">🇪🇸 MARCA POPULAR</span>
-      <h3>Bonka Café Natural en Grano 1 kg</h3>
-      <p class="product-desc">Un clásico de tueste natural muy extendido en el mercado español.</p>
-      <div class="price-box">
-        <div class="price">14,95 €</div>
-        <div class="unit">14,95 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=bonka+cafe+natural+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- TARJETA 4: NESCAFÉ -->
-  <article class="product">
-    <div class="product-top">
-      <svg width="120" height="150" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="20" width="80" height="110" rx="8" fill="#1e293b" stroke="#0f172a" stroke-width="2"/>
-        <rect x="20" y="45" width="80" height="35" fill="#dc2626"/>
-        <text x="60" y="67" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">NESCAFÉ</text>
-        <text x="60" y="100" fill="#cbd5e1" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Selección</text>
-        <circle cx="60" cy="118" r="5" fill="#dc2626"/>
-      </svg>
-    </div>
-    <div class="product-body">
-      <span class="badge blue">🔥 TOP VENTAS</span>
-      <h3>Nescafé Selección Café en Grano 1 kg</h3>
-      <p class="product-desc">Sabor intenso y aroma constante de una de las marcas más vendidas mundialmente.</p>
-      <div class="price-box">
-        <div class="price">15,80 €</div>
-        <div class="unit">15,80 €/kg</div>
-        <div class="reference-label">Precio ref. Mercado</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=nescafe+cafe+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- TARJETA 5: MARCILLA -->
-  <article class="product">
-    <div class="product-top">
-      <svg width="120" height="150" viewBox="0 0 120 150" xmlns="http://www.w3.org/2000/svg">
-        <rect x="20" y="20" width="80" height="110" rx="8" fill="#fef2f2" stroke="#fca5a5" stroke-width="2"/>
-        <rect x="20" y="45" width="80" height="35" fill="#991b1b"/>
-        <text x="60" y="67" fill="#ffffff" font-family="sans-serif" font-size="11" font-weight="900" text-anchor="middle">MARCILLA</text>
-        <text x="60" y="100" fill="#7f1d1d" font-family="sans-serif" font-size="10" font-weight="bold" text-anchor="middle">Gran Aroma</text>
-        <circle cx="60" cy="118" r="5" fill="#991b1b"/>
-      </svg>
-    </div>
-    <div class="product-body">
-      <span class="badge orange">⭐ MARCA RECONOCIDA</span>
-      <h3>Marcilla Gran Aroma Natural 1 kg</h3>
-      <p class="product-desc">Aroma característico y tueste tradicional para amantes de la marca Marcilla.</p>
-      <div class="price-box">
-        <div class="price">16,50 €</div>
-        <div class="unit">16,50 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=marcilla+gran+aroma+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-</section>
-
-
-  <!-- TARJETA 3: BONKA -->
-  <article class="product">
-    <div class="product-top">
-      <img src="https://i.postimg.cc/85z1SfZR/bonka.jpg" alt="Café Bonka 1kg">
-    </div>
-    <div class="product-body">
-      <span class="badge blue">🇪🇸 MARCA POPULAR</span>
-      <h3>Bonka Café Natural en Grano 1 kg</h3>
-      <p class="product-desc">Un clásico de tueste natural muy extendido en el mercado español.</p>
-      <div class="price-box">
-        <div class="price">14,95 €</div>
-        <div class="unit">14,95 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=bonka+cafe+natural+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- TARJETA 4: NESCAFÉ -->
-  <article class="product">
-    <div class="product-top">
-      <img src="https://i.postimg.cc/mD3WvD0k/nescafe.jpg" alt="Café Nescafé 1kg">
-    </div>
-    <div class="product-body">
-      <span class="badge blue">🔥 TOP VENTAS</span>
-      <h3>Nescafé Selección Café en Grano 1 kg</h3>
-      <p class="product-desc">Sabor intenso y aroma constante de una de las marcas más vendidas mundialmente.</p>
-      <div class="price-box">
-        <div class="price">15,80 €</div>
-        <div class="unit">15,80 €/kg</div>
+<!-- SECCIÓN DE PRODUCTOS -->
 <section class="products">
 
   <!-- TARJETA 1: DIA CAFETERÍA -->
@@ -675,10 +435,7 @@
 
 </section>
 
-
-</section>
-
-<section class="comparison">
+<section>
   <h2>📊 Comparativa rápida de precios de referencia</h2>
   <p>Precios por kilo calculados tomando de base la ficha de supermercado (DIA / Mercado de referencia).</p>
 
@@ -695,8 +452,8 @@
       <tr>
         <td>🏷️ DIA Cafetería</td>
         <td>Marca Blanca</td>
-        <td class="best">10,25 €</td>
-        <td class="best">10,25 €</td>
+        <td>10,25 €</td>
+        <td>10,25 €</td>
       </tr>
       <tr>
         <td>☕ Ubago Natural</td>
@@ -726,19 +483,19 @@
   </table>
 </section>
 
-<section class="verdict">
+<section>
   <h2>🏆 Veredicto CholloCesta</h2>
   <p>💰 <strong>Para ahorrar al máximo:</strong> La marca blanca (DIA Cafetería) o marcas como Ubago marcan el suelo del mercado rondando los 10€ - 12€/kg.</p>
   <p>⭐ <strong>Para marcas reconocidas (Bonka, Nescafé, Marcilla):</strong> El precio medio habitual se sitúa entre 14,50€ y 17,00€/kg.</p>
   <p>🔥 <strong>¿Cuándo es un CHOLLO en Amazon?</strong> Cualquier bajada puntual de Bonka, Nescafé o Marcilla por debajo de los <strong>12,50 €/kg</strong> se considera una oportunidad clara de compra que notificaremos por el canal.</p>
 </section>
 
-<section class="telegram">
+<section class="cta-telegram">
   <div>
-    <strong>📲 ¿Quieres enterarte cuando aparezca un auténtico chollo de café?</strong>
+    <strong>📲 ¿Quieres enterarte cuando aparezca un auténtico chollo de café?</strong><br>
     <span>Únete gratis al canal de Telegram de CholloCesta.</span>
   </div>
-  <a class="telegram-btn" href="https://t.me/CholloCesta" target="_blank" rel="noopener">Unirme al canal</a>
+  <a class="button telegram" href="https://t.me/CholloCesta" target="_blank" rel="noopener">Unirme al canal</a>
 </section>
 
 </main>
