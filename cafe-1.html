@@ -161,22 +161,20 @@
     }
 
     .product-top{
-      height:180px;
-      background:#eef1f5;
+      height:200px;
+      background:#ffffff;
       display:flex;
       align-items:center;
       justify-content:center;
       overflow:hidden;
+      padding:15px;
+      border-bottom:1px solid var(--line);
     }
 
     .product-top img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-    }
-
-    .product-top .placeholder{
-      font-size:55px;
+      max-width:100%;
+      max-height:100%;
+      object-fit:contain;
     }
 
     .product-body{
@@ -199,7 +197,6 @@
     .badge.green{ background:#dcfce7; color:#166534; }
     .badge.blue{ background:#dbeafe; color:#1e40af; }
     .badge.orange{ background:#ffedd5; color:#9a3412; }
-    .badge.gray{ background:#f1f5f9; color:#475569; }
 
     .product h3{
       font-size:18px;
@@ -339,7 +336,7 @@
       background:var(--blue);
       color:white;
       padding:10px 14px;
-      border-radius:9px;
+      border-radius:999px;
       font-weight:800;
       white-space:nowrap;
     }
@@ -431,12 +428,10 @@
 
 <section class="products">
 
-  <!-- TARJETA 1: DIA CAFETERÍA (Marca Blanca Reference) -->
+  <!-- TARJETA 1: DIA CAFETERÍA -->
   <article class="product">
     <div class="product-top">
-      <!-- Sustituir ruta por foto local si se dispone de ella -->
-      <img src="img/cafe-dia-cafeteria.jpg" alt="Café DIA Cafetería" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <span class="placeholder" style="display:none;">🏷️</span>
+      <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=400&q=80" alt="Café DIA Cafetería">
     </div>
     <div class="product-body">
       <span class="badge green">💰 MARCA BLANCA REFERENCIA</span>
@@ -449,15 +444,14 @@
         <div class="unit">10,25 €/kg</div>
         <div class="reference-label">Precio ref. DIA</div>
       </div>
-      <a class="button" href="#SEARCH-AMAZON-DIA#">Buscar mejor precio →</a>
+      <a class="button" href="https://www.amazon.es/s?k=cafe+en+grano+1kg+molido+natural" target="_blank" rel="noopener">Buscar mejor precio →</a>
     </div>
   </article>
 
   <!-- TARJETA 2: UBAGO -->
   <article class="product">
     <div class="product-top">
-      <img src="img/cafe-ubago.jpg" alt="Café Ubago 1kg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <span class="placeholder" style="display:none;">☕</span>
+      <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?auto=format&fit=crop&w=400&q=80" alt="Café Ubago 1kg">
     </div>
     <div class="product-body">
       <span class="badge green">👍 EQUILIBRIO PRECIO</span>
@@ -470,15 +464,14 @@
         <div class="unit">11,90 €/kg</div>
         <div class="reference-label">Precio ref. DIA</div>
       </div>
-      <a class="button" href="#SEARCH-AMAZON-UBAGO#">Buscar mejor precio →</a>
+      <a class="button" href="https://www.amazon.es/s?k=cafe+ubago+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
     </div>
   </article>
 
   <!-- TARJETA 3: BONKA -->
   <article class="product">
     <div class="product-top">
-      <img src="img/cafe-bonka.jpg" alt="Café Bonka 1kg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <span class="placeholder" style="display:none;">🇪🇸</span>
+      <img src="https://m.media-amazon.com/images/I/71rIeThw2AL._AC_SL1500_.jpg" alt="Café Bonka 1kg">
     </div>
     <div class="product-body">
       <span class="badge blue">🇪🇸 MARCA POPULAR</span>
@@ -491,15 +484,14 @@
         <div class="unit">14,95 €/kg</div>
         <div class="reference-label">Precio ref. DIA</div>
       </div>
-      <a class="button" href="#SEARCH-AMAZON-BONKA#">Buscar mejor precio →</a>
+      <a class="button" href="https://www.amazon.es/s?k=bonka+cafe+natural+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
     </div>
   </article>
 
   <!-- TARJETA 4: NESCAFÉ -->
   <article class="product">
     <div class="product-top">
-      <img src="img/cafe-nescafe.jpg" alt="Café Nescafé 1kg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <span class="placeholder" style="display:none;">🔴</span>
+      <img src="https://m.media-amazon.com/images/I/61m1aTf3IHL._AC_SL1200_.jpg" alt="Café Nescafé 1kg">
     </div>
     <div class="product-body">
       <span class="badge blue">🔥 TOP VENTAS</span>
@@ -512,15 +504,14 @@
         <div class="unit">15,80 €/kg</div>
         <div class="reference-label">Precio ref. Mercado</div>
       </div>
-      <a class="button" href="#SEARCH-AMAZON-NESCAFE#">Buscar mejor precio →</a>
+      <a class="button" href="https://www.amazon.es/s?k=nescafe+cafe+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
     </div>
   </article>
 
   <!-- TARJETA 5: MARCILLA -->
   <article class="product">
     <div class="product-top">
-      <img src="img/cafe-marcilla.jpg" alt="Café Marcilla 1kg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <span class="placeholder" style="display:none;">⭐</span>
+      <img src="https://m.media-amazon.com/images/I/71iKSpG0KkL._AC_SL1500_.jpg" alt="Café Marcilla 1kg">
     </div>
     <div class="product-body">
       <span class="badge orange">⭐ MARCA RECONOCIDA</span>
@@ -533,7 +524,7 @@
         <div class="unit">16,50 €/kg</div>
         <div class="reference-label">Precio ref. DIA</div>
       </div>
-      <a class="button" href="#SEARCH-AMAZON-MARCILLA#">Buscar mejor precio →</a>
+      <a class="button" href="https://www.amazon.es/s?k=marcilla+gran+aroma+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
     </div>
   </article>
 
@@ -590,7 +581,7 @@
 <section class="verdict">
   <h2>🏆 Veredicto CholloCesta</h2>
   <p>💰 <strong>Para ahorrar al máximo:</strong> La marca blanca (DIA Cafetería) o marcas como Ubago marcan el suelo del mercado rondando los 10€ - 12€/kg.</p>
-  <p>⭐ <strong>Para marcas reconocidas (Bonka, Nescafé, Marcilla):</strong> El precio medio habitual se sitúa entre 14,50€ y 17.00€/kg.</p>
+  <p>⭐ <strong>Para marcas reconocidas (Bonka, Nescafé, Marcilla):</strong> El precio medio habitual se sitúa entre 14,50€ y 17,00€/kg.</p>
   <p>🔥 <strong>¿Cuándo es un CHOLLO en Amazon?</strong> Cualquier bajada puntual de Bonka, Nescafé o Marcilla por debajo de los <strong>12,50 €/kg</strong> se considera una oportunidad clara de compra que notificaremos por el canal.</p>
 </section>
 
@@ -599,7 +590,7 @@
     <strong>📲 ¿Quieres enterarte cuando aparezca un auténtico chollo de café?</strong>
     <span>Únete gratis al canal de Telegram de CholloCesta.</span>
   </div>
-  <a class="telegram-btn" href="https://t.me/CholloCesta">Unirme al canal</a>
+  <a class="telegram-btn" href="https://t.me/CholloCesta" target="_blank" rel="noopener">Unirme al canal</a>
 </section>
 
 </main>
