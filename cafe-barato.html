@@ -3,70 +3,580 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Café barato online: cómo saber si es un chollo | CholloCesta</title>
+
 <meta name="description" content="Cómo comparar el precio del café, calcular el precio por kilo y detectar si una oferta es realmente interesante. Guía CholloCesta.">
+
 <meta name="theme-color" content="#111827">
+
 <style>
-*{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#f6f7f9;color:#172033;line-height:1.65}a{text-decoration:none;color:inherit}.top{background:#111827;color:#fff}.nav{max-width:900px;margin:auto;padding:16px;display:flex;justify-content:space-between;align-items:center}.brand{font-size:24px;font-weight:900}.brand span{color:#f59e0b}.back{font-size:13px;color:#cbd5e1}.hero{background:linear-gradient(145deg,#111827,#293548);color:white;padding:42px 16px}.hero-inner{max-width:850px;margin:auto}.eyebrow{color:#fbbf24;font-size:12px;font-weight:900;letter-spacing:.08em}.hero h1{font-size:clamp(32px,7vw,52px);line-height:1.08;letter-spacing:-1.5px;margin:10px 0 14px}.hero p{color:#dbe4ef;max-width:720px;font-size:17px}.container{max-width:850px;margin:auto;padding:28px 16px 50px}.article{background:#fff;border:1px solid #e5e7eb;border-radius:16px;padding:22px;box-shadow:0 4px 16px rgba(16,24,40,.04)}h2{font-size:24px;line-height:1.25;margin:30px 0 10px}h2:first-child{margin-top:0}h3{font-size:18px;margin:20px 0 7px}p{margin:10px 0;color:#4b5565}.rule{background:#fff7e6;border-left:4px solid #f59e0b;padding:15px 16px;margin:18px 0;border-radius:8px;font-weight:800}.table-wrap{overflow-x:auto;margin:18px 0}table{border-collapse:collapse;width:100%;min-width:560px;background:#fff}th,td{padding:11px;border:1px solid #e5e7eb;text-align:left}th{background:#f3f4f6}.good{color:#15803d;font-weight:800}.price{font-weight:900}.box{background:#eef8fc;border:1px solid #c9eaf7;border-radius:13px;padding:18px;margin-top:22px}.tg{display:inline-block;background:#229ed9;color:#fff;padding:10px 15px;border-radius:9px;font-weight:800;margin-top:8px}.sources{font-size:12px;color:#667085;margin-top:24px;padding-top:18px;border-top:1px solid #e5e7eb}footer{background:#111827;color:#aeb8c6;text-align:center;padding:28px 16px;font-size:12px}footer p{color:#aeb8c6;max-width:800px;margin:5px auto}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0
+}
+
+body{
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:#f6f7f9;
+  color:#172033;
+  line-height:1.65
+}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+.top{
+  background:#111827;
+  color:#fff
+}
+
+.nav{
+  max-width:900px;
+  margin:auto;
+  padding:16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+
+.brand{
+  font-size:24px;
+  font-weight:900
+}
+
+.brand span{
+  color:#f59e0b
+}
+
+.back{
+  font-size:13px;
+  color:#cbd5e1
+}
+
+.hero{
+  background:linear-gradient(145deg,#111827,#293548);
+  color:white;
+  padding:42px 16px
+}
+
+.hero-inner{
+  max-width:850px;
+  margin:auto
+}
+
+.eyebrow{
+  color:#fbbf24;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.08em
+}
+
+.hero h1{
+  font-size:clamp(32px,7vw,52px);
+  line-height:1.08;
+  letter-spacing:-1.5px;
+  margin:10px 0 14px
+}
+
+.hero p{
+  color:#dbe4ef;
+  max-width:720px;
+  font-size:17px
+}
+
+.container{
+  max-width:850px;
+  margin:auto;
+  padding:28px 16px 50px
+}
+
+.article{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:16px;
+  padding:22px;
+  box-shadow:0 4px 16px rgba(16,24,40,.04)
+}
+
+h2{
+  font-size:24px;
+  line-height:1.25;
+  margin:30px 0 10px
+}
+
+h2:first-child{
+  margin-top:0
+}
+
+h3{
+  font-size:18px;
+  margin:20px 0 7px
+}
+
+p{
+  margin:10px 0;
+  color:#4b5565
+}
+
+.rule{
+  background:#fff7e6;
+  border-left:4px solid #f59e0b;
+  padding:15px 16px;
+  margin:18px 0;
+  border-radius:8px;
+  font-weight:800
+}
+
+.table-wrap{
+  overflow-x:auto;
+  margin:18px 0
+}
+
+table{
+  border-collapse:collapse;
+  width:100%;
+  min-width:560px;
+  background:#fff
+}
+
+th,
+td{
+  padding:11px;
+  border:1px solid #e5e7eb;
+  text-align:left
+}
+
+th{
+  background:#f3f4f6
+}
+
+.good{
+  color:#15803d;
+  font-weight:800
+}
+
+.price{
+  font-weight:900
+}
+
+.compare-box{
+  margin:25px 0 5px;
+  background:#fff7e6;
+  border:1px solid #fed7aa;
+  border-radius:13px;
+  padding:20px;
+  text-align:center
+}
+
+.compare-box strong{
+  display:block;
+  font-size:18px;
+  margin-bottom:7px
+}
+
+.compare-button{
+  display:inline-block;
+  background:#f59e0b;
+  color:#171717;
+  padding:12px 18px;
+  border-radius:9px;
+  font-weight:900;
+  margin-top:10px
+}
+
+.box{
+  background:#eef8fc;
+  border:1px solid #c9eaf7;
+  border-radius:13px;
+  padding:18px;
+  margin-top:22px
+}
+
+.tg{
+  display:inline-block;
+  background:#229ed9;
+  color:#fff;
+  padding:10px 15px;
+  border-radius:9px;
+  font-weight:800;
+  margin-top:8px
+}
+
+.sources{
+  font-size:12px;
+  color:#667085;
+  margin-top:24px;
+  padding-top:18px;
+  border-top:1px solid #e5e7eb
+}
+
+footer{
+  background:#111827;
+  color:#aeb8c6;
+  text-align:center;
+  padding:28px 16px;
+  font-size:12px
+}
+
+footer p{
+  color:#aeb8c6;
+  max-width:800px;
+  margin:5px auto
+}
+
 </style>
 </head>
+
+
 <body>
-<header class="top"><nav class="nav"><a class="brand" href="../">🛒 Chollo<span>Cesta</span></a><a class="back" href="../">← Volver a CholloCesta</a></nav></header>
 
-<section class="hero"><div class="hero-inner">
-<div class="eyebrow">GUÍA CHOLLOCESTA · ACTUALIZADA</div>
-<h1>☕ Café barato: cómo saber si realmente es un chollo</h1>
-<p>Comparar solo el precio del paquete puede llevarnos a equivocarnos. Te enseñamos a mirar el precio por kilo y otros factores antes de comprar.</p>
-</div></section>
 
-<main class="container"><article class="article">
-<h2>La primera regla: mira el precio por kilo</h2>
-<p>Dos paquetes de café pueden tener precios muy diferentes y, sin embargo, el producto aparentemente más barato puede salir más caro. Por eso, la referencia más sencilla para comparar formatos es el <strong>precio por kilo</strong>.</p>
-<div class="rule">🧮 Regla CholloCesta: antes de decidir, convierte siempre el precio al mismo formato de comparación.</div>
+<header class="top">
 
-<h2>Un ejemplo real de la diferencia</h2>
-<p>En la tienda online de DIA consultada para esta guía aparecen, entre otros, un café en grano natural Dia Cafetería de 500 g a 5,49 € (10,98 €/kg), un Ubago especial de 1 kg a 12,69 €/kg y un Marcilla natural de 500 g a 12,95 € (25,90 €/kg). Son productos distintos, así que el precio por kilo no determina por sí solo cuál es mejor, pero sí permite comparar el coste de forma mucho más clara.</p>
+<nav class="nav">
 
-<div class="table-wrap"><table>
-<thead><tr><th>Producto</th><th>Formato</th><th>Precio</th><th>Precio/kg</th></tr></thead>
-<tbody>
-<tr><td>Dia Cafetería natural</td><td>500 g</td><td class="price">5,49 €</td><td class="good">10,98 €/kg</td></tr>
-<tr><td>Ubago especial</td><td>1 kg</td><td class="price">12,69 €</td><td>12,69 €/kg</td></tr>
-<tr><td>Ubago Arábica Kaldi</td><td>500 g</td><td class="price">9,89 €</td><td>19,78 €/kg</td></tr>
-<tr><td>Bonka natural</td><td>500 g</td><td class="price">10,39 €</td><td>20,78 €/kg</td></tr>
-<tr><td>Marcilla natural</td><td>500 g</td><td class="price">12,95 €</td><td>25,90 €/kg</td></tr>
-</tbody></table></div>
+<a class="brand" href="index.html">
+🛒 Chollo<span>Cesta</span>
+</a>
 
-<p><strong>Importante:</strong> estos son precios observados en la tienda online de DIA al preparar esta guía y pueden cambiar. No estamos afirmando que el café más barato por kilo sea automáticamente el mejor: la variedad, el tueste, la marca y las preferencias personales también cuentan.</p>
+<a class="back" href="index.html">
+← Volver a CholloCesta
+</a>
 
-<h2>¿Y si compras café molido?</h2>
-<p>La misma regla sirve para el café molido. En la misma tienda aparecen, por ejemplo, paquetes de 2 × 250 g de Dia Cafetería natural a 4,70 € (9,40 €/kg), mientras que un Bonka natural de 250 g figura a 4,05 € (16,20 €/kg). Comparar el precio por paquete escondería una parte importante de la diferencia.</p>
+</nav>
 
-<h2>¿Un pack grande siempre es un chollo?</h2>
-<p>No necesariamente. Un formato grande puede reducir el precio por kilo, pero hay que comprobar si realmente vas a consumirlo, si existe un gasto de envío y si el producto que estás comparando es equivalente.</p>
-<p>En una oferta online también conviene mirar el <strong>precio final</strong>, no solo el porcentaje de descuento anunciado.</p>
+</header>
 
-<h2>☕ ¿Qué más deberías mirar?</h2>
-<h3>1. Tipo de café</h3><p>Natural, mezcla, descafeinado, arábica u otras variedades no son equivalentes. El precio debe interpretarse junto con lo que estás comprando.</p>
-<h3>2. Formato</h3><p>250 g, 500 g, 1 kg o packs múltiples pueden hacer que una oferta parezca más barata de lo que realmente es.</p>
-<h3>3. Gastos adicionales</h3><p>En compras online, el envío puede cambiar completamente el atractivo de una oferta.</p>
-<h3>4. Precio habitual</h3><p>Un descuento grande no significa necesariamente que el precio final sea excepcional. Si podemos, compararemos con otras opciones similares.</p>
-<h3>5. ¿Lo comprarías igualmente?</h3><p>Una oferta solo tiene sentido si el producto te interesa. Ahorrar dinero comprando algo que no necesitas no es ahorrar.</p>
 
-<h2>🔥 El análisis CholloCesta</h2>
-<p>Con los ejemplos consultados, vemos una diferencia considerable entre cafés en grano: desde 10,98 €/kg en el producto Dia Cafetería natural hasta 25,90 €/kg en el Marcilla natural. Eso no permite decir que uno sea mejor que otro, pero sí demuestra por qué el precio por kilo debe formar parte de cualquier comparación.</p>
-<p>Para nosotros, un <strong>chollo</strong> no será simplemente un producto con una etiqueta de “-30 %”. Queremos comprobar el precio, el formato y qué alternativa comparable existe antes de recomendarlo.</p>
 
-<div class="box"><strong>📲 ¿Quieres que te avisemos cuando encontremos una oferta?</strong><p>Estamos construyendo CholloCesta para seleccionar oportunidades interesantes y compartirlas también por Telegram.</p><a class="tg" href="https://t.me/CholloCesta">Unirme a CholloCesta en Telegram</a></div>
+<section class="hero">
 
-<div class="sources"><strong>Fuentes consultadas</strong><br>
-Precios y formatos: catálogo online de DIA consultado durante la elaboración de esta guía. Los precios son variables y deben comprobarse antes de comprar.
+<div class="hero-inner">
+
+<div class="eyebrow">
+GUÍA CHOLLOCESTA · ACTUALIZADA
 </div>
-</article></main>
+
+<h1>
+☕ Café barato: cómo saber si realmente es un chollo
+</h1>
+
+<p>
+Comparar solo el precio del paquete puede llevarnos a equivocarnos.
+Te enseñamos a mirar el precio por kilo y otros factores antes de comprar.
+</p>
+
+</div>
+
+</section>
+
+
+
+<main class="container">
+
+<article class="article">
+
+
+<h2>
+La primera regla: mira el precio por kilo
+</h2>
+
+<p>
+Dos paquetes de café pueden tener precios muy diferentes y, sin embargo,
+el producto aparentemente más barato puede salir más caro.
+Por eso, la referencia más sencilla para comparar formatos es el
+<strong>precio por kilo</strong>.
+</p>
+
+
+<div class="rule">
+
+🧮 Regla CholloCesta: antes de decidir, convierte siempre el precio
+al mismo formato de comparación.
+
+</div>
+
+
+
+<h2>
+Un ejemplo real de la diferencia
+</h2>
+
+<p>
+En la tienda online de DIA consultada para esta guía aparecen,
+entre otros, un café en grano natural Dia Cafetería de 500 g a
+5,49 € (10,98 €/kg), un Ubago especial de 1 kg a 12,69 €/kg y
+un Marcilla natural de 500 g a 12,95 € (25,90 €/kg).
+Son productos distintos, así que el precio por kilo no determina
+por sí solo cuál es mejor, pero sí permite comparar el coste de
+forma mucho más clara.
+</p>
+
+
+<div class="table-wrap">
+
+<table>
+
+<thead>
+
+<tr>
+<th>Producto</th>
+<th>Formato</th>
+<th>Precio</th>
+<th>Precio/kg</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Dia Cafetería natural</td>
+<td>500 g</td>
+<td class="price">5,49 €</td>
+<td class="good">10,98 €/kg</td>
+</tr>
+
+<tr>
+<td>Ubago especial</td>
+<td>1 kg</td>
+<td class="price">12,69 €</td>
+<td>12,69 €/kg</td>
+</tr>
+
+<tr>
+<td>Ubago Arábica Kaldi</td>
+<td>500 g</td>
+<td class="price">9,89 €</td>
+<td>19,78 €/kg</td>
+</tr>
+
+<tr>
+<td>Bonka natural</td>
+<td>500 g</td>
+<td class="price">10,39 €</td>
+<td>20,78 €/kg</td>
+</tr>
+
+<tr>
+<td>Marcilla natural</td>
+<td>500 g</td>
+<td class="price">12,95 €</td>
+<td>25,90 €/kg</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+
+<p>
+<strong>Importante:</strong> estos son precios observados en la tienda
+online de DIA al preparar esta guía y pueden cambiar.
+No estamos afirmando que el café más barato por kilo sea
+automáticamente el mejor: la variedad, el tueste, la marca y las
+preferencias personales también cuentan.
+</p>
+
+
+
+<h2>
+¿Y si compras café molido?
+</h2>
+
+<p>
+La misma regla sirve para el café molido.
+En la misma tienda aparecen, por ejemplo, paquetes de 2 × 250 g
+de Dia Cafetería natural a 4,70 € (9,40 €/kg), mientras que un
+Bonka natural de 250 g figura a 4,05 € (16,20 €/kg).
+Comparar el precio por paquete escondería una parte importante
+de la diferencia.
+</p>
+
+
+
+<h2>
+¿Un pack grande siempre es un chollo?
+</h2>
+
+<p>
+No necesariamente.
+Un formato grande puede reducir el precio por kilo, pero hay
+que comprobar si realmente vas a consumirlo, si existe un gasto
+de envío y si el producto que estás comparando es equivalente.
+</p>
+
+<p>
+En una oferta online también conviene mirar el
+<strong>precio final</strong>, no solo el porcentaje de descuento anunciado.
+</p>
+
+
+
+<h2>
+☕ ¿Qué más deberías mirar?
+</h2>
+
+
+<h3>
+1. Tipo de café
+</h3>
+
+<p>
+Natural, mezcla, descafeinado, arábica u otras variedades no son
+equivalentes. El precio debe interpretarse junto con lo que estás comprando.
+</p>
+
+
+<h3>
+2. Formato
+</h3>
+
+<p>
+250 g, 500 g, 1 kg o packs múltiples pueden hacer que una oferta
+parezca más barata de lo que realmente es.
+</p>
+
+
+<h3>
+3. Gastos adicionales
+</h3>
+
+<p>
+En compras online, el envío puede cambiar completamente el atractivo
+de una oferta.
+</p>
+
+
+<h3>
+4. Precio habitual
+</h3>
+
+<p>
+Un descuento grande no significa necesariamente que el precio final
+sea excepcional. Si podemos, compararemos con otras opciones similares.
+</p>
+
+
+<h3>
+5. ¿Lo comprarías igualmente?
+</h3>
+
+<p>
+Una oferta solo tiene sentido si el producto te interesa.
+Ahorrar dinero comprando algo que no necesitas no es ahorrar.
+</p>
+
+
+
+<h2>
+🔥 El análisis CholloCesta
+</h2>
+
+<p>
+Con los ejemplos consultados, vemos una diferencia considerable entre
+cafés en grano: desde 10,98 €/kg en el producto Dia Cafetería natural
+hasta 25,90 €/kg en el Marcilla natural.
+Eso no permite decir que uno sea mejor que otro, pero sí demuestra
+por qué el precio por kilo debe formar parte de cualquier comparación.
+</p>
+
+<p>
+Para nosotros, un <strong>chollo</strong> no será simplemente un producto
+con una etiqueta de “-30 %”.
+Queremos comprobar el precio, el formato y qué alternativa comparable
+existe antes de recomendarlo.
+</p>
+
+
+
+<!-- ENLACE A LA COMPARATIVA -->
+
+<div class="compare-box">
+
+<strong>
+📊 ¿Quieres comparar cafés de 1 kg?
+</strong>
+
+<p>
+Hemos preparado una comparativa con marcas conocidas,
+alternativas económicas y su precio por kilo.
+</p>
+
+<a class="compare-button" href="cafe-1.html">
+📊 Ver comparativa de cafés →
+</a>
+
+</div>
+
+
+
+<div class="box">
+
+<strong>
+📲 ¿Quieres que te avisemos cuando encontremos una oferta?
+</strong>
+
+<p>
+Estamos construyendo CholloCesta para seleccionar oportunidades
+interesantes y compartirlas también por Telegram.
+</p>
+
+<a class="tg" href="https://t.me/CholloCesta">
+Unirme a CholloCesta en Telegram
+</a>
+
+</div>
+
+
+
+<div class="sources">
+
+<strong>
+Fuentes consultadas
+</strong>
+
+<br>
+
+Precios y formatos: catálogo online de DIA consultado durante
+la elaboración de esta guía.
+Los precios son variables y deben comprobarse antes de comprar.
+
+</div>
+
+
+</article>
+
+</main>
+
+
 
 <footer>
-<p>© 2026 CholloCesta</p>
-<p>Los precios y la disponibilidad pueden cambiar. Comprueba siempre el precio final antes de comprar.</p>
-<p>Algunos enlaces de esta web podrán ser enlaces de afiliado. Si realizas una compra a través de ellos, CholloCesta podría recibir una comisión.</p>
+
+<p>
+© 2026 CholloCesta
+</p>
+
+<p>
+Los precios y la disponibilidad pueden cambiar.
+Comprueba siempre el precio final antes de comprar.
+</p>
+
+<p>
+Algunos enlaces de esta web podrán ser enlaces de afiliado.
+Si realizas una compra a través de ellos, CholloCesta podría
+recibir una comisión.
+</p>
+
 </footer>
-</body></html>
+
+
+</body>
+</html>
