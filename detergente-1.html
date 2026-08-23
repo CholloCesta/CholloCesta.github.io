@@ -3,184 +3,324 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detergente para Lavadora: Comparativa de Precios por Dosis | CholloCesta</title>
-  <meta name="description" content="Comparamos el precio por lavado de detergente líquido y cápsulas (Ariel Pods, Colon y Marca Blanca) para detectar chollos reales en Amazon y supermercado.">
+  <title>Detergente Lavadora: Ariel Pods vs Colon vs DIA | CholloCesta</title>
+  <meta name="description" content="Comparativa de precios por colada entre Ariel Pods, Colon Gel y marca blanca DIA para saber cuándo una oferta en Amazon es un chollo real.">
   <meta name="theme-color" content="#111827">
 
   <style>
-    :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--accent:#f59e0b;--green:#16a34a;--red:#dc2626;--blue:#229ed9}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.5}
-    a{text-decoration:none;color:inherit}
-    header{background:var(--dark);color:#fff}
-    nav{max-width:1000px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{font-size:24px;font-weight:900;letter-spacing:-.6px}
-    .brand span{color:var(--accent)}
-    nav small{color:#cbd5e1}
-    .hero{background:linear-gradient(145deg,#111827 0%,#1f2937 100%);color:#fff;padding:32px 16px;text-align:center}
-    .eyebrow{display:inline-block;background:rgba(245,158,11,.15);color:#fbbf24;border:1px solid rgba(245,158,11,.3);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:12px}
-    h1{font-size:clamp(26px,6vw,42px);line-height:1.1;margin-bottom:10px}
-    .hero p{max-width:640px;margin:auto;color:#d1d5db;font-size:15px}
-    main{max-width:1000px;margin:auto;padding:24px 16px 48px}
-    .intro{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:24px}
-    .intro h2{font-size:20px;margin-bottom:8px}
-    .intro p{font-size:14px;color:#4b5563;margin-bottom:10px}
-    .alert{background:#fef3c7;border-left:4px solid var(--accent);padding:12px;border-radius:6px;font-size:13px;color:#92400e;margin-top:10px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:32px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
-    .card-img{height:180px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-size:56px}
-    .card-body{padding:16px;display:flex;flex-direction:column;flex-grow:1}
-    .badge{display:inline-block;background:#e0f2fe;color:#0369a1;font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px;margin-bottom:8px;align-self:flex-start}
-    .card h3{font-size:16px;margin-bottom:6px;line-height:1.3}
-    .card p{font-size:13px;color:var(--muted);margin-bottom:12px;flex-grow:1}
-    .price-box{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:10px;margin-bottom:12px}
-    .main-price{font-size:20px;font-weight:900;color:var(--dark)}
-    .unit-price{font-size:13px;font-weight:700;color:var(--green)}
-    .ref-label{font-size:11px;color:var(--muted)}
-    .btn{display:block;text-align:center;background:var(--accent);color:#111;font-weight:800;padding:10px;border-radius:8px;font-size:14px}
-    .table-section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:24px;overflow-x:auto}
-    table{width:100%;border-collapse:collapse;text-align:left;font-size:14px}
-    th,td{padding:10px 12px;border-bottom:1px solid var(--line)}
-    th{background:#f8fafc;font-weight:800}
-    .verdict{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:24px}
-    .verdict h2{font-size:20px;margin-bottom:10px}
-    .verdict p{font-size:14px;color:#374151;margin-bottom:8px}
-    .telegram-banner{background:#e8f6fc;border:1px solid #bbe3f5;border-radius:12px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
-    .telegram-btn{background:var(--blue);color:#fff;padding:10px 16px;border-radius:8px;font-weight:800;font-size:14px}
-    footer{background:var(--dark);color:#9ca3af;padding:24px 16px;font-size:12px;text-align:center}
+    :root{
+      --dark:#111827;
+      --muted:#667085;
+      --bg:#f6f7f9;
+      --card:#fff;
+      --line:#e5e7eb;
+      --accent:#f59e0b;
+      --green:#16a34a;
+      --red:#dc2626;
+      --blue:#229ed9
+    }
+
+    *{
+      box-sizing:border-box;
+      margin:0;
+      padding:0
+    }
+
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background:var(--bg);
+      color:#172033;
+      line-height:1.5
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit
+    }
+
+    .top{
+      background:var(--dark);
+      color:#fff
+    }
+
+    .nav{
+      max-width:1120px;
+      margin:auto;
+      padding:16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px
+    }
+
+    .brand{
+      font-size:25px;
+      font-weight:900;
+      letter-spacing:-.7px
+    }
+
+    .brand span{
+      color:var(--accent)
+    }
+
+    .nav small{
+      color:#cbd5e1
+    }
+
+    main{
+      max-width:1120px;
+      margin:auto;
+      padding:28px 16px 50px
+    }
+
+    .breadcrumb{
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:14px
+    }
+
+    .breadcrumb a{
+      color:var(--blue);
+      font-weight:600
+    }
+
+    h1{
+      font-size:clamp(26px,5vw,40px);
+      line-height:1.1;
+      letter-spacing:-1px;
+      margin-bottom:12px
+    }
+
+    .intro{
+      font-size:16px;
+      color:#4b5563;
+      max-width:800px;
+      margin-bottom:28px
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
+      margin-bottom:34px
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:16px;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      box-shadow:0 4px 14px rgba(16,24,40,.05)
+    }
+
+    .card-img{
+      height:200px;
+      background:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-bottom:1px solid var(--line);
+      padding:12px
+    }
+
+    .card-body{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      flex-grow:1
+    }
+
+    .badge{
+      align-self:flex-start;
+      background:#dcfce7;
+      color:#166534;
+      border-radius:999px;
+      padding:4px 9px;
+      font-size:11px;
+      font-weight:900;
+      margin-bottom:10px
+    }
+
+    .card h3{
+      font-size:18px;
+      margin-bottom:6px
+    }
+
+    .card p{
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:14px;
+      flex-grow:1
+    }
+
+    .price-box{
+      background:#f8fafc;
+      border:1px solid var(--line);
+      border-radius:10px;
+      padding:12px;
+      margin-bottom:14px;
+      text-align:center
+    }
+
+    .main-price{
+      font-size:22px;
+      font-weight:900;
+      color:var(--dark)
+    }
+
+    .unit-price{
+      font-size:14px;
+      font-weight:800;
+      color:var(--green);
+      margin-top:2px
+    }
+
+    .ref-label{
+      font-size:11px;
+      color:var(--muted);
+      margin-top:3px
+    }
+
+    .btn{
+      display:block;
+      text-align:center;
+      background:var(--accent);
+      color:#171717;
+      font-weight:900;
+      padding:12px;
+      border-radius:999px
+    }
+
+    .content-block{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:24px;
+      margin-bottom:24px
+    }
+
+    .content-block h2{
+      font-size:20px;
+      margin-bottom:12px
+    }
+
+    .content-block p{
+      font-size:14px;
+      color:#4b5563;
+      margin-bottom:10px
+    }
+
+    footer{
+      background:var(--dark);
+      color:#aeb8c6;
+      padding:28px 16px;
+      font-size:12px;
+      text-align:center
+    }
+
+    footer p{
+      max-width:800px;
+      margin:6px auto
+    }
+
+    @media(max-width:850px){
+      .grid{grid-template-columns:1fr}
+    }
   </style>
 </head>
+
 <body>
 
-<header>
-  <nav>
+<header class="top">
+  <nav class="nav">
     <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
     <small>Encuentra el chollo. Llena la cesta. Paga menos.</small>
   </nav>
 </header>
 
-<section class="hero">
-  <span class="eyebrow">🧺 RADAR CHOLLOCESTA</span>
-  <h1>Detergente Lavadora: Precio por Lavado</h1>
-  <p>Comparamos cápsulas y líquido de marcas líderes frente a marcas blancas para identificar cuándo una oferta gigante en Amazon merece la pena.</p>
-</section>
-
 <main>
 
-<section class="intro">
-  <h2>🧺 ¿Cómo detectar un chollo en detergente de lavadora?</h2>
-  <p>Tanto en gel líquido como en cápsulas (Pods), las marcas varían el número de dosis por envase. La única métrica objetiva para comparar es el <strong>precio por lavado/dosis</strong>.</p>
-  <div class="alert">
-    ⚠️ <strong>Nota sobre precios:</strong> Los precios son las referencias habituales en supermercado. Haz clic en «Buscar mejor precio» para comprobar los packs de ahorro activos en Amazon.
-  </div>
-</section>
+  <nav class="breadcrumb">
+    <a href="index.html">Inicio</a> / <a href="limpieza.html">Limpieza</a> / Detergente Lavadora
+  </nav>
 
-<section class="grid">
+  <h1>🧺 Detergente Lavadora: Ariel Pods vs Colon vs Marca Blanca</h1>
+  <p class="intro">Analizamos el coste real por colada entre gel y cápsulas. Aprende a calcular el precio por lavado para identificar megapacks que verdaderamente merecen la pena en Amazon.</p>
 
-  <!-- PRODUCTO 1 -->
-  <article class="card">
-    <div class="card-img">🫧</div>
-    <div class="card-body">
-      <span class="badge">🔥 MÁXIMA COMODIDAD</span>
-      <h3>Ariel All-in-1 Pods Cápsulas</h3>
-      <p>Formato en cápsulas. Remueve manchas difíciles incluso en agua fría.</p>
-      <div class="price-box">
-        <div class="main-price">26,90 €</div>
-        <div class="unit-price">0,34 € / lavado</div>
-        <div class="ref-label">Precio ref. Supermercado (80 dosis)</div>
+  <section class="grid">
+
+    <!-- PRODUCTO 1: ARIEL PODS -->
+    <article class="card">
+      <div class="card-img">
+        <img src="ariel-pods.jpg" alt="Ariel All-in-1 Pods" style="max-height:170px; max-width:100%; object-fit:contain;">
       </div>
-      <a href="https://www.amazon.es/s?k=ariel+pods+lavadora" target="_blank" rel="noopener" class="btn">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- PRODUCTO 2 -->
-  <article class="card">
-    <div class="card-img">🧴</div>
-    <div class="card-body">
-      <span class="badge">⭐ LÍDER EN Gel</span>
-      <h3>Colon Gel Líquido Activo</h3>
-      <p>Detergente líquido para ropa blanca y de color. Gran eficacia en ciclos cortos.</p>
-      <div class="price-box">
-        <div class="main-price">18,50 €</div>
-        <div class="unit-price">0,22 € / lavado</div>
-        <div class="ref-label">Precio ref. Supermercado (85 dosis)</div>
+      <div class="card-body">
+        <span class="badge">🔥 MÁXIMA COMODIDAD</span>
+        <h3>Ariel All-in-1 Pods Cápsulas</h3>
+        <p>Formato en cápsulas. Remueve manchas difíciles incluso en agua fría.</p>
+        <div class="price-box">
+          <div class="main-price">26,90 €</div>
+          <div class="unit-price">0,34 € / lavado</div>
+          <div class="ref-label">Precio ref. Supermercado (80 dosis)</div>
+        </div>
+        <a href="https://www.amazon.es/s?k=ariel+pods+lavadora" target="_blank" rel="noopener" class="btn">Buscar mejor precio →</a>
       </div>
-      <a href="https://www.amazon.es/s?k=colon+detergente+liquido" target="_blank" rel="noopener" class="btn">Buscar mejor precio →</a>
-    </div>
-  </article>
+    </article>
 
-  <!-- PRODUCTO 3 -->
-  <article class="card">
-    <div class="card-img">📦</div>
-    <div class="card-body">
-      <span class="badge">💰 MARCA BLANCA</span>
-      <h3>Detergente Gel Universal DIA</h3>
-      <p>Formato gel económico para coladas de diario sin manchas complejas.</p>
-      <div class="price-box">
-        <div class="main-price">4,95 €</div>
-        <div class="unit-price">0,11 € / lavado</div>
-        <div class="ref-label">Precio ref. DIA (45 dosis)</div>
+    <!-- PRODUCTO 2: COLON GEL -->
+    <article class="card">
+      <div class="card-img">
+        <img src="colon-gel.jpg" alt="Colon Gel Líquido Activo" style="max-height:170px; max-width:100%; object-fit:contain;">
       </div>
-      <a href="https://www.amazon.es/s?k=detergente+lavadora+gel" target="_blank" rel="noopener" class="btn">Buscar mejor precio →</a>
-    </div>
+      <div class="card-body">
+        <span class="badge">⭐ LÍDER EN GEL</span>
+        <h3>Colon Gel Líquido Activo</h3>
+        <p>Detergente líquido para ropa blanca y de color. Gran eficacia en ciclos cortos.</p>
+        <div class="price-box">
+          <div class="main-price">18,50 €</div>
+          <div class="unit-price">0,22 € / lavado</div>
+          <div class="ref-label">Precio ref. Supermercado (85 dosis)</div>
+        </div>
+        <a href="https://www.amazon.es/s?k=colon+detergente+liquido" target="_blank" rel="noopener" class="btn">Buscar mejor precio →</a>
+      </div>
+    </article>
+
+    <!-- PRODUCTO 3: DETERGENTE DIA -->
+    <article class="card">
+      <div class="card-img">
+        <img src="detergente-dia.jpg" alt="Detergente Gel Universal DIA" style="max-height:170px; max-width:100%; object-fit:contain;">
+      </div>
+      <div class="card-body">
+        <span class="badge">💰 MARCA BLANCA</span>
+        <h3>Detergente Gel Universal DIA</h3>
+        <p>Formato gel económico para coladas de diario sin manchas complejas.</p>
+        <div class="price-box">
+          <div class="main-price">4,95 €</div>
+          <div class="unit-price">0,11 € / lavado</div>
+          <div class="ref-label">Precio ref. DIA (45 dosis)</div>
+        </div>
+        <a href="https://www.amazon.es/s?k=detergente+lavadora+gel" target="_blank" rel="noopener" class="btn">Buscar mejor precio →</a>
+      </div>
+    </article>
+
+  </section>
+
+  <article class="content-block">
+    <h2>🎯 ¿Cuándo es un chollo el detergente de lavadora?</h2>
+    <p>Para no dejarte llevar por las ofertas engañosas o formatos "gigante", la clave está en mirar siempre el **precio por lavado / colada**:</p>
+    <p>• <strong>Formato Cápsulas (Ariel / Fairy / Dixan):</strong> Es un chollo cuando baja de <strong>0,20 € / lavado</strong>.</p>
+    <p>• <strong>Formato Gel (Colon / Wipp / Ariel Líquido):</strong> Es un chollo cuando ronda los <strong>0,14 € - 0,16 € / lavado</strong>.</p>
+    <p>• <strong>Marca Blanca:</strong> El precio suelo de referencia se sitúa en torno a los <strong>0,10 € - 0,11 € / lavado</strong>.</p>
   </article>
-
-</section>
-
-<section class="table-section">
-  <h2>📊 Comparativa de coste por lavado</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Formato / Marca</th>
-        <th>Tipo</th>
-        <th>Precio Ref.</th>
-        <th>€ / Lavado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🏷️ Gel Marca Blanca (DIA / Mercadona)</td>
-        <td>Líquido</td>
-        <td>4,95 €</td>
-        <td><strong>0,11 €</strong></td>
-      </tr>
-      <tr>
-        <td>🧴 Colon / Dixan Gel</td>
-        <td>Líquido Marca</td>
-        <td>18,50 €</td>
-        <td><strong>0,22 €</strong></td>
-      </tr>
-      <tr>
-        <td>🫧 Ariel / Finish Pods</td>
-        <td>Cápsulas Premium</td>
-        <td>26,90 €</td>
-        <td><strong>0,34 €</strong></td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-<section class="verdict">
-  <h2>🏆 Veredicto CholloCesta</h2>
-  <p>💰 <strong>Suelo de mercado (Gel económico):</strong> Los detergentes líquidos de marca blanca rondan entre <strong>0,10 € y 0,13 € por colada</strong>.</p>
-  <p>🧺 <strong>Precio habitual Cápsulas (Ariel / Skip Pods):</strong> En supermercado se pagan normalmente entre <strong>0,32 € y 0,40 € por cápsula</strong>.</p>
-  <p>🔥 <strong>¿Cuándo es un CHOLLO en Amazon?</strong> Cuando los megapacks de Ariel Pods o Skip bajan de los <strong>0,20 € - 0,22 € por cápsula</strong>, o el gel líquido de marca baja de <strong>0,15 €/lavado</strong>. Ahí es momento de hacer acopio.</p>
-</section>
-
-<section class="telegram-banner">
-  <div>
-    <strong>📲 ¿Quieres enterarte cuando haya megapacks de detergente a precio de marca blanca?</strong>
-    <p style="font-size:13px; color:#526273; margin:0;">Únete gratis al canal de Telegram de CholloCesta.</p>
-  </div>
-  <a href="https://t.me/CholloCesta" target="_blank" rel="noopener" class="telegram-btn">Unirme al canal</a>
-</section>
 
 </main>
 
 <footer>
   <p>© 2026 CholloCesta · Encuentra el chollo. Llena la cesta. Paga menos.</p>
   <p>Los precios y la disponibilidad pueden cambiar. Comprueba siempre las condiciones y el precio final antes de comprar.</p>
+  <p>Algunos enlaces de esta web podrán ser enlaces de afiliado. Si realizas una compra a través de ellos, CholloCesta podría recibir una comisión.</p>
 </footer>
 
 </body>
