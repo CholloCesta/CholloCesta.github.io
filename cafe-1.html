@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Café en grano 1 kg | Radar CholloCesta</title>
+  <title>Café en grano 1 kg | Guía de Precios y Chollos | CholloCesta</title>
 
-  <meta name="description" content="Comparamos cafés en grano de 1 kg para encontrar los mejores precios. By Amazon, Bonka y Marcilla.">
+  <meta name="description" content="Comparamos precios de café en grano de 1 kg: Ubago, Bonka, Marcilla, DIA Cafetería y Nescafé para encontrar el mejor precio/kg.">
 
   <meta name="theme-color" content="#111827">
 
   <style>
-
     :root{
       --dark:#111827;
       --dark2:#253247;
@@ -111,7 +110,7 @@
     }
 
     main{
-      max-width:1050px;
+      max-width:1120px;
       margin:auto;
       padding:30px 16px 55px;
     }
@@ -147,8 +146,8 @@
 
     .products{
       display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:18px;
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:20px;
     }
 
     .product{
@@ -157,23 +156,39 @@
       border-radius:16px;
       overflow:hidden;
       box-shadow:0 4px 14px rgba(16,24,40,.05);
+      display:flex;
+      flex-direction:column;
     }
 
     .product-top{
-      height:150px;
+      height:180px;
       background:#eef1f5;
       display:flex;
       align-items:center;
       justify-content:center;
+      overflow:hidden;
+    }
+
+    .product-top img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .product-top .placeholder{
       font-size:55px;
     }
 
     .product-body{
       padding:18px;
+      display:flex;
+      flex-direction:column;
+      flex-grow:1;
     }
 
     .badge{
       display:inline-block;
+      align-self:flex-start;
       border-radius:999px;
       padding:5px 9px;
       font-size:11px;
@@ -181,20 +196,10 @@
       margin-bottom:10px;
     }
 
-    .badge.green{
-      background:#dcfce7;
-      color:#166534;
-    }
-
-    .badge.blue{
-      background:#dbeafe;
-      color:#1e40af;
-    }
-
-    .badge.orange{
-      background:#ffedd5;
-      color:#9a3412;
-    }
+    .badge.green{ background:#dcfce7; color:#166534; }
+    .badge.blue{ background:#dbeafe; color:#1e40af; }
+    .badge.orange{ background:#ffedd5; color:#9a3412; }
+    .badge.gray{ background:#f1f5f9; color:#475569; }
 
     .product h3{
       font-size:18px;
@@ -205,7 +210,7 @@
     .product-desc{
       color:var(--muted);
       font-size:13px;
-      min-height:58px;
+      flex-grow:1;
     }
 
     .price-box{
@@ -215,7 +220,7 @@
     }
 
     .price{
-      font-size:29px;
+      font-size:26px;
       font-weight:900;
       color:var(--red);
     }
@@ -226,10 +231,11 @@
       margin-top:1px;
     }
 
-    .rating{
-      margin-top:9px;
-      font-size:13px;
-      color:#596579;
+    .reference-label{
+      font-size:11px;
+      color:#8898aa;
+      margin-top:2px;
+      font-style:italic;
     }
 
     .button{
@@ -239,16 +245,17 @@
       color:#171717;
       font-weight:900;
       padding:11px;
-      border-radius:9px;
+      border-radius:999px;
       margin-top:16px;
+      transition:background 0.2s;
     }
 
     .button:hover{
-      opacity:.9;
+      background:#e08e0b;
     }
 
     .comparison{
-      margin-top:30px;
+      margin-top:35px;
       background:white;
       border:1px solid var(--line);
       border-radius:15px;
@@ -351,452 +358,257 @@
     }
 
     @media(max-width:800px){
-
-      .products{
-        grid-template-columns:1fr;
-      }
-
       .nav{
         align-items:flex-start;
       }
-
       .nav small{
         display:none;
       }
-
     }
 
     @media(max-width:600px){
-
       table{
         font-size:12px;
       }
-
       th,td{
         padding:10px 8px;
       }
-
       .telegram{
         flex-direction:column;
         align-items:flex-start;
       }
-
       .telegram-btn{
         width:100%;
         text-align:center;
       }
-
     }
-
   </style>
 </head>
 
-
 <body>
 
-
 <header class="top">
-
   <nav class="nav">
-
     <a href="index.html" class="brand">
       🛒 Chollo<span>Cesta</span>
     </a>
-
     <small>
       Encuentra el chollo. Llena la cesta. Paga menos.
     </small>
-
   </nav>
-
 </header>
 
-
-
 <section class="hero">
-
   <div class="hero-inner">
-
     <span class="eyebrow">
       ☕ RADAR CHOLLOCESTA
     </span>
-
     <h1>
       Café en grano: 1 kg
     </h1>
-
     <p>
-      Comparamos diferentes marcas y precios para descubrir
-      cuándo un café realmente merece la pena.
+      Comparamos marcas líderes y opciones de supermercado para detectar las mejores ofertas y relación calidad/precio.
     </p>
-
   </div>
-
 </section>
-
-
 
 <main>
 
-
 <section class="intro">
-
   <h2>
-    ☕ ¿Cuál es el mejor precio?
+    ☕ ¿Cuál es la opción más conveniente?
   </h2>
-
   <p>
-    Hemos seleccionado tres opciones de café en grano de 1 kg
-    para comparar precio por kilo y marca.
+    Hemos seleccionado 5 opciones clave de café en grano de 1 kg para analizar su precio por kilo, tomando como referencia base los precios de DIA frente al mercado general.
   </p>
-
   <p>
-    El objetivo de CholloCesta no es recomendar automáticamente
-    el producto más barato, sino ayudarte a saber cuándo
-    estás ante una buena oportunidad.
+    El objetivo de CholloCesta es darte la referencia real de supermercado y ayudarte a pulsar en «Buscar mejor precio» para cazar ofertas puntuales más baratas online.
   </p>
-
   <div class="warning">
-
-    ⚠️ <strong>Importante:</strong>
-    los precios de Amazon pueden cambiar en cualquier momento.
-    El precio definitivo es el que aparece en Amazon antes de realizar
-    la compra.
-
+    ⚠️ <strong>Nota sobre precios:</strong> Los precios listados abajo sirven como referencia base de supermercado. Al pulsar en «Buscar mejor precio» podrás comprobar si existe una oferta activa en Amazon u otras tiendas.
   </div>
-
 </section>
-
-
 
 <section class="products">
 
-
-<!-- BY AMAZON -->
-
-<article class="product">
-
-  <div class="product-top">
-    💰
-  </div>
-
-  <div class="product-body">
-
-    <span class="badge green">
-      💰 OPCIÓN ECONÓMICA
-    </span>
-
-    <h3>
-      by Amazon Café en Grano Natural 1 kg
-    </h3>
-
-    <p class="product-desc">
-      Café en grano 100% Arábica, tueste medio.
-      Una de las opciones más económicas encontradas.
-    </p>
-
-    <div class="price-box">
-
-      <div class="price">
-        13,80 €
-      </div>
-
-      <div class="unit">
-        13,80 €/kg
-      </div>
-
-      <div class="rating">
-        ⭐ 5,0/5 · 1 valoración
-      </div>
-
+  <!-- TARJETA 1: DIA CAFETERÍA (Marca Blanca Reference) -->
+  <article class="product">
+    <div class="product-top">
+      <!-- Sustituir ruta por foto local si se dispone de ella -->
+      <img src="img/cafe-dia-cafeteria.jpg" alt="Café DIA Cafetería" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="placeholder" style="display:none;">🏷️</span>
     </div>
-
-    <a class="button" href="#AFILIADO-BY-AMAZON#">
-      Ver producto →
-    </a>
-
-  </div>
-
-</article>
-
-
-
-<!-- BONKA -->
-
-<article class="product">
-
-  <div class="product-top">
-    🇪🇸
-  </div>
-
-  <div class="product-body">
-
-    <span class="badge blue">
-      🇪🇸 MARCA CONOCIDA
-    </span>
-
-    <h3>
-      Bonka Café Natural en Grano 1 kg
-    </h3>
-
-    <p class="product-desc">
-      Café natural en grano de una marca muy conocida
-      en España.
-    </p>
-
-    <div class="price-box">
-
-      <div class="price">
-        15,75 €
+    <div class="product-body">
+      <span class="badge green">💰 MARCA BLANCA REFERENCIA</span>
+      <h3>Café en Grano DIA Cafetería 1 kg</h3>
+      <p class="product-desc">
+        Opción económica de referencia diaria para consumo habitual en hogar u oficina.
+      </p>
+      <div class="price-box">
+        <div class="price">10,25 €</div>
+        <div class="unit">10,25 €/kg</div>
+        <div class="reference-label">Precio ref. DIA</div>
       </div>
-
-      <div class="unit">
-        15,75 €/kg
-      </div>
-
-      <div class="rating">
-        ⭐ 4,7/5 · valoraciones verificadas
-      </div>
-
+      <a class="button" href="#SEARCH-AMAZON-DIA#">Buscar mejor precio →</a>
     </div>
+  </article>
 
-    <a class="button" href="#AFILIADO-BONKA#">
-      Ver producto →
-    </a>
-
-  </div>
-
-</article>
-
-
-
-<!-- MARCILLA -->
-
-<article class="product">
-
-  <div class="product-top">
-    ⭐
-  </div>
-
-  <div class="product-body">
-
-    <span class="badge orange">
-      ⭐ MARCA RECONOCIDA
-    </span>
-
-    <h3>
-      Marcilla Gran Aroma Natural 1 kg
-    </h3>
-
-    <p class="product-desc">
-      Una alternativa de marca reconocida para quienes
-      prefieren Marcilla.
-    </p>
-
-    <div class="price-box">
-
-      <div class="price">
-        17,93 €
-      </div>
-
-      <div class="unit">
-        17,93 €/kg
-      </div>
-
-      <div class="rating">
-        ⭐ 4,7/5 · valoraciones verificadas
-      </div>
-
+  <!-- TARJETA 2: UBAGO -->
+  <article class="product">
+    <div class="product-top">
+      <img src="img/cafe-ubago.jpg" alt="Café Ubago 1kg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="placeholder" style="display:none;">☕</span>
     </div>
+    <div class="product-body">
+      <span class="badge green">👍 EQUILIBRIO PRECIO</span>
+      <h3>Café en Grano Ubago Natural 1 kg</h3>
+      <p class="product-desc">
+        Tueste natural equilibrado. Una alternativa de gran rendimiento a precio ajustado.
+      </p>
+      <div class="price-box">
+        <div class="price">11,90 €</div>
+        <div class="unit">11,90 €/kg</div>
+        <div class="reference-label">Precio ref. DIA</div>
+      </div>
+      <a class="button" href="#SEARCH-AMAZON-UBAGO#">Buscar mejor precio →</a>
+    </div>
+  </article>
 
-    <a class="button" href="#AFILIADO-MARCILLA#">
-      Ver producto →
-    </a>
+  <!-- TARJETA 3: BONKA -->
+  <article class="product">
+    <div class="product-top">
+      <img src="img/cafe-bonka.jpg" alt="Café Bonka 1kg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="placeholder" style="display:none;">🇪🇸</span>
+    </div>
+    <div class="product-body">
+      <span class="badge blue">🇪🇸 MARCA POPULAR</span>
+      <h3>Bonka Café Natural en Grano 1 kg</h3>
+      <p class="product-desc">
+        Un clásico de tueste natural muy extendido en el mercado español.
+      </p>
+      <div class="price-box">
+        <div class="price">14,95 €</div>
+        <div class="unit">14,95 €/kg</div>
+        <div class="reference-label">Precio ref. DIA</div>
+      </div>
+      <a class="button" href="#SEARCH-AMAZON-BONKA#">Buscar mejor precio →</a>
+    </div>
+  </article>
 
-  </div>
+  <!-- TARJETA 4: NESCAFÉ -->
+  <article class="product">
+    <div class="product-top">
+      <img src="img/cafe-nescafe.jpg" alt="Café Nescafé 1kg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="placeholder" style="display:none;">🔴</span>
+    </div>
+    <div class="product-body">
+      <span class="badge blue">🔥 TOP VENTAS</span>
+      <h3>Nescafé Selección Café en Grano 1 kg</h3>
+      <p class="product-desc">
+        Sabor intenso y aroma constante de una de las marcas más vendidas mundialmente.
+      </p>
+      <div class="price-box">
+        <div class="price">15,80 €</div>
+        <div class="unit">15,80 €/kg</div>
+        <div class="reference-label">Precio ref. Mercado</div>
+      </div>
+      <a class="button" href="#SEARCH-AMAZON-NESCAFE#">Buscar mejor precio →</a>
+    </div>
+  </article>
 
-</article>
-
+  <!-- TARJETA 5: MARCILLA -->
+  <article class="product">
+    <div class="product-top">
+      <img src="img/cafe-marcilla.jpg" alt="Café Marcilla 1kg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <span class="placeholder" style="display:none;">⭐</span>
+    </div>
+    <div class="product-body">
+      <span class="badge orange">⭐ MARCA RECONOCIDA</span>
+      <h3>Marcilla Gran Aroma Natural 1 kg</h3>
+      <p class="product-desc">
+        Aroma característico y tueste tradicional para amantes de la marca Marcilla.
+      </p>
+      <div class="price-box">
+        <div class="price">16,50 €</div>
+        <div class="unit">16,50 €/kg</div>
+        <div class="reference-label">Precio ref. DIA</div>
+      </div>
+      <a class="button" href="#SEARCH-AMAZON-MARCILLA#">Buscar mejor precio →</a>
+    </div>
+  </article>
 
 </section>
-
-
 
 <section class="comparison">
-
-  <h2>
-    📊 Comparativa rápida
-  </h2>
-
-  <p>
-    Precios consultados en Amazon España. Todos los productos
-    comparados son de aproximadamente 1 kg.
-  </p>
+  <h2>📊 Comparativa rápida de precios de referencia</h2>
+  <p>Precios por kilo calculados tomando de base la ficha de supermercado (DIA / Mercado de referencia).</p>
 
   <table>
-
     <thead>
-
       <tr>
-        <th>Producto</th>
-        <th>Precio</th>
-        <th>€/kg</th>
-        <th>Valoración</th>
+        <th>Producto / Marca</th>
+        <th>Tipo</th>
+        <th>Precio Ref.</th>
+        <th>€ / kg</th>
       </tr>
-
     </thead>
-
     <tbody>
-
       <tr>
-
-        <td>
-          💰 by Amazon
-        </td>
-
-        <td class="best">
-          13,80 €
-        </td>
-
-        <td class="best">
-          13,80 €
-        </td>
-
-        <td>
-          ⭐ 5,0
-        </td>
-
+        <td>🏷️ DIA Cafetería</td>
+        <td>Marca Blanca</td>
+        <td class="best">10,25 €</td>
+        <td class="best">10,25 €</td>
       </tr>
-
-
       <tr>
-
-        <td>
-          🇪🇸 Bonka
-        </td>
-
-        <td>
-          15,75 €
-        </td>
-
-        <td>
-          15,75 €
-        </td>
-
-        <td>
-          ⭐ 4,7
-        </td>
-
+        <td>☕ Ubago Natural</td>
+        <td>Comercial</td>
+        <td>11,90 €</td>
+        <td>11,90 €</td>
       </tr>
-
-
       <tr>
-
-        <td>
-          ⭐ Marcilla
-        </td>
-
-        <td>
-          17,93 €
-        </td>
-
-        <td>
-          17,93 €
-        </td>
-
-        <td>
-          ⭐ 4,7
-        </td>
-
+        <td>🇪🇸 Bonka Natural</td>
+        <td>Marca Comercial</td>
+        <td>14,95 €</td>
+        <td>14,95 €</td>
       </tr>
-
+      <tr>
+        <td>🔴 Nescafé Selección</td>
+        <td>Marca Comercial</td>
+        <td>15,80 €</td>
+        <td>15,80 €</td>
+      </tr>
+      <tr>
+        <td>⭐ Marcilla Gran Aroma</td>
+        <td>Marca Premium</td>
+        <td>16,50 €</td>
+        <td>16,50 €</td>
+      </tr>
     </tbody>
-
   </table>
-
 </section>
-
-
 
 <section class="verdict">
-
-  <h2>
-    🏆 Veredicto CholloCesta
-  </h2>
-
-  <p>
-    💰 <strong>Si buscas el precio más bajo:</strong>
-    by Amazon es actualmente la opción más económica
-    de esta comparativa.
-  </p>
-
-  <p>
-    🇪🇸 <strong>Si prefieres una marca conocida:</strong>
-    Bonka ofrece una alternativa reconocida por un precio
-    intermedio.
-  </p>
-
-  <p>
-    ⭐ <strong>Si prefieres Marcilla:</strong>
-    actualmente tiene el precio más elevado de las tres
-    opciones comparadas.
-  </p>
-
-  <p>
-    🔥 <strong>¿Es un CHOLLO?</strong>
-    Todavía no lo clasificamos como tal. Necesitamos conocer
-    mejor el precio habitual y observar su evolución.
-  </p>
-
+  <h2>🏆 Veredicto CholloCesta</h2>
+  <p>💰 <strong>Para ahorrar al máximo:</strong> La marca blanca (DIA Cafetería) o marcas como Ubago marcan el suelo del mercado rondando los 10€ - 12€/kg.</p>
+  <p>⭐ <strong>Para marcas reconocidas (Bonka, Nescafé, Marcilla):</strong> El precio medio habitual se sitúa entre 14,50€ y 17.00€/kg.</p>
+  <p>🔥 <strong>¿Cuándo es un CHOLLO en Amazon?</strong> Cualquier bajada puntual de Bonka, Nescafé o Marcilla por debajo de los <strong>12,50 €/kg</strong> se considera una oportunidad clara de compra que notificaremos por el canal.</p>
 </section>
-
-
 
 <section class="telegram">
-
   <div>
-
-    <strong>
-      📲 ¿Quieres enterarte cuando aparezca un auténtico chollo?
-    </strong>
-
-    <span>
-      Únete gratis al canal de Telegram de CholloCesta.
-    </span>
-
+    <strong>📲 ¿Quieres enterarte cuando aparezca un auténtico chollo de café?</strong>
+    <span>Únete gratis al canal de Telegram de CholloCesta.</span>
   </div>
-
-  <a class="telegram-btn" href="https://t.me/CholloCesta">
-    Unirme al canal
-  </a>
-
+  <a class="telegram-btn" href="https://t.me/CholloCesta">Unirme al canal</a>
 </section>
-
 
 </main>
 
-
-
 <footer>
-
-  <p>
-    © 2026 CholloCesta · Encuentra el chollo.
-    Llena la cesta. Paga menos.
-  </p>
-
-  <p>
-    Los precios y la disponibilidad pueden cambiar.
-    Comprueba siempre las condiciones y el precio final antes de comprar.
-  </p>
-
-  <p>
-    Algunos enlaces de esta web podrán ser enlaces de afiliado.
-    Si realizas una compra a través de ellos, CholloCesta podría recibir
-    una comisión.
-  </p>
-
+  <p>© 2026 CholloCesta · Encuentra el chollo. Llena la cesta. Paga menos.</p>
+  <p>Los precios y la disponibilidad pueden cambiar. Comprueba siempre las condiciones y el precio final antes de comprar.</p>
+  <p>Algunos enlaces de esta web podrán ser enlaces de afiliado. Si realizas una compra a través de ellos, CholloCesta podría recibir una comisión.</p>
 </footer>
-
 
 </body>
 </html>
