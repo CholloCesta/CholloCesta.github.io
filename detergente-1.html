@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Comparativa Detergente Lavadora · CholloCesta</title>
-  <meta name="description" content="Análisis y precio real por lavado en detergentes: Ariel, Wipp Express, Colón y marcas blancas.">
+  <meta name="description" content="Análisis y precio real por lavado en detergentes: Ariel, Wipp Express, Colón y marca blanca.">
   <meta name="theme-color" content="#111827">
 
   <style>
@@ -25,22 +25,21 @@
 
     main{max-width:800px;margin:auto;padding:24px 16px 40px}
 
-    /* Banner Amazon */
-    .deal-banner{background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);border:2px solid #f59e0b;border-radius:14px;padding:20px;margin-bottom:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    .deal-content h3{color:#92400e;font-size:17px;margin-bottom:4px}
-    .deal-content p{color:#78350f;font-size:13px}
-    .deal-btn{background:#b45309;color:#fff;padding:10px 18px;border-radius:8px;font-weight:800;font-size:13px;transition:background .2s}
-    .deal-btn:hover{background:#92400e}
-
     /* Tabla Comparativa */
     .section-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:28px;box-shadow:0 4px 6px -1px rgba(0,0,0,.02)}
     .section-box h2{font-size:18px;margin-bottom:16px;font-weight:800;display:flex;align-items:center;gap:8px}
     
     .table-container{overflow-x:auto}
     table{width:100%;border-collapse:collapse;text-align:left;font-size:13px}
-    th, td{padding:12px 10px;border-bottom:1px solid var(--line)}
+    th, td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
     th{background:#f8fafc;font-weight:800;color:var(--dark)}
     tr:last-child td{border-bottom:none}
+
+    .product-link{color:#0284c7;font-weight:700;transition:color .2s}
+    .product-link:hover{color:#0369a1;text-decoration:underline}
+
+    .btn-amazon{display:inline-block;background:#f59e0b;color:#111827;padding:6px 12px;border-radius:6px;font-weight:800;font-size:12px;transition:background .2s}
+    .btn-amazon:hover{background:#d97706}
 
     /* Veredicto Box */
     .verdict-box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;margin-bottom:28px;box-shadow:0 4px 6px -1px rgba(0,0,0,.02)}
@@ -74,46 +73,59 @@
 
 <main>
 
-  <!-- BANNER AMAZON -->
-  <div class="deal-banner">
-    <div class="deal-content">
-      <h3>🔥 ¡Última ganga encontrada en Amazon!</h3>
-      <p>Packs ahorro de detergentes con descuento directo hoy.</p>
-    </div>
-    <a href="https://www.amazon.es/s?k=detergente+lavadora&tag=chollocesta-21" target="_blank" rel="noopener" class="deal-btn">Buscar mejor precio →</a>
-  </div>
-
-  <!-- TABLA COMPARATIVA -->
+  <!-- TABLA COMPARATIVA CON ENLACES ESPECÍFICOS -->
   <div class="section-box">
-    <h2>📊 Comparativa rápida de precio por dosis</h2>
+    <h2>📊 Comparativa y Precios por Dosis en Amazon</h2>
     <div class="table-container">
       <table>
         <thead>
           <tr>
-            <th>Marca / Opción</th>
+            <th>Producto / Marca</th>
             <th>Gama</th>
-            <th>Precio Ref.</th>
             <th>€ / Lavado</th>
+            <th>Acción</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>🏷️ <strong>Supermercado (Marca Blanca)</strong></td>
+            <td>
+              <a href="https://www.amazon.es/s?k=by+amazon+detergente+lavadora&tag=chollocesta-21" target="_blank" rel="noopener" class="product-link">
+                🏷️ Marca Blanca (by Amazon)
+              </a>
+            </td>
             <td>Ahorro Máx.</td>
-            <td>5,20 €</td>
-            <td><strong>0,11 €</strong></td>
+            <td><strong>~0,11 €</strong></td>
+            <td><a href="https://www.amazon.es/s?k=by+amazon+detergente+lavadora&tag=chollocesta-21" target="_blank" rel="noopener" class="btn-amazon">Ver Amazon →</a></td>
           </tr>
           <tr>
-            <td>🔵 <strong>Colón / Wipp Express</strong></td>
-            <td>Líder / Media</td>
-            <td>12,50 €</td>
-            <td><strong>0,18 €</strong></td>
+            <td>
+              <a href="https://www.amazon.es/s?k=Colon+detergente+lavadora&tag=chollocesta-21" target="_blank" rel="noopener" class="product-link">
+                🔵 Colón Total
+              </a>
+            </td>
+            <td>Gama Media</td>
+            <td><strong>~0,15 €</strong></td>
+            <td><a href="https://www.amazon.es/s?k=Colon+detergente+lavadora&tag=chollocesta-21" target="_blank" rel="noopener" class="btn-amazon">Ver Amazon →</a></td>
           </tr>
           <tr>
-            <td>🟢 <strong>Ariel Pods Original</strong></td>
+            <td>
+              <a href="https://www.amazon.es/s?k=Wipp+Express+detergente&tag=chollocesta-21" target="_blank" rel="noopener" class="product-link">
+                🔵 Wipp Express
+              </a>
+            </td>
+            <td>Líder / Gel</td>
+            <td><strong>~0,21 €</strong></td>
+            <td><a href="https://www.amazon.es/s?k=Wipp+Express+detergente&tag=chollocesta-21" target="_blank" rel="noopener" class="btn-amazon">Ver Amazon →</a></td>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://www.amazon.es/s?k=Ariel+Pods+detergente&tag=chollocesta-21" target="_blank" rel="noopener" class="product-link">
+                🟢 Ariel Pods Original
+              </a>
+            </td>
             <td>Gama Alta</td>
-            <td>18,90 €</td>
-            <td><strong>0,24 €</strong></td>
+            <td><strong>~0,24 €</strong></td>
+            <td><a href="https://www.amazon.es/s?k=Ariel+Pods+detergente&tag=chollocesta-21" target="_blank" rel="noopener" class="btn-amazon">Ver Amazon →</a></td>
           </tr>
         </tbody>
       </table>
@@ -124,20 +136,20 @@
   <div class="verdict-box">
     <h2>🏆 Veredicto CholloCesta</h2>
     <div class="verdict-item">
-      💰 <strong>Suelo del mercado (Marca Blanca):</strong> Las opciones de supermercado rondan los <strong>0,10 € - 0,13 € por lavado</strong>.
+      💰 <strong>Suelo del mercado (Marca Blanca):</strong> Las opciones económicas rondan los <strong>0,10 € - 0,13 € por lavado</strong>.
     </div>
     <div class="verdict-item">
-      ⭐ <strong>Precio habitual marcas TOP (Ariel / Wipp):</strong> En tienda física se pagan normalmente entre <strong>0,20 € y 0,26 € por dosis</strong>.
+      ⭐ <strong>Precio habitual marcas TOP (Ariel / Wipp / Colón):</strong> En tienda se pagan normalmente entre <strong>0,18 € y 0,26 € por dosis</strong>.
     </div>
     <div class="verdict-item">
-      🔥 <strong>¿Cuándo es un CHOLLO en Amazon?</strong> Cuando un pack grande de Ariel Pods o Wipp Express baje de los <strong>0,14 € - 0,16 € por lavado</strong>. ¡En ese momento pagas precio de marca blanca por calidad premium!
+      🔥 <strong>¿Cuándo es un CHOLLO en Amazon?</strong> Cuando un pack grande de Ariel o Wipp Express baje de los <strong>0,14 € - 0,16 € por lavado</strong>. ¡En ese momento pagas precio de marca blanca por calidad premium!
     </div>
   </div>
 
   <!-- TELEGRAM CTA -->
   <div class="telegram-box">
     <div class="telegram-content">
-      <h3>📲 ¿Quieres enterarte cuando el detergente esté a precio de marca blanca?</h3>
+      <h3>📲 ¿Quieres enterarte cuando baje de precio tu detergente favorito?</h3>
       <p>Únete gratis al canal de Telegram de CholloCesta.</p>
     </div>
     <a href="https://t.me/chollocesta" target="_blank" rel="noopener" class="telegram-btn">Unirme al canal</a>
@@ -148,7 +160,18 @@
 <footer>
   <p>© 2026 CholloCesta · Encuentra el chollo. Llena la cesta. Paga menos.</p>
   <p style="margin-top:4px">Los precios y la disponibilidad pueden cambiar. Comprueba siempre las condiciones antes de comprar.</p>
+  <p style="margin-top:6px; font-size:10px; color:#64748b;">Visitas totales: <span id="visitas">...</span></p>
 </footer>
+
+<!-- SCRIPT CONTADOR DE VISITAS -->
+<script>
+  fetch('https://api.counterapi.dev/v1/chollocesta/global_visits/up')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('visitas').innerText = data.count;
+    })
+    .catch(err => console.error('Error al cargar el contador:', err));
+</script>
 
 </body>
 </html>
