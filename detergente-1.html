@@ -143,6 +143,11 @@
 <footer>
   <p>© 2026 CholloCesta · Todos los derechos reservados.</p>
 </footer>
+<!-- Sincronizador de contador global -->
+<script>
+  fetch('https://api.counterapi.dev/v1/chollocesta/global_visits/up')
+    .catch(error => console.log('Error al sumar visita'));
+</script>
 
 </body>
 </html>
