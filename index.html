@@ -109,6 +109,24 @@
   </section>
 
 </main>
+  <!-- Contador Global CholloCesta -->
+<div style="text-align: center; margin: 20px 0; font-family: sans-serif;">
+  <p style="font-size: 14px; color: #666; margin-bottom: 5px;">🔥 Visitas totales en CholloCesta:</p>
+  <span id="global-counter" style="font-size: 20px; font-weight: bold; color: #2563eb;">Cargando...</span>
+</div>
+
+<script>
+  // Incrementa y obtiene el total global
+  fetch('https://api.counterapi.dev/v1/chollocesta/global_visits/up')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('global-counter').innerText = data.count.toLocaleString();
+    })
+    .catch(error => {
+      document.getElementById('global-counter').innerText = "Disponible pronto";
+    });
+</script>
+
 
 <footer>
   <p>© 2026 CholloCesta · Todos los derechos reservados.</p>
