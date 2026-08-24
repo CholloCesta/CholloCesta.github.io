@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mejores ofertas de Pasta de Dientes | CholloCesta</title>
+<meta name="description" content="Comparamos precios de pasta de dientes y dentífricos en Amazon y supermercados. Descubre el mejor precio por 100 ml.">
+<meta name="theme-color" content="#111827">
+
+<style>
+:root{
+--dark:#111827;
+--dark2:#1f2937;
+--bg:#f5f7fa;
+--card:#fff;
+--line:#e5e7eb;
+--muted:#667085;
+--orange:#f59e0b;
+--green:#16a34a;
+--green-dark:#15803d;
+--blue:#2563eb;
+--red:#dc2626;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+background:var(--bg);
+color:#172033;
+line-height:1.5
+}
+
+a{text-decoration:none;color:inherit}
+
+header{
+background:linear-gradient(135deg,#111827,#1f2937);
+color:white;
+box-shadow:0 2px 12px rgba(0,0,0,.12)
+}
+
+nav{
+max-width:1050px;
+margin:auto;
+padding:15px 16px;
+display:flex;
+align-items:center;
+justify-content:space-between
+}
+
+.brand{
+font-size:24px;
+font-weight:900;
+letter-spacing:-.7px
+}
+
+.brand span{color:var(--orange)}
+
+nav small{
+color:#cbd5e1;
+font-size:12px
+}
+
+main{
+max-width:950px;
+margin:auto;
+padding:24px 15px 55px
+}
+
+.back{
+display:inline-block;
+background:var(--dark);
+color:#fff;
+font-weight:700;
+padding:9px 15px;
+border-radius:9px;
+font-size:14px;
+margin-bottom:22px
+}
+
+h1{
+font-size:clamp(28px,6vw,42px);
+line-height:1.1;
+font-weight:900;
+letter-spacing:-1px;
+margin-bottom:12px
+}
+
+.intro{
+color:var(--muted);
+font-size:16px;
+margin-bottom:8px
+}
+
+.updated{
+font-size:12px;
+color:#98a2b3;
+margin-bottom:24px
+}
+
+/* CHOLLO */
+
+.deal{
+background:linear-gradient(135deg,#fff8df,#fff);
+border:2px solid var(--orange);
+border-radius:18px;
+padding:22px;
+margin-bottom:28px;
+box-shadow:0 7px 22px rgba(245,158,11,.13)
+}
+
+.badge{
+display:inline-block;
+background:var(--orange);
+color:#111827;
+font-size:12px;
+font-weight:900;
+padding:6px 11px;
+border-radius:30px;
+margin-bottom:12px
+}
+
+.deal h2{
+font-size:25px;
+margin-bottom:5px
+}
+
+.deal p{
+color:var(--muted);
+margin-bottom:13px
+}
+
+.bigprice{
+display:flex;
+align-items:baseline;
+gap:8px;
+margin-bottom:16px;
+flex-wrap:wrap
+}
+
+.bigprice strong{
+font-size:34px;
+color:var(--green-dark)
+}
+
+.bigprice span{
+font-weight:800;
+color:var(--muted)
+}
+
+.buttons{
+display:flex;
+gap:9px;
+flex-wrap:wrap
+}
+
+.btn{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+padding:10px 16px;
+border-radius:9px;
+font-size:14px;
+font-weight:900;
+min-height:42px
+}
+
+.amazon{
+background:#ff9900;
+color:#111
+}
+
+.store{
+background:var(--blue);
+color:white
+}
+
+/* AVISO */
+
+.notice{
+background:#eef6ff;
+border:1px solid #bfdbfe;
+color:#1e3a8a;
+padding:13px 15px;
+border-radius:12px;
+font-size:13px;
+margin-bottom:28px
+}
+
+/* TABLA */
+
+.section-title{
+font-size:23px;
+font-weight:900;
+color:var(--dark);
+margin:28px 0 14px
+}
+
+.table-box{
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 3px 12px rgba(0,0,0,.04)
+}
+
+.scroll{
+overflow-x:auto
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+min-width:720px;
+font-size:14px
+}
+
+th,td{
+padding:13px 14px;
+border-bottom:1px solid var(--line);
+text-align:left
+}
+
+th{
+background:#f9fafb;
+font-weight:900;
+color:var(--dark)
+}
+
+tr:last-child td{border-bottom:none}
+
+.product{
+font-weight:900
+}
+
+.store-name{
+font-size:11px;
+color:#98a2b3;
+margin-top:2px
+}
+
+.format{
+font-weight:700;
+white-space:nowrap
+}
+
+.price{
+font-weight:900;
+white-space:nowrap
+}
+
+.perliter{
+font-weight:900;
+color:var(--green-dark);
+white-space:nowrap
+}
+
+.best{
+display:inline-block;
+background:#dcfce7;
+color:#166534;
+font-size:10px;
+font-weight:900;
+padding:3px 6px;
+border-radius:20px;
+margin-left:4px
+}
+
+.link{
+display:inline-block;
+padding:6px 9px;
+border-radius:7px;
+font-size:12px;
+font-weight:800;
+background:#f3f4f6;
+margin:2px
+}
+
+.link:hover{background:#e5e7eb}
+
+/* TARJETAS MOVIL */
+
+.cards{
+display:none;
+flex-direction:column;
+gap:12px
+}
+
+.card{
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+padding:16px
+}
+
+.card.best-card{
+border:2px solid var(--orange)
+}
+
+.card-top{
+display:flex;
+justify-content:space-between;
+gap:12px
+}
+
+.card-name{
+font-weight:900;
+font-size:16px
+}
+
+.card-store{
+font-size:12px;
+color:var(--muted);
+margin-top:3px
+}
+
+.card-format{
+font-size:12px;
+color:#98a2b3;
+margin-top:2px
+}
+
+.card-price{
+text-align:right;
+white-space:nowrap
+}
+
+.card-price strong{
+font-size:21px
+}
+
+.card-price small{
+display:block;
+font-weight:900;
+color:var(--green-dark)
+}
+
+.card-buttons{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+margin-top:14px
+}
+
+.card-buttons a{
+text-align:center;
+padding:9px 5px;
+border-radius:8px;
+font-size:12px;
+font-weight:900
+}
+
+/* CONSEJOS */
+
+.tips{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+margin-bottom:30px
+}
+
+.tip{
+background:white;
+border:1px solid var(--line);
+border-radius:13px;
+padding:16px
+}
+
+.tip-icon{
+font-size:23px;
+margin-bottom:6px
+}
+
+.tip strong{
+display:block;
+margin-bottom:4px
+}
+
+.tip p{
+font-size:13px;
+color:var(--muted)
+}
+
+.text{
+color:var(--muted);
+margin-bottom:15px
+}
+
+footer{
+background:var(--dark);
+color:#9ca3af;
+text-align:center;
+font-size:12px;
+padding:28px 15px
+}
+
+footer strong{color:white}
+
+/* MOVIL */
+
+@media(max-width:700px){
+nav{padding:13px 14px}
+.brand{font-size:21px}
+nav small{font-size:10px}
+main{padding:20px 13px 45px}
+h1{font-size:30px}
+.intro{font-size:15px}
+.deal{padding:18px;border-radius:15px}
+.deal h2{font-size:21px}
+.bigprice strong{font-size:29px}
+.table-box{display:none}
+.cards{display:flex}
+.tips{grid-template-columns:1fr}
+.buttons .btn{flex:1}
+.section-title{font-size:21px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
+<small>Compra inteligente</small>
+</nav>
+</header>
+
+<main>
+
+<a href="index.html" class="back">← Volver al inicio</a>
+
+<h1>🦷 Mejores ofertas de Pasta de Dientes</h1>
+
+<p class="intro">
+Comparamos precios por cada 100 ml en dentífricos y pastas de dientes de marcas líderes para que sepas dónde comprar más barato.
+</p>
+
+<p class="updated">
+🔄 Precios comprobados el 25 de agosto de 2026.
+</p>
+
+<!-- MEJOR CHOLLO -->
+<section class="deal">
+<span class="badge">🔥 MEJOR CHOLLO DEL MOMENTO</span>
+<h2>Colgate Total Original · Pack ahorro</h2>
+<p>Una de las mejores opciones en relación calidad y precio por 100 ml en formato multipack.</p>
+
+<div class="bigprice">
+<strong>3,49 €</strong>
+<span>· 1,75 € / 100 ml</span>
+</div>
+
+<div class="buttons">
+<a class="btn store" href="https://www.amazon.es/dp/B07XYZ1234" target="_blank" rel="nofollow sponsored noopener">🛍️ Ver Oferta</a>
+<a class="btn amazon" href="https://www.amazon.es/s?k=Colgate+Total+pasta+de+dientes&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">🛒 Buscar en Amazon</a>
+</div>
+</section>
+
+<div class="notice">
+💡 <strong>Importante:</strong> en productos de higiene como la pasta de dientes, los formatos en pack de 2 o 3 unidades reducen drásticamente el coste por cada 100 ml.
+</div>
+
+<h2 class="section-title">🏆 Comparativa Dentífricos</h2>
+
+<div class="table-box">
+<div class="scroll">
+<table>
+<thead>
+<tr>
+<th>Producto</th>
+<th>Formato</th>
+<th>Tienda</th>
+<th>Precio</th>
+<th>€ / 100 ml</th>
+<th>Enlaces</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="product">Colgate Total Original <span class="best">🔥 CHOLLO</span></div>
+<div class="store-name">Pack 2x100ml</div>
+</td>
+<td class="format">200 ml</td>
+<td>Amazon</td>
+<td class="price">3,49 €</td>
+<td class="perliter">1,75 €</td>
+<td>
+<a class="link" href="https://www.amazon.es/s?k=Colgate+Total+200ml&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="product">Oral-B Pro-Expert Protección Total</div>
+<div class="store-name">Supermercado</div>
+</td>
+<td class="format">75 ml</td>
+<td>Carrefour</td>
+<td class="price">2,99 €</td>
+<td class="perliter">3,98 €</td>
+<td>
+<a class="link" href="https://www.carrefour.es" target="_blank">Carrefour</a>
+<a class="link" href="https://www.amazon.es/s?k=Oral+B+Pro+Expert+75ml&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+<tr>
+<td>
+<div class="product">Fluocaril Bi-Flúor 250mg</div>
+<div class="store-name">Farmacia / Online</div>
+</td>
+<td class="format">125 ml</td>
+<td>Amazon</td>
+<td class="price">3,20 €</td>
+<td class="perliter">2,56 €</td>
+<td>
+<a class="link" href="https://www.amazon.es/s?k=Fluocaril+Bi+Fluor+125ml&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- TARJETAS MOVIL -->
+<div class="cards">
+<article class="card best-card">
+<div class="card-top">
+<div>
+<div class="card-name">🔥 Colgate Total Original</div>
+<div class="card-store">Amazon (Pack ahorro)</div>
+<div class="card-format">200 ml total</div>
+</div>
+<div class="card-price">
+<strong>3,49 €</strong>
+<small>1,75 € / 100ml</small>
+</div>
+</div>
+<div class="card-buttons">
+<a class="amazon" href="https://www.amazon.es/s?k=Colgate+Total+200ml&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">🛒 Amazon</a>
+</div>
+</article>
+</div>
+
+<h2 class="section-title">💡 Consejos para ahorrar en higiene bucal</h2>
+<div class="tips">
+<div class="tip">
+<div class="tip-icon">📦</div>
+<strong>Compra en formato multipack</strong>
+<p>Los lotes de 2 o 3 tubos suelen bajar considerablemente el coste por cada 100 ml.</p>
+</div>
+<div class="tip">
+<div class="tip-icon">⚖️</div>
+<strong>Compara los ml reales</strong>
+<p>No todos los tubos traen la misma cantidad (los estándar varían entre 75 ml y 100 ml).</p>
+</div>
+<div class="tip">
+<div class="tip-icon">🔔</div>
+<strong>Suscripciones de Amazon</strong>
+<p>Añadir la compra recurrente en Amazon puede ahorrarte un 10% adicional.</p>
+</div>
+</div>
+
+<div class="notice">
+💰 <strong>Enlaces de afiliado:</strong> algunos enlaces de esta página son de afiliado con el tag <code>chollocesta-21</code>.
+</div>
+
+</main>
+
+<footer>
+<p>© 2026 <strong>CholloCesta</strong> · Compra inteligente</p>
+<p>Precios comprobados el 25/08/2026</p>
+</footer>
+
+</body>
+</html>
