@@ -1,99 +1,928 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aceite de Oliva · CholloCesta</title>
-  <meta name="description" content="Comparativa y seguimiento del precio por litro en aceite de oliva virgen extra y marcas de distribución.">
-  <meta name="theme-color" content="#111827">
-  <style>
-    :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--accent:#f59e0b;--green:#16a34a;--blue:#229ed9}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.5}
-    a{text-decoration:none;color:inherit}
-    header{background:var(--dark);color:#fff}
-    nav{max-width:1000px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{font-size:24px;font-weight:900;letter-spacing:-.6px}
-    .brand span{color:var(--accent)}
-    nav small{color:#cbd5e1}
-    main{max-width:800px;margin:auto;padding:32px 16px 48px}
-    h1{font-size:clamp(24px,5vw,36px);margin-bottom:16px;font-weight:800}
-    h2{font-size:20px;margin:28px 0 12px;font-weight:800;color:var(--dark)}
-    p{margin-bottom:16px;color:var(--muted)}
-    .table-container{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:24px}
-    table{width:100%;border-collapse:collapse;text-align:left;font-size:14px}
-    th,td{padding:12px 16px;border-bottom:1px solid var(--line)}
-    th{background:#f9fafb;font-weight:800;color:var(--dark)}
-    tr:last-child td{border-bottom:none}
-    td a{color:#2563eb;text-decoration:underline;font-weight:600;}
-    td a:hover{color:var(--accent)}
-    .btn-back{display:inline-block;background:var(--dark);color:#fff;font-weight:700;padding:8px 16px;border-radius:8px;font-size:14px;margin-bottom:20px}
-    footer{background:var(--dark);color:#9ca3af;padding:24px 16px;font-size:12px;text-align:center}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mejores ofertas de Aceite de Oliva | CholloCesta</title>
+<meta name="description" content="Comparamos precios de aceite de oliva virgen extra en Amazon, Carrefour y Alcampo. Descubre los mejores precios por litro.">
+<meta name="theme-color" content="#111827">
+
+<style>
+:root{
+--dark:#111827;
+--dark2:#1f2937;
+--bg:#f5f7fa;
+--card:#fff;
+--line:#e5e7eb;
+--muted:#667085;
+--orange:#f59e0b;
+--green:#16a34a;
+--green-dark:#15803d;
+--blue:#2563eb;
+--red:#dc2626;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+background:var(--bg);
+color:#172033;
+line-height:1.5
+}
+
+a{text-decoration:none;color:inherit}
+
+header{
+background:linear-gradient(135deg,#111827,#1f2937);
+color:white;
+box-shadow:0 2px 12px rgba(0,0,0,.12)
+}
+
+nav{
+max-width:1050px;
+margin:auto;
+padding:15px 16px;
+display:flex;
+align-items:center;
+justify-content:space-between
+}
+
+.brand{
+font-size:24px;
+font-weight:900;
+letter-spacing:-.7px
+}
+
+.brand span{color:var(--orange)}
+
+nav small{
+color:#cbd5e1;
+font-size:12px
+}
+
+main{
+max-width:950px;
+margin:auto;
+padding:24px 15px 55px
+}
+
+.back{
+display:inline-block;
+background:var(--dark);
+color:#fff;
+font-weight:700;
+padding:9px 15px;
+border-radius:9px;
+font-size:14px;
+margin-bottom:22px
+}
+
+h1{
+font-size:clamp(28px,6vw,42px);
+line-height:1.1;
+font-weight:900;
+letter-spacing:-1px;
+margin-bottom:12px
+}
+
+.intro{
+color:var(--muted);
+font-size:16px;
+margin-bottom:8px
+}
+
+.updated{
+font-size:12px;
+color:#98a2b3;
+margin-bottom:24px
+}
+
+/* CHOLLO */
+
+.deal{
+background:linear-gradient(135deg,#fff8df,#fff);
+border:2px solid var(--orange);
+border-radius:18px;
+padding:22px;
+margin-bottom:28px;
+box-shadow:0 7px 22px rgba(245,158,11,.13)
+}
+
+.badge{
+display:inline-block;
+background:var(--orange);
+color:#111827;
+font-size:12px;
+font-weight:900;
+padding:6px 11px;
+border-radius:30px;
+margin-bottom:12px
+}
+
+.deal h2{
+font-size:25px;
+margin-bottom:5px
+}
+
+.deal p{
+color:var(--muted);
+margin-bottom:13px
+}
+
+.bigprice{
+display:flex;
+align-items:baseline;
+gap:8px;
+margin-bottom:16px;
+flex-wrap:wrap
+}
+
+.bigprice strong{
+font-size:34px;
+color:var(--green-dark)
+}
+
+.bigprice span{
+font-weight:800;
+color:var(--muted)
+}
+
+.buttons{
+display:flex;
+gap:9px;
+flex-wrap:wrap
+}
+
+.btn{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+padding:10px 16px;
+border-radius:9px;
+font-size:14px;
+font-weight:900;
+min-height:42px
+}
+
+.amazon{
+background:#ff9900;
+color:#111
+}
+
+.store{
+background:var(--blue);
+color:white
+}
+
+/* AVISO */
+
+.notice{
+background:#eef6ff;
+border:1px solid #bfdbfe;
+color:#1e3a8a;
+padding:13px 15px;
+border-radius:12px;
+font-size:13px;
+margin-bottom:28px
+}
+
+/* TABLA */
+
+.section-title{
+font-size:23px;
+font-weight:900;
+color:var(--dark);
+margin:28px 0 14px
+}
+
+.table-box{
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 3px 12px rgba(0,0,0,.04)
+}
+
+.scroll{
+overflow-x:auto
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+min-width:720px;
+font-size:14px
+}
+
+th,td{
+padding:13px 14px;
+border-bottom:1px solid var(--line);
+text-align:left
+}
+
+th{
+background:#f9fafb;
+font-weight:900;
+color:var(--dark)
+}
+
+tr:last-child td{border-bottom:none}
+
+.product{
+font-weight:900
+}
+
+.store-name{
+font-size:11px;
+color:#98a2b3;
+margin-top:2px
+}
+
+.format{
+font-weight:700;
+white-space:nowrap
+}
+
+.price{
+font-weight:900;
+white-space:nowrap
+}
+
+.perliter{
+font-weight:900;
+color:var(--green-dark);
+white-space:nowrap
+}
+
+.best{
+display:inline-block;
+background:#dcfce7;
+color:#166534;
+font-size:10px;
+font-weight:900;
+padding:3px 6px;
+border-radius:20px;
+margin-left:4px
+}
+
+.link{
+display:inline-block;
+padding:6px 9px;
+border-radius:7px;
+font-size:12px;
+font-weight:800;
+background:#f3f4f6;
+margin:2px
+}
+
+.link:hover{background:#e5e7eb}
+
+/* TARJETAS MOVIL */
+
+.cards{
+display:none;
+flex-direction:column;
+gap:12px
+}
+
+.card{
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+padding:16px
+}
+
+.card.best-card{
+border:2px solid var(--orange)
+}
+
+.card-top{
+display:flex;
+justify-content:space-between;
+gap:12px
+}
+
+.card-name{
+font-weight:900;
+font-size:16px
+}
+
+.card-store{
+font-size:12px;
+color:var(--muted);
+margin-top:3px
+}
+
+.card-format{
+font-size:12px;
+color:#98a2b3;
+margin-top:2px
+}
+
+.card-price{
+text-align:right;
+white-space:nowrap
+}
+
+.card-price strong{
+font-size:21px
+}
+
+.card-price small{
+display:block;
+font-weight:900;
+color:var(--green-dark)
+}
+
+.card-buttons{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:8px;
+margin-top:14px
+}
+
+.card-buttons a{
+text-align:center;
+padding:9px 5px;
+border-radius:8px;
+font-size:12px;
+font-weight:900
+}
+
+/* CONSEJOS */
+
+.tips{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+margin-bottom:30px
+}
+
+.tip{
+background:white;
+border:1px solid var(--line);
+border-radius:13px;
+padding:16px
+}
+
+.tip-icon{
+font-size:23px;
+margin-bottom:6px
+}
+
+.tip strong{
+display:block;
+margin-bottom:4px
+}
+
+.tip p{
+font-size:13px;
+color:var(--muted)
+}
+
+.text{
+color:var(--muted);
+margin-bottom:15px
+}
+
+footer{
+background:var(--dark);
+color:#9ca3af;
+text-align:center;
+font-size:12px;
+padding:28px 15px
+}
+
+footer strong{color:white}
+
+/* MOVIL */
+
+@media(max-width:700px){
+
+nav{padding:13px 14px}
+
+.brand{font-size:21px}
+
+nav small{font-size:10px}
+
+main{padding:20px 13px 45px}
+
+h1{font-size:30px}
+
+.intro{font-size:15px}
+
+.deal{
+padding:18px;
+border-radius:15px
+}
+
+.deal h2{font-size:21px}
+
+.bigprice strong{font-size:29px}
+
+.table-box{display:none}
+
+.cards{display:flex}
+
+.tips{grid-template-columns:1fr}
+
+.buttons .btn{flex:1}
+
+.section-title{font-size:21px}
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <nav>
-    <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
-    <small>Compra inteligente</small>
-  </nav>
+<nav>
+<a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
+<small>Compra inteligente</small>
+</nav>
 </header>
 
 <main>
-  <a href="index.html" class="btn-back">← Volver al inicio</a>
-  <h1>Comparativa de Precios: Aceite de Oliva</h1>
-  <p>Seguimiento y comparativa del precio por litro en aceite de oliva virgen extra y marcas de distribución para saber en qué momento y formato compensa más llenar la despensa.</p>
 
-  <p>Actualmente nos encontramos con horquillas de precios muy diferentes según los formatos y marcas elegidas. Por ejemplo, Dcoop AOVE de 1 litro aparece a 6,99 €/l, Carbonell AOVE de 1 litro a 7,95 €/l y Maestros de Hojiblanca de 1 litro a 8,25 €/l.</p>
+<a href="index.html" class="back">← Volver al inicio</a>
 
-  <div class="table-container">
-    <table>
-      <thead>
-        <tr>
-          <th>Producto</th>
-          <th>Formato</th>
-          <th>Precio</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><a href="https://www.amazon.es/s?k=Dcoop+AOVE+1L&tag=chollocesta-21" target="_blank" rel="noopener">Dcoop AOVE</a></td>
-          <td>1 L</td>
-          <td>6,99 €</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.amazon.es/s?k=Carbonell+AOVE+1L&tag=chollocesta-21" target="_blank" rel="noopener">Carbonell AOVE</a></td>
-          <td>1 L</td>
-          <td>7,95 €</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.amazon.es/s?k=Maestros+de+Hojiblanca+AOVE+1L&tag=chollocesta-21" target="_blank" rel="noopener">Maestros de Hojiblanca AOVE</a></td>
-          <td>1 L</td>
-          <td>8,25 €</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.amazon.es/s?k=Carbonell+AOVE+5L&tag=chollocesta-21" target="_blank" rel="noopener">Carbonell AOVE</a></td>
-          <td>5 L</td>
-          <td>--</td>
-        </tr>
-        <tr>
-          <td><a href="https://www.amazon.es/s?k=Carbonell+Gran+Seleccion+AOVE&tag=chollocesta-21" target="_blank" rel="noopener">Carbonell Gran Selección AOVE</a></td>
-          <td>--</td>
-          <td>--</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<h1>🫒 Mejores ofertas de Aceite</h1>
 
-  <p>Estos precios corresponden a productos y promociones observados en Carrefour durante la elaboración de esta guía y pueden cambiar.</p>
+<p class="intro">
+Comparamos diferentes marcas y formatos de aceite de oliva virgen extra
+para encontrar los precios realmente interesantes.
+</p>
 
-  <h2>¿Comprar una garrafa de 5 litros sale a cuenta?</h2>
-  <p>No siempre necesitamos comprar el formato más grande, pero puede ser interesante cuando el precio por litro es claramente inferior y el consumo familiar lo absorbe bien antes de que pierda propiedades organolépticas.</p>
+<p class="updated">
+🔄 Precios comprobados el 25 de agosto de 2026.
+</p>
+
+
+<!-- MEJOR CHOLLO -->
+
+<section class="deal">
+
+<span class="badge">🔥 MEJOR CHOLLO DEL MOMENTO</span>
+
+<h2>Finca Casa Nueva AOVE · 5 litros</h2>
+
+<p>
+Una de las mejores ofertas encontradas actualmente entre los AOVE
+comparados.
+</p>
+
+<div class="bigprice">
+<strong>19,95 €</strong>
+<span>· 3,99 €/litro</span>
+</div>
+
+<div class="buttons">
+
+<a
+class="btn store"
+href="https://www.compraonline.alcampo.es/products/finca-casa-nueva-aceite-de-oliva-virgen-extra-5-l/513741"
+target="_blank"
+rel="noopener">
+🛍️ Ver en Alcampo
+</a>
+
+<a
+class="btn amazon"
+href="https://www.amazon.es/s?k=Finca+Casa+Nueva+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">
+🛒 Buscar en Amazon
+</a>
+
+</div>
+
+</section>
+
+
+<div class="notice">
+💡 <strong>Importante:</strong> comparamos siempre el precio por litro.
+Un envase grande no significa necesariamente que sea más barato.
+Los precios y la disponibilidad pueden cambiar.
+</div>
+
+
+<h2 class="section-title">🏆 Comparativa AOVE</h2>
+
+<div class="table-box">
+
+<div class="scroll">
+
+<table>
+
+<thead>
+<tr>
+<th>Producto</th>
+<th>Formato</th>
+<th>Tienda</th>
+<th>Precio</th>
+<th>€/L</th>
+<th>Oferta</th>
+</tr>
+</thead>
+
+<tbody>
+
+
+<tr>
+<td>
+<div class="product">
+Finca Casa Nueva AOVE
+<span class="best">🔥 CHOLLO</span>
+</div>
+<div class="store-name">Alcampo</div>
+</td>
+<td class="format">5 L</td>
+<td>Alcampo</td>
+<td class="price">19,95 €</td>
+<td class="perliter">3,99 €/L</td>
+<td>
+<a class="link"
+href="https://www.compraonline.alcampo.es/products/finca-casa-nueva-aceite-de-oliva-virgen-extra-5-l/513741"
+target="_blank">Alcampo</a>
+<a class="link"
+href="https://www.amazon.es/s?k=Finca+Casa+Nueva+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="product">Carrefour Extra AOVE</div>
+<div class="store-name">Carrefour</div>
+</td>
+<td class="format">5 L</td>
+<td>Carrefour</td>
+<td class="price">22,35 €</td>
+<td class="perliter">4,47 €/L</td>
+<td>
+<a class="link"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-carrefour-extra-5-l/R-521028105/p"
+target="_blank">Carrefour</a>
+<a class="link"
+href="https://www.amazon.es/s?k=Carrefour+Extra+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="product">Coosur AOVE</div>
+<div class="store-name">Carrefour</div>
+</td>
+<td class="format">5 L</td>
+<td>Carrefour</td>
+<td class="price">29,80 €</td>
+<td class="perliter">5,96 €/L</td>
+<td>
+<a class="link"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-coosur-5-l/R-fprod1480043/p"
+target="_blank">Carrefour</a>
+<a class="link"
+href="https://www.amazon.es/s?k=Coosur+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="product">Dcoop AOVE</div>
+<div class="store-name">Carrefour</div>
+</td>
+<td class="format">5 L</td>
+<td>Carrefour</td>
+<td class="price">30,80 €</td>
+<td class="perliter">6,16 €/L</td>
+<td>
+<a class="link"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-dcoop-5-l/R-prod710117/p"
+target="_blank">Carrefour</a>
+<a class="link"
+href="https://www.amazon.es/s?k=Dcoop+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="product">Carbonell AOVE</div>
+<div class="store-name">Carrefour</div>
+</td>
+<td class="format">5 L</td>
+<td>Carrefour</td>
+<td class="price">—</td>
+<td class="perliter">Consultar</td>
+<td>
+<a class="link"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-carbonell-5-l/R-584001515/p"
+target="_blank">Carrefour</a>
+<a class="link"
+href="https://www.amazon.es/s?k=Carbonell+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<div class="product">Maestros de Hojiblanca AOVE</div>
+<div class="store-name">Carrefour</div>
+</td>
+<td class="format">5 L</td>
+<td>Carrefour</td>
+<td class="price">34,60 €</td>
+<td class="perliter">6,92 €/L</td>
+<td>
+<a class="link"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-maestros-de-hojiblanca-5-l/R-521033469/p"
+target="_blank">Carrefour</a>
+<a class="link"
+href="https://www.amazon.es/s?k=Maestros+Hojiblanca+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">Amazon</a>
+</td>
+</tr>
+
+</tbody>
+</table>
+
+</div>
+</div>
+
+
+<!-- TARJETAS MOVIL -->
+
+<div class="cards">
+
+
+<article class="card best-card">
+
+<div class="card-top">
+
+<div>
+<div class="card-name">🔥 Finca Casa Nueva AOVE</div>
+<div class="card-store">Alcampo</div>
+<div class="card-format">Garrafa · 5 litros</div>
+</div>
+
+<div class="card-price">
+<strong>19,95 €</strong>
+<small>3,99 €/L</small>
+</div>
+
+</div>
+
+<div class="card-buttons">
+
+<a
+class="store"
+href="https://www.compraonline.alcampo.es/products/finca-casa-nueva-aceite-de-oliva-virgen-extra-5-l/513741"
+target="_blank">
+🛍️ Alcampo
+</a>
+
+<a
+class="amazon"
+href="https://www.amazon.es/s?k=Finca+Casa+Nueva+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">
+🛒 Amazon
+</a>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="card-top">
+
+<div>
+<div class="card-name">Carrefour Extra AOVE</div>
+<div class="card-store">Carrefour</div>
+<div class="card-format">Garrafa · 5 litros</div>
+</div>
+
+<div class="card-price">
+<strong>22,35 €</strong>
+<small>4,47 €/L</small>
+</div>
+
+</div>
+
+<div class="card-buttons">
+
+<a
+class="store"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-carrefour-extra-5-l/R-521028105/p"
+target="_blank">
+🛍️ Carrefour
+</a>
+
+<a
+class="amazon"
+href="https://www.amazon.es/s?k=Carrefour+Extra+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">
+🛒 Amazon
+</a>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="card-top">
+
+<div>
+<div class="card-name">Coosur AOVE</div>
+<div class="card-store">Carrefour</div>
+<div class="card-format">Garrafa · 5 litros</div>
+</div>
+
+<div class="card-price">
+<strong>29,80 €</strong>
+<small>5,96 €/L</small>
+</div>
+
+</div>
+
+<div class="card-buttons">
+
+<a
+class="store"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-coosur-5-l/R-fprod1480043/p"
+target="_blank">
+🛍️ Carrefour
+</a>
+
+<a
+class="amazon"
+href="https://www.amazon.es/s?k=Coosur+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">
+🛒 Amazon
+</a>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="card-top">
+
+<div>
+<div class="card-name">Dcoop AOVE</div>
+<div class="card-store">Carrefour</div>
+<div class="card-format">Garrafa · 5 litros</div>
+</div>
+
+<div class="card-price">
+<strong>30,80 €</strong>
+<small>6,16 €/L</small>
+</div>
+
+</div>
+
+<div class="card-buttons">
+
+<a
+class="store"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-dcoop-5-l/R-prod710117/p"
+target="_blank">
+🛍️ Carrefour
+</a>
+
+<a
+class="amazon"
+href="https://www.amazon.es/s?k=Dcoop+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">
+🛒 Amazon
+</a>
+
+</div>
+
+</article>
+
+
+<article class="card">
+
+<div class="card-top">
+
+<div>
+<div class="card-name">Maestros de Hojiblanca AOVE</div>
+<div class="card-store">Carrefour</div>
+<div class="card-format">Garrafa · 5 litros</div>
+</div>
+
+<div class="card-price">
+<strong>34,60 €</strong>
+<small>6,92 €/L</small>
+</div>
+
+</div>
+
+<div class="card-buttons">
+
+<a
+class="store"
+href="https://www.carrefour.es/supermercado/aceite-de-oliva-virgen-extra-maestros-de-hojiblanca-5-l/R-521033469/p"
+target="_blank">
+🛍️ Carrefour
+</a>
+
+<a
+class="amazon"
+href="https://www.amazon.es/s?k=Maestros+Hojiblanca+AOVE+5L&tag=chollocesta-21"
+target="_blank"
+rel="nofollow sponsored noopener">
+🛒 Amazon
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+
+<h2 class="section-title">💰 ¿Qué precio merece la pena?</h2>
+
+<div class="tips">
+
+<div class="tip">
+<div class="tip-icon">🔥</div>
+<strong>Menos de 4,50 €/L</strong>
+<p>Para AOVE, es un precio especialmente interesante.</p>
+</div>
+
+<div class="tip">
+<div class="tip-icon">👍</div>
+<strong>4,50–6 €/L</strong>
+<p>Precio razonable dependiendo de la marca y variedad.</p>
+</div>
+
+<div class="tip">
+<div class="tip-icon">⚠️</div>
+<strong>Más de 6 €/L</strong>
+<p>Conviene comparar antes de comprar, especialmente en formatos grandes.</p>
+</div>
+
+</div>
+
+
+<h2 class="section-title">🧮 ¿Por qué comparamos €/litro?</h2>
+
+<p class="text">
+Una garrafa de 5 litros puede parecer cara porque cuesta más dinero,
+pero puede ser mucho más económica por litro que varias botellas pequeñas.
+Por eso CholloCesta utiliza siempre el <strong>precio por litro</strong>
+como referencia principal.
+</p>
+
+<p class="text">
+En la comprobación realizada hoy, Finca Casa Nueva AOVE de Alcampo
+se sitúa en <strong>3,99 €/L</strong>, por delante de Carrefour Extra
+AOVE a 4,47 €/L.
+</p>
+
+
+<div class="notice">
+💰 <strong>Enlaces de afiliado:</strong>
+algunos enlaces de Amazon de esta página son enlaces de afiliado.
+Si compras a través de ellos, CholloCesta puede recibir una comisión
+sin coste adicional para ti.
+</div>
+
 </main>
 
+
 <footer>
-  <p>© 2026 CholloCesta · Todos los derechos reservados.</p>
+
+<p>© 2026 <strong>CholloCesta</strong> · Compra inteligente</p>
+
+<p>Precios comprobados el 25/08/2026 · Los precios pueden cambiar.</p>
+
 </footer>
 
 </body>
