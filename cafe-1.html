@@ -3,507 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Café en grano 1 kg - CholloCesta</title>
+  <title>Café en Grano: Comparativa de Precios por Kilo | CholloCesta</title>
+  <meta name="description" content="Comparamos el precio por kilo de café en grano Bonka, Marcilla y marca blanca para detectar chollos en Amazon.">
+  <meta name="theme-color" content="#111827">
+
   <style>
-    :root {
-      --primary: #d97706;
-      --primary-hover: #b45309;
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text: #1e293b;
-      --text-muted: #64748b;
-      --border: #e2e8f0;
-      --radius: 12px;
-      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.5;
-      padding-bottom: 40px;
-    }
-
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid var(--border);
-      padding: 16px 20px;
-      text-align: center;
-    }
-
-    nav a {
-      font-size: 1.4rem;
-      font-weight: 800;
-      color: var(--text);
-      text-decoration: none;
-    }
-
-    nav span {
-      color: var(--primary);
-    }
-
-    nav small {
-      display: block;
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-top: 2px;
-      font-weight: normal;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, #78350f 0%, #451a03 100%);
-      color: #ffffff;
-      padding: 32px 20px;
-      text-align: center;
-    }
-
-    .hero-badge {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.15);
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin-bottom: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .hero h1 {
-      font-size: 1.8rem;
-      margin-bottom: 8px;
-    }
-
-    .hero p {
-      font-size: 0.95rem;
-      color: #fef3c7;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    section {
-      margin-bottom: 32px;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      margin-bottom: 12px;
-      color: var(--text);
-    }
-
-    p {
-      margin-bottom: 12px;
-      color: #334155;
-      font-size: 0.95rem;
-    }
-
-    .note {
-      background-color: #fffbebf8;
-      border-left: 4px solid #f59e0b;
-      padding: 12px 16px;
-      border-radius: 4px;
-      font-size: 0.88rem;
-      color: #b45309;
-      margin-top: 16px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-
-    .product {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .product-top {
-      height: 200px;
-      background-color: #f1f5f9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-
-    .product-top img {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      padding: 12px;
-    }
-
-    .product-body {
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-    }
-
-    .badge {
-      display: inline-block;
-      align-self: flex-start;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 4px 8px;
-      border-radius: 6px;
-      margin-bottom: 8px;
-      text-transform: uppercase;
-    }
-
-    .badge.green {
-      background-color: #dcfce7;
-      color: #166534;
-    }
-
-    .badge.blue {
-      background-color: #dbeafe;
-      color: #1e40af;
-    }
-
-    .badge.orange {
-      background-color: #ffedd5;
-      color: #9a3412;
-    }
-
-    .product h3 {
-      font-size: 1.1rem;
-      margin-bottom: 6px;
-      color: var(--text);
-    }
-
-    .product-desc {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      margin-bottom: 16px;
-      flex-grow: 1;
-    }
-
-    .price-box {
-      border-top: 1px solid var(--border);
-      padding-top: 12px;
-      margin-bottom: 16px;
-    }
-
-    .price {
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: #dc2626;
-    }
-
-    .unit {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      font-weight: 600;
-    }
-
-    .reference-label {
-      font-size: 0.75rem;
-      color: #94a3b8;
-      font-style: italic;
-    }
-
-    .button {
-      display: block;
-      width: 100%;
-      padding: 12px;
-      background-color: var(--primary);
-      color: #ffffff;
-      text-align: center;
-      text-decoration: none;
-      font-weight: 700;
-      border-radius: 8px;
-      transition: background-color 0.2s;
-    }
-
-    .button:hover {
-      background-color: var(--primary-hover);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      overflow: hidden;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      margin-top: 12px;
-    }
-
-    th, td {
-      padding: 12px 16px;
-      text-align: left;
-      font-size: 0.9rem;
-    }
-
-    th {
-      background-color: #f1f5f9;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    tr:not(:last-child) {
-      border-bottom: 1px solid var(--border);
-    }
-
-    .cta-telegram {
-      background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
-      color: #ffffff;
-      padding: 20px;
-      border-radius: var(--radius);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      text-align: center;
-    }
-
-    .cta-telegram strong {
-      font-size: 1.05rem;
-    }
-
-    .cta-telegram span {
-      font-size: 0.85rem;
-      opacity: 0.9;
-    }
-
-    .button.telegram {
-      background-color: #ffffff;
-      color: #0088cc;
-      width: auto;
-      padding: 10px 24px;
-    }
-
-    .button.telegram:hover {
-      background-color: #f8fafc;
-    }
-
-    footer {
-      text-align: center;
-      padding: 24px 20px 0;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      border-top: 1px solid var(--border);
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin-bottom: 6px;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
+    :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--accent:#f59e0b;--green:#16a34a;--red:#dc2626;--blue:#229ed9}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.5}
+    a{text-decoration:none;color:inherit}
+    header{background:var(--dark);color:#fff}
+    nav{max-width:1000px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-size:24px;font-weight:900;letter-spacing:-.6px}
+    .brand span{color:var(--accent)}
+    nav small{color:#cbd5e1}
+    .hero{background:linear-gradient(145deg,#111827 0%,#1f2937 100%);color:#fff;padding:32px 16px;text-align:center}
+    .eyebrow{display:inline-block;background:rgba(245,158,11,.15);color:#fbbf24;border:1px solid rgba(245,158,11,.3);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:12px}
+    h1{font-size:clamp(26px,6vw,42px);line-height:1.1;margin-bottom:10px}
+    .hero p{max-width:640px;margin:auto;color:#d1d5db;font-size:15px}
+    main{max-width:1000px;margin:auto;padding:24px 16px 48px}
+    .intro{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:24px}
+    .intro h2{font-size:20px;margin-bottom:8px}
+    .intro p{font-size:14px;color:#4b5563;margin-bottom:10px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;margin-bottom:32px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+    .card-img{height:180px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-size:50px}
+    .card-body{padding:16px;display:flex;flex-direction:column;flex-grow:1}
+    .badge{display:inline-block;background:#e0f2fe;color:#0369a1;font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px;margin-bottom:8px;align-self:flex-start}
+    .card h3{font-size:16px;margin-bottom:6px;line-height:1.3}
+    .card p{font-size:13px;color:var(--muted);margin-bottom:12px;flex-grow:1}
+    .price-box{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:10px;margin-bottom:12px}
+    .main-price{font-size:20px;font-weight:900;color:var(--dark)}
+    .unit-price{font-size:13px;font-weight:700;color:var(--green)}
+    .ref-label{font-size:11px;color:var(--muted)}
+    .btn{display:block;text-align:center;background:var(--accent);color:#111;font-weight:800;padding:10px;border-radius:8px;font-size:14px}
+    .telegram-banner{background:#e8f6fc;border:1px solid #bbe3f5;border-radius:12px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    .telegram-btn{background:var(--blue);color:#fff;padding:10px 16px;border-radius:8px;font-weight:800;font-size:14px}
+    footer{background:var(--dark);color:#9ca3af;padding:24px 16px;font-size:12px;text-align:center}
   </style>
 </head>
 <body>
 
 <header>
   <nav>
-    <a href="index.html">🛒 Chollo<span>Cesta</span></a>
+    <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
     <small>Encuentra el chollo. Llena la cesta. Paga menos.</small>
   </nav>
 </header>
 
 <section class="hero">
-  <span class="hero-badge">☕ RADAR CHOLLOCESTA</span>
-  <h1>Café en grano: 1 kg</h1>
-  <p>Comparamos marcas líderes y opciones de supermercado para detectar las mejores ofertas y relación calidad/precio.</p>
+  <span class="eyebrow">☕ RADAR CHOLLOCESTA</span>
+  <h1>Café en Grano: Precio por Kilo</h1>
+  <p>Analizamos precios de referencia entre marcas líderes y marca blanca.</p>
 </section>
 
 <main>
 
-<section>
-  <h2>☕ ¿Cuál es la opción más conveniente?</h2>
-  <p>Hemos seleccionado 5 opciones clave de café en grano de 1 kg para analizar su precio por kilo, tomando como referencia base los precios de DIA frente al mercado general.</p>
-  <p>El objetivo de CholloCesta es darte la referencia real de supermercado y ayudarte a pulsar en «Buscar mejor precio» para cazar ofertas puntuales más baratas online.</p>
-  <div class="note">
-    ⚠️ <strong>Nota sobre precios:</strong> Los precios listados abajo sirven como referencia base de supermercado. Al pulsar en «Buscar mejor precio» podrás comprobar si existe una oferta activa en Amazon u otras tiendas.
-  </div>
+<section class="intro">
+  <h2>☕ ¿Cómo comparar el café en grano?</h2>
+  <p>La clave es medir siempre el coste por kilo, ya que los formatos varían entre bolsas de 500g y 1kg.</p>
 </section>
 
-<!-- SECCIÓN DE PRODUCTOS -->
-<section class="products">
+<section class="grid">
 
-  <!-- TARJETA 1: DIA CAFETERÍA -->
-  <article class="product">
-    <div class="product-top">
-      <img src="Dia.jpg" alt="Café DIA Cafetería 1kg">
-    </div>
-    <div class="product-body">
-      <span class="badge green">💰 MARCA BLANCA REFERENCIA</span>
-      <h3>Café en Grano DIA Cafetería 1 kg</h3>
-      <p class="product-desc">Opción económica de referencia diaria para consumo habitual en hogar u oficina.</p>
+  <article class="card">
+    <div class="card-img">☕</div>
+    <div class="card-body">
+      <span class="badge">🔥 LÍDER VENTAS</span>
+      <h3>Café en grano Bonka Natural</h3>
+      <p>Equilibrio perfecto de tueste natural en formato de 1 kg.</p>
       <div class="price-box">
-        <div class="price">10,25 €</div>
-        <div class="unit">10,25 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
+        <div class="main-price">13,50 €</div>
+        <div class="unit-price">13,50 € / kg</div>
+        <div class="ref-label">Precio referencia (1 kg)</div>
       </div>
-      <a class="button" href="https://www.amazon.es/s?k=cafe+en+grano+1kg+molido+natural" target="_blank" rel="noopener">Buscar mejor precio →</a>
+      <a href="https://www.amazon.es/s?k=cafe+en+grano+bonka+1kg&tag=chollocesta-21" target="_blank" rel="noopener" class="btn">Buscar mejor precio →</a>
     </div>
   </article>
 
-  <!-- TARJETA 2: UBAGO -->
-  <article class="product">
-    <div class="product-top">
-      <img src="Ubago.jpg" alt="Café Ubago 1kg">
-    </div>
-    <div class="product-body">
-      <span class="badge green">👍 EQUILIBRIO PRECIO</span>
-      <h3>Café en Grano Ubago Natural 1 kg</h3>
-      <p class="product-desc">Tueste natural equilibrado. Una alternativa de gran rendimiento a precio ajustado.</p>
+  <article class="card">
+    <div class="card-img">☕</div>
+    <div class="card-body">
+      <span class="badge">⭐ GAMA ALTA</span>
+      <h3>Café en grano Marcilla Natural</h3>
+      <p>Aroma intenso y crema consistente para cafeteras superautomáticas.</p>
       <div class="price-box">
-        <div class="price">11,90 €</div>
-        <div class="unit">11,90 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
+        <div class="main-price">15,90 €</div>
+        <div class="unit-price">15,90 € / kg</div>
+        <div class="ref-label">Precio referencia (1 kg)</div>
       </div>
-      <a class="button" href="https://www.amazon.es/s?k=cafe+ubago+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- TARJETA 3: BONKA -->
-  <article class="product">
-    <div class="product-top">
-      <img src="Bonka.jpg" alt="Café Bonka 1kg">
-    </div>
-    <div class="product-body">
-      <span class="badge blue">🇪🇸 MARCA POPULAR</span>
-      <h3>Bonka Café Natural en Grano 1 kg</h3>
-      <p class="product-desc">Un clásico de tueste natural muy extendido en el mercado español.</p>
-      <div class="price-box">
-        <div class="price">14,95 €</div>
-        <div class="unit">14,95 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=bonka+cafe+natural+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- TARJETA 4: NESCAFÉ -->
-  <article class="product">
-    <div class="product-top">
-      <img src="Nescafe.jpg" alt="Café Nescafé 1kg">
-    </div>
-    <div class="product-body">
-      <span class="badge blue">🔥 TOP VENTAS</span>
-      <h3>Nescafé Selección Café en Grano 1 kg</h3>
-      <p class="product-desc">Sabor intenso y aroma constante de una de las marcas más vendidas mundialmente.</p>
-      <div class="price-box">
-        <div class="price">15,80 €</div>
-        <div class="unit">15,80 €/kg</div>
-        <div class="reference-label">Precio ref. Mercado</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=nescafe+cafe+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
-    </div>
-  </article>
-
-  <!-- TARJETA 5: MARCILLA -->
-  <article class="product">
-    <div class="product-top">
-      <img src="Marcilla.jpg" alt="Café Marcilla 1kg">
-    </div>
-    <div class="product-body">
-      <span class="badge orange">⭐ MARCA RECONOCIDA</span>
-      <h3>Marcilla Gran Aroma Natural 1 kg</h3>
-      <p class="product-desc">Aroma característico y tueste tradicional para amantes de la marca Marcilla.</p>
-      <div class="price-box">
-        <div class="price">16,50 €</div>
-        <div class="unit">16,50 €/kg</div>
-        <div class="reference-label">Precio ref. DIA</div>
-      </div>
-      <a class="button" href="https://www.amazon.es/s?k=marcilla+gran+aroma+en+grano+1kg" target="_blank" rel="noopener">Buscar mejor precio →</a>
+      <a href="https://www.amazon.es/s?k=cafe+en+grano+marcilla+1kg&tag=chollocesta-21" target="_blank" rel="noopener" class="btn">Buscar mejor precio →</a>
     </div>
   </article>
 
 </section>
 
-<section>
-  <h2>📊 Comparativa rápida de precios de referencia</h2>
-  <p>Precios por kilo calculados tomando de base la ficha de supermercado (DIA / Mercado de referencia).</p>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Producto / Marca</th>
-        <th>Tipo</th>
-        <th>Precio Ref.</th>
-        <th>€ / kg</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>🏷️ DIA Cafetería</td>
-        <td>Marca Blanca</td>
-        <td>10,25 €</td>
-        <td>10,25 €</td>
-      </tr>
-      <tr>
-        <td>☕ Ubago Natural</td>
-        <td>Comercial</td>
-        <td>11,90 €</td>
-        <td>11,90 €</td>
-      </tr>
-      <tr>
-        <td>🇪🇸 Bonka Natural</td>
-        <td>Marca Comercial</td>
-        <td>14,95 €</td>
-        <td>14,95 €</td>
-      </tr>
-      <tr>
-        <td>🔴 Nescafé Selección</td>
-        <td>Marca Comercial</td>
-        <td>15,80 €</td>
-        <td>15,80 €</td>
-      </tr>
-      <tr>
-        <td>⭐ Marcilla Gran Aroma</td>
-        <td>Marca Premium</td>
-        <td>16,50 €</td>
-        <td>16,50 €</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-<section>
-  <h2>🏆 Veredicto CholloCesta</h2>
-  <p>💰 <strong>Para ahorrar al máximo:</strong> La marca blanca (DIA Cafetería) o marcas como Ubago marcan el suelo del mercado rondando los 10€ - 12€/kg.</p>
-  <p>⭐ <strong>Para marcas reconocidas (Bonka, Nescafé, Marcilla):</strong> El precio medio habitual se sitúa entre 14,50€ y 17,00€/kg.</p>
-  <p>🔥 <strong>¿Cuándo es un CHOLLO en Amazon?</strong> Cualquier bajada puntual de Bonka, Nescafé o Marcilla por debajo de los <strong>12,50 €/kg</strong> se considera una oportunidad clara de compra que notificaremos por el canal.</p>
-</section>
-
-<section class="cta-telegram">
+<section class="telegram-banner">
   <div>
-    <strong>📲 ¿Quieres enterarte cuando aparezca un auténtico chollo de café?</strong><br>
-    <span>Únete gratis al canal de Telegram de CholloCesta.</span>
+    <strong>📲 Únete al canal de Telegram</strong>
+    <p style="font-size:13px; color:#526273; margin:0;">Entérate de las bajadas de precio en café.</p>
   </div>
-  <a class="button telegram" href="https://t.me/CholloCesta" target="_blank" rel="noopener">Unirme al canal</a>
+  <a href="https://t.me/CholloCesta" target="_blank" rel="noopener" class="telegram-btn">Unirme al canal</a>
 </section>
 
 </main>
 
 <footer>
   <p>© 2026 CholloCesta · Encuentra el chollo. Llena la cesta. Paga menos.</p>
-  <p>Los precios y la disponibilidad pueden cambiar. Comprueba siempre las condiciones y el precio final antes de comprar.</p>
-  <p>Algunos enlaces de esta web podrán ser enlaces de afiliado. Si realizas una compra a través de ellos, CholloCesta podría recibir una comisión.</p>
 </footer>
 
 </body>
