@@ -26,7 +26,7 @@
     main{max-width:1000px;margin:auto;padding:32px 16px 48px}
     
     /* Categorías / Filtros */
-    .categories{display:flex;gap:10px;overflow-x:auto;padding-bottom:12px;margin-bottom:28px;scrollbar-width:none;cursor:pointer}
+    .categories{display:flex;gap:10px;overflow-x:auto;padding-bottom:12px;margin-bottom:28px;scrollbar-width:none}
     .categories::-webkit-scrollbar{display:none}
     .cat-chip{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:700;font-size:13px;white-space:nowrap;transition:all .2s;border:none;cursor:pointer}
     .cat-chip:hover,.cat-chip.active{background:var(--dark);color:#fff;}
@@ -81,6 +81,19 @@
 
   <h2>📌 Guías y Comparativas Destacadas</h2>
   <div class="grid" id="product-grid">
+
+    <!-- ACEITE -->
+    <article class="card" data-category="alimentacion despensa">
+      <div class="card-img">
+        <a href="aceite-1.html">🫒</a>
+      </div>
+      <div class="card-body">
+        <span class="badge">ALIMENTACIÓN · DESPENSA</span>
+        <h3>Aceite de Oliva</h3>
+        <p>Seguimiento y comparativa del precio por litro en virgen extra y marcas de distribución.</p>
+        <a href="aceite-1.html" class="btn">Ver comparativa →</a>
+      </div>
+    </article>
 
     <!-- LAVAVAJILLAS -->
     <article class="card" data-category="hogar limpieza">
