@@ -25,7 +25,7 @@
 
     main{max-width:1000px;margin:auto;padding:32px 16px 48px}
 
-    /* Alerta Última Ganga */
+    /* Alerta Última Ganga Amazon */
     .deal-banner{background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);border:2px solid #f59e0b;border-radius:14px;padding:24px;margin-bottom:32px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
     .deal-content h3{color:#92400e;font-size:18px;margin-bottom:4px}
     .deal-content p{color:#78350f;font-size:14px}
@@ -36,7 +36,11 @@
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:40px}
     .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
     .card:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.05)}
-    .card-img{height:150px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-size:50px}
+    
+    .card-img{height:120px;background:#f3f4f6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border-bottom:1px solid var(--line)}
+    .card-img span{font-size:20px;font-weight:900;letter-spacing:-.5px}
+    .card-img small{font-size:12px;font-weight:600;color:var(--muted)}
+
     .card-body{padding:20px;display:flex;flex-direction:column;flex-grow:1}
     .badge{display:inline-block;background:#e0f2fe;color:#0369a1;font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px;margin-bottom:8px;align-self:flex-start}
     .badge-eco{background:#dcfce7;color:#166534}
@@ -67,50 +71,62 @@
 
   <div class="deal-banner">
     <div class="deal-content">
-      <h3>🔥 ¡Última ganga encontrada!</h3>
-      <p>Wipp Express Discs (Pack ahorro 105 lavados) rebajado un 35% en hipermercado.</p>
+      <h3>🔥 ¡Última ganga encontrada en Amazon!</h3>
+      <p>Detergentes y packs ahorro de primeras marcas con descuento directo hoy.</p>
     </div>
-    <a href="https://t.me/CholloCesta" target="_blank" rel="noopener" class="deal-btn">Ver chollo en directo →</a>
+    <a href="https://www.amazon.es/s?k=detergente+lavadora&tag=chollocesta-21" target="_blank" rel="noopener" class="deal-btn">Ver chollo en Amazon →</a>
   </div>
 
   <h2>📋 Análisis por marcas</h2>
   <div class="grid">
 
     <article class="card" id="ariel">
-      <div class="card-img">🟢</div>
+      <div class="card-img" style="background:#e0f2fe; color:#0369a1;">
+        <span>ARIEL</span>
+        <small>Pods / Cápsulas</small>
+      </div>
       <div class="card-body">
         <span class="badge">CÁPSULAS · TOP</span>
         <h3>Ariel Pods Original</h3>
         <div class="price-tag">~0,24€ / lavado</div>
         <p>Poder de limpieza impecable en frío, pero su precio por dosis suele ser de los más elevados del mercado.</p>
-        <a href="#ariel" class="btn">Ver detalles</a>
+        <a href="https://www.amazon.es/s?k=Ariel+Pods+detergente&tag=chollocesta-21" target="_blank" rel="noopener" class="btn">Ver en Amazon</a>
       </div>
     </article>
 
     <article class="card" id="wipp-express">
-      <div class="card-img">🔵</div>
+      <div class="card-img" style="background:#fef3c7; color:#b45309;">
+        <span>WIPP EXPRESS</span>
+        <small>Gel y Discs</small>
+      </div>
       <div class="card-body">
         <span class="badge">GEL Y DISCS</span>
         <h3>Wipp Express Azul</h3>
         <div class="price-tag">~0,21€ / lavado</div>
         <p>Excelente rendimiento contra las manchas difíciles. Muy sensible a las ofertas de 2ª unidad al 50%.</p>
-        <a href="#wipp-express" class="btn">Ver detalles</a>
+        <a href="https://www.amazon.es/s?k=Wipp+Express+detergente&tag=chollocesta-21" target="_blank" rel="noopener" class="btn">Ver en Amazon</a>
       </div>
     </article>
 
     <article class="card" id="colon">
-      <div class="card-img">🔴</div>
+      <div class="card-img" style="background:#fee2e2; color:#991b1b;">
+        <span>COLÓN</span>
+        <small>Polvo y Líquido</small>
+      </div>
       <div class="card-body">
         <span class="badge">POLVO Y LÍQUIDO</span>
         <h3>Colón Total</h3>
         <div class="price-tag">~0,15€ / lavado</div>
         <p>La opción equilibrada de gama media. Ofrece gran frescor y un coste por dosis bastante competitivo.</p>
-        <a href="#colon" class="btn">Ver detalles</a>
+        <a href="https://www.amazon.es/s?k=Colon+detergente+lavadora&tag=chollocesta-21" target="_blank" rel="noopener" class="btn">Ver en Amazon</a>
       </div>
     </article>
 
     <article class="card" id="marca-blanca">
-      <div class="card-img">⚪</div>
+      <div class="card-img" style="background:#dcfce7; color:#166534;">
+        <span>SUPERMERCADO</span>
+        <small>Marca Blanca</small>
+      </div>
       <div class="card-body">
         <span class="badge badge-eco">AHORRO MÁXIMO</span>
         <h3>Supermercado (Marca Blanca)</h3>
