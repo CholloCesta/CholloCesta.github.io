@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Mejores ofertas de Champú y Comparativa | CholloCesta</title>
+<meta name="description" content="Comparamos precios por 100 ml en champús de marcas reconocidas como H&S, Fructis, Pantene y alternativas de marca propia en Amazon.">
+<meta name="theme-color" content="#111827">
+
+<style>
+:root{
+--dark:#111827;
+--dark2:#1f2937;
+--bg:#f5f7fa;
+--card:#fff;
+--line:#e5e7eb;
+--muted:#667085;
+--orange:#f59e0b;
+--green:#16a34a;
+--green-dark:#15803d;
+--blue:#2563eb;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+background:var(--bg);
+color:#172033;
+line-height:1.5
+}
+
+a{text-decoration:none;color:inherit}
+
+header{
+background:linear-gradient(135deg,#111827,#1f2937);
+color:white;
+box-shadow:0 2px 12px rgba(0,0,0,.12)
+}
+
+nav{
+max-width:1050px;
+margin:auto;
+padding:15px 16px;
+display:flex;
+align-items:center;
+justify-content:space-between
+}
+
+.brand{
+font-size:24px;
+font-weight:900;
+letter-spacing:-.7px
+}
+
+.brand span{color:var(--orange)}
+
+nav small{
+color:#cbd5e1;
+font-size:12px
+}
+
+main{
+max-width:950px;
+margin:auto;
+padding:24px 15px 55px
+}
+
+.back{
+display:inline-block;
+background:var(--dark);
+color:#fff;
+font-weight:700;
+padding:9px 15px;
+border-radius:9px;
+font-size:14px;
+margin-bottom:22px
+}
+
+h1{
+font-size:clamp(28px,6vw,42px);
+line-height:1.1;
+font-weight:900;
+letter-spacing:-1px;
+margin-bottom:12px
+}
+
+.intro{
+color:var(--muted);
+font-size:16px;
+margin-bottom:8px
+}
+
+.updated{
+font-size:12px;
+color:#98a2b3;
+margin-bottom:24px
+}
+
+/* RECOMENDACIÓN / CHOLLO */
+
+.deal{
+background:linear-gradient(135deg,#fff8df,#fff);
+border:2px solid var(--orange);
+border-radius:18px;
+padding:22px;
+margin-bottom:28px;
+box-shadow:0 7px 22px rgba(245,158,11,.13)
+}
+
+.badge{
+display:inline-block;
+background:var(--orange);
+color:#111827;
+font-size:12px;
+font-weight:900;
+padding:6px 11px;
+border-radius:30px;
+margin-bottom:12px
+}
+
+.deal h2{
+font-size:25px;
+margin-bottom:5px
+}
+
+.deal p{
+color:var(--muted);
+margin-bottom:13px
+}
+
+.bigprice{
+display:flex;
+align-items:baseline;
+gap:8px;
+margin-bottom:16px;
+flex-wrap:wrap
+}
+
+.bigprice strong{
+font-size:34px;
+color:var(--green-dark)
+}
+
+.bigprice span{
+font-weight:800;
+color:var(--muted)
+}
+
+.buttons{
+display:flex;
+gap:9px;
+flex-wrap:wrap
+}
+
+.btn{
+display:inline-flex;
+justify-content:center;
+align-items:center;
+padding:10px 16px;
+border-radius:9px;
+font-size:14px;
+font-weight:900;
+min-height:42px
+}
+
+.amazon{
+background:#ff9900;
+color:#111
+}
+
+/* EXPLICACIÓN */
+
+.content-box{
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+padding:20px;
+margin-bottom:28px;
+font-size:14px;
+color:var(--muted);
+line-height:1.6
+}
+
+.content-box h3{
+color:var(--dark);
+font-size:18px;
+font-weight:900;
+margin-bottom:10px
+}
+
+.content-box p{
+margin-bottom:10px
+}
+
+/* TABLA */
+
+.section-title{
+font-size:23px;
+font-weight:900;
+color:var(--dark);
+margin:28px 0 14px
+}
+
+.table-box{
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 3px 12px rgba(0,0,0,.04);
+margin-bottom:28px;
+}
+
+.scroll{
+overflow-x:auto
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+min-width:720px;
+font-size:14px
+}
+
+th,td{
+padding:13px 14px;
+border-bottom:1px solid var(--line);
+text-align:left
+}
+
+th{
+background:#f9fafb;
+font-weight:900;
+color:var(--dark)
+}
+
+tr:last-child td{border-bottom:none}
+
+.product{
+font-weight:900;
+display:flex;
+align-items:center;
+gap:12px
+}
+
+.product-img{
+width:45px;
+height:45px;
+object-fit:contain;
+background:#f3f4f6;
+border-radius:8px;
+padding:4px
+}
+
+.store-name{
+font-size:11px;
+color:#98a2b3;
+margin-top:2px
+}
+
+.format{
+font-weight:700;
+white-space:nowrap
+}
+
+.price{
+font-weight:900;
+white-space:nowrap
+}
+
+.perliter{
+font-weight:900;
+color:var(--green-dark);
+white-space:nowrap
+}
+
+.best{
+display:inline-block;
+background:#dcfce7;
+color:#166534;
+font-size:10px;
+font-weight:900;
+padding:3px 6px;
+border-radius:20px;
+margin-left:4px
+}
+
+.link{
+display:inline-block;
+padding:6px 9px;
+border-radius:7px;
+font-size:12px;
+font-weight:800;
+background:#f3f4f6;
+margin:2px
+}
+
+.link:hover{background:#e5e7eb}
+
+/* TARJETAS MOVIL */
+
+.cards{
+display:none;
+flex-direction:column;
+gap:12px;
+margin-bottom:28px;
+}
+
+.card{
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+padding:16px
+}
+
+.card.best-card{
+border:2px solid var(--orange)
+}
+
+.card-top{
+display:flex;
+justify-content:space-between;
+gap:12px
+}
+
+.card-name{
+font-weight:900;
+font-size:16px;
+display:flex;
+align-items:center;
+gap:10px
+}
+
+.card-img{
+width:40px;
+height:40px;
+object-fit:contain;
+background:#f3f4f6;
+border-radius:8px;
+padding:3px
+}
+
+.card-store{
+font-size:12px;
+color:var(--muted);
+margin-top:3px
+}
+
+.card-format{
+font-size:12px;
+color:#98a2b3;
+margin-top:2px
+}
+
+.card-price{
+text-align:right;
+white-space:nowrap
+}
+
+.card-price strong{
+font-size:21px
+}
+
+.card-price small{
+display:block;
+font-weight:900;
+color:var(--green-dark)
+}
+
+.card-buttons{
+display:grid;
+grid-template-columns:1fr;
+gap:8px;
+margin-top:14px
+}
+
+.card-buttons a{
+text-align:center;
+padding:9px 5px;
+border-radius:8px;
+font-size:12px;
+font-weight:900
+}
+
+/* Supermercados alternativos */
+.store-table-box{
+background:white;
+border:1px solid var(--line);
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 3px 12px rgba(0,0,0,.04);
+margin-bottom:28px;
+display: block !important;
+}
+.store-table td{font-size:13px; color:var(--muted)}
+.store-table th{background:#f1f5f9}
+
+footer{
+background:var(--dark);
+color:#9ca3af;
+text-align:center;
+font-size:12px;
+padding:28px 15px
+}
+
+footer strong{color:white}
+
+/* MOVIL */
+
+@media(max-width:700px){
+nav{padding:13px 14px}
+.brand{font-size:21px}
+nav small{font-size:10px}
+main{padding:20px 13px 45px}
+h1{font-size:30px}
+.intro{font-size:15px}
+.deal{padding:18px;border-radius:15px}
+.deal h2{font-size:21px}
+.bigprice strong{font-size:29px}
+.table-box{display:none}
+.cards{display:flex}
+.buttons .btn{flex:1}
+.section-title{font-size:21px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
+<small>Compra inteligente</small>
+</nav>
+</header>
+
+<main>
+
+<a href="index.html" class="back">← Volver al inicio</a>
+
+<h1>🧴 Champús: Comparativa de Precios, Descuentos y Formatos Ahorro</h1>
+
+<p class="intro">
+Comparamos el precio por cada 100 ml en champús de marcas líderes (H&S, Fructis, Pantene) y opciones de marca propia en Amazon.
+</p>
+
+<p class="updated">
+🔄 Precios orientativos actualizados el 25 de agosto de 2026. <em>Nota: Los precios en Amazon fluctúan frecuentemente.</em>
+</p>
+
+<!-- RECOMENDACIÓN / DESTACADO -->
+<section class="deal">
+<span class="badge">🔥 RECOMENDADO CALIDAD-PRECIO</span>
+<h2>H&S Champú Anticaspa (Pack Ahorro 1 Litro)</h2>
+<p>La opción con mejor relación calidad-precio en formato grande con rebaja aplicada.</p>
+
+<div class="bigprice">
+<strong>8,99 €</strong>
+<span>· 0,90 € / 100 ml (¡Chollo verificado!)</span>
+</div>
+
+<div class="buttons">
+<a class="btn amazon" href="https://www.amazon.es/s?k=HS-Champu-Anticaspa-1Litro&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">🛒 Ver oferta en Amazon</a>
+</div>
+</section>
+
+<!-- EXPLICACIÓN -->
+<section class="content-box">
+<h3>¿Cómo elegir el mejor champú al mejor precio por 100 ml?</h3>
+<p>
+En el cuidado capilar, los formatos grandes (como botellas de 600 ml o 1 litro) y los paquetes tipo "marca propia de Amazon" o distribuidor ofrecen una relación imbatible frente a los botes pequeños de supermercado. Analizamos cada opción para asegurarnos de que el ahorro por mililitro sea real.
+</p>
+</section>
+
+<h2 class="section-title">🏆 Tabla Comparativa Principal (Amazon)</h2>
+
+<div class="table-box">
+<div class="scroll">
+<table>
+<thead>
+<tr>
+<th>Producto</th>
+<th>Formato</th>
+<th>Tienda</th>
+<th>Precio (Ref.)</th>
+<th>€ / 100 ml</th>
+<th>Enlace Directo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<div class="product">
+<img src="https://m.media-amazon.com/images/I/61t0W1u+a9L._AC_SL1500_.jpg" alt="" class="product-img" onerror="this.src='https://via.placeholder.com/45?text=📦'">
+<div>
+<div>Belei / Marca Propia Amazon (Nutritivo) <span class="best">🔥 TIPO AMAZON</span></div>
+<div class="store-name">Amazon Basics</div>
+</div>
+</div>
+</td>
+<td class="format">400 ml</td>
+<td>Amazon</td>
+<td class="price">3,49 €</td>
+<td class="perliter">0,87 €</td>
+<td>
+<a class="link" href="https://www.amazon.es/s?k=Belei-Amazon-Champu&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="product">
+<img src="https://m.media-amazon.com/images/I/71YyP9f2a2L._AC_SL1500_.jpg" alt="" class="product-img" onerror="this.src='https://via.placeholder.com/45?text=⭐'">
+<div>
+<div>H&S Champú Anticaspa Clásico <span class="best">⭐ MEJOR CALIDAD-PRECIO</span></div>
+<div class="store-name">Head & Shoulders</div>
+</div>
+</div>
+</td>
+<td class="format">1 Litro (1000 ml)</td>
+<td>Amazon</td>
+<td class="price">8,99 €</td>
+<td class="perliter">0,90 €</td>
+<td>
+<a class="link" href="https://www.amazon.es/s?k=HS-Champu-Anticaspa-1Litro&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="product">
+<img src="https://m.media-amazon.com/images/I/71LzFj3bM0L._AC_SL1500_.jpg" alt="" class="product-img" onerror="this.src='https://via.placeholder.com/45?text=🍃'">
+<div>
+<div>Garnier Fructis Nutri Reparación</div>
+<div class="store-name">Garnier Fructis</div>
+</div>
+</div>
+</td>
+<td class="format">600 ml</td>
+<td>Amazon</td>
+<td class="price">4,95 €</td>
+<td class="perliter">0,83 €</td>
+<td>
+<a class="link" href="https://www.amazon.es/s?k=Garnier-Fructis-Champu-600ml&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon</a>
+</td>
+</tr>
+
+<tr>
+<td>
+<div class="product">
+<img src="https://m.media-amazon.com/images/I/71R2cKjYx+L._AC_SL1500_.jpg" alt="" class="product-img" onerror="this.src='https://via.placeholder.com/45?text=✨'">
+<div>
+<div>Pantene Pro-V Miracles Suave y Lisos</div>
+<div class="store-name">Pantene</div>
+</div>
+</div>
+</td>
+<td class="format">670 ml</td>
+<td>Amazon</td>
+<td class="price">6,50 €</td>
+<td class="perliter">0,97 €</td>
+<td>
+<a class="link" href="https://www.amazon.es/s?k=Pantene-Champu-670ml&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon</a>
+</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+</div>
+
+<!-- TARJETAS MOVIL -->
+<div class="cards">
+
+<article class="card">
+<div class="card-top">
+<div style="display:flex; align-items:center; gap:10px;">
+<img src="https://m.media-amazon.com/images/I/61t0W1u+a9L._AC_SL1500_.jpg" alt="" class="card-img" onerror="this.src='https://via.placeholder.com/40?text=📦'">
+<div>
+<div class="card-name">Belei / Marca Propia Amazon</div>
+<div class="card-store">Amazon Basics · 400 ml</div>
+</div>
+</div>
+<div class="card-price">
+<strong>3,49 €</strong>
+<small>0,87 € / 100ml</small>
+</div>
+</div>
+<div class="card-buttons">
+<a class="btn amazon" href="https://www.amazon.es/s?k=Belei-Amazon-Champu&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">🛒 Ver en Amazon</a>
+</div>
+</article>
+
+<article class="card best-card">
+<div class="card-top">
+<div style="display:flex; align-items:center; gap:10px;">
+<img src="https://m.media-amazon.com/images/I/71YyP9f2a2L._AC_SL1500_.jpg" alt="" class="card-img" onerror="this.src='https://via.placeholder.com/40?text=⭐'">
+<div>
+<div class="card-name">⭐ H&S Champú Anticaspa</div>
+<div class="card-store">Head & Shoulders · 1000 ml</div>
+</div>
+</div>
+<div class="card-price">
+<strong>8,99 €</strong>
+<small>0,90 € / 100ml</small>
+</div>
+</div>
+<div class="card-buttons">
+<a class="btn amazon" href="https://www.amazon.es/s?k=HS-Champu-Anticaspa-1Litro&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">🛒 Ver oferta en Amazon</a>
+</div>
+</article>
+
+<article class="card">
+<div class="card-top">
+<div style="display:flex; align-items:center; gap:10px;">
+<img src="https://m.media-amazon.com/images/I/71LzFj3bM0L._AC_SL1500_.jpg" alt="" class="card-img" onerror="this.src='https://via.placeholder.com/40?text=🍃'">
+<div>
+<div class="card-name">Garnier Fructis Nutri Reparación</div>
+<div class="card-store">Garnier · 600 ml</div>
+</div>
+</div>
+<div class="card-price">
+<strong>4,95 €</strong>
+<small>0,83 € / 100ml</small>
+</div>
+</div>
+<div class="card-buttons">
+<a class="btn amazon" href="https://www.amazon.es/s?k=Garnier-Fructis-Champu-600ml&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">🛒 Ver en Amazon</a>
+</div>
+</article>
+
+<article class="card">
+<div class="card-top">
+<div style="display:flex; align-items:center; gap:10px;">
+<img src="https://m.media-amazon.com/images/I/71R2cKjYx+L._AC_SL1500_.jpg" alt="" class="card-img" onerror="this.src='https://via.placeholder.com/40?text=✨'">
+<div>
+<div class="card-name">Pantene Pro-V Suave y Lisos</div>
+<div class="card-store">Pantene · 670 ml</div>
+</div>
+</div>
+<div class="card-price">
+<strong>6,50 €</strong>
+<small>0,97 € / 100ml</small>
+</div>
+</div>
+<div class="card-buttons">
+<a class="btn amazon" href="https://www.amazon.es/s?k=Pantene-Champu-670ml&tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">🛒 Ver en Amazon</a>
+</div>
+</article>
+
+</div>
+
+<!-- CONTADOR DE VISITAS -->
+<div style="text-align: center; margin: 30px 0 10px; font-family: sans-serif;">
+  <p style="font-size: 14px; color: #666; margin-bottom: 5px;">🔥 Visitas en esta guía:</p>
+  <span id="page-counter" style="font-size: 20px; font-weight: bold; color: #2563eb;">Cargando...</span>
+</div>
+
+<script>
+  fetch('https://api.counterapi.dev/v1/chollocesta/champu_visits/up')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('page-counter').innerText = data.count.toLocaleString();
+    })
+    .catch(error => {
+      document.getElementById('page-counter').innerText = "Disponible pronto";
+    });
+</script>
+
+<footer>
+<p>© 2026 <strong>CholloCesta</strong> · Compra inteligente</p>
+<p style="margin-top:5px; font-size:11px;">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Tag: chollocesta-21</p>
+</footer>
+
+</body>
+</html>
