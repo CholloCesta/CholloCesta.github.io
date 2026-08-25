@@ -25,24 +25,11 @@
     
     main{max-width:1000px;margin:auto;padding:32px 16px 48px}
 
-    /* Estilos para el bloque SEO integrado */
     .seo-intro{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:32px;color:#374151}
     .seo-intro h1 {font-size:24px;margin-bottom:12px;color:var(--dark);font-weight:800}
     .seo-intro p {font-size:15px;margin-bottom:16px;color:var(--muted)}
     .seo-intro h2 {font-size:18px;margin-top:20px;margin-bottom:8px;color:var(--dark);font-weight:700}
     
-      <!-- CHOLLO DEL DÍA -->
-  <section style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #f59e0b; border-radius: 14px; padding: 24px; margin-bottom: 32px;">
-    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
-      <div>
-        <span style="background: #b45309; color: #fff; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 999px;">🔥 Chollo del Día</span>
-        <h2 style="font-size: 20px; font-weight: 800; color: #78350f; margin: 8px 0 4px;">Cerveza Victoria (Pack 24 Latas)</h2>
-        <p style="font-size: 14px; color: #92400e; margin: 0;">Oferta destacada en Amazon al mejor precio por unidad.</p>
-      </div>
-      <a href="https://amzn.to/3STlbZ2" target="_blank" rel="noopener" style="background: #d97706; color: #fff; padding: 12px 20px; border-radius: 8px; font-weight: 800; font-size: 14px;">Ver Oferta →</a>
-    </div>
-  </section>
-    /* Categorías / Filtros */
     .categories{display:flex;gap:10px;overflow-x:auto;padding-bottom:12px;margin-bottom:28px;scrollbar-width:none}
     .categories::-webkit-scrollbar{display:none}
     .cat-chip{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:700;font-size:13px;white-space:nowrap;transition:all .2s;cursor:pointer}
@@ -88,10 +75,21 @@
   <!-- BLOQUE SEO OPTIMIZADO PARA GOOGLE -->
   <section class="seo-intro">
     <h1>Chollos y Ofertas Flash en Amazon Hoy | CholloCesta</h1>
-    <p>Bienvenido a <strong>CholloCesta</strong>, tu sitio web de referencia para cazar los mejores chollos, ofertas flash y descuentos en Amazon. Actualizamos cada día una selección exclusiva con las rebajas más brutales en alimentación, supermercado, tecnología y productos para el día a día para que ahorres en cada compra sin esfuerzo.</p>
-    
+    <p>Bienvenido a <strong>CholloCesta</strong>, tu sitio web de referencia para cazar los mejores chollos, ofertas flash y descuentos en Amazon.</p>
     <h2>Las mejores ofertas y chollos diarios en Amazon</h2>
-    <p>Encontrar productos rebajados al mejor precio ya no es cuestión de suerte. Nuestro equipo rastrea continuamente las principales categorías de Amazon para traerte bajadas de precio históricas, cupones exclusivos y chollos temporales que vuelan en pocas horas.</p>
+    <p>Nuestro equipo rastrea continuamente las principales categorías para traerte bajadas de precio históricas y chollos temporales.</p>
+  </section>
+
+  <!-- CHOLLO DEL DÍA -->
+  <section style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); border: 2px solid #f59e0b; border-radius: 14px; padding: 24px; margin-bottom: 32px;">
+    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+      <div>
+        <span style="background: #b45309; color: #fff; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 999px;">🔥 Chollo del Día</span>
+        <h2 style="font-size: 20px; font-weight: 800; color: #78350f; margin: 8px 0 4px;">Cerveza Victoria (Pack 24 Latas)</h2>
+        <p style="font-size: 14px; color: #92400e; margin: 0;">Oferta destacada en Amazon al mejor precio por unidad.</p>
+      </div>
+      <a href="https://amzn.to/3STlbZ2" target="_blank" rel="noopener" style="background: #d97706; color: #fff; padding: 12px 20px; border-radius: 8px; font-weight: 800; font-size: 14px;">Ver Oferta →</a>
+    </div>
   </section>
 
   <div class="categories">
@@ -106,6 +104,19 @@
 
   <h2 class="section-title">📌 Guías y Comparativas Destacadas</h2>
   <div class="grid" id="product-grid">
+
+    <!-- TARJETA CORREGIDA: PAÑALES TALLA 4 -->
+    <article class="card" data-category="hogar">
+      <div class="card-img">
+        <a href="panales-talla-4.html">🧷</a>
+      </div>
+      <div class="card-body">
+        <span class="badge">BEBÉ · AHORRO</span>
+        <h3>Pañales Talla 4</h3>
+        <p>Comparativa del precio por unidad en Amazon, Carrefour y Alcampo.</p>
+        <a href="panales-talla-4.html" class="btn">Ver comparativa →</a>
+      </div>
+    </article>
 
     <article class="card" data-category="alimentacion despensa">
       <div class="card-img">
@@ -166,17 +177,7 @@
         <a href="detergente-1.html" class="btn">Ver comparativa →</a>
       </div>
     </article>
-<article class="card" data-category="hogar">
-  <div class="card-img">
-    <a href="panales.html">🧷</a>
-  </div>
-  <div class="card-body">
-    <span class="badge">BEBÉ · AHORRO</span>
-    <h3>Pañales Talla 4</h3>
-    <p>Comparativa del precio por unidad en Amazon, Carrefour y Alcampo.</p>
-    <a href="panales.html" class="btn">Ver comparativa →</a>
-  </div>
-</article>
+
     <article class="card" data-category="alimentacion despensa">
       <div class="card-img">
         <a href="cafe-1.html">☕</a>
