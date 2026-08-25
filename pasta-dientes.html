@@ -208,7 +208,8 @@ background:white;
 border:1px solid var(--line);
 border-radius:15px;
 overflow:hidden;
-box-shadow:0 3px 12px rgba(0,0,0,.04)
+box-shadow:0 3px 12px rgba(0,0,0,.04);
+margin-bottom:28px;
 }
 
 .scroll{
@@ -290,7 +291,8 @@ margin:2px
 .cards{
 display:none;
 flex-direction:column;
-gap:12px
+gap:12px;
+margin-bottom:28px;
 }
 
 .card{
@@ -356,6 +358,10 @@ border-radius:8px;
 font-size:12px;
 font-weight:900
 }
+
+/* Supermercados alternativos */
+.store-table td{font-size:13px; color:var(--muted)}
+.store-table th{background:#f1f5f9}
 
 footer{
 background:var(--dark);
@@ -434,7 +440,7 @@ Analizamos el coste real por cada 100 ml en dentífricos de marcas como Signal, 
 </p>
 </section>
 
-<h2 class="section-title">🏆 Tabla Comparativa por 100 ml</h2>
+<h2 class="section-title">🏆 Tabla Comparativa Principal (Amazon)</h2>
 
 <div class="table-box">
 <div class="scroll">
@@ -582,6 +588,65 @@ Analizamos el coste real por cada 100 ml en dentífricos de marcas como Signal, 
 </div>
 </article>
 
+</div>
+
+<!-- SECCIÓN INFORMATIVA: PRECIOS EN OTROS SUPERMERCADOS (SIN ENLACES) -->
+<h2 class="section-title">🏬 Referencia de precios en otros Supermercados</h2>
+<p class="intro" style="font-size:14px; margin-bottom:15px;">
+Para que puedas comparar el mercado, aquí tienes una estimación de lo que cuestan estos u otros dentífricos equivalentes en tiendas físicas (sin enlaces externos):
+</p>
+
+<div class="table-box">
+<div class="scroll">
+<table class="store-table">
+<thead>
+<tr>
+<th>Supermercado</th>
+<th>Producto / Marca Blanca Habitual</th>
+<th>Formato</th>
+<th>Precio aprox.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Carrefour</strong></td>
+<td>Dentífrico frescor / Marca propia Carrefour</td>
+<td>75 ml</td>
+<td>0,89 € - 1,05 €</td>
+</tr>
+<tr>
+<td><strong>Mercadona</strong></td>
+<td>Dentífrico Total / Deliplus</td>
+<td>100 ml</td>
+<td>1,10 € - 1,25 €</td>
+</tr>
+<tr>
+<td><strong>Día</strong></td>
+<td>Pasta dental protección / Marca Día</td>
+<td>75 ml</td>
+<td>0,90 € - 1,00 €</td>
+</tr>
+<tr>
+<td><strong>Alcampo</strong></td>
+<td>Dentífrico anticaries / Marca Auchan</td>
+<td>75 ml / 100 ml</td>
+<td>0,85 € - 1,15 €</td>
+</tr>
+<tr>
+<td><strong>Eroski</strong></td>
+<td>Dentífrico sensible / Marca Eroski</td>
+<td>75 ml</td>
+<td>1,15 € - 1,30 €</td>
+</tr>
+<tr>
+<td><strong>El Corte Inglés</strong></td>
+<td>Dentífrico marcas líderes (Colgate / Signal)</td>
+<td>75 ml / 100 ml</td>
+<td>1,80 € - 2,50 €</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 <!-- CONTADOR DE VISITAS -->
