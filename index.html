@@ -68,7 +68,6 @@
 
 <main>
 
-  <!-- Categorías / Filtros Interactivos -->
   <div class="categories">
     <button class="cat-chip active" data-filter="all">🔥 Todos</button>
     <button class="cat-chip" data-filter="limpieza">🧼 Limpieza</button>
@@ -82,7 +81,6 @@
   <h2>📌 Guías y Comparativas Destacadas</h2>
   <div class="grid" id="product-grid">
 
-    <!-- ACEITE -->
     <article class="card" data-category="alimentacion despensa">
       <div class="card-img">
         <a href="aceite-oliva.html">🫒</a>
@@ -95,7 +93,18 @@
       </div>
     </article>
 
-    <!-- PASTA DE DIENTES -->
+    <article class="card" data-category="hogar limpieza">
+      <div class="card-img">
+        <a href="champu.html">🧴</a>
+      </div>
+      <div class="card-body">
+        <span class="badge">HOGAR · HIGIENE</span>
+        <h3>Champús</h3>
+        <p>Comparamos precios por cada 100 ml en champús de marcas líderes y formatos ahorro.</p>
+        <a href="champu.html" class="btn">Ver comparativa →</a>
+      </div>
+    </article>
+
     <article class="card" data-category="hogar">
       <div class="card-img">
         <a href="pasta-dientes.html">🦷</a>
@@ -108,7 +117,6 @@
       </div>
     </article>
 
-    <!-- LAVAVAJILLAS -->
     <article class="card" data-category="hogar limpieza">
       <div class="card-img">
         <a href="lavavajillas-1.html">🍽️</a>
@@ -121,7 +129,6 @@
       </div>
     </article>
 
-    <!-- DETERGENTE -->
     <article class="card" data-category="limpieza">
       <div class="card-img">
         <a href="detergente-1.html">👕</a>
@@ -134,7 +141,6 @@
       </div>
     </article>
 
-    <!-- CAFÉ -->
     <article class="card" data-category="alimentacion despensa">
       <div class="card-img">
         <a href="cafe-1.html">☕</a>
@@ -159,7 +165,6 @@
 
 </main>
 
-<!-- Script para Filtrar por Categoría -->
 <script>
   const buttons = document.querySelectorAll('.cat-chip');
   const cards = document.querySelectorAll('.card');
@@ -182,7 +187,6 @@
   });
 </script>
 
-<!-- Contador Global CholloCesta -->
 <div style="text-align: center; margin: 20px 0; font-family: sans-serif;">
   <p style="font-size: 14px; color: #666; margin-bottom: 5px;">🔥 Visitas totales en CholloCesta:</p>
   <span id="global-counter" style="font-size: 20px; font-weight: bold; color: #2563eb;">Cargando...</span>
