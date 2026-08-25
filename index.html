@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CholloCesta · Encuentra el chollo. Llena la cesta. Paga menos.</title>
-  <meta name="description" content="Guías de ahorro y comparativas de precios por unidad, dosis y kilo en productos de supermercado.">
+  <meta name="description" content="Guías de ahorro y comparativas de precios por unidad, dosis y kilo en productos de supermercado. Chollos y ofertas flash en Amazon.">
   <meta name="theme-color" content="#111827">
 
   <style>
@@ -20,18 +20,24 @@
     
     .hero{background:linear-gradient(145deg,#111827 0%,#1f2937 100%);color:#fff;padding:48px 16px;text-align:center}
     .eyebrow{display:inline-block;background:rgba(245,158,11,.15);color:#fbbf24;border:1px solid rgba(245,158,11,.3);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:12px}
-    h1{font-size:clamp(28px,6vw,46px);line-height:1.1;margin-bottom:12px}
+    .hero h1{font-size:clamp(28px,6vw,46px);line-height:1.1;margin-bottom:12px}
     .hero p{max-width:600px;margin:auto;color:#d1d5db;font-size:16px}
     
     main{max-width:1000px;margin:auto;padding:32px 16px 48px}
+
+    /* Estilos para el bloque SEO integrado */
+    .seo-intro{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:32px;color:#374151}
+    .seo-intro h1 {font-size:24px;margin-bottom:12px;color:var(--dark);font-weight:800}
+    .seo-intro p {font-size:15px;margin-bottom:16px;color:var(--muted)}
+    .seo-intro h2 {font-size:18px;margin-top:20px;margin-bottom:8px;color:var(--dark);font-weight:700}
     
     /* Categorías / Filtros */
     .categories{display:flex;gap:10px;overflow-x:auto;padding-bottom:12px;margin-bottom:28px;scrollbar-width:none}
     .categories::-webkit-scrollbar{display:none}
-    .cat-chip{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:700;font-size:13px;white-space:nowrap;transition:all .2s;border:none;cursor:pointer}
-    .cat-chip:hover,.cat-chip.active{background:var(--dark);color:#fff;}
+    .cat-chip{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:700;font-size:13px;white-space:nowrap;transition:all .2s;cursor:pointer}
+    .cat-chip:hover,.cat-chip.active{background:var(--dark);color:#fff;border-color:var(--dark)}
 
-    h2{font-size:22px;margin-bottom:16px;font-weight:800}
+    h2.section-title{font-size:22px;margin-bottom:16px;font-weight:800}
     .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:40px}
     .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
     .card:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.05)}
@@ -45,7 +51,7 @@
     .btn{display:block;text-align:center;background:var(--dark);color:#fff;font-weight:700;padding:10px;border-radius:8px;font-size:14px;transition:background .2s}
     .card:hover .btn{background:var(--accent);color:#111}
     
-    .telegram-banner{background:#e8f6fc;border:1px solid #bbe3f5;border-radius:14px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .telegram-banner{background:#e8f6fc;border:1px solid #bbe3f5;border-radius:14px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:32px}
     .telegram-btn{background:var(--blue);color:#fff;padding:12px 20px;border-radius:8px;font-weight:800;font-size:15px}
     
     footer{background:var(--dark);color:#9ca3af;padding:24px 16px;font-size:12px;text-align:center}
@@ -68,6 +74,15 @@
 
 <main>
 
+  <!-- BLOQUE SEO OPTIMIZADO PARA GOOGLE -->
+  <section class="seo-intro">
+    <h1>Chollos y Ofertas Flash en Amazon Hoy | CholloCesta</h1>
+    <p>Bienvenido a <strong>CholloCesta</strong>, tu sitio web de referencia para cazar los mejores chollos, ofertas flash y descuentos en Amazon. Actualizamos cada día una selección exclusiva con las rebajas más brutales en alimentación, supermercado, tecnología y productos para el día a día para que ahorres en cada compra sin esfuerzo.</p>
+    
+    <h2>Las mejores ofertas y chollos diarios en Amazon</h2>
+    <p>Encontrar productos rebajados al mejor precio ya no es cuestión de suerte. Nuestro equipo rastrea continuamente las principales categorías de Amazon para traerte bajadas de precio históricas, cupones exclusivos y chollos temporales que vuelan en pocas horas.</p>
+  </section>
+
   <div class="categories">
     <button class="cat-chip active" data-filter="all">🔥 Todos</button>
     <button class="cat-chip" data-filter="limpieza">🧼 Limpieza</button>
@@ -78,7 +93,7 @@
     <button class="cat-chip" data-filter="despensa">📦 Despensa</button>
   </div>
 
-  <h2>📌 Guías y Comparativas Destacadas</h2>
+  <h2 class="section-title">📌 Guías y Comparativas Destacadas</h2>
   <div class="grid" id="product-grid">
 
     <article class="card" data-category="alimentacion despensa">
