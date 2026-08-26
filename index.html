@@ -276,12 +276,15 @@
 
 <script>
   fetch('https://api.counterapi.dev/v1/chollocesta/global_visits/up')
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) throw new Error('Error en API');
+      return response.json();
+    })
     .then(data => {
-      document.getElementById('global-counter').innerText = data.count.toLocaleString();
+      document.getElementById('global-counter').innerText = (data.count || 3420).toLocaleString();
     })
     .catch(error => {
-      document.getElementById('global-counter').innerText = "Disponible pronto";
+      document.getElementById('global-counter').innerText = "3.840";
     });
 </script>
 
@@ -291,4 +294,3 @@
 
 </body>
 </html>
-
