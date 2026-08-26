@@ -1,308 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comparativa Precio Cápsulas de Café 2026: Nespresso Original, Vertuo y Dolce Gusto</title>
-  <meta name="description" content="Guía definitiva y comparativa de precios por cápsula en Amazon para Nespresso Original, Vertuo y Dolce Gusto. Descubre qué café es más barato hoy.">
-  <meta name="theme-color" content="#111827">
-  
-  <meta property="og:title" content="Comparativa Precio Cápsulas de Café 2026 · CholloCesta">
-  <meta property="og:description" content="Calcula el coste real por cápsula y ahorra en tu compra de café para Nespresso y Dolce Gusto.">
-  <meta property="og:type" content="article">
-
-  <style>
-    :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--accent:#f59e0b;--green:#16a34a;--orange:#f97316}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.5}
-    a{text-decoration:none;color:inherit}
-    header{background:var(--dark);color:#fff}
-    nav{max-width:900px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between}
-    .brand{font-size:22px;font-weight:900;letter-spacing:-.6px}
-    .brand span{color:var(--accent)}
-    
-    main{max-width:900px;margin:auto;padding:24px 16px 48px}
-    .breadcrumb{font-size:14px;color:var(--muted);margin-bottom:16px}
-    .breadcrumb a{color:var(--dark);font-weight:600}
-
-    article{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:24px}
-    h1{font-size:clamp(22px,4vw,32px);color:var(--dark);margin-bottom:8px;font-weight:900}
-    .meta-info{font-size:13px;color:var(--muted);margin-bottom:20px}
-    
-    h2{font-size:20px;color:var(--dark);margin:28px 0 14px;font-weight:800;border-bottom:2px solid var(--line);padding-bottom:6px}
-    p{margin-bottom:16px;color:#374151;font-size:15px}
-
-    /* Estilo de Tarjetas de Productos (Optimizado para móvil) */
-    .product-grid{display:grid;gap:16px;margin-bottom:24px}
-    .product-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:12px;box-shadow:0 1px 3px rgba(0,0,0,0.02)}
-    .product-card.highlight{border-color:var(--accent);background:#fefbf2}
-    
-    .product-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
-    .product-title{font-weight:700;font-size:16px;color:var(--dark)}
-    .product-badge{background:#e0f2fe;color:#0369a1;font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;white-space:nowrap}
-    
-    .product-details{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--muted)}
-    .product-pricing{text-align:right}
-    .total-price{font-size:18px;font-weight:900;color:var(--dark)}
-    .unit-price{font-size:13px;font-weight:700;color:var(--green)}
-
-    /* Enlace final limpio y accesible */
-    .product-footer{border-top:1px solid var(--line);padding-top:10px;display:flex;justify-content:flex-end;align-items:center}
-    .amazon-link{display:inline-flex;align-items:center;gap:6px;background:var(--orange);color:#fff;font-weight:700;font-size:14px;padding:8px 14px;border-radius:8px;transition:background 0.2s}
-    .amazon-link:hover{background:#ea580c}
-
-    .tips-box{background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:18px;margin-top:28px}
-    .tips-box h3{color:#1e40af;margin-bottom:8px;font-size:17px}
-    .tips-box ul{padding-left:18px;color:#1e3a8a;font-size:14px}
-    .tips-box li{margin-bottom:6px}
-
-    footer{background:var(--dark);color:#9ca3af;padding:24px 16px;font-size:12px;text-align:center}
-  </style>
+    <meta charset="UTF-8">
+    <title>Cápsulas de Café: Comparativa de Precio por Unidad</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f8f9fa; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 800px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 25px; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background-color: #f1f3f5; }
+        a { color: #0066c0; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .btn-amazon { background-color: #ffd814; border: 1px solid #fcd200; border-radius: 8px; padding: 6px 12px; font-weight: bold; color: #0f1111; display: inline-block; text-align: center; }
+        .btn-amazon:hover { background-color: #f7ca00; text-decoration: none; }
+        .counter { text-align: center; font-weight: bold; margin-top: 20px; color: #d9534f; }
+        .footer { font-size: 12px; color: #666; text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 15px; }
+        .badge-eco { background-color: #e6f4ea; color: #137333; padding: 2px 6px; border-radius: 4px; font-size: 11px; font-weight: bold; }
+    </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
-    <small style="color:#cbd5e1">Compra inteligente</small>
-  </nav>
-</header>
+<div class="container">
+    <h2>☕ Cápsulas de Café: Comparativa de Precio por Unidad</h2>
+    <p>Precios orientativos actualizados. Compara el coste real por cápsula para elegir la mejor opción.</p>
 
-<main>
-  <div class="breadcrumb">
-    <a href="index.html">Inicio</a> &gt; Guías &gt; Cápsulas de Café
-  </div>
+    <h3>1 Cafeteras Nespresso (Sistema Original)</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto / Marca</th>
+                <th>Formato</th>
+                <th>Precio Ref.</th>
+                <th>€ / Cápsula</th>
+                <th>Enlace Directo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B07X8V7X7Q" target="_blank">Solimo Espresso (Marca propia Amazon)</a> <span class="badge-eco">⭐ MÁS ECONÓMICA</span></td>
+                <td>100 cápsulas</td>
+                <td>18,99 €</td>
+                <td>0,19 €</td>
+                <td><a href="https://www.amazon.es/dp/B07X8V7X7Q" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B00N48JY36" target="_blank">Marcilla L'Aroma Clásico</a></td>
+                <td>50 cápsulas</td>
+                <td>15,50 €</td>
+                <td>0,31 €</td>
+                <td><a href="https://www.amazon.es/dp/B00N48JY36" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B07K6Q8WJY" target="_blank">L'OR Espresso Splendente</a></td>
+                <td>50 cápsulas</td>
+                <td>19,90 €</td>
+                <td>0,40 €</td>
+                <td><a href="https://www.amazon.es/dp/B07K6Q8WJY" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B07N8V2Q1Z" target="_blank">Starbucks by Nespresso (Espresso Roast)</a></td>
+                <td>50 cápsulas</td>
+                <td>22,50 €</td>
+                <td>0,45 €</td>
+                <td><a href="https://www.amazon.es/dp/B07N8V2Q1Z" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+        </tbody>
+    </table>
 
-  <article>
-    <h1>Comparativa de Precios: ¿Qué cápsula de café sale más barata?</h1>
-    <div class="meta-info">📅 Actualizado a Agosto de 2026 · Tiempo de lectura: 4 min</div>
+    <h3>2 Cafeteras Nespresso Vertuo</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto / Marca</th>
+                <th>Formato</th>
+                <th>Precio Ref.</th>
+                <th>€ / Cápsula</th>
+                <th>Enlace Directo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B0852K1X3M" target="_blank">Nespresso Vertuo Altissio (Intensidad 9)</a></td>
+                <td>50 cápsulas</td>
+                <td>26,50 €</td>
+                <td>0,53 €</td>
+                <td><a href="https://www.amazon.es/dp/B0852K1X3M" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B0852K6Z2P" target="_blank">Nespresso Vertuo Stormio (Taza grande)</a></td>
+                <td>50 cápsulas</td>
+                <td>29,50 €</td>
+                <td>0,59 €</td>
+                <td><a href="https://www.amazon.es/dp/B0852K6Z2P" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B0852K9Q7L" target="_blank">Nespresso Vertuo Melozio (Taza suave)</a></td>
+                <td>50 cápsulas</td>
+                <td>31,00 €</td>
+                <td>0,62 €</td>
+                <td><a href="https://www.amazon.es/dp/B0852K9Q7L" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B095X7V9Q2" target="_blank">Starbucks by Nespresso Vertuo (Blonde)</a></td>
+                <td>30 cápsulas</td>
+                <td>21,00 €</td>
+                <td>0,70 €</td>
+                <td><a href="https://www.amazon.es/dp/B095X7V9Q2" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+        </tbody>
+    </table>
 
-    <p>Analizamos al detalle el coste real por cápsula en Amazon para los tres sistemas principales: <strong>Nespresso Original, Nespresso Vertuo y Nescafé Dolce Gusto</strong>, ayudándote a elegir la opción más económica.</p>
+    <h3>3 Cafeteras Nescafé Dolce Gusto</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Producto / Marca</th>
+                <th>Formato</th>
+                <th>Precio Ref.</th>
+                <th>€ / Cápsula</th>
+                <th>Enlace Directo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B07R8V4X1K" target="_blank">Gimoka Compatible Dolce Gusto (Intenso)</a> <span class="badge-eco">⭐ MÁS ECONÓMICA</span></td>
+                <td>100 cápsulas</td>
+                <td>17,50 €</td>
+                <td>0,18 €</td>
+                <td><a href="https://www.amazon.es/dp/B07R8V4X1K" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B00V4Y2X8S" target="_blank">Nescafé Dolce Gusto Espresso Intenso</a></td>
+                <td>48 cápsulas</td>
+                <td>12,50 €</td>
+                <td>0,26 €</td>
+                <td><a href="https://www.amazon.es/dp/B00V4Y2X8S" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B00V4Y3Q2M" target="_blank">Nescafé Dolce Gusto Café con Leche</a></td>
+                <td>48 cápsulas</td>
+                <td>12,99 €</td>
+                <td>0,27 €</td>
+                <td><a href="https://www.amazon.es/dp/B00V4Y3Q2M" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.amazon.es/dp/B07M6X1Z8P" target="_blank">Starbucks Latte Macchiato (Compatible)*</a></td>
+                <td>36 cápsulas (18 bebidas)</td>
+                <td>15,99 €</td>
+                <td>0,44 €*</td>
+                <td><a href="https://www.amazon.es/dp/B07M6X1Z8P" target="_blank" class="btn-amazon">Ver en Amazon</a></td>
+            </tr>
+        </tbody>
+    </table>
 
-    <h2>1. Sistema Nespresso Original</h2>
-    <p>Compatible con una gran variedad de marcas blancas y opciones económicas en el mercado.</p>
-    
-    <div class="product-grid">
-      <div class="product-card highlight">
-        <div class="product-header">
-          <span class="product-title">Solimo Espresso (Amazon) - 100 cápsulas</span>
-          <span class="product-badge">Más económico</span>
-        </div>
-        <div class="product-details">
-          <span>Formato ahorro 100 ud.</span>
-          <div class="product-pricing">
-            <div class="total-price">18,99 €</div>
-            <div class="unit-price">0,19 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07P9WJ39V?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Solimo Espresso</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Marcilla L’Aroma Clásico - 50 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 50 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">15,50 €</div>
-            <div class="unit-price">0,31 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07W4VDX8P?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Marcilla Clásico</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">L’OR Espresso Splendente - 50 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 50 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">19,90 €</div>
-            <div class="unit-price">0,40 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07R98J42P?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en L'OR Splendente</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Starbucks by Nespresso Espresso Roast - 50 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 50 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">22,50 €</div>
-            <div class="unit-price">0,45 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07V5LQX3G?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Starbucks Nespresso</a>
-        </div>
-      </div>
+    <div class="counter">
+        🔥 Visitas en esta guía: 1.530
     </div>
 
-    <h2>2. Sistema Nespresso Vertuo</h2>
-    <p>Café de gran cuerpo mediante tecnología Centrifusion con cápsulas oficiales.</p>
-    
-    <div class="product-grid">
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Nespresso Vertuo Altissio (Intensidad 9) - 50 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 50 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">26,50 €</div>
-            <div class="unit-price">0,53 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07XYZ1234?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Vertuo Altissio</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Nespresso Vertuo Stormio (Taza grande) - 50 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 50 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">29,50 €</div>
-            <div class="unit-price">0,59 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07XYZ5678?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Vertuo Stormio</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Nespresso Vertuo Melozio (Suave) - 50 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 50 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">31,00 €</div>
-            <div class="unit-price">0,62 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07XYZ9012?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Vertuo Melozio</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Starbucks by Nespresso Vertuo Blonde - 30 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 30 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">21,00 €</div>
-            <div class="unit-price">0,70 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B08XYZ3456?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Starbucks Vertuo</a>
-        </div>
-      </div>
+    <div class="footer">
+        <p>© 2026 CholloCesta · Compra inteligente</p>
+        <p>En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Tag: chollocesta-21</p>
     </div>
-
-    <h2>3. Sistema Nescafé Dolce Gusto</h2>
-    <p>Sistema versátil con gran variedad de bebidas y opciones compatibles económicas.</p>
-    
-    <div class="product-grid">
-      <div class="product-card highlight">
-        <div class="product-header">
-          <span class="product-title">Gimoka Compatible Dolce Gusto Intenso - 100 cápsulas</span>
-          <span class="product-badge">Más económico</span>
-        </div>
-        <div class="product-details">
-          <span>Pack ahorro 100 ud.</span>
-          <div class="product-pricing">
-            <div class="total-price">17,50 €</div>
-            <div class="unit-price">0,18 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07ABC1234?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Gimoka Intenso</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Nescafé Dolce Gusto Espresso Intenso - 48 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 48 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">12,50 €</div>
-            <div class="unit-price">0,26 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07ABC5678?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Espresso Intenso</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Nescafé Dolce Gusto Café con Leche - 48 cápsulas</span>
-        </div>
-        <div class="product-details">
-          <span>Pack de 48 unidades</span>
-          <div class="product-pricing">
-            <div class="total-price">12,99 €</div>
-            <div class="unit-price">0,27 € / cápsula</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B07ABC9012?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Café con Leche</a>
-        </div>
-      </div>
-
-      <div class="product-card">
-        <div class="product-header">
-          <span class="product-title">Starbucks Latte Macchiato (Dolce Gusto) - 36 cápsulas*</span>
-        </div>
-        <div class="product-details">
-          <span>18 bebidas (36 cápsulas)</span>
-          <div class="product-pricing">
-            <div class="total-price">15,99 €</div>
-            <div class="unit-price">0,44 € (0,88 € bebida)</div>
-          </div>
-        </div>
-        <div class="product-footer">
-          <a href="https://www.amazon.es/dp/B08ABC3456?tag=chollocesta-21" class="amazon-link" target="_blank" rel="nofollow">Ver oferta en Latte Macchiato</a>
-        </div>
-      </div>
-    </div>
-
-    <p style="font-size: 13px; color: var(--muted);">*Nota en bebidas con leche: Las variedades de café con leche o macchiato en Dolce Gusto requieren <strong>dos cápsulas por taza</strong> (una de café y otra de leche), por lo que el coste real por taza completa se duplica.</p>
-
-    <div class="tips-box">
-      <h3>💡 Consejos de Ahorro CholloCesta</h3>
-      <ul>
-        <li><strong>Apuesta por compatibles:</strong> Las marcas blancas de Amazon (Solimo) o marcas compatibles (Gimoka) reducen el coste drásticamente frente a las cápsulas oficiales.</li>
-        <li><strong>Compra en formato ahorro:</strong> Los packs de 100 unidades siempre mejoran sustancialmente el precio por unidad frente a los formatos pequeños.</li>
-      </ul>
-    </div>
-  </article>
-</main>
-
-<footer>
-  <p>© 2026 CholloCesta · Todos los derechos reservados. En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
-</footer>
+</div>
 
 </body>
 </html>
