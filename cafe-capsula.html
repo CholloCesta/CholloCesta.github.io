@@ -13,6 +13,7 @@ body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #f5f6f8
 /* CABECERA */
 .header { background: linear-gradient(135deg, #111827, #374151); color: white; border-radius: 18px; padding: 30px 25px; margin-bottom: 25px; box-shadow: 0 8px 25px rgba(0,0,0,.12); }
 .logo { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+.logo a { color: inherit; text-decoration: none; }
 .logo span { color: #ffd814; }
 .header h1 { margin: 10px 0; font-size: 28px; }
 .header p { margin: 0; color: #d1d5db; line-height: 1.6; }
@@ -42,6 +43,10 @@ td { padding: 16px 14px; border-top: 1px solid var(--border); vertical-align: mi
 .best-deal { background: linear-gradient(135deg, #ecfdf5, #f0fdf4); border: 2px solid #86efac; border-radius: 15px; padding: 20px; margin-bottom: 25px; }
 .best-deal-title { color: #166534; font-size: 14px; font-weight: 800; text-transform: uppercase; margin-bottom: 8px; }
 .best-deal strong { font-size: 22px; }
+/* EXTRA / CAFÉ DE GRANO */
+.extra-link-box { text-align: center; background: white; border-radius: 12px; padding: 18px; margin: 25px 0; box-shadow: 0 3px 12px rgba(0,0,0,.05); font-size: 15px; }
+.extra-link-box a { color: #d97706; font-weight: bold; text-decoration: none; }
+.extra-link-box a:hover { text-decoration: underline; }
 /* CONTADOR */
 .counter { text-align: center; background: white; border-radius: 12px; padding: 18px; margin: 25px 0; font-weight: 700; box-shadow: 0 3px 12px rgba(0,0,0,.05); }
 .counter span { color: var(--red); }
@@ -68,7 +73,7 @@ td { padding: 16px 14px; border-top: 1px solid var(--border); vertical-align: mi
 <div class="container">
   <header class="header">
     <div class="logo">
-      ☕ Chollo<span>Cesta</span>
+      <a href="index.html">☕ Chollo<span>Cesta</span></a>
     </div>
     <h1>Las mejores cápsulas de café por precio</h1>
     <p>
@@ -321,6 +326,10 @@ td { padding: 16px 14px; border-top: 1px solid var(--border); vertical-align: mi
       * En este producto el cálculo puede variar porque el formato indicado contiene componentes para preparar bebidas completas.
     </div>
   </section>
+
+  <div class="extra-link-box">
+    ☕ ¿Prefieres el método tradicional? Echa un vistazo a nuestra guía de <a href="cafe-en-grano.html">café en grano al mejor precio</a>.
+  </div>
 
   <div class="counter">
     🔥 Esta guía ha sido consultada <span>1.530 veces</span>
