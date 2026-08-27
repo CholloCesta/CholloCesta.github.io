@@ -4,68 +4,143 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cremas Solares Corporales · CholloCesta</title>
-  <meta name="description" content="Comparativa de precios y ofertas en cremas solares corporales en Amazon.">
+  <meta name="description" content="Comparativa y precios por ml de protectores solares corporales y botes familiares en Amazon.">
+  <meta name="theme-color" content="#111827">
+
   <style>
-    :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--accent:#f59e0b;--green:#16a34a}
+    :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--accent:#f59e0b;--green:#16a34a;--blue:#229ed9}
     *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:#172033;line-height:1.5}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.5}
     a{text-decoration:none;color:inherit}
     header{background:var(--dark);color:#fff}
-    nav{max-width:1000px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between}
-    .brand{font-size:24px;font-weight:900}
+    nav{max-width:1000px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{font-size:24px;font-weight:900;letter-spacing:-.6px}
     .brand span{color:var(--accent)}
-    .inicio-btn{background:var(--accent);color:#111827;padding:6px 14px;border-radius:6px;font-weight:800;font-size:14px}
-    main{max-width:1000px;margin:auto;padding:32px 16px}
-    h1{font-size:24px;margin-bottom:20px;color:var(--dark);font-weight:800}
-    .product-list{display:flex;flex-direction:column;gap:16px}
-    .product-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
-    .product-info h3{font-size:18px;margin-bottom:6px;color:var(--dark)}
-    .product-info h3 a:hover{color:var(--accent);text-decoration:underline}
-    .product-info p{font-size:14px;color:var(--muted)}
-    .buy-btn{background:#d97706;color:#fff;padding:10px 16px;border-radius:8px;font-weight:800;font-size:14px;white-space:nowrap}
-    .buy-btn:hover{filter:brightness(0.95)}
-    footer{background:var(--dark);color:#9ca3af;padding:24px;text-align:center;font-size:12px;margin-top:40px}
+    .inicio-btn{background:var(--accent);color:#111827;padding:6px 14px;border-radius:6px;font-weight:800;font-size:14px;transition:filter .2s}
+    .inicio-btn:hover{filter:brightness(0.9)}
+    
+    .hero{background:linear-gradient(145deg,#111827 0%,#1f2937 100%);color:#fff;padding:36px 16px;text-align:center}
+    .eyebrow{display:inline-block;background:rgba(245,158,11,.15);color:#fbbf24;border:1px solid rgba(245,158,11,.3);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:12px}
+    .hero h1{font-size:clamp(24px,5vw,38px);line-height:1.1;margin-bottom:8px}
+    .hero p{max-width:600px;margin:auto;color:#d1d5db;font-size:15px}
+    
+    main{max-width:1000px;margin:auto;padding:32px 16px 48px}
+    .back-link{display:inline-block;margin-bottom:20px;font-weight:700;color:var(--blue);font-size:14px}
+    
+    .content-box{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:24px;color:#374151}
+    .content-box h2{font-size:20px;color:var(--dark);margin-bottom:12px;font-weight:800}
+    .content-box p{margin-bottom:12px;font-size:15px;color:var(--muted)}
+
+    .table-container{overflow-x:auto;margin-bottom:24px}
+    table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--line)}
+    th,td{padding:12px 16px;text-align:left;font-size:14px;border-bottom:1px solid var(--line)}
+    th{background:var(--dark);color:#fff;font-weight:700}
+    tr:last-child td{border-bottom:none}
+    .price{font-weight:800;color:var(--green)}
+    
+    .product-link {font-weight:800;color:var(--dark);transition:color .2s;}
+    .product-link:hover {color:var(--accent);text-decoration:underline;}
+
+    .table-btn{display:inline-block;background:#d97706;color:#fff;font-weight:800;font-size:12px;padding:6px 10px;border-radius:6px;text-align:center;transition:filter .2s}
+    .table-btn:hover{filter:brightness(0.95)}
+    
+    footer{background:var(--dark);color:#9ca3af;padding:24px 16px;font-size:12px;text-align:center}
   </style>
 </head>
 <body>
+
 <header>
   <nav>
     <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
     <a href="index.html" class="inicio-btn">🏠 Inicio</a>
   </nav>
 </header>
+
+<section class="hero">
+  <span class="eyebrow">☀️ PROTECCIÓN CORPORAL</span>
+  <h1>Cremas Solares Corporales</h1>
+  <p>Análisis de formatos familiares y lociones corporales para asegurar el mejor precio por ml.</p>
+</section>
+
 <main>
-  <h1>☀️ Cremas Solares Corporales: Comparativa y Precios</h1>
-  <div class="product-list">
+  <a href="index.html" class="back-link">← Volver al inicio</a>
 
-    <div class="product-card">
-      <div class="product-info">
-        <h3><a href="https://amzn.to/4hYa7UO" target="_blank" rel="noopener">PIZ BUIN Allergy Protector Solar Corporal SPF 50+ (200 ml, Pack de 2)</a></h3>
-        <p>Loción especializada para pieles sensibles. Protección alta UVA/UVB.</p>
-      </div>
-      <a href="https://amzn.to/4hYa7UO" target="_blank" rel="noopener" class="buy-btn">Ver en Amazon →</a>
-    </div>
+  <section class="content-box">
+    <h2>Ahorra en grandes formatos para toda la familia</h2>
+    <p>Los botes de mayor capacidad y los formatos familiares ofrecen un menor coste por mililitro frente a los envases pequeños. Comparamos las mejores opciones corporales en Amazon.</p>
+  </section>
 
-    <div class="product-card">
-      <div class="product-info">
-        <h3><a href="https://amzn.to/4irvM7W" target="_blank" rel="noopener">NIVEA SUN Protects and Cools Spray Solar SPF 50 (200 ml)</a></h3>
-        <p>Protector solar refrescante en spray, fórmula transparente de absorción inmediata.</p>
-      </div>
-      <a href="https://amzn.to/4irvM7W" target="_blank" rel="noopener" class="buy-btn">Ver en Amazon →</a>
-    </div>
-
-    <div class="product-card">
-      <div class="product-info">
-        <h3><a href="https://amzn.to/4wWHjQ5" target="_blank" rel="noopener">Hawaiian Tropic Glowing Protection Ultra Radiance SPF 50 (170 ml, Pack de 2)</a></h3>
-        <p>Loción solar protectora con fragancia tropical y sutil brillo.</p>
-      </div>
-      <a href="https://amzn.to/4wWHjQ5" target="_blank" rel="noopener" class="buy-btn">Ver en Amazon →</a>
-    </div>
-
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Producto / Formato</th>
+          <th>Protección</th>
+          <th>Cantidad</th>
+          <th>Precio Aprox.</th>
+          <th>Precio / 100ml</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a href="https://amzn.to/3UDzame" class="product-link" target="_blank" rel="noopener">Delial Garnier Protector Leche</a>
+          </td>
+          <td>SPF 50+</td>
+          <td>300 ml</td>
+          <td class="price">12,95 €</td>
+          <td>4,32 € / 100ml</td>
+          <td><a href="https://amzn.to/3UDzame" class="table-btn" target="_blank" rel="noopener">Ver Chollo</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://amzn.to/3UDzame" class="product-link" target="_blank" rel="noopener">Nivea Sun Protect & Bronze</a>
+          </td>
+          <td>SPF 30</td>
+          <td>270 ml</td>
+          <td class="price">10,99 €</td>
+          <td>4,07 € / 100ml</td>
+          <td><a href="https://amzn.to/3UDzame" class="table-btn" target="_blank" rel="noopener">Ver Chollo</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://amzn.to/4hYa7UO" class="product-link" target="_blank" rel="noopener">PIZ BUIN Allergy Protector Solar Corporal (Pack de 2)</a>
+          </td>
+          <td>SPF 50+</td>
+          <td>200 ml x2</td>
+          <td class="price">Consultar</td>
+          <td>-</td>
+          <td><a href="https://amzn.to/4hYa7UO" class="table-btn" target="_blank" rel="noopener">Ver Chollo</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://amzn.to/4irvM7W" class="product-link" target="_blank" rel="noopener">NIVEA SUN Protects and Cools Spray Solar</a>
+          </td>
+          <td>SPF 50</td>
+          <td>200 ml</td>
+          <td class="price">14,48 €</td>
+          <td>7,24 € / 100ml</td>
+          <td><a href="https://amzn.to/4irvM7W" class="table-btn" target="_blank" rel="noopener">Ver Chollo</a></td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://amzn.to/4wWHjQ5" class="product-link" target="_blank" rel="noopener">Hawaiian Tropic Glowing Protection Ultra Radiance (Pack de 2)</a>
+          </td>
+          <td>SPF 50</td>
+          <td>170 ml x2</td>
+          <td class="price">25,65 €</td>
+          <td>7,54 € / 100ml</td>
+          <td><a href="https://amzn.to/4wWHjQ5" class="table-btn" target="_blank" rel="noopener">Ver Chollo</a></td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </main>
+
 <footer>
   <p>© 2026 CholloCesta · Todos los derechos reservados.</p>
 </footer>
+
 </body>
 </html>
