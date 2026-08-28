@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El secreto de hidratación de 72 horas que arrasa en Amazon - CholloCesta</title>
+    <style>
+        :root {
+            --primary: #ff6600;
+            --primary-dark: #e55c00;
+            --primary-light: #fff3e0;
+            --text: #1a1a1a;
+            --text-secondary: #555;
+            --border: #eaeaea;
+            --bg: #f7f7f7;
+            --white: #ffffff;
+            --success: #0a7c42;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 14px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-link {
+            text-decoration: none;
+            color: var(--primary);
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-link:hover {
+            color: var(--primary-dark);
+        }
+
+        .header-tag {
+            font-size: 13px;
+            color: var(--text-secondary);
+            background: #f0f0f0;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        /* Main content */
+        main {
+            max-width: 760px;
+            margin: 32px auto 60px;
+            padding: 0 16px;
+        }
+
+        article {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        .article-body {
+            padding: 36px 40px 40px;
+        }
+
+        @media (max-width: 600px) {
+            .article-body {
+                padding: 28px 20px 32px;
+            }
+        }
+
+        /* Meta */
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 18px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            background: var(--primary);
+            color: white;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 3px 9px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            line-height: 1.25;
+            color: var(--text);
+            margin-bottom: 20px;
+            letter-spacing: -0.4px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 23px;
+            }
+        }
+
+        /* Paragraphs & lists */
+        p {
+            margin-bottom: 16px;
+            color: var(--text);
+            font-size: 16.5px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            margin: 32px 0 14px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        h2::before {
+            content: "";
+            width: 4px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 2px;
+        }
+
+        ul {
+            margin: 0 0 20px 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 14px;
+            font-size: 16px;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        /* Price box */
+        .price-box {
+            background: linear-gradient(135deg, #fff8f0 0%, #fff3e0 100%);
+            border: 1px solid #ffe0b2;
+            border-radius: 10px;
+            padding: 22px 24px;
+            margin: 28px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .price-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .price-old {
+            font-size: 15px;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .price-current {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .price-note {
+            font-size: 13px;
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .discount-badge {
+            background: var(--primary);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 8px 14px;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+
+        /* Alert / blockquote */
+        .alert {
+            background: #fff8f0;
+            border-left: 5px solid var(--primary);
+            padding: 16px 18px;
+            margin: 24px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 15px;
+            color: #8a3b00;
+        }
+
+        .alert strong {
+            display: block;
+            margin-bottom: 4px;
+            color: #b24700;
+        }
+
+        /* CTA */
+        .cta-container {
+            text-align: center;
+            margin: 36px 0 12px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 700;
+            padding: 16px 28px;
+            border-radius: 8px;
+            box-shadow: 0 4px 14px rgba(255, 102, 0, 0.35);
+            transition: all 0.2s ease;
+            max-width: 100%;
+        }
+
+        .cta-button:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 18px rgba(255, 102, 0, 0.4);
+        }
+
+        .cta-sub {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        /* Footer note */
+        .footer-note {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 32px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Site footer */
+        .site-footer {
+            text-align: center;
+            padding: 24px 20px 40px;
+            font-size: 13px;
+            color: #999;
+        }
+
+        .site-footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="logo-link">CholloCesta</a>
+            <span class="header-tag">Ofertas verificadas</span>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <div class="article-body">
+                <div class="meta">
+                    <span class="badge">Oferta Flash</span>
+                    <span>Belleza · Hidratación facial</span>
+                    <span>· Actualizado hoy</span>
+                </div>
+
+                <h1>El secreto de hidratación de 72 horas que arrasa en Amazon cae a su precio mínimo histórico: ¡por menos de 9 €</h1>
+
+                <p>Encontrar una crema hidratante facial que cumpla con todo lo que le pedimos parece una misión imposible: que hidrate de verdad, que no engrase, que se absorba al instante y que, por supuesto, no nos cueste un ojo de la cara.</p>
+
+                <p>Sin embargo, hay un producto que lleva años coronándose como el rey indiscutible de las rutinas de belleza, y hoy vuelve a ser noticia en <strong>CholloCesta</strong> por protagonizar una de las bajadas de precio más brutales del mes. Hablamos del famosísimo <strong>Neutrogena Hydro Boost Gel de Agua</strong>, un auténtico superventas que acumula más de 5.000 compras solo en el último mes.</p>
+
+                <h2>¿Por qué es el favorito de miles de usuarios?</h2>
+                <p>Su éxito rotundo no es casualidad. Frente a las cremas pesadas y densas que saturan el rostro, este gel destaca por una fórmula avanzada pensada para ofrecer resultados desde la primera aplicación:</p>
+
+                <ul>
+                    <li><strong>Hidratación extrema de 72 horas:</strong> Gracias a su potente combinación de Ácido Hialurónico, aminoácidos y electrolitos, actúa como un depósito de agua continuo para la piel, manteniendo la elasticidad y la jugosidad durante todo el día.</li>
+                    <li><strong>Textura "Gel de Agua" ultraligera y fresca:</strong> Su tacto acuoso se funde de inmediato con la piel al aplicarlo. Se absorbe en cuestión de segundos sin dejar ningún residuo pegajoso, lo que lo convierte en la base ideal para aplicar el maquillaje justo después sin esperas.</li>
+                    <li><strong>Fórmula Oil-Free y No Comedogénica:</strong> Está testado dermatológicamente para pieles normales, mixtas e incluso sensibles o con tendencia al acné. Hidrata a fondo sin obstruir los poros ni aportar brillos indeseados.</li>
+                </ul>
+
+                <h2>¡Oportunidad Flash en CholloCesta!</h2>
+                <p>Mientras que en farmacias y grandes superficies su precio habitual suele rondar los 15-20 €, Amazon ha desplomado su precio temporalmente en su sección de Oferta Flash.</p>
+
+                <div class="price-box">
+                    <div class="price-info">
+                        <span class="price-old">Precio habitual \~9,98 €</span>
+                        <span class="price-current">8,71 €</span>
+                        <span class="price-note">✓ Envío gratis con Prime</span>
+                    </div>
+                    <div class="discount-badge">Precio mínimo histórico</div>
+                </div>
+
+                <div class="alert">
+                    <strong>¡Aviso CholloCesta!</strong>
+                    Al tratarse de una oferta flash con un volumen de ventas tan alto (miles de unidades vendidas cada semana), es muy probable que el stock vuele o el precio suba en las próximas horas.
+                </div>
+
+                <p>Si tu piel pide a gritos un extra de frescor e hidratación sin renunciar a la ligereza, esta es la oportunidad perfecta para hacerte con él al precio más bajo.</p>
+
+                <div class="cta-container">
+                    <a href="https://amzn.to/4xsEZld" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        Ver oferta en Amazon →
+                    </a>
+                    <p class="cta-sub">Se abre en una pestaña nueva · Oferta verificada por CholloCesta</p>
+                </div>
+
+                <p class="footer-note">¡No digas que no te avisamos! Sigue atento a CholloCesta para no perderte ni un solo chollazo.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 CholloCesta · Tu portal de confianza para los mejores chollos<br>
+        <a href="index.html">Inicio</a> · Los enlaces pueden ser de afiliados</p>
+    </footer>
+
+</body>
+</html>
