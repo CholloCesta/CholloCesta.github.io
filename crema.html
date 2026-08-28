@@ -27,7 +27,8 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             background-color: var(--bg);
             color: var(--text);
-            line-height: 1.65;
+            line-height: 1.7;
+            font-size: 17px;
             -webkit-font-smoothing: antialiased;
         }
 
@@ -102,14 +103,14 @@
             gap: 12px;
             align-items: center;
             margin-bottom: 18px;
-            font-size: 13px;
+            font-size: 14px;
             color: var(--text-secondary);
         }
 
         .badge {
             background: var(--primary);
             color: white;
-            font-size: 11px;
+            font-size: 12px;
             font-weight: 700;
             padding: 3px 9px;
             border-radius: 4px;
@@ -119,9 +120,9 @@
 
         /* Title */
         h1 {
-            font-size: 28px;
+            font-size: 29px;
             font-weight: 800;
-            line-height: 1.25;
+            line-height: 1.28;
             color: var(--text);
             margin-bottom: 20px;
             letter-spacing: -0.4px;
@@ -129,22 +130,22 @@
 
         @media (max-width: 600px) {
             h1 {
-                font-size: 23px;
+                font-size: 24px;
             }
         }
 
         /* Paragraphs & lists */
         p {
-            margin-bottom: 16px;
+            margin-bottom: 17px;
             color: var(--text);
-            font-size: 16.5px;
+            font-size: 17.5px;
         }
 
         h2 {
-            font-size: 20px;
+            font-size: 21px;
             font-weight: 700;
             color: var(--text);
-            margin: 32px 0 14px;
+            margin: 34px 0 15px;
             display: flex;
             align-items: center;
             gap: 8px;
@@ -153,13 +154,13 @@
         h2::before {
             content: "";
             width: 4px;
-            height: 20px;
+            height: 21px;
             background: var(--primary);
             border-radius: 2px;
         }
 
         ul {
-            margin: 0 0 20px 0;
+            margin: 0 0 22px 0;
             padding-left: 0;
             list-style: none;
         }
@@ -167,8 +168,8 @@
         li {
             position: relative;
             padding-left: 28px;
-            margin-bottom: 14px;
-            font-size: 16px;
+            margin-bottom: 15px;
+            font-size: 17px;
         }
 
         li::before {
@@ -212,14 +213,14 @@
         }
 
         .price-current {
-            font-size: 28px;
+            font-size: 29px;
             font-weight: 800;
             color: var(--primary);
             letter-spacing: -0.5px;
         }
 
         .price-note {
-            font-size: 13px;
+            font-size: 14px;
             color: var(--success);
             font-weight: 600;
         }
@@ -234,14 +235,14 @@
             white-space: nowrap;
         }
 
-        /* Alert / blockquote */
+        /* Alert */
         .alert {
             background: #fff8f0;
             border-left: 5px solid var(--primary);
             padding: 16px 18px;
             margin: 24px 0;
             border-radius: 0 8px 8px 0;
-            font-size: 15px;
+            font-size: 16px;
             color: #8a3b00;
         }
 
@@ -265,7 +266,7 @@
             background: var(--primary);
             color: white;
             text-decoration: none;
-            font-size: 17px;
+            font-size: 17.5px;
             font-weight: 700;
             padding: 16px 28px;
             border-radius: 8px;
@@ -282,7 +283,7 @@
 
         .cta-sub {
             text-align: center;
-            font-size: 13px;
+            font-size: 13.5px;
             color: #777;
             margin-top: 10px;
         }
@@ -290,18 +291,37 @@
         /* Footer note */
         .footer-note {
             text-align: center;
-            font-size: 14px;
+            font-size: 14.5px;
             color: #777;
             margin-top: 32px;
             padding-top: 20px;
             border-top: 1px solid var(--border);
         }
 
+        /* Contador de visitas (abajo del todo) */
+        .visits {
+            text-align: center;
+            font-size: 14px;
+            color: #888;
+            margin-top: 24px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .visits span {
+            font-weight: 600;
+            color: var(--primary);
+        }
+
         /* Site footer */
         .site-footer {
             text-align: center;
             padding: 24px 20px 40px;
-            font-size: 13px;
+            font-size: 13.5px;
             color: #999;
         }
 
@@ -371,6 +391,11 @@
                 </div>
 
                 <p class="footer-note">¡No digas que no te avisamos! Sigue atento a CholloCesta para no perderte ni un solo chollazo.</p>
+
+                <!-- Contador de visitas real (abajo del todo) -->
+                <div class="visits">
+                    👁 <span id="visit-count">—</span> personas han visto esta oferta
+                </div>
             </div>
         </article>
     </main>
@@ -379,6 +404,18 @@
         <p>© 2026 CholloCesta · Tu portal de confianza para los mejores chollos<br>
         <a href="index.html">Inicio</a> · Los enlaces pueden ser de afiliados</p>
     </footer>
+
+    <!-- Script del contador real -->
+    <script>
+        fetch('https://api.countapi.xyz/hit/chollocesta/neutrogena-hydro-boost')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('visit-count').textContent = data.value.toLocaleString('es-ES');
+            })
+            .catch(() => {
+                document.getElementById('visit-count').textContent = '—';
+            });
+    </script>
 
 </body>
 </html>
