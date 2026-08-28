@@ -38,7 +38,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://amzn.to/4xsEZld",
+        "url": "https://amzn.to/4gAAoGp",
         "priceCurrency": "EUR",
         "price": "8.71",
         "availability": "https://schema.org/InStock",
@@ -53,6 +53,64 @@
         "ratingValue": "4.6",
         "reviewCount": "5000"
       }
+    }
+    </script>
+
+    <!-- Schema FAQPage (mejora SEO y posibilidad de rich results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué es el Neutrogena Hydro Boost Gel de Agua?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es un gel hidratante facial de Neutrogena con ácido hialurónico, aminoácidos y electrolitos. Ofrece hidratación de 72 horas con una textura ultraligera tipo 'gel de agua' que se absorbe en segundos, sin dejar residuo graso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto dura la hidratación del Hydro Boost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Proporciona hidratación continua durante 72 horas gracias a su combinación de ácido hialurónico, aminoácidos y electrolitos, que actúan como un depósito de agua en la piel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Es adecuado para pieles mixtas, grasas o con tendencia al acné?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Su fórmula es Oil-Free (sin aceites) y No Comedogénica, por lo que no obstruye los poros ni aporta brillos. Está testado dermatológicamente y es apto para pieles normales, mixtas, sensibles y con tendencia al acné."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuál es el precio actual del Neutrogena Hydro Boost en Amazon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Actualmente está a 8,71€ en Oferta Flash de Amazon, su precio mínimo histórico. El precio habitual suele rondar los 9,98€-15€. Incluye envío gratis con Amazon Prime."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Se puede usar como base de maquillaje?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí. Su textura gel de agua se absorbe en segundos sin dejar residuo pegajoso, por lo que es una base ideal para aplicar maquillaje inmediatamente después sin esperas."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Por qué es una Oferta Flash y hay que actuar rápido?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Es una Oferta Flash temporal de Amazon con un volumen de ventas muy alto (miles de unidades a la semana). El stock puede agotarse o el precio subir en las próximas horas, por lo que conviene aprovecharla cuanto antes."
+          }
+        }
+      ]
     }
     </script>
 
@@ -266,6 +324,14 @@
             padding: 8px 14px;
             border-radius: 6px;
             white-space: nowrap;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.2s ease, transform 0.2s ease;
+        }
+
+        .discount-badge:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
         }
 
         .alert {
@@ -357,6 +423,65 @@
             color: var(--primary);
             text-decoration: none;
         }
+
+        /* FAQ Section */
+        .faq-section {
+            margin: 40px 0 20px;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            background: #fafafa;
+        }
+
+        .faq-item details {
+            padding: 0;
+        }
+
+        .faq-item summary {
+            padding: 16px 18px;
+            font-weight: 700;
+            font-size: 16.5px;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            color: var(--text);
+            transition: background 0.15s ease;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: "+";
+            font-size: 20px;
+            font-weight: 400;
+            color: var(--primary);
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .faq-item details[open] summary::after {
+            content: "−";
+        }
+
+        .faq-item summary:hover {
+            background: #f0f0f0;
+        }
+
+        .faq-answer {
+            padding: 0 18px 16px;
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.65;
+        }
     </style>
 </head>
 <body>
@@ -401,7 +526,9 @@
                         <span class="price-current">8,71 €</span>
                         <span class="price-note">✓ Envío gratis con Prime</span>
                     </div>
-                    <div class="discount-badge">Precio mínimo histórico</div>
+                    <a href="https://amzn.to/4gAAoGp" target="_blank" rel="noopener noreferrer" class="discount-badge">
+                        Precio mínimo histórico
+                    </a>
                 </div>
 
                 <div class="alert">
@@ -411,8 +538,61 @@
 
                 <p>Si tu piel pide a gritos un extra de frescor e hidratación sin renunciar a la ligereza, esta es la oportunidad perfecta para hacerte con él al precio más bajo.</p>
 
+                <!-- FAQ visible (coincide con Schema FAQPage) -->
+                <section class="faq-section" aria-labelledby="faq-heading">
+                    <h2 id="faq-heading">Preguntas frecuentes</h2>
+
+                    <div class="faq-item">
+                        **Summary:**
+¿Qué es el Neutrogena Hydro Boost Gel de Agua?
+                            <div class="faq-answer">
+                                Es un gel hidratante facial de Neutrogena con ácido hialurónico, aminoácidos y electrolitos. Ofrece hidratación de 72 horas con una textura ultraligera tipo “gel de agua” que se absorbe en segundos, sin dejar residuo graso.
+                            </div>
+                    </div>
+
+                    <div class="faq-item">
+                        **Summary:**
+¿Cuánto dura la hidratación del Hydro Boost?
+                            <div class="faq-answer">
+                                Proporciona hidratación continua durante 72 horas gracias a su combinación de ácido hialurónico, aminoácidos y electrolitos, que actúan como un depósito de agua en la piel.
+                            </div>
+                    </div>
+
+                    <div class="faq-item">
+                        **Summary:**
+¿Es adecuado para pieles mixtas, grasas o con tendencia al acné?
+                            <div class="faq-answer">
+                                Sí. Su fórmula es Oil-Free (sin aceites) y No Comedogénica, por lo que no obstruye los poros ni aporta brillos. Está testado dermatológicamente y es apto para pieles normales, mixtas, sensibles y con tendencia al acné.
+                            </div>
+                    </div>
+
+                    <div class="faq-item">
+                        **Summary:**
+¿Cuál es el precio actual del Neutrogena Hydro Boost en Amazon?
+                            <div class="faq-answer">
+                                Actualmente está a 8,71€ en Oferta Flash de Amazon, su precio mínimo histórico. El precio habitual suele rondar los 9,98€-15€. Incluye envío gratis con Amazon Prime.
+                            </div>
+                    </div>
+
+                    <div class="faq-item">
+                        **Summary:**
+¿Se puede usar como base de maquillaje?
+                            <div class="faq-answer">
+                                Sí. Su textura gel de agua se absorbe en segundos sin dejar residuo pegajoso, por lo que es una base ideal para aplicar maquillaje inmediatamente después sin esperas.
+                            </div>
+                    </div>
+
+                    <div class="faq-item">
+                        **Summary:**
+¿Por qué es una Oferta Flash y hay que actuar rápido?
+                            <div class="faq-answer">
+                                Es una Oferta Flash temporal de Amazon con un volumen de ventas muy alto (miles de unidades a la semana). El stock puede agotarse o el precio subir en las próximas horas, por lo que conviene aprovecharla cuanto antes.
+                            </div>
+                    </div>
+                </section>
+
                 <div class="cta-container">
-                    <a href="https://amzn.to/4xsEZld" target="_blank" rel="noopener noreferrer" class="cta-button">
+                    <a href="https://amzn.to/4gAAoGp" target="_blank" rel="noopener noreferrer" class="cta-button">
                         Ver oferta en Amazon →
                     </a>
                     <p class="cta-sub">Se abre en una pestaña nueva · Oferta verificada por CholloCesta</p>
