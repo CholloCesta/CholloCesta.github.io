@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mejores Chollos en Cuidado Facial, Cremas y Cosmética | CholloCesta</title>
+    <meta name="description" content="Encuentra los mejores chollos, ofertas y descuentos en cuidado facial, sérums, cremas hidratantes y limpiadores en CholloCesta. ¡Ahorra en tus marcas favoritas!">
+    <meta name="keywords" content="chollos cosmética, ofertas cuidado facial, ceraue, la roche posay, cetaphil, eucerin, medicube, chollocesta">
+    <meta name="robots" content="index, follow">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #ff9900;
+            --bg-color: #f9f9f9;
+            --card-bg: #ffffff;
+            --text-color: #333333;
+            --danger-color: #d9534f;
+            --success-color: #5cb85c;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-color);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--card-bg);
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+        .logo a {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .nav-buttons a {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.2s;
+        }
+        .nav-buttons a:hover {
+            background-color: #34495e;
+        }
+        .stats-bar {
+            display: flex;
+            justify-content: space-around;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+        h1 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+        }
+        .table-container {
+            overflow-x: auto;
+            background-color: var(--card-bg);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 700px;
+        }
+        th, td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #555;
+        }
+        tr:last-child td {
+            border-bottom: none;
+        }
+        .product-col {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .product-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 4px;
+            border: 1px solid #eee;
+        }
+        .product-name a {
+            font-weight: 600;
+            color: #0066c0;
+            text-decoration: none;
+        }
+        .product-name a:hover {
+            text-decoration: underline;
+        }
+        .product-size {
+            font-size: 0.85em;
+            color: #777;
+        }
+        .price-col {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: var(--danger-color);
+        }
+        .price-discount {
+             font-size: 0.85em;
+             color: var(--success-color);
+             display: block;
+        }
+        .link-col a {
+            background-color: #ffd814;
+            color: #111;
+            border: 1px solid #fcd200;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.9em;
+            font-weight: 500;
+            display: inline-block;
+            transition: background-color 0.2s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .link-col a:hover {
+            background-color: #f7ca00;
+        }
+        .disclaimer {
+            font-size: 0.8em;
+            color: #888;
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        <div class="logo">
+            <a href="index.html">CholloCesta 🛒</a>
+        </div>
+        <div class="nav-buttons">
+            <a href="index.html">🏠 Inicio</a>
+        </div>
+    </header>
+
+    <!-- Barra de contadores -->
+    <div class="stats-bar">
+        <div>👀 Visitas a esta página: <span id="visit-counter">1</span></div>
+        <div>🔥 Chollos activos: <span>5</span></div>
+        <div>👆 Clics totales en ofertas: <span id="click-counter">0</span></div>
+    </div>
+
+    <h1>Chollos en Cuidado Facial y Cosmética</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Descripción Destacada</th>
+                    <th>Precio Actual</th>
+                    <th>Enlace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Fila 1: Medicube -->
+                <tr>
+                    <td class="product-col">
+                        <img src="image_0.png" alt="Medicube Deep Vita C Ampoule" class="product-img">
+                        <div>
+                            <div class="product-name"><a href="https://amzn.to/4qMHxIi" target="_blank" rel="nofollow noopener" onclick="trackClick()">Medicube Deep Vita C Ampoule</a></div>
+                            <div class="product-size">Sérum Vitamina C (30ml)</div>
+                        </div>
+                    </td>
+                    <td>Efecto Pink Glow, ADN de Salmón, Hidratación y Firmeza. Resultados probados en 2 semanas.</td>
+                    <td class="price-col">Consultar enlace</td>
+                    <td class="link-col"><a href="https://amzn.to/4qMHxIi" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
+                </tr>
+                <!-- Fila 2: CeraVe -->
+                <tr>
+                    <td class="product-col">
+                        <img src="image_3.png" alt="CeraVe Loción Hidratante Rostro" class="product-img">
+                        <div>
+                            <div class="product-name"><a href="https://amzn.to/4y5joyX" target="_blank" rel="nofollow noopener" onclick="trackClick()">CeraVe Loción Hidratante Rostro</a></div>
+                            <div class="product-size">Crema Hidratante Noche (52 ml)</div>
+                        </div>
+                    </td>
+                    <td>Hidrata y ayuda a restaurar la barrera protectora del rostro. Textura ultra-ligera.</td>
+                    <td class="price-col">12,23€</td>
+                    <td class="link-col"><a href="https://amzn.to/4y5joyX" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
+                </tr>
+                <!-- Fila 3: La Roche-Posay -->
+                <tr>
+                    <td class="product-col">
+                        <img src="image_5.png" alt="La Roche-Posay Gel Effaclar" class="product-img">
+                        <div>
+                            <div class="product-name"><a href="https://amzn.to/3SD1cO4" target="_blank" rel="nofollow noopener" onclick="trackClick()">La Roche-Posay Gel Effaclar +M</a></div>
+                            <div class="product-size">Gel Limpiador Purificante (400 ml)</div>
+                        </div>
+                    </td>
+                    <td>Específico para pieles grasas con tendencia acneica. Purifica, anti-impurezas, limpia suavemente.</td>
+                    <td class="price-col">19,78€</td>
+                    <td class="link-col"><a href="https://amzn.to/3SD1cO4" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
+                </tr>
+                 <!-- Fila 4: Cetaphil -->
+                <tr>
+                    <td class="product-col">
+                        <img src="image_7.png" alt="Cetaphil Set Rutina" class="product-img">
+                        <div>
+                            <div class="product-name"><a href="https://amzn.to/4wTfwA7" target="_blank" rel="nofollow noopener" onclick="trackClick()">Cetaphil Rutina Set</a></div>
+                            <div class="product-size">Crema 453g + Mini Limpiadora 29ml</div>
+                        </div>
+                    </td>
+                    <td>Set completo para el cuidado de piel sensible. Hidratación profunda para rostro y cuerpo.</td>
+                    <td class="price-col">12,99€</td>
+                    <td class="link-col"><a href="https://amzn.to/4wTfwA7" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
+                </tr>
+                <!-- Fila 5: Eucerin -->
+                <tr>
+                    <td class="product-col">
+                        <img src="image_9.png" alt="Eucerin Hyaluron-Filler Recarga" class="product-img">
+                        <div>
+                            <div class="product-name"><a href="https://amzn.to/4x1Qdfk" target="_blank" rel="nofollow noopener" onclick="trackClick()">Eucerin Hyaluron-Filler Recarga</a></div>
+                            <div class="product-size">Recarga Crema de Día FPS 15 (50 ml)</div>
+                        </div>
+                    </td>
+                    <td>Tratamiento facial antiedad con Ácido Hialurónico. Opción ecológica con 90% menos de plástico.</td>
+                    <td class="price-col">
+                        25,47€
+                        <span class="price-discount">(-10% dto.)</span>
+                    </td>
+                    <td class="link-col"><a href="https://amzn.to/4x1Qdfk" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Aviso Legal Afiliados -->
+    <div class="disclaimer">
+        <p>En calidad de afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables.</p>
+    </div>
+
+    <!-- Script para los contadores -->
+    <script>
+        // Lógica del contador de visitas con localStorage
+        let visits = localStorage.getItem('cholloCesta_visits_facial');
+        if (!visits) {
+            visits = 1;
+        } else {
+            visits = parseInt(visits) + 1;
+        }
+        localStorage.setItem('cholloCesta_visits_facial', visits);
+        document.getElementById('visit-counter').innerText = visits;
+
+        // Lógica del contador de clics en ofertas
+        let clicks = localStorage.getItem('cholloCesta_clicks_facial');
+        if (!clicks) {
+            clicks = 0;
+        }
+        document.getElementById('click-counter').innerText = clicks;
+
+        function trackClick() {
+            clicks = parseInt(clicks) + 1;
+            localStorage.setItem('cholloCesta_clicks_facial', clicks);
+            document.getElementById('click-counter').innerText = clicks;
+        }
+    </script>
+
+</body>
+</html>
