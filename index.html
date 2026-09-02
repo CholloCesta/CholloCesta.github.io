@@ -1,381 +1,353 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CholloCesta · Encuentra el chollo. Llena la cesta. Paga menos.</title>
-  <meta name="description" content="Guías de ahorro y comparativas de precios por unidad, dosis y kilo en productos de supermercado. Chollos y ofertas flash en Amazon.">
-  <meta name="theme-color" content="#111827">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CholloCesta - Las Mejores Ofertas, Chollos Diarios y Descuentos en Amazon</title>
+    <meta name="description" content="Bienvenido a CholloCesta. Tu portal de referencia para cazar los mejores chollos, ofertas flash, códigos descuento y análisis comparativos en Amazon. ¡Ahorra en tus compras!">
+    <meta name="keywords" content="chollocesta, chollos diarios, ofertas amazon, descuentos, rebajas, comparativas, robot aspirador, chollos tecnologia, cuidado personal">
+    <style>
+        :root {
+            --primary-color: #ff9900;
+            --primary-dark: #e68a00;
+            --secondary-color: #232f3e;
+            --text-color: #333333;
+            --bg-color: #f9f9f9;
+            --white: #ffffff;
+            --border-color: #dddddd;
+        }
 
-  <style>
-    :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--accent:#f59e0b;--green:#16a34a;--blue:#229ed9}
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.5}
-    a{text-decoration:none;color:inherit}
-    header{background:var(--dark);color:#fff}
-    nav{max-width:1000px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{font-size:24px;font-weight:900;letter-spacing:-.6px}
-    .brand span{color:var(--accent)}
-    nav small{color:#cbd5e1}
-    
-    .hero{background:linear-gradient(145deg,#111827 0%,#1f2937 100%);color:#fff;padding:48px 16px;text-align:center}
-    .eyebrow{display:inline-block;background:rgba(245,158,11,.15);color:#fbbf24;border:1px solid rgba(245,158,11,.3);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:12px}
-    .hero h1{font-size:clamp(28px,6vw,46px);line-height:1.1;margin-bottom:12px}
-    .hero p{max-width:600px;margin:auto;color:#d1d5db;font-size:16px}
-    
-    main{max-width:1000px;margin:auto;padding:32px 16px 48px}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    .seo-intro{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:32px;color:#374151}
-    .seo-intro h1 {font-size:24px;margin-bottom:12px;color:var(--dark);font-weight:800}
-    .seo-intro p {font-size:15px;margin-bottom:16px;color:var(--muted)}
-    .seo-intro h2 {font-size:18px;margin-top:20px;margin-bottom:8px;color:var(--dark);font-weight:700}
-    
-    .todays-deals{background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);border:2px solid #f59e0b;border-radius:14px;padding:24px;margin-bottom:32px}
-    .todays-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px}
-    .todays-title{font-size:20px;font-weight:900;color:#78350f;display:flex;align-items:center;gap:8px}
-    .deal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-    .deal-card{background:#fff;border:1px solid #fde68a;border-radius:10px;padding:16px;display:flex;flex-direction:column;justify-content:space-between}
-    .deal-tag{font-size:10px;font-weight:800;text-transform:uppercase;padding:2px 6px;border-radius:999px;display:inline-block;margin-bottom:8px;background:#fef3c7;color:#92400e}
-    .deal-card h4{font-size:16px;color:var(--dark);margin-bottom:6px;font-weight:800}
-    .deal-card p{font-size:13px;color:var(--muted);margin-bottom:12px}
-    .deal-price{font-weight:900;color:var(--green);font-size:16px;margin-bottom:12px}
-    .deal-btn{display:inline-block;background:#d97706;color:#fff;font-weight:800;font-size:13px;padding:8px 12px;border-radius:6px;text-align:center;transition:filter .2s}
-    .deal-btn:hover{filter:brightness(0.95)}
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
 
-    .categories{display:flex;gap:10px;overflow-x:auto;padding-bottom:12px;margin-bottom:28px;scrollbar-width:none}
-    .categories::-webkit-scrollbar{display:none}
-    .cat-chip{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:700;font-size:13px;white-space:nowrap;transition:all .2s;cursor:pointer}
-    .cat-chip:hover,.cat-chip.active{background:var(--dark);color:#fff;border-color:var(--dark)}
+        header {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 20px 0;
+            border-bottom: 4px solid var(--primary-color);
+        }
 
-    h2.section-title{font-size:22px;margin-bottom:16px;font-weight:800}
-    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:40px}
-    .card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
-    .card:hover{transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,.05)}
-    .card.hidden{display:none}
-    .card-img{height:160px;background:#f3f4f6;display:flex;align-items:center;justify-content:center;font-size:45px}
-    .card-img a{display:flex;align-items:center;justify-content:center;width:100%;height:100%}
-    .card-body{padding:20px;display:flex;flex-direction:column;flex-grow:1}
-    .badge{display:inline-block;background:#e0f2fe;color:#0369a1;font-size:11px;font-weight:800;padding:3px 8px;border-radius:999px;margin-bottom:8px;align-self:flex-start}
-    .card h3{font-size:18px;margin-bottom:8px}
-    .card p{font-size:14px;color:var(--muted);margin-bottom:16px;flex-grow:1}
-    .btn{display:block;text-align:center;background:var(--dark);color:#fff;font-weight:700;padding:10px;border-radius:8px;font-size:14px;transition:background .2s}
-    .card:hover .btn{background:var(--accent);color:#111}
-    
-    .telegram-banner{background:#e8f6fc;border:1px solid #bbe3f5;border-radius:14px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:32px}
-    .telegram-btn{background:var(--blue);color:#fff;padding:12px 20px;border-radius:8px;font-weight:800;font-size:15px}
-    
-    footer{background:var(--dark);color:#9ca3af;padding:24px 16px;font-size:12px;text-align:center}
-  </style>
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo h1 {
+            font-size: 2.2em;
+            color: var(--white);
+        }
+
+        .logo h1 span {
+            color: var(--primary-color);
+        }
+
+        .tagline {
+            font-size: 1.1em;
+            color: #bbbbbb;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        main {
+            padding: 40px 0;
+        }
+
+        .seo-intro {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .seo-intro h2 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .seo-intro p {
+            margin-bottom: 12px;
+            color: #555555;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2.section-title {
+            color: var(--secondary-color);
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .grid-entradas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--secondary-color);
+            font-size: 1.4em;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #666666;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .btn-card {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        .btn-card:hover {
+            background-color: var(--primary-dark);
+        }
+
+        .canales {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+            border: 1px solid #ffeeba;
+            padding: 35px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .canales h3 {
+            color: #856404;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .canales p {
+            color: #533f03;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+        }
+
+        .btn-telegram {
+            display: inline-block;
+            background-color: #0088cc;
+            color: var(--white);
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .btn-telegram:hover {
+            background-color: #006699;
+        }
+
+        .faq-section {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+        }
+
+        .faq-item h4 {
+            color: var(--secondary-color);
+            font-size: 1.2em;
+            margin-bottom: 8px;
+        }
+
+        .faq-item p {
+            color: #555555;
+            font-size: 0.95em;
+        }
+
+        footer {
+            background-color: var(--secondary-color);
+            color: #bbbbbb;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+        .afiliacion {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .header-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul {
+                justify-content: center;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
-    <small>Compra inteligente</small>
-  </nav>
-</header>
-
-<section class="hero">
-  <span class="eyebrow">🎯 RADAR DE OFERTAS Y CONSUMO</span>
-  <h1>Encuentra el chollo. Llena la cesta. Paga menos.</h1>
-  <p>Calculamos el coste real por dosis, lavado y kilo para que sepas cuándo una oferta es real.</p>
-</section>
-
-<main>
-
-  <section class="seo-intro">
-    <h1>Chollos y Ofertas Flash en Amazon Hoy | CholloCesta</h1>
-    <p>Bienvenido al sitio web de referencia para cazar los mejores chollos, ofertas flash y descuentos en Amazon.</p>
-    <h2>Las mejores ofertas y chollos diarios en Amazon</h2>
-    <p>Nuestro equipo rastrea continuamente las principales categorías para traerte bajadas de precio históricas y chollos temporales.</p>
-  </section>
-
-  <section class="todays-deals">
-    <div class="todays-header">
-      <div class="todays-title">🔥 Las Ofertas de Hoy</div>
-      <small style="color:#b45309; font-weight:700;">Actualizado diario</small>
-    </div>
-    <div class="deal-grid">
-      <div class="deal-card">
-        <div>
-          <span class="deal-tag">Super Chollo</span>
-          <h4>Pastillas Lavavajillas Fairy (104 uds)</h4>
-          <p>Pack ahorro con ventas rápidas. ¡Sale a 0,12€ por lavado!</p>
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <h1>Chollo<span>Cesta</span> 🛒</h1>
+                <p class="tagline">Tu buscador de confianza de chollos diarios y ofertas flash</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="aspirador.html">Robots Aspiradores</a></li>
+                    <li><a href="https://t.me/CholloCesta" target="_blank" rel="nofollow">Telegram</a></li>
+                </ul>
+            </nav>
         </div>
-        <div>
-          <div class="deal-price">12,99 € <span style="font-size:12px; color:var(--muted); text-decoration:line-through;">17,27€</span></div>
-          <a href="https://amzn.to/3UDzame" class="deal-btn" target="_blank" rel="noopener">Ver Chollo en Amazon →</a>
+    </header>
+
+    <main class="container">
+
+        <section class="seo-intro">
+            <h2>¿Qué es CholloCesta y cómo te ayudamos a ahorrar en Amazon?</h2>
+            <p>En <strong>CholloCesta</strong> rastreamos la red cada día para traerte las rebajas más potentes, códigos descuento exclusivos y ofertas flash de Amazon. Nuestro objetivo principal es facilitarte una experiencia de compra inteligente y transparente mediante análisis detallados, guías comparativas honestas y selecciones directas de artículos con la mejor relación calidad-precio del mercado.</p>
+            <p>Ya estés buscando renovar tus electrodomésticos del hogar, adquirir dispositivos tecnológicos punteros o cazar chollos de cuidado personal y skincare, en CholloCesta centralizamos los mejores chollazos para que ahorres tiempo y dinero sin esfuerzo.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Últimas Guías y Comparativas Destacadas</h2>
+            
+            <div class="grid-entradas">
+                <!-- Entrada de Robots Aspiradores -->
+                <div class="card">
+                    <div>
+                        <h3>🤖 Mejores Robots Aspiradores en Oferta</h3>
+                        <p>Analizamos a fondo los modelos más equilibrados del mercado actual de marcas punteras como iRobot Roomba, Cecotec Conga, Roborock y Xiaomi. Descubre sus virtudes, defectos y precios mínimos en Amazon.</p>
+                    </div>
+                    <a href="aspirador.html" class="btn-card">Ver Comparativa Completa</a>
+                </div>
+
+                <!-- Próxima entrada 1 -->
+                <div class="card" style="border-top-color: #007bff;">
+                    <div>
+                        <h3>✨ Packs de Cuidado Facial y Skincare</h3>
+                        <p>Selección de los mejores kits de limpieza facial, aguas micelares y rutinas de belleza con descuentos directos en Amazon. ¡Cuida tu piel al mejor precio!</p>
+                    </div>
+                    <a href="#" class="btn-card" style="background-color: #007bff;">Próximamente</a>
+                </div>
+
+                <!-- Próxima entrada 2 -->
+                <div class="card" style="border-top-color: #28a745;">
+                    <div>
+                        <h3>🎧 Chollos en Audio y Auriculares</h3>
+                        <p>¿Buscas sonido de calidad sin gastar de más? Descubre los auriculares inalámbricos Bluetooth más vendidos y mejor valorados por los usuarios.</p>
+                    </div>
+                    <a href="#" class="btn-card" style="background-color: #28a745;">Próximamente</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="canales">
+            <h3>⚡ ¡No te pierdas ni un solo chollo en directo!</h3>
+            <p>Las mejores ofertas vuelan en cuestión de horas. Únete a nuestra comunidad en Telegram para recibir alertas instantáneas de bajadas de precio drásticas antes que nadie:</p>
+            <a href="https://t.me/CholloCesta" target="_blank" rel="nofollow" class="btn-telegram">📢 Únete al canal de Telegram de CholloCesta</a>
+        </section>
+
+        <section class="faq-section">
+            <h2 class="section-title" style="border-bottom: none; margin-bottom: 15px;">Preguntas Frecuentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <h4>¿Cómo encuentra CholloCesta las mejores ofertas?</h4>
+                <p>Monitorizamos constantemente las fluctuaciones de precios en Amazon, filtrando aquellos productos que cuentan con verdaderos descuentos históricos, excelentes valoraciones de clientes y una alta fiabilidad.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>¿Los precios de las ofertas pueden cambiar?</h4>
+                <p>Sí. Las ofertas flash y los descuentos en Amazon dependen estrictamente del stock disponible y de la vigencia de la promoción establecida por cada vendedor o fabricante.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>¿Tiene algún coste adicional usar CholloCesta?</h4>
+                <p>Ninguno. Todos nuestros análisis y recopilatorios son totalmente gratuitos para los usuarios. Si compras a través de nuestros enlaces, recibimos una pequeña comisión de Amazon sin que a ti te cueste ni un céntimo más.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="afiliacion">
+            <p><em>En calidad de afiliado de Amazon, CholloCesta obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. Esto no altera jamás el precio final para el consumidor ni condiciona la independencia de nuestros análisis y recomendaciones.</em></p>
+            <p style="margin-top: 15px;">&copy; 2026 CholloCesta. Todos los derechos reservados.</p>
         </div>
-      </div>
-
-      <div class="deal-card">
-        <div>
-          <span class="deal-tag">Ofertón</span>
-          <h4>Cerveza Victoria (Pack 24 Latas)</h4>
-          <p>Oferta destacada en Amazon al mejor precio por unidad.</p>
-        </div>
-        <div>
-          <div class="deal-price">Precio Flash</div>
-          <a href="https://amzn.to/3STlbZ2" class="deal-btn" target="_blank" rel="noopener">Ver Chollo en Amazon →</a>
-        </div>
-      </div>
-
-      <div class="deal-card">
-        <div>
-          <span class="deal-tag">Higiene</span>
-          <h4>Pasta de Dientes Oral-B Junior Stitch</h4>
-          <p>Pack de 4 tubos más económico por unidad.</p>
-        </div>
-        <div>
-          <div class="deal-price">4,87 €</div>
-          <a href="https://amzn.to/4zCfTBR" class="deal-btn" target="_blank" rel="noopener">Ver Chollo en Amazon →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="categories">
-    <button class="cat-chip active" data-filter="all">🔥 Todos</button>
-    <button class="cat-chip" data-filter="cuidado-facial">💧 Cuidado Facial</button>
-    <button class="cat-chip" data-filter="limpieza">🧼 Limpieza</button>
-    <button class="cat-chip" data-filter="hogar">🍽️ Hogar & Cocina</button>
-    <button class="cat-chip" data-filter="alimentacion">☕ Alimentación</button>
-    <button class="cat-chip" data-filter="mascotas">🐾 Mascotas</button>
-    <button class="cat-chip" data-filter="tecnologia">📱 Tecnología</button>
-    <button class="cat-chip" data-filter="despensa">📦 Despensa</button>
-  </div>
-
-  <h2 class="section-title">📌 Guías y Comparativas Destacadas</h2>
-  <div class="grid" id="product-grid">
-
-    <!-- Tarjeta de Neutrogena (crema.html) -->
-    <article class="card" data-category="hogar limpieza">
-      <div class="card-img">
-        <a href="crema.html">💧</a>
-      </div>
-      <div class="card-body">
-        <span class="badge" style="background:#e0f2fe; color:#0369a1;">BELLEZA · CHOLLO</span>
-        <h3>Neutrogena Hydro Boost Gel de Agua</h3>
-        <p>El superventas de hidratación de 72 horas con Ácido Hialurónico a su precio mínimo histórico.</p>
-        <a href="crema.html" class="btn">Ver chollo →</a>
-      </div>
-    </article>
-
-    <!-- Tarjeta de Cuidado Facial (cuidado-facial.html) -->
-    <article class="card" data-category="cuidado-facial hogar limpieza">
-      <div class="card-img">
-        <a href="cuidado-facial.html">✨</a>
-      </div>
-      <div class="card-body">
-        <span class="badge" style="background:#e0f2fe; color:#0369a1;">BELLEZA · CUIDADO FACIAL</span>
-        <h3>Guía Completa de Cuidado Facial</h3>
-        <p>Descubre las mejores rutinas, comparativas y productos esenciales para el cuidado de tu piel.</p>
-        <a href="cuidado-facial.html" class="btn">Ver guía →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="hogar limpieza">
-      <div class="card-img">
-        <a href="cremas-solares-seleccion-completa.html">🧴</a>
-      </div>
-      <div class="card-body">
-        <span class="badge" style="background:#fef3c7; color:#b45309;">VERANO · SELECCIÓN</span>
-        <h3>Selección Completa Cremas Solares</h3>
-        <p>Nuestra selección experta de protectores solares al mejor precio en Amazon.</p>
-        <a href="cremas-solares-seleccion-completa.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="hogar limpieza">
-      <div class="card-img">
-        <a href="cremas-solares-corporales.html">☀️</a>
-      </div>
-      <div class="card-body">
-        <span class="badge" style="background:#fef3c7; color:#b45309;">VERANO · CORPORAL</span>
-        <h3>Cremas Solares Corporales</h3>
-        <p>Comparativa y precios por ml de protectores solares corporales y botes familiares.</p>
-        <a href="cremas-solares-corporales.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="hogar">
-      <div class="card-img">
-        <a href="toallitas-humedas-bebe.html">🧻</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">BEBÉ · AHORRO</span>
-        <h3>Toallitas Húmedas Bebé</h3>
-        <p>Comparamos el precio por toallita en packs ahorro de marcas líderes.</p>
-        <a href="toallitas-humedas-bebe.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="alimentacion despensa">
-      <div class="card-img">
-        <a href="cafe-capsula.html">☕</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">ALIMENTACIÓN · CAFÉ</span>
-        <h3>Cápsulas de Café</h3>
-        <p>Comparamos el precio por cápsula en Nespresso Original, Vertuo y Dolce Gusto.</p>
-        <a href="cafe-capsula.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="hogar">
-      <div class="card-img">
-        <a href="panales-talla-4.html">🧷</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">BEBÉ · AHORRO</span>
-        <h3>Pañales Talla 4</h3>
-        <p>Comparativa del precio por unidad en Amazon, Carrefour y Alcampo.</p>
-        <a href="panales-talla-4.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="alimentacion despensa">
-      <div class="card-img">
-        <a href="aceite-oliva.html">🫒</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">ALIMENTACIÓN · DESPENSA</span>
-        <h3>Aceite de Oliva</h3>
-        <p>Seguimiento y comparativa del precio por litro en virgen extra y marcas de distribución.</p>
-        <a href="aceite-oliva.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="hogar limpieza">
-      <div class="card-img">
-        <a href="champu.html">🧴</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">HOGAR · HIGIENE</span>
-        <h3>Champús</h3>
-        <p>Comparamos precios por cada 100 ml en champús de marcas líderes y formatos ahorro.</p>
-        <a href="champu.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="hogar">
-      <div class="card-img">
-        <a href="pasta-dientes.html">🦷</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">HOGAR · HIGIENE</span>
-        <h3>Pasta de Dientes</h3>
-        <p>Comparamos precios por cada 100 ml en dentífricos y packs de ahorro de higiene bucal.</p>
-        <a href="pasta-dientes.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="hogar limpieza">
-      <div class="card-img">
-        <a href="lavavajillas-1.html">🍽️</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">HOGAR · LIMPIEZA</span>
-        <h3>Pastillas Lavavajillas</h3>
-        <p>Comparamos Finish, Fairy y marcas blancas para descubrir el precio límite por dosis.</p>
-        <a href="lavavajillas-1.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="limpieza">
-      <div class="card-img">
-        <a href="detergente-1.html">👕</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">HOGAR · COLADA</span>
-        <h3>Detergente Lavadora</h3>
-        <p>Analizamos cápsulas Ariel frente a geles y marcas de supermercado.</p>
-        <a href="detergente-1.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <article class="card" data-category="alimentacion despensa">
-      <div class="card-img">
-        <a href="cafe-1.html">☕</a>
-      </div>
-      <div class="card-body">
-        <span class="badge">ALIMENTACIÓN</span>
-        <h3>Café en Grano</h3>
-        <p>Seguimiento del precio por kilo en marcas líderes para cafeteras automáticas.</p>
-        <a href="cafe-1.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-    <!-- 🆕 NUEVA TARJETA: Ambientadores Hogar -->
-    <article class="card" data-category="hogar limpieza">
-      <div class="card-img">
-        <a href="ambientador.html">🌿</a>
-      </div>
-      <div class="card-body">
-        <span class="badge" style="background:#fef3c7; color:#b45309;">HOGAR · AMBIENTACIÓN</span>
-        <h3>Comparativa Ambientadores Hogar</h3>
-        <p>Análisis de los 5 mejores ambientadores (Air Wick, Ambi Pur, Mikado). Precios, duración y pros/contrass.</p>
-        <a href="ambientador.html" class="btn">Ver comparativa →</a>
-      </div>
-    </article>
-
-  </div>
-
-  <section class="telegram-banner">
-    <div>
-      <strong>📲 No te pierdas ninguna bajada de precio</strong>
-      <p style="font-size:14px; color:#526273; margin:4px 0 0;">Avisos directos en nuestro canal de Telegram cuando hay chollos reales.</p>
-    </div>
-    <a href="https://t.me/CholloCesta" target="_blank" rel="noopener" class="telegram-btn">Unirme a Telegram</a>
-  </section>
-
-</main>
-
-<script>
-  const buttons = document.querySelectorAll('.cat-chip');
-  const cards = document.querySelectorAll('.card');
-
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      buttons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-
-      const filter = button.getAttribute('data-filter');
-
-      cards.forEach(card => {
-        if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
-          card.classList.remove('hidden');
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    });
-  });
-</script>
-
-<div style="text-align: center; margin: 20px 0; font-family: sans-serif;">
-  <p style="font-size: 14px; color: #666; margin-bottom: 5px;">🔥 Visitas totales en CholloCesta:</p>
-  <span id="global-counter" style="font-size: 20px; font-weight: bold; color: #2563eb;">Cargando...</span>
-</div>
-
-<script>
-  fetch('https://api.counterapi.dev/v1/chollocesta/global_visits/up')
-    .then(response => {
-      if (!response.ok) throw new Error('Error en API');
-      return response.json();
-    })
-    .then(data => {
-      document.getElementById('global-counter').innerText = (data.count || 3420).toLocaleString();
-    })
-    .catch(error => {
-      document.getElementById('global-counter').innerText = "3.840";
-    });
-</script>
-
-<footer>
-  <p>© 2026 CholloCesta · Todos los derechos reservados.</p>
-</footer>
+    </footer>
 
 </body>
 </html>
