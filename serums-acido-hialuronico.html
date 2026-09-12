@@ -323,6 +323,10 @@
       text-align:center;
     }
 
+    .mobile-hint{
+      display:none;
+    }
+
     .faq h3{
       font-size:17px;
       color:var(--dark);
@@ -368,72 +372,19 @@
       }
 
       .table-wrap{
-        overflow:visible;
-        background:transparent;
-        border:0;
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
       }
 
       table{
-        display:block;
-        min-width:0;
-        width:100%;
+        min-width:850px;
       }
 
-      thead{
-        display:none;
-      }
-
-      tbody{
-        display:block;
-        width:100%;
-      }
-
-      tr{
-        display:block;
-        background:#fff;
-        border:1px solid var(--line);
-        border-radius:14px;
-        margin-bottom:16px;
-        padding:16px;
-      }
-
-      td{
-        display:block;
-        width:100%;
-        padding:5px 0;
-        border:0;
-      }
-
-      td[data-label]::before{
-        content:attr(data-label);
+      .mobile-hint{
         display:block;
         color:var(--muted);
-        font-size:11px;
-        font-weight:800;
-        text-transform:uppercase;
-        margin-top:8px;
-        margin-bottom:3px;
-      }
-
-      td[data-label="Producto"]::before{
-        display:none;
-      }
-
-      .product{
-        min-width:0;
-        align-items:flex-start;
-      }
-
-      .name{
-        font-size:16px;
-      }
-
-      .btn{
-        display:block;
-        width:100%;
-        text-align:center;
-        padding:12px;
-        font-size:15px;
+        font-size:12px;
+        margin:-12px 0 12px;
       }
     }
   </style>
@@ -588,6 +539,11 @@
   </div>
 
   <h2>Comparativa de sérums faciales</h2>
+
+  <p class="mobile-hint">
+    En móvil puedes deslizar la tabla hacia los lados.
+    También puedes pulsar directamente sobre el nombre o el icono del producto.
+  </p>
 
   <div class="table-wrap">
     <table>
