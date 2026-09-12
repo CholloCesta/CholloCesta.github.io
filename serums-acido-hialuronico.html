@@ -227,6 +227,16 @@
       min-width:245px;
     }
 
+    .product-link{
+      width:100%;
+      color:inherit;
+    }
+
+    .product-link:hover .name{
+      text-decoration:underline;
+      color:var(--blue);
+    }
+
     .emoji{
       width:52px;
       height:52px;
@@ -337,6 +347,7 @@
     }
 
     @media(max-width:650px){
+
       main{
         padding:20px 12px 36px;
       }
@@ -354,6 +365,75 @@
 
       h2{
         font-size:20px;
+      }
+
+      .table-wrap{
+        overflow:visible;
+        background:transparent;
+        border:0;
+      }
+
+      table{
+        display:block;
+        min-width:0;
+        width:100%;
+      }
+
+      thead{
+        display:none;
+      }
+
+      tbody{
+        display:block;
+        width:100%;
+      }
+
+      tr{
+        display:block;
+        background:#fff;
+        border:1px solid var(--line);
+        border-radius:14px;
+        margin-bottom:16px;
+        padding:16px;
+      }
+
+      td{
+        display:block;
+        width:100%;
+        padding:5px 0;
+        border:0;
+      }
+
+      td[data-label]::before{
+        content:attr(data-label);
+        display:block;
+        color:var(--muted);
+        font-size:11px;
+        font-weight:800;
+        text-transform:uppercase;
+        margin-top:8px;
+        margin-bottom:3px;
+      }
+
+      td[data-label="Producto"]::before{
+        display:none;
+      }
+
+      .product{
+        min-width:0;
+        align-items:flex-start;
+      }
+
+      .name{
+        font-size:16px;
+      }
+
+      .btn{
+        display:block;
+        width:100%;
+        text-align:center;
+        padding:12px;
+        font-size:15px;
       }
     }
   </style>
@@ -524,8 +604,12 @@
       <tbody>
 
         <tr>
-          <td>
-            <div class="product">
+          <td data-label="Producto">
+            <a class="product product-link"
+               href="https://amzn.to/4y2BFNR"
+               target="_blank"
+               rel="sponsored nofollow noopener">
+
               <div class="emoji">🧴</div>
 
               <div>
@@ -537,24 +621,26 @@
                   30 ml · con ceramidas
                 </div>
               </div>
-            </div>
+            </a>
           </td>
 
-          <td class="price">
+          <td class="price" data-label="Precio">
             9,20 €
             <small style="display:block;color:#16a34a;font-weight:700;">
               -7%
             </small>
           </td>
 
-          <td class="unit">3,07 €</td>
+          <td class="unit" data-label="Precio por 10 ml">
+            3,07 €
+          </td>
 
-          <td class="rating">
+          <td class="rating" data-label="Valoración">
             ★ 4,6
             <small>39,8 mil opiniones</small>
           </td>
 
-          <td>
+          <td data-label="Enlace">
             <a class="btn"
                href="https://amzn.to/4y2BFNR"
                target="_blank"
@@ -565,8 +651,12 @@
         </tr>
 
         <tr>
-          <td>
-            <div class="product">
+          <td data-label="Producto">
+            <a class="product product-link"
+               href="https://amzn.to/4gYQ5Hr"
+               target="_blank"
+               rel="sponsored nofollow noopener">
+
               <div class="emoji">🌿</div>
 
               <div>
@@ -578,18 +668,23 @@
                   100 ml · formato ahorro
                 </div>
               </div>
-            </div>
+            </a>
           </td>
 
-          <td class="price">19,98 €</td>
-          <td class="unit">2,00 €</td>
+          <td class="price" data-label="Precio">
+            19,98 €
+          </td>
 
-          <td class="rating">
+          <td class="unit" data-label="Precio por 10 ml">
+            2,00 €
+          </td>
+
+          <td class="rating" data-label="Valoración">
             ★ 4,4
             <small>931 opiniones</small>
           </td>
 
-          <td>
+          <td data-label="Enlace">
             <a class="btn"
                href="https://amzn.to/4gYQ5Hr"
                target="_blank"
@@ -600,8 +695,12 @@
         </tr>
 
         <tr>
-          <td>
-            <div class="product">
+          <td data-label="Producto">
+            <a class="product product-link"
+               href="https://amzn.to/4A5pfq5"
+               target="_blank"
+               rel="sponsored nofollow noopener">
+
               <div class="emoji">💧</div>
 
               <div>
@@ -613,18 +712,23 @@
                   75 ml · ácido hialurónico y agua volcánica
                 </div>
               </div>
-            </div>
+            </a>
           </td>
 
-          <td class="price">29,30 €</td>
-          <td class="unit">3,91 €</td>
+          <td class="price" data-label="Precio">
+            29,30 €
+          </td>
 
-          <td class="rating">
+          <td class="unit" data-label="Precio por 10 ml">
+            3,91 €
+          </td>
+
+          <td class="rating" data-label="Valoración">
             ★ 4,6
             <small>638 opiniones</small>
           </td>
 
-          <td>
+          <td data-label="Enlace">
             <a class="btn"
                href="https://amzn.to/4A5pfq5"
                target="_blank"
@@ -635,8 +739,12 @@
         </tr>
 
         <tr>
-          <td>
-            <div class="product">
+          <td data-label="Producto">
+            <a class="product product-link"
+               href="https://amzn.to/3VrHJkp"
+               target="_blank"
+               rel="sponsored nofollow noopener">
+
               <div class="emoji">✨</div>
 
               <div>
@@ -648,18 +756,23 @@
                   30 ml · ácido hialurónico y PDRN
                 </div>
               </div>
-            </div>
+            </a>
           </td>
 
-          <td class="price">16,89 €</td>
-          <td class="unit">5,63 €</td>
+          <td class="price" data-label="Precio">
+            16,89 €
+          </td>
 
-          <td class="rating">
+          <td class="unit" data-label="Precio por 10 ml">
+            5,63 €
+          </td>
+
+          <td class="rating" data-label="Valoración">
             ★ 4,6
             <small>6,6 mil opiniones</small>
           </td>
 
-          <td>
+          <td data-label="Enlace">
             <a class="btn"
                href="https://amzn.to/3VrHJkp"
                target="_blank"
@@ -670,8 +783,12 @@
         </tr>
 
         <tr>
-          <td>
-            <div class="product">
+          <td data-label="Producto">
+            <a class="product product-link"
+               href="https://amzn.to/46l4XuY"
+               target="_blank"
+               rel="sponsored nofollow noopener">
+
               <div class="emoji">💦</div>
 
               <div>
@@ -683,18 +800,23 @@
                   100 ml · con péptidos, niacinamida y vitamina C
                 </div>
               </div>
-            </div>
+            </a>
           </td>
 
-          <td class="price">8,99 €</td>
-          <td class="unit">0,90 €</td>
+          <td class="price" data-label="Precio">
+            8,99 €
+          </td>
 
-          <td class="rating">
+          <td class="unit" data-label="Precio por 10 ml">
+            0,90 €
+          </td>
+
+          <td class="rating" data-label="Valoración">
             ★ 4,5
             <small>572 opiniones</small>
           </td>
 
-          <td>
+          <td data-label="Enlace">
             <a class="btn"
                href="https://amzn.to/46l4XuY"
                target="_blank"
