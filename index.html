@@ -4,20 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- SEO Optimizado (Fusión de ambos) -->
+  <!-- SEO Optimizado -->
   <title>CholloCesta · Chollos, Ofertas Flash y Comparativas en Amazon</title>
   <meta name="description" content="Descubre los mejores chollos diarios, ofertas flash, guías de ahorro por unidad, comparativas de robots aspiradores y productos con más valoraciones en Amazon. ¡Ahorra tiempo y dinero!">
   <meta name="keywords" content="chollocesta, chollos diarios, ofertas amazon, descuentos, comparativas, robot aspirador, baliza v16, anker, fire tv stick, supermercado, ahorro">
   <meta name="theme-color" content="#111827">
 
-  <!-- Estilos CSS (Lo mejor del Index 1 + ajustes del Index 2) -->
   <style>
     :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--card:#fff;--line:#e5e7eb;--accent:#f59e0b;--green:#16a34a;--blue:#229ed9;--secondary:#232f3e;--primary:#ff9900}
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.5}
     a{text-decoration:none;color:inherit}
-    
-    /* Header y Navegación (Index 2 mejorado) */
+
     header{background:var(--dark);color:#fff}
     nav{max-width:1100px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
     .brand{font-size:24px;font-weight:900;letter-spacing:-.6px}
@@ -25,22 +23,19 @@
     .nav-links{display:flex;gap:15px;align-items:center}
     .nav-links a{font-size:14px;font-weight:600;color:#cbd5e1;transition:color .2s}
     .nav-links a:hover{color:var(--accent)}
-    
-    /* Hero Section (Index 1) */
+
     .hero{background:linear-gradient(145deg,#111827 0%,#1f2937 100%);color:#fff;padding:48px 16px;text-align:center}
     .eyebrow{display:inline-block;background:rgba(245,158,11,.15);color:#fbbf24;border:1px solid rgba(245,158,11,.3);padding:5px 12px;border-radius:999px;font-size:12px;font-weight:800;margin-bottom:12px}
     .hero h1{font-size:clamp(28px,6vw,46px);line-height:1.1;margin-bottom:12px}
     .hero p{max-width:600px;margin:auto;color:#d1d5db;font-size:16px}
-    
+
     main{max-width:1100px;margin:auto;padding:32px 16px 48px}
 
-    /* SEO Intro (Index 2, rico en texto) */
     .seo-intro{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:32px;color:#374151}
-    .seo-intro h1 {font-size:24px;margin-bottom:12px;color:var(--dark);font-weight:800}
-    .seo-intro p {font-size:15px;margin-bottom:16px;color:var(--muted)}
-    .seo-intro h2 {font-size:18px;margin-top:20px;margin-bottom:8px;color:var(--dark);font-weight:700}
-    
-    /* Ofertas del Día (Index 1) */
+    .seo-intro h1{font-size:24px;margin-bottom:12px;color:var(--dark);font-weight:800}
+    .seo-intro p{font-size:15px;margin-bottom:16px;color:var(--muted)}
+    .seo-intro h2{font-size:18px;margin-top:20px;margin-bottom:8px;color:var(--dark);font-weight:700}
+
     .todays-deals{background:linear-gradient(135deg,#fef3c7 0%,#fde68a 100%);border:2px solid #f59e0b;border-radius:14px;padding:24px;margin-bottom:32px}
     .todays-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px}
     .todays-title{font-size:20px;font-weight:900;color:#78350f;display:flex;align-items:center;gap:8px}
@@ -53,7 +48,6 @@
     .deal-btn{display:inline-block;background:#d97706;color:#fff;font-weight:800;font-size:13px;padding:8px 12px;border-radius:6px;text-align:center;transition:filter .2s}
     .deal-btn:hover{filter:brightness(0.95)}
 
-    /* Categorías interactivas (Index 1) */
     .categories{display:flex;gap:10px;overflow-x:auto;padding-bottom:12px;margin-bottom:28px;scrollbar-width:none}
     .categories::-webkit-scrollbar{display:none}
     .cat-chip{background:#fff;border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:700;font-size:13px;white-space:nowrap;transition:all .2s;cursor:pointer}
@@ -72,28 +66,27 @@
     .card p{font-size:14px;color:var(--muted);margin-bottom:16px;flex-grow:1}
     .btn{display:block;text-align:center;background:var(--dark);color:#fff;font-weight:700;padding:10px;border-radius:8px;font-size:14px;transition:background .2s}
     .card:hover .btn{background:var(--accent);color:#111}
-    
-    /* Banner Telegram (Index 1) */
+
     .telegram-banner{background:#e8f6fc;border:1px solid #bbe3f5;border-radius:14px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:32px}
     .telegram-btn{background:var(--blue);color:#fff;padding:12px 20px;border-radius:8px;font-weight:800;font-size:15px;transition:background .2s}
     .telegram-btn:hover{background:#1a8ac4}
 
-    /* FAQ (Index 2 - Increíble para SEO) */
     .faq-section{background:#fff;border:1px solid var(--line);border-radius:14px;padding:24px;margin-bottom:32px}
     .faq-item{margin-bottom:20px}
     .faq-item h4{color:var(--dark);font-size:1.1em;margin-bottom:8px;font-weight:700}
     .faq-item p{color:var(--muted);font-size:0.95em}
 
-    /* Footer (Fusión y aviso de afiliación) */
     footer{background:var(--dark);color:#9ca3af;padding:24px 16px;font-size:12px;text-align:center}
     .afiliacion{max-width:800px;margin:0 auto;padding:0 20px;line-height:1.5;margin-bottom:15px}
   </style>
 </head>
+
 <body>
 
 <header>
   <nav>
     <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
+
     <div class="nav-links">
       <a href="index.html">Inicio</a>
       <a href="aspirador.html">Robots Aspiradores</a>
@@ -111,30 +104,53 @@
 
 <main>
 
-  <!-- SEO INTRO (Texto del Index 2) -->
   <section class="seo-intro">
     <h1>Chollos, Ofertas Flash y Comparativas en Amazon | CholloCesta</h1>
-    <p>Bienvenido a <strong>CholloCesta</strong>, tu portal de referencia para cazar los mejores chollos diarios, ofertas flash y códigos descuento en Amazon. Rastreamos la red cada día para traerte rebajas potentes y análisis detallados.</p>
+
+    <p>
+      Bienvenido a <strong>CholloCesta</strong>, tu portal de referencia para cazar
+      los mejores chollos diarios, ofertas flash y códigos descuento en Amazon.
+      Rastreamos la red cada día para traerte rebajas potentes y análisis detallados.
+    </p>
+
     <h2>Guías de ahorro, tecnología y consumo inteligente</h2>
-    <p>Ya estés buscando renovar tus electrodomésticos, adquirir dispositivos tecnológicos punteros, o cazar chollos de supermercado calculando el precio por unidad, aquí centralizamos todo para que ahorres tiempo y dinero sin esfuerzo.</p>
+
+    <p>
+      Ya estés buscando renovar tus electrodomésticos, adquirir dispositivos
+      tecnológicos punteros o cazar chollos de supermercado calculando el precio
+      por unidad, aquí centralizamos todo para que ahorres tiempo y dinero sin esfuerzo.
+    </p>
   </section>
 
-  <!-- OFERTAS DEL DÍA -->
   <section class="todays-deals">
     <div class="todays-header">
       <div class="todays-title">🔥 Las Ofertas de Hoy</div>
       <small style="color:#b45309; font-weight:700;">Actualizado diario</small>
     </div>
+
     <div class="deal-grid">
+
       <div class="deal-card">
         <div>
           <span class="deal-tag">Super Chollo</span>
           <h4>Pastillas Lavavajillas Fairy (104 uds)</h4>
           <p>Pack ahorro con ventas rápidas. ¡Sale a 0,12€ por lavado!</p>
         </div>
+
         <div>
-          <div class="deal-price">12,99 € <span style="font-size:12px; color:var(--muted); text-decoration:line-through;">17,27€</span></div>
-          <a href="https://amzn.to/3UDzame" class="deal-btn" target="_blank" rel="noopener">Ver Chollo en Amazon →</a>
+          <div class="deal-price">
+            12,99 €
+            <span style="font-size:12px;color:var(--muted);text-decoration:line-through;">
+              17,27€
+            </span>
+          </div>
+
+          <a href="https://amzn.to/3UDzame"
+             class="deal-btn"
+             target="_blank"
+             rel="noopener">
+            Ver Chollo en Amazon →
+          </a>
         </div>
       </div>
 
@@ -144,9 +160,16 @@
           <h4>Cerveza Victoria (Pack 24 Latas)</h4>
           <p>Oferta destacada en Amazon al mejor precio por unidad.</p>
         </div>
+
         <div>
           <div class="deal-price">Precio Flash</div>
-          <a href="https://amzn.to/3STlbZ2" class="deal-btn" target="_blank" rel="noopener">Ver Chollo en Amazon →</a>
+
+          <a href="https://amzn.to/3STlbZ2"
+             class="deal-btn"
+             target="_blank"
+             rel="noopener">
+            Ver Chollo en Amazon →
+          </a>
         </div>
       </div>
 
@@ -156,15 +179,22 @@
           <h4>Pasta de Dientes Oral-B Junior Stitch</h4>
           <p>Pack de 4 tubos más económico por unidad.</p>
         </div>
+
         <div>
           <div class="deal-price">4,87 €</div>
-          <a href="https://amzn.to/4zCfTBR" class="deal-btn" target="_blank" rel="noopener">Ver Chollo en Amazon →</a>
+
+          <a href="https://amzn.to/4zCfTBR"
+             class="deal-btn"
+             target="_blank"
+             rel="noopener">
+            Ver Chollo en Amazon →
+          </a>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- CATEGORÍAS INTERACTIVAS -->
   <div class="categories">
     <button class="cat-chip active" data-filter="all">🔥 Todos</button>
     <button class="cat-chip" data-filter="tecnologia">📱 Tecnología</button>
@@ -177,43 +207,67 @@
   </div>
 
   <h2 class="section-title">📌 Guías y Comparativas Destacadas</h2>
+
   <div class="grid" id="product-grid">
 
-    <!-- 🆕 TARJETA NUEVA: Robots Aspiradores (Index 2) -->
     <article class="card" data-category="tecnologia hogar">
       <div class="card-img">
         <a href="aspirador.html">🤖</a>
       </div>
+
       <div class="card-body">
-        <span class="badge" style="background:#e0f2fe; color:#0369a1;">TECNOLOGÍA · HOGAR</span>
+        <span class="badge" style="background:#e0f2fe;color:#0369a1;">
+          TECNOLOGÍA · HOGAR
+        </span>
+
         <h3>Mejores Robots Aspiradores</h3>
-        <p>Análisis profundo de iRobot, Cecotec, Roborock y Xiaomi. Virtudes, defectos y precios mínimos.</p>
+
+        <p>
+          Análisis profundo de iRobot, Cecotec, Roborock y Xiaomi.
+          Virtudes, defectos y precios mínimos.
+        </p>
+
         <a href="aspirador.html" class="btn">Ver comparativa →</a>
       </div>
     </article>
 
-    <!-- 🆕 TARJETA NUEVA: Top Valoraciones (Creada anteriormente) -->
     <article class="card" data-category="tecnologia hogar">
       <div class="card-img">
         <a href="valoraciones.html">🏆</a>
       </div>
+
       <div class="card-body">
-        <span class="badge" style="background:#fef3c7; color:#b45309;">TOP · VALORACIONES</span>
+        <span class="badge" style="background:#fef3c7;color:#b45309;">
+          TOP · VALORACIONES
+        </span>
+
         <h3>Los 3 Productos Más Valorados</h3>
-        <p>Fire TV Stick, Cargador Anker 65W y Baliza V16 con opiniones reales de usuarios.</p>
+
+        <p>
+          Fire TV Stick, Cargador Anker 65W y Baliza V16 con opiniones reales de usuarios.
+        </p>
+
         <a href="valoraciones.html" class="btn">Ver análisis →</a>
       </div>
     </article>
 
-    <!-- Tarjetas originales del Index 1 -->
     <article class="card" data-category="cuidado-facial hogar limpieza">
       <div class="card-img">
         <a href="crema.html">💧</a>
       </div>
+
       <div class="card-body">
-        <span class="badge" style="background:#e0f2fe; color:#0369a1;">BELLEZA · CHOLLO</span>
+        <span class="badge" style="background:#e0f2fe;color:#0369a1;">
+          BELLEZA · CHOLLO
+        </span>
+
         <h3>Neutrogena Hydro Boost Gel de Agua</h3>
-        <p>El superventas de hidratación de 72 horas con Ácido Hialurónico a su precio mínimo histórico.</p>
+
+        <p>
+          El superventas de hidratación de 72 horas con ácido hialurónico
+          a su precio mínimo histórico.
+        </p>
+
         <a href="crema.html" class="btn">Ver chollo →</a>
       </div>
     </article>
@@ -222,11 +276,44 @@
       <div class="card-img">
         <a href="cuidado-facial.html">✨</a>
       </div>
+
       <div class="card-body">
-        <span class="badge" style="background:#e0f2fe; color:#0369a1;">BELLEZA · CUIDADO FACIAL</span>
+        <span class="badge" style="background:#e0f2fe;color:#0369a1;">
+          BELLEZA · CUIDADO FACIAL
+        </span>
+
         <h3>Guía Completa de Cuidado Facial</h3>
-        <p>Descubre las mejores rutinas, comparativas y productos esenciales para el cuidado de tu piel.</p>
+
+        <p>
+          Descubre las mejores rutinas, comparativas y productos esenciales
+          para el cuidado de tu piel.
+        </p>
+
         <a href="cuidado-facial.html" class="btn">Ver guía →</a>
+      </div>
+    </article>
+
+    <!-- NUEVA TARJETA: Sérums con ácido hialurónico -->
+    <article class="card" data-category="cuidado-facial">
+      <div class="card-img">
+        <a href="serums-acido-hialuronico.html">✨</a>
+      </div>
+
+      <div class="card-body">
+        <span class="badge" style="background:#fce7f3;color:#be185d;">
+          BELLEZA · CUIDADO FACIAL
+        </span>
+
+        <h3>Mejores sérums con ácido hialurónico</h3>
+
+        <p>
+          Comparamos precio por 10 ml, formatos y valoraciones para encontrar
+          sérums faciales sin pagar de más.
+        </p>
+
+        <a href="serums-acido-hialuronico.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -234,11 +321,21 @@
       <div class="card-img">
         <a href="cremas-solares-seleccion-completa.html">🧴</a>
       </div>
+
       <div class="card-body">
-        <span class="badge" style="background:#fef3c7; color:#b45309;">VERANO · SELECCIÓN</span>
+        <span class="badge" style="background:#fef3c7;color:#b45309;">
+          VERANO · SELECCIÓN
+        </span>
+
         <h3>Selección Completa Cremas Solares</h3>
-        <p>Nuestra selección experta de protectores solares al mejor precio en Amazon.</p>
-        <a href="cremas-solares-seleccion-completa.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Nuestra selección experta de protectores solares al mejor precio en Amazon.
+        </p>
+
+        <a href="cremas-solares-seleccion-completa.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -246,11 +343,22 @@
       <div class="card-img">
         <a href="cremas-solares-corporales.html">☀️</a>
       </div>
+
       <div class="card-body">
-        <span class="badge" style="background:#fef3c7; color:#b45309;">VERANO · CORPORAL</span>
+        <span class="badge" style="background:#fef3c7;color:#b45309;">
+          VERANO · CORPORAL
+        </span>
+
         <h3>Cremas Solares Corporales</h3>
-        <p>Comparativa y precios por ml de protectores solares corporales y botes familiares.</p>
-        <a href="cremas-solares-corporales.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Comparativa y precios por ml de protectores solares corporales
+          y botes familiares.
+        </p>
+
+        <a href="cremas-solares-corporales.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -258,11 +366,19 @@
       <div class="card-img">
         <a href="toallitas-humedas-bebe.html">🧻</a>
       </div>
+
       <div class="card-body">
         <span class="badge">BEBÉ · AHORRO</span>
+
         <h3>Toallitas Húmedas Bebé</h3>
-        <p>Comparamos el precio por toallita en packs ahorro de marcas líderes.</p>
-        <a href="toallitas-humedas-bebe.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Comparamos el precio por toallita en packs ahorro de marcas líderes.
+        </p>
+
+        <a href="toallitas-humedas-bebe.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -270,11 +386,20 @@
       <div class="card-img">
         <a href="cafe-capsula.html">☕</a>
       </div>
+
       <div class="card-body">
         <span class="badge">ALIMENTACIÓN · CAFÉ</span>
+
         <h3>Cápsulas de Café</h3>
-        <p>Comparamos el precio por cápsula en Nespresso Original, Vertuo y Dolce Gusto.</p>
-        <a href="cafe-capsula.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Comparamos el precio por cápsula en Nespresso Original,
+          Vertuo y Dolce Gusto.
+        </p>
+
+        <a href="cafe-capsula.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -282,11 +407,19 @@
       <div class="card-img">
         <a href="panales-talla-4.html">🧷</a>
       </div>
+
       <div class="card-body">
         <span class="badge">BEBÉ · AHORRO</span>
+
         <h3>Pañales Talla 4</h3>
-        <p>Comparativa del precio por unidad en Amazon, Carrefour y Alcampo.</p>
-        <a href="panales-talla-4.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Comparativa del precio por unidad en Amazon, Carrefour y Alcampo.
+        </p>
+
+        <a href="panales-talla-4.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -294,11 +427,20 @@
       <div class="card-img">
         <a href="aceite-oliva.html">🫒</a>
       </div>
+
       <div class="card-body">
         <span class="badge">ALIMENTACIÓN · DESPENSA</span>
+
         <h3>Aceite de Oliva</h3>
-        <p>Seguimiento y comparativa del precio por litro en virgen extra y marcas de distribución.</p>
-        <a href="aceite-oliva.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Seguimiento y comparativa del precio por litro en virgen extra
+          y marcas de distribución.
+        </p>
+
+        <a href="aceite-oliva.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -306,11 +448,20 @@
       <div class="card-img">
         <a href="champu.html">🧴</a>
       </div>
+
       <div class="card-body">
         <span class="badge">HOGAR · HIGIENE</span>
+
         <h3>Champús</h3>
-        <p>Comparamos precios por cada 100 ml en champús de marcas líderes y formatos ahorro.</p>
-        <a href="champu.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Comparamos precios por cada 100 ml en champús de marcas líderes
+          y formatos ahorro.
+        </p>
+
+        <a href="champu.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -318,11 +469,20 @@
       <div class="card-img">
         <a href="pasta-dientes.html">🦷</a>
       </div>
+
       <div class="card-body">
         <span class="badge">HOGAR · HIGIENE</span>
+
         <h3>Pasta de Dientes</h3>
-        <p>Comparamos precios por cada 100 ml en dentífricos y packs de ahorro de higiene bucal.</p>
-        <a href="pasta-dientes.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Comparamos precios por cada 100 ml en dentífricos
+          y packs de ahorro de higiene bucal.
+        </p>
+
+        <a href="pasta-dientes.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -330,11 +490,20 @@
       <div class="card-img">
         <a href="lavavajillas-1.html">🍽️</a>
       </div>
+
       <div class="card-body">
         <span class="badge">HOGAR · LIMPIEZA</span>
+
         <h3>Pastillas Lavavajillas</h3>
-        <p>Comparamos Finish, Fairy y marcas blancas para descubrir el precio límite por dosis.</p>
-        <a href="lavavajillas-1.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Comparamos Finish, Fairy y marcas blancas para descubrir
+          el precio límite por dosis.
+        </p>
+
+        <a href="lavavajillas-1.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -342,11 +511,19 @@
       <div class="card-img">
         <a href="detergente-1.html">👕</a>
       </div>
+
       <div class="card-body">
         <span class="badge">HOGAR · COLADA</span>
+
         <h3>Detergente Lavadora</h3>
-        <p>Analizamos cápsulas Ariel frente a geles y marcas de supermercado.</p>
-        <a href="detergente-1.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Analizamos cápsulas Ariel frente a geles y marcas de supermercado.
+        </p>
+
+        <a href="detergente-1.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -354,11 +531,20 @@
       <div class="card-img">
         <a href="cafe-1.html">☕</a>
       </div>
+
       <div class="card-body">
         <span class="badge">ALIMENTACIÓN</span>
+
         <h3>Café en Grano</h3>
-        <p>Seguimiento del precio por kilo en marcas líderes para cafeteras automáticas.</p>
-        <a href="cafe-1.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Seguimiento del precio por kilo en marcas líderes
+          para cafeteras automáticas.
+        </p>
+
+        <a href="cafe-1.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -366,11 +552,22 @@
       <div class="card-img">
         <a href="ambientador.html">🌿</a>
       </div>
+
       <div class="card-body">
-        <span class="badge" style="background:#fef3c7; color:#b45309;">HOGAR · AMBIENTACIÓN</span>
+        <span class="badge" style="background:#fef3c7;color:#b45309;">
+          HOGAR · AMBIENTACIÓN
+        </span>
+
         <h3>Comparativa Ambientadores Hogar</h3>
-        <p>Análisis de los 5 mejores ambientadores (Air Wick, Ambi Pur, Mikado). Precios y duración.</p>
-        <a href="ambientador.html" class="btn">Ver comparativa →</a>
+
+        <p>
+          Análisis de los 5 mejores ambientadores:
+          Air Wick, Ambi Pur y Mikado. Precios y duración.
+        </p>
+
+        <a href="ambientador.html" class="btn">
+          Ver comparativa →
+        </a>
       </div>
     </article>
 
@@ -379,34 +576,59 @@
   <section class="telegram-banner">
     <div>
       <strong>📲 No te pierdas ninguna bajada de precio</strong>
-      <p style="font-size:14px; color:#526273; margin:4px 0 0;">Avisos directos en nuestro canal de Telegram cuando hay chollos reales.</p>
+
+      <p style="font-size:14px;color:#526273;margin:4px 0 0;">
+        Avisos directos en nuestro canal de Telegram cuando hay chollos reales.
+      </p>
     </div>
-    <a href="https://t.me/CholloCesta" target="_blank" rel="noopener" class="telegram-btn">Unirme a Telegram</a>
+
+    <a href="https://t.me/CholloCesta"
+       target="_blank"
+       rel="noopener"
+       class="telegram-btn">
+      Unirme a Telegram
+    </a>
   </section>
 
-  <!-- FAQ (Index 2) para SEO -->
   <section class="faq-section">
-    <h2 class="section-title" style="border-bottom: none; margin-bottom: 15px;">Preguntas Frecuentes (FAQ)</h2>
-    
+    <h2 class="section-title" style="border-bottom:none;margin-bottom:15px;">
+      Preguntas Frecuentes (FAQ)
+    </h2>
+
     <div class="faq-item">
-        <h4>¿Cómo encuentra CholloCesta las mejores ofertas?</h4>
-        <p>Monitorizamos constantemente las fluctuaciones de precios en Amazon, filtrando aquellos productos que cuentan con verdaderos descuentos históricos, excelentes valoraciones de clientes y una alta fiabilidad.</p>
+      <h4>¿Cómo encuentra CholloCesta las mejores ofertas?</h4>
+
+      <p>
+        Monitorizamos constantemente las fluctuaciones de precios en Amazon,
+        filtrando aquellos productos que cuentan con verdaderos descuentos históricos,
+        excelentes valoraciones de clientes y una alta fiabilidad.
+      </p>
     </div>
 
     <div class="faq-item">
-        <h4>¿Los precios de las ofertas pueden cambiar?</h4>
-        <p>Sí. Las ofertas flash y los descuentos en Amazon dependen estrictamente del stock disponible y de la vigencia de la promoción establecida por cada vendedor o fabricante.</p>
+      <h4>¿Los precios de las ofertas pueden cambiar?</h4>
+
+      <p>
+        Sí. Las ofertas flash y los descuentos en Amazon dependen estrictamente
+        del stock disponible y de la vigencia de la promoción establecida
+        por cada vendedor o fabricante.
+      </p>
     </div>
 
     <div class="faq-item">
-        <h4>¿Tiene algún coste adicional usar CholloCesta?</h4>
-        <p>Ninguno. Todos nuestros análisis y recopilatorios son totalmente gratuitos para los usuarios. Si compras a través de nuestros enlaces, recibimos una pequeña comisión de Amazon sin que a ti te cueste ni un céntimo más.</p>
+      <h4>¿Tiene algún coste adicional usar CholloCesta?</h4>
+
+      <p>
+        Ninguno. Todos nuestros análisis y recopilatorios son totalmente gratuitos
+        para los usuarios. Si compras a través de nuestros enlaces, recibimos
+        una pequeña comisión de Amazon sin que a ti te cueste ni un céntimo más.
+      </p>
     </div>
   </section>
 
 </main>
 
-<!-- Script de Filtros (Index 1) -->
+<!-- Script de filtros -->
 <script>
   const buttons = document.querySelectorAll('.cat-chip');
   const cards = document.querySelectorAll('.card');
@@ -419,7 +641,10 @@
       const filter = button.getAttribute('data-filter');
 
       cards.forEach(card => {
-        if (filter === 'all' || card.getAttribute('data-category').includes(filter)) {
+        if (
+          filter === 'all' ||
+          card.getAttribute('data-category').includes(filter)
+        ) {
           card.classList.remove('hidden');
         } else {
           card.classList.add('hidden');
@@ -429,10 +654,16 @@
   });
 </script>
 
-<!-- Contador de visitas (Index 1) -->
-<div style="text-align: center; margin: 20px 0; font-family: sans-serif;">
-  <p style="font-size: 14px; color: #666; margin-bottom: 5px;">🔥 Visitas totales en CholloCesta:</p>
-  <span id="global-counter" style="font-size: 20px; font-weight: bold; color: #2563eb;">Cargando...</span>
+<!-- Contador de visitas -->
+<div style="text-align:center;margin:20px 0;font-family:sans-serif;">
+  <p style="font-size:14px;color:#666;margin-bottom:5px;">
+    🔥 Visitas totales en CholloCesta:
+  </p>
+
+  <span id="global-counter"
+        style="font-size:20px;font-weight:bold;color:#2563eb;">
+    Cargando...
+  </span>
 </div>
 
 <script>
@@ -442,19 +673,29 @@
       return response.json();
     })
     .then(data => {
-      document.getElementById('global-counter').innerText = (data.count || 3420).toLocaleString();
+      document.getElementById('global-counter').innerText =
+        (data.count || 3420).toLocaleString();
     })
     .catch(error => {
-      document.getElementById('global-counter').innerText = "3.840";
+      document.getElementById('global-counter').innerText = '3.840';
     });
 </script>
 
-<!-- Footer con Aviso de Afiliación (Index 2) -->
 <footer>
-    <div class="afiliacion">
-        <p><em>En calidad de afiliado de Amazon, CholloCesta obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables. Esto no altera jamás el precio final para el consumidor ni condiciona la independencia de nuestros análisis y recomendaciones.</em></p>
-        <p style="margin-top: 15px;">&copy; 2026 CholloCesta. Todos los derechos reservados.</p>
-    </div>
+  <div class="afiliacion">
+    <p>
+      <em>
+        En calidad de afiliado de Amazon, CholloCesta obtiene ingresos por las
+        compras adscritas que cumplen los requisitos aplicables. Esto no altera
+        jamás el precio final para el consumidor ni condiciona la independencia
+        de nuestros análisis y recomendaciones.
+      </em>
+    </p>
+
+    <p style="margin-top:15px;">
+      &copy; 2026 CholloCesta. Todos los derechos reservados.
+    </p>
+  </div>
 </footer>
 
 </body>
