@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Ofertas flash de Amazon | CholloCesta</title>
+  <meta name="description" content="Descubre ofertas flash y chollos seleccionados de Amazon en CholloCesta. Comprueba siempre el precio y la disponibilidad antes de comprar.">
+  <meta name="theme-color" content="#111827">
+
+  <style>
+    :root {
+      --dark: #111827;
+      --muted: #667085;
+      --bg: #f6f7f9;
+      --line: #e5e7eb;
+      --accent: #f59e0b;
+      --green: #16a34a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: #172033;
+      line-height: 1.5;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background: var(--dark);
+      color: #fff;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: -.6px;
+    }
+
+    .brand span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      color: #cbd5e1;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: linear-gradient(145deg, #111827 0%, #1f2937 100%);
+      color: #fff;
+      padding: 42px 16px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(245, 158, 11, .15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, .3);
+      padding: 5px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .hero h1 {
+      font-size: clamp(28px, 6vw, 42px);
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: auto;
+      color: #d1d5db;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 32px 16px 48px;
+    }
+
+    .intro {
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    .deal-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+      max-width: 680px;
+      margin: 0 auto 22px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, .04);
+    }
+
+    .deal-tag {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .deal-card h2 {
+      color: var(--dark);
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .deal-card p {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .price {
+      color: var(--green);
+      font-size: 25px;
+      font-weight: 900;
+      margin-bottom: 4px;
+    }
+
+    .checked,
+    .note {
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #d97706;
+      color: #fff;
+      font-weight: 800;
+      padding: 10px 15px;
+      border-radius: 7px;
+    }
+
+    .button:hover {
+      filter: brightness(.95);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 10px;
+      color: #475569;
+      font-weight: 700;
+    }
+
+    footer {
+      background: var(--dark);
+      color: #cbd5e1;
+      padding: 24px 16px;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    footer p {
+      max-width: 800px;
+      margin: 8px auto;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        justify-content: center;
+      }
+
+      .nav-links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
+
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="ofertas.html">Ofertas flash</a>
+        <a href="aspirador.html">Robots Aspiradores</a>
+        <a href="valoraciones.html">Top Valoraciones</a>
+        <a href="secadores.html">Secadores</a>
+        <a href="https://t.me/CholloCesta"
+           target="_blank"
+           rel="nofollow noopener">Telegram</a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">🔥 CHOLLOCesta · OFERTAS</span>
+    <h1>Ofertas flash y chollos</h1>
+    <p>Una selección de ofertas de Amazon. Revisa siempre el precio final y la disponibilidad antes de comprar.</p>
+  </section>
+
+  <main>
+    <p class="intro">
+      Añadimos aquí ofertas seleccionadas de distintas categorías.
+      Los precios y el stock pueden cambiar rápidamente.
+    </p>
+
+    <article class="deal-card">
+      <span class="deal-tag">Belleza · Protector solar</span>
+
+      <h2>La Roche-Posay Anthelios UV-MUNE 400 SPF50+ (50 ml)</h2>
+
+      <p>
+        Fluido facial invisible con Mexoryl 400.
+        Resistente al agua, al sudor y a la arena.
+      </p>
+
+      <div class="price">12,70 €</div>
+      <small class="checked">Precio indicado el 23/09/2026</small>
+      <small class="note">
+        Amazon puede cambiar el precio, la disponibilidad y las condiciones de entrega.
+      </small>
+
+      <a href="https://amzn.to/3VLX0wA"
+         class="button"
+         target="_blank"
+         rel="nofollow sponsored noopener">
+        Ver oferta en Amazon →
+      </a>
+    </article>
+
+    <a href="index.html" class="back">← Volver a CholloCesta</a>
+  </main>
+
+  <footer>
+    <p>
+      <em>
+        En calidad de afiliado de Amazon, CholloCesta obtiene ingresos por
+        las compras adscritas que cumplen los requisitos aplicables.
+      </em>
+    </p>
+    <p>Los precios y la disponibilidad pueden cambiar en Amazon.</p>
+    <p>&copy; 2026 CholloCesta. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
