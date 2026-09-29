@@ -307,11 +307,29 @@
 
     .card-img {
       height: 145px;
-      background: #f3f4f6;
+      background: linear-gradient(135deg, #f3f4f6, #e8eef5);
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 48px;
+      overflow: hidden;
+    }
+
+    .svg-defs {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .card-art {
+      display: block;
+      width: 150px;
+      height: 125px;
+      transition: transform .2s ease;
+    }
+
+    .card:hover .card-art {
+      transform: scale(1.05);
     }
 
     .card-img a {
@@ -463,14 +481,38 @@
 
 <body>
 
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id='icon-hairdryer' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fff3db'/><path d='M28 36h42a12 12 0 0 1 12 12v7H39a11 11 0 0 1-11-11z' fill='#f59e0b' stroke='#24324b' stroke-width='3'/><path d='M82 43h13v12H82M43 55v22q0 4 4 4h11q4 0 4-4V55' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='M48 64h10m-10 7h10' stroke='white' stroke-width='3'/></symbol>
+    <symbol id='icon-robot' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#e7f5fa'/><rect x='28' y='39' width='64' height='38' rx='17' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='M45 39v-8q0-9 9-9h13q9 0 9 9v8' fill='white' stroke='#24324b' stroke-width='3'/><circle cx='60' cy='29' r='4' fill='#f59e0b'/><circle cx='45' cy='57' r='4' fill='#24324b'/><circle cx='75' cy='57' r='4' fill='#24324b'/></symbol>
+    <symbol id='icon-trophy' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fff3db'/><path d='M40 25h40v17q0 20-20 27-20-7-20-27z' fill='#f59e0b' stroke='#24324b' stroke-width='3'/><path d='M40 32H28v9q0 15 17 16m35-25h12v9q0 15-17 16M60 69v11m-14 0h28' fill='none' stroke='#24324b' stroke-width='4' stroke-linecap='round'/><path d='m60 34 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z' fill='white'/></symbol>
+    <symbol id='icon-hydro' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#e7f5fa'/><rect x='30' y='39' width='60' height='39' rx='12' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='M37 39v-8q0-6 6-6h34q6 0 6 6v8' fill='white' stroke='#24324b' stroke-width='3'/><path d='M43 52h34' stroke='white' stroke-width='4' stroke-linecap='round'/><path d='M60 57c-6 8-7 11-7 14a7 7 0 0 0 14 0c0-3-1-6-7-14' fill='#dff7ff'/></symbol>
+    <symbol id='icon-facial' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fdebf2'/><path d='M45 31q15-14 30 0l4 15q2 20-19 29-21-9-19-29z' fill='#f4c7b8' stroke='#24324b' stroke-width='3'/><path d='M48 49h7m10 0h7m-13 8q5 5 10 0' fill='none' stroke='#24324b' stroke-width='2.5' stroke-linecap='round'/><path d='M33 39l3-5m-8 16h7m49-11 4-5m-1 16h7' stroke='#f59e0b' stroke-width='3' stroke-linecap='round'/></symbol>
+    <symbol id='icon-serum' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fdebf2'/><path d='M55 27h10v10l7 7v34H48V44l7-7z' fill='#e879a8' stroke='#24324b' stroke-width='3'/><path d='M55 27h10v-7H55zm3-7v-6h4v6' fill='white' stroke='#24324b' stroke-width='3'/><path d='M52 55h16' stroke='white' stroke-width='3'/><path d='M34 42l3-5m-8 15h7m47-10 4-5m-1 15h7' stroke='#f59e0b' stroke-width='3' stroke-linecap='round'/></symbol>
+    <symbol id='icon-sunscreen' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fff3db'/><path d='M42 34h36l-4 43H46z' fill='white' stroke='#24324b' stroke-width='3'/><path d='M47 25h27v9H47z' fill='#f59e0b' stroke='#24324b' stroke-width='3'/><path d='M53 53h15' stroke='#67b7d1' stroke-width='5' stroke-linecap='round'/><circle cx='60' cy='64' r='6' fill='#f59e0b'/><path d='M90 27v-7m-7 3-4-4m18 4 4-4' stroke='#f59e0b' stroke-width='3'/></symbol>
+    <symbol id='icon-solar' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fff3db'/><circle cx='83' cy='30' r='11' fill='#f59e0b'/><path d='M83 13v-5m0 44v-5M66 30h-5m44 0h-5M71 18l-4-4m32 32-4-4m0-24 4-4m-32 32-4 4' stroke='#f59e0b' stroke-width='3'/><path d='M32 44h34l-5 32H37z' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='M39 36h20v8H39z' fill='white' stroke='#24324b' stroke-width='3'/></symbol>
+    <symbol id='icon-wipes' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#e7f5fa'/><rect x='27' y='39' width='66' height='38' rx='9' fill='white' stroke='#24324b' stroke-width='3'/><path d='M42 39v-5q0-6 6-6h24q6 0 6 6v5' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='M48 53q12-9 24 0v9q-12 9-24 0z' fill='#dff7ff' stroke='#24324b' stroke-width='2'/><path d='M50 69h20' stroke='#f59e0b' stroke-width='3'/></symbol>
+    <symbol id='icon-capsules' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fff3db'/><path d='M34 29q9-6 15 3l-7 17q-4 8-12 4t0-12z' fill='#e879a8' stroke='#24324b' stroke-width='3'/><path d='M72 28q9-5 14 4l-8 17q-4 8-12 4t0-12z' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='M40 39l10 5m23-7 10 5' stroke='white' stroke-width='3'/><path d='M48 61h32v14H48z' fill='white' stroke='#24324b' stroke-width='3'/><path d='M45 61q19-15 38 0' fill='#f59e0b' stroke='#24324b' stroke-width='3'/></symbol>
+    <symbol id='icon-diaper' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#e7f5fa'/><path d='M31 34q29 12 58 0l-7 38q-22 17-44 0z' fill='white' stroke='#24324b' stroke-width='3'/><path d='m31 34 15 5-4 31-11-3m58-33-15 5 4 31 11-3' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='M48 51q12 6 24 0m-20 12q8 5 16 0' fill='none' stroke='#f59e0b' stroke-width='3'/></symbol>
+    <symbol id='icon-oil' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#edf7e8'/><path d='M53 25h14v10l8 8v34H45V43l8-8z' fill='#4b9a6c' stroke='#24324b' stroke-width='3'/><path d='M54 25h12v-7H54z' fill='#f59e0b' stroke='#24324b' stroke-width='3'/><path d='M51 52h22v14H51z' fill='#fff3db' stroke='#24324b' stroke-width='2'/><ellipse cx='58' cy='59' rx='4' ry='6' fill='#7c9f3a'/><path d='M58 54q8-8 12-2' fill='none' stroke='#4b9a6c' stroke-width='2'/></symbol>
+    <symbol id='icon-shampoo' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fdebf2'/><path d='M48 31h24v9l7 8v29H41V48l7-8z' fill='#e879a8' stroke='#24324b' stroke-width='3'/><path d='M51 31v-8h18v8m-18-8h13' fill='none' stroke='#24324b' stroke-width='3' stroke-linecap='round'/><path d='M49 55h25' stroke='white' stroke-width='4' stroke-linecap='round'/><circle cx='84' cy='28' r='5' fill='#67b7d1'/><circle cx='34' cy='36' r='4' fill='#f59e0b'/></symbol>
+    <symbol id='icon-toothpaste' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#e7f5fa'/><path d='M34 37h47l-7 36H42z' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='m34 37 4-10h35l8 10' fill='white' stroke='#24324b' stroke-width='3'/><path d='M46 51h23' stroke='white' stroke-width='4' stroke-linecap='round'/><path d='M82 63h24m-20-7v14m6-14v14m6-14v14' stroke='#24324b' stroke-width='3' stroke-linecap='round'/></symbol>
+    <symbol id='icon-dishwasher' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#e7f5fa'/><rect x='30' y='27' width='60' height='50' rx='6' fill='white' stroke='#24324b' stroke-width='3'/><path d='M30 40h60' stroke='#24324b' stroke-width='3'/><circle cx='38' cy='33' r='2.5' fill='#f59e0b'/><circle cx='46' cy='33' r='2.5' fill='#67b7d1'/><path d='M42 51h36v17H42z' fill='#dff7ff' stroke='#24324b' stroke-width='2'/><path d='M48 59q12-10 24 0-12 10-24 0z' fill='#f59e0b'/></symbol>
+    <symbol id='icon-laundry' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#e7f5fa'/><path d='M37 31h34v47H37z' fill='#67b7d1' stroke='#24324b' stroke-width='3'/><path d='M43 31v-8h22v8' fill='white' stroke='#24324b' stroke-width='3'/><path d='M45 44h18' stroke='white' stroke-width='4' stroke-linecap='round'/><path d='M82 46q14-2 16 9l-4 19q-14 2-18-8z' fill='white' stroke='#24324b' stroke-width='3'/><path d='M78 55q8 3 15 0' stroke='#e879a8' stroke-width='3'/></symbol>
+    <symbol id='icon-beans' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#fff3db'/><path d='M29 58q17-20 34-6t-3 23q-17 11-31-1t0-16z' fill='#8b5a3c' stroke='#24324b' stroke-width='3'/><path d='M42 51q-4 14 10 22' fill='none' stroke='#fff3db' stroke-width='3'/><path d='M55 33q14-17 28-6t0 22q-15 13-29 2t1-18z' fill='#a86d44' stroke='#24324b' stroke-width='3'/><path d='M67 26q-4 14 10 22' fill='none' stroke='#fff3db' stroke-width='3'/><path d='M76 61h24v14H76z' fill='white' stroke='#24324b' stroke-width='3'/><path d='M73 61q15-13 30 0' fill='#f59e0b' stroke='#24324b' stroke-width='3'/></symbol>
+    <symbol id='icon-air' viewBox='0 0 120 100'><circle cx='60' cy='50' r='43' fill='#edf7e8'/><path d='M45 40h31v37H45z' fill='white' stroke='#24324b' stroke-width='3'/><path d='M51 40v-9h19v9m0-9h11' fill='none' stroke='#24324b' stroke-width='3' stroke-linecap='round'/><path d='M54 56h14' stroke='#67b7d1' stroke-width='4' stroke-linecap='round'/><path d='M84 33q11-11 18-2-3 12-16 12m-1 3q-7 4-8 12' fill='none' stroke='#4b9a6c' stroke-width='3' stroke-linecap='round'/><path d='M83 33q-4-10 4-14 9 5 4 13' fill='#84c778' stroke='#24324b' stroke-width='2'/></symbol>
+  </defs>
+</svg>
+
 <header>
   <nav>
     <a href="index.html" class="brand">
-      🛒 Chollo<span>Cesta</span>
+      Chollo<span>Cesta</span>
     </a>
 
     <div class="nav-links">
       <a href="index.html">Inicio</a>
+      <a href="belleza.html">Belleza</a>
       <a href="ofertas.html">Ofertas flash</a>
       <a href="aspirador.html">Robots Aspiradores</a>
       <a href="valoraciones.html">Top Valoraciones</a>
@@ -485,7 +527,7 @@
 </header>
 
 <section class="hero">
-  <span class="eyebrow">🎯 RADAR DE OFERTAS Y CONSUMO</span>
+  <span class="eyebrow">RADAR DE OFERTAS Y CONSUMO</span>
 
   <h1>
     Encuentra el chollo. Llena la cesta. Paga menos.
@@ -524,7 +566,7 @@
 
   <section class="todays-deals">
     <div class="todays-header">
-      <div class="todays-title">🔥 Las Ofertas de Hoy</div>
+      <div class="todays-title">Las Ofertas de Hoy</div>
       <small>Actualizado diariamente</small>
       <a href="ofertas.html" class="deal-button">Ver todas las ofertas →</a>
     </div>
@@ -592,53 +634,91 @@
 
   <div class="categories">
     <button class="cat-chip active" data-filter="all">
-      🔥 Todos
+      Todos
+    </button>
+
+    <button class="cat-chip" data-filter="belleza">
+      Belleza
     </button>
 
     <button class="cat-chip" data-filter="tecnologia">
-      📱 Tecnología
+      Tecnología
     </button>
 
     <button class="cat-chip" data-filter="cuidado-facial">
-      💧 Cuidado facial
+      Cuidado facial
     </button>
 
     <button class="cat-chip" data-filter="cuidado-capilar">
-      💇 Cuidado capilar
+      Cuidado capilar
     </button>
 
     <button class="cat-chip" data-filter="limpieza">
-      🧼 Limpieza
+      Limpieza
     </button>
 
     <button class="cat-chip" data-filter="hogar">
-      🍽️ Hogar y cocina
+      Hogar y cocina
     </button>
 
     <button class="cat-chip" data-filter="alimentacion">
-      ☕ Alimentación
+      Alimentación
     </button>
 
     <button class="cat-chip" data-filter="mascotas">
-      🐾 Mascotas
+      Mascotas
     </button>
 
     <button class="cat-chip" data-filter="despensa">
-      📦 Despensa
+      Despensa
     </button>
   </div>
 
   <h2 class="section-title">
-    📌 Guías y comparativas destacadas
+    Guías y comparativas destacadas
   </h2>
 
   <div class="grid" id="product-grid">
 
-    <article class="card" data-category="cuidado-capilar hogar">
+    <article class="card" data-category="belleza cuidado-facial cuidado-capilar">
       <div class="card-img">
-        <a href="secadores.html" aria-label="Comparativa de secadores">
-          💨
+        <a href="belleza.html" aria-label="Guías y comparativas de belleza">
+          <svg class="card-art" viewBox="0 0 120 100" aria-hidden="true">
+            <circle cx="60" cy="50" r="43" fill="#fdebf2"/>
+            <path d="M34 59q0-26 26-26t26 26v13H34z"
+                  fill="#f4c7b8" stroke="#24324b" stroke-width="3"/>
+            <path d="M45 52h7m16 0h7m-21 9q10 8 20 0"
+                  fill="none" stroke="#24324b" stroke-width="3"
+                  stroke-linecap="round"/>
+            <path d="M27 30l4-7m-8 16h8m57-9 4-7m-1 16h8"
+                  stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+            <path d="M52 74h16" stroke="#e879a8" stroke-width="4"
+                  stroke-linecap="round"/>
+          </svg>
         </a>
+      </div>
+
+      <div class="card-body">
+        <span class="badge" style="background:#fce7f3;color:#be185d;">
+          BELLEZA · GUÍAS Y COMPARATIVAS
+        </span>
+
+        <h3>Ofertas y comparativas de belleza</h3>
+
+        <p>
+          Explora cuidado facial, cabello, maquillaje y herramientas de belleza
+          en un solo lugar.
+        </p>
+
+        <a href="belleza.html" class="btn">
+          Explorar belleza →
+        </a>
+      </div>
+    </article>
+
+    <article class="card" data-category="cuidado-capilar hogar belleza">
+      <div class="card-img">
+        <a href="secadores.html" aria-label="Comparativa de secadores"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-hairdryer"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -661,7 +741,7 @@
 
     <article class="card" data-category="tecnologia hogar">
       <div class="card-img">
-        <a href="aspirador.html">🤖</a>
+        <a href="aspirador.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-robot"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -682,7 +762,7 @@
 
     <article class="card" data-category="tecnologia hogar">
       <div class="card-img">
-        <a href="valoraciones.html">🏆</a>
+        <a href="valoraciones.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-trophy"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -703,9 +783,9 @@
       </div>
     </article>
 
-    <article class="card" data-category="cuidado-facial">
+    <article class="card" data-category="cuidado-facial belleza">
       <div class="card-img">
-        <a href="crema.html">💧</a>
+        <a href="crema.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-hydro"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -724,9 +804,9 @@
       </div>
     </article>
 
-    <article class="card" data-category="cuidado-facial">
+    <article class="card" data-category="cuidado-facial belleza">
       <div class="card-img">
-        <a href="cuidado-facial.html">✨</a>
+        <a href="cuidado-facial.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-facial"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -744,9 +824,9 @@
       </div>
     </article>
 
-    <article class="card" data-category="cuidado-facial">
+    <article class="card" data-category="cuidado-facial belleza">
       <div class="card-img">
-        <a href="serums-acido-hialuronico.html">✨</a>
+        <a href="serums-acido-hialuronico.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-serum"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -766,9 +846,9 @@
       </div>
     </article>
 
-    <article class="card" data-category="hogar limpieza">
+    <article class="card" data-category="hogar limpieza belleza">
       <div class="card-img">
-        <a href="cremas-solares-seleccion-completa.html">🧴</a>
+        <a href="cremas-solares-seleccion-completa.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-sunscreen"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -786,9 +866,9 @@
       </div>
     </article>
 
-    <article class="card" data-category="hogar limpieza">
+    <article class="card" data-category="hogar limpieza belleza">
       <div class="card-img">
-        <a href="cremas-solares-corporales.html">☀️</a>
+        <a href="cremas-solares-corporales.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-solar"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -808,7 +888,7 @@
 
     <article class="card" data-category="hogar">
       <div class="card-img">
-        <a href="toallitas-humedas-bebe.html">🧻</a>
+        <a href="toallitas-humedas-bebe.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-wipes"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -828,7 +908,7 @@
 
     <article class="card" data-category="alimentacion despensa">
       <div class="card-img">
-        <a href="cafe-capsula.html">☕</a>
+        <a href="cafe-capsula.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-capsules"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -848,7 +928,7 @@
 
     <article class="card" data-category="hogar">
       <div class="card-img">
-        <a href="panales-talla-4.html">🧷</a>
+        <a href="panales-talla-4.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-diaper"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -868,7 +948,7 @@
 
     <article class="card" data-category="alimentacion despensa">
       <div class="card-img">
-        <a href="aceite-oliva.html">🫒</a>
+        <a href="aceite-oliva.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-oil"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -886,9 +966,9 @@
       </div>
     </article>
 
-    <article class="card" data-category="cuidado-capilar hogar">
+    <article class="card" data-category="cuidado-capilar hogar belleza">
       <div class="card-img">
-        <a href="champu.html">🧴</a>
+        <a href="champu.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-shampoo"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -908,7 +988,7 @@
 
     <article class="card" data-category="hogar">
       <div class="card-img">
-        <a href="pasta-dientes.html">🦷</a>
+        <a href="pasta-dientes.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-toothpaste"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -928,7 +1008,7 @@
 
     <article class="card" data-category="hogar limpieza">
       <div class="card-img">
-        <a href="lavavajillas-1.html">🍽️</a>
+        <a href="lavavajillas-1.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-dishwasher"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -948,7 +1028,7 @@
 
     <article class="card" data-category="limpieza">
       <div class="card-img">
-        <a href="detergente-1.html">👕</a>
+        <a href="detergente-1.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-laundry"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -968,7 +1048,7 @@
 
     <article class="card" data-category="alimentacion despensa">
       <div class="card-img">
-        <a href="cafe-1.html">☕</a>
+        <a href="cafe-1.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-beans"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -988,7 +1068,7 @@
 
     <article class="card" data-category="hogar limpieza">
       <div class="card-img">
-        <a href="ambientador.html">🌿</a>
+        <a href="ambientador.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-air"></use></svg></a>
       </div>
 
       <div class="card-body">
@@ -1010,7 +1090,7 @@
 
   <section class="telegram-banner">
     <div>
-      <strong>📲 No te pierdas ninguna bajada de precio</strong>
+      <strong>No te pierdas ninguna bajada de precio</strong>
 
       <p style="font-size:14px;color:#526273;margin-top:4px;">
         Avisos directos en nuestro canal de Telegram cuando hay chollos reales.
@@ -1088,7 +1168,7 @@
 
 <!-- Contador de visitas -->
 <div class="counter">
-  <p>👁️ Visitas a CholloCesta:</p>
+  <p>Visitas a CholloCesta:</p>
 
   <strong id="global-counter">
     Cargando…
