@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Belleza en Amazon: ofertas y comparativas | CholloCesta</title>
-  <meta name="description" content="Encuentra guías y comparativas de belleza en Amazon: cuidado facial, cremas solares, champús, tratamientos capilares, maquillaje y herramientas de belleza.">
+  <meta name="description" content="Encuentra guías de belleza en Amazon: cuidado facial, cabello, tintes, maquillaje y herramientas para comparar productos y ofertas.">
   <link rel="canonical" href="https://chollocesta.github.io/belleza.html">
   <meta name="theme-color" content="#111827">
   <meta name="robots" content="index, follow">
@@ -199,6 +199,62 @@
       color: var(--dark);
     }
 
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 18px 0 24px;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #ffffff;
+    }
+
+    .product-tag {
+      margin-bottom: 10px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: #fff7fb;
+      color: #7a3158;
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .product-card h4 {
+      margin-bottom: 8px;
+      color: var(--dark);
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .product-card p {
+      flex-grow: 1;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .product-button {
+      display: inline-block;
+      padding: 9px 12px;
+      border-radius: 7px;
+      background: var(--dark);
+      color: #ffffff;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .product-button:hover {
+      background: var(--pink);
+    }
+
     .text-pills {
       display: flex;
       flex-wrap: wrap;
@@ -304,7 +360,7 @@
     </p>
     <p>
       Explora nuestras guías de cuidado de la piel, cremas solares, champús,
-      tratamientos capilares, maquillaje y herramientas de belleza. Los precios
+      tratamientos capilares, tintes de pelo, maquillaje y herramientas de belleza. Los precios
       y la disponibilidad pueden cambiar; comprueba siempre las condiciones y el
       precio final en la tienda antes de comprar.
     </p>
@@ -360,6 +416,18 @@
         </svg>
         <h3>Maquillaje</h3>
         <p>Bases, polvos, sombras, delineadores, máscara, pintalabios y uñas.</p>
+      </a>
+
+      <a class="category-card" href="#tintes">
+        <svg class="category-art" viewBox="0 0 120 100" aria-hidden="true">
+          <circle cx="60" cy="50" r="43" fill="#fff3db"/>
+          <path d="M39 35h42v39H39z" fill="#e879a8" stroke="#24324b" stroke-width="3"/>
+          <path d="M48 35v-9h24v9" fill="#fff" stroke="#24324b" stroke-width="3"/>
+          <path d="M48 47h24m-24 8h24" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+          <path d="M30 78q10-8 20 0t20 0 20 0" fill="none" stroke="#7a4b32" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <h3>Tintes de pelo</h3>
+        <p>Coloración vegetal, sin amoníaco y permanente.</p>
       </a>
 
       <a class="category-card" href="#herramientas">
@@ -437,6 +505,93 @@
       capilares cuando tengas varias opciones que puedas comparar con datos
       y precios actualizados.
     </div>
+  </section>
+
+  <section class="content-section" id="tintes">
+    <h2>Tintes de pelo: vegetales, sin amoníaco y permanentes</h2>
+    <p>
+      No todos los tintes funcionan igual. Los vegetales, como la henna pura,
+      depositan pigmento y suelen ofrecer una gama más limitada; los tintes
+      tono sobre tono aportan color sin ser lo mismo que un tinte vegetal; y
+      las coloraciones permanentes utilizan procesos oxidativos para cambiar
+      el color durante más tiempo. El resultado depende también del tono de base,
+      las canas y los tratamientos anteriores.
+    </p>
+
+    <h3>Opciones para comparar</h3>
+    <p>
+      He elegido tres formatos de marcas diferentes. La opción más vegetal queda
+      destacada; que un tinte sea “sin amoníaco” no significa que sea 100 % natural.
+    </p>
+
+    <div class="product-grid">
+      <article class="product-card" style="border-color:#9bc49b;background:#fbfff9;">
+        <span class="product-tag" style="background:#e8f5e8;color:#315b37;">MÁS VEGETAL · HENNA PURA</span>
+        <h4>Khadi Henna Pura (100 g)</h4>
+        <p>
+          Polvo vegetal que la ficha presenta como henna pura. Se orienta a tonos
+          rojizos y cobrizos; no aclara el color natural y el resultado varía según
+          la base del cabello.
+        </p>
+        <a class="product-button" href="https://link.amazon/B0coBg14B" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a>
+      </article>
+
+      <article class="product-card">
+        <span class="product-tag">TONO SOBRE TONO · SIN AMONÍACO</span>
+        <h4>L’Oréal Paris Casting Crème Gloss, tono 400 castaño</h4>
+        <p>
+          Coloración sin amoníaco tono sobre tono. No es un tinte vegetal;
+          comprueba en la ficha la duración, la cobertura de canas y las
+          instrucciones para el tono elegido.
+        </p>
+        <a class="product-button" href="https://link.amazon/B036Uvo5a" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a>
+      </article>
+
+      <article class="product-card">
+        <span class="product-tag">PERMANENTE · SIN AMONÍACO</span>
+        <h4>Garnier Olia, tono 5.0 castaño claro</h4>
+        <p>
+          Coloración permanente sin amoníaco, con aceites florales de origen
+          natural según la ficha del fabricante. No es una coloración 100 % vegetal.
+        </p>
+        <a class="product-button" href="https://link.amazon/B08moSkvT" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a>
+      </article>
+    </div>
+
+    <div class="tip">
+      <strong>¿Cuál es la opción más natural?</strong> De esta selección, la henna
+      pura de Khadi es la alternativa de origen vegetal. Comprueba siempre la lista
+      de ingredientes y el tono esperado: la henna no aclara el pelo y no ofrece la
+      misma variedad de tonos que las coloraciones químicas.
+    </div>
+
+    <h3>Amoníaco en los tintes: para qué sirve y qué inconvenientes tiene</h3>
+    <p>
+      No diría que se usa principalmente por ser más barato. En las coloraciones
+      permanentes oxidativas, el amoníaco actúa como alcalinizante: eleva el pH y
+      ayuda a que el proceso de coloración llegue a la fibra capilar. También es
+      volátil, por lo que su olor fuerte puede resultar molesto y sus vapores
+      irritar a algunas personas; conviene seguir las instrucciones y ventilar.
+    </p>
+    <p>
+      La sequedad, la aspereza y la rotura no dependen solo del amoníaco: influyen
+      el conjunto de la fórmula —incluido el oxidante—, el tiempo de exposición,
+      la frecuencia de aplicación y el estado previo del cabello. Un tinte “sin
+      amoníaco” puede usar otros alcalinizantes, como etanolaminas, y seguir siendo
+      una coloración química; por eso no es automáticamente vegetal, inocuo ni menos
+      dañino en cualquier caso.
+    </p>
+
+    <div class="tip">
+      Haz la prueba de alergia indicada en el envase y una prueba en un mechón,
+      especialmente si cambias de producto o tienes el cabello tratado. “Natural”
+      tampoco significa que no pueda causar irritación o alergia.
+    </div>
+
+    <p style="font-size:13px;color:var(--muted);margin-top:16px;">
+      Fuentes: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9214764/" target="_blank" rel="noopener" style="text-decoration:underline;">revisión científica sobre ingredientes y riesgos de los tintes</a> ·
+      <a href="https://www.fda.gov/cosmetics/cosmetic-products/temporary-tattoos-hennamehndi-and-black-henna-fact-sheet" target="_blank" rel="noopener" style="text-decoration:underline;">FDA: henna y precauciones sobre productos “henna negra”</a>.
+    </p>
   </section>
 
   <section class="content-section" id="maquillaje">
