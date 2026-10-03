@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mejores Chollos en Cuidado Facial, Cremas y Cosmética | CholloCesta</title>
     <meta name="description" content="Descubre la selección experta con las mejores cremas faciales, sérums y limpiadores. Ofertas y chollos en CeraVe, La Roche-Posay, Eucerin y más. ¡Ahorra en tu rutina!">
+  <link rel="canonical" href="https://chollocesta.github.io/cuidado-facial.html">
     <meta name="keywords" content="mejores cremas faciales, chollos cosmética, ofertas cuidado facial, cerave, la roche posay, cetaphil, eucerin, medicube, chollocesta">
     <meta name="robots" content="index, follow">
     <style>
@@ -115,12 +116,9 @@
             align-items: center;
             gap: 15px;
         }
-        .product-img {
-            width: 60px;
-            height: 60px;
-            object-fit: contain;
-            border-radius: 4px;
-            border: 1px solid #eee;
+        .product-img-placeholder {
+            width: 60px; height: 60px; flex: 0 0 60px; display: grid; place-items: center;
+            border-radius: 8px; border: 1px solid #eee; background: #f9edf2; color: #b83280; font-size: 22px; font-weight: 800;
         }
         .product-name a {
             font-weight: 600;
@@ -204,7 +202,7 @@
                 <tr>
                     <th>Producto</th>
                     <th>Descripción Destacada</th>
-                    <th>Precio Actual</th>
+                    <th>Precio en Amazon</th>
                     <th>Enlace</th>
                 </tr>
             </thead>
@@ -212,7 +210,7 @@
                 <!-- Fila 1: Medicube -->
                 <tr>
                     <td class="product-col">
-                        <img src="image_0.png" alt="Medicube Deep Vita C Ampoule" class="product-img">
+                        <span class="product-img-placeholder" aria-hidden="true">M</span>
                         <div>
                             <div class="product-name"><a href="https://amzn.to/4qMHxIi" target="_blank" rel="nofollow noopener" onclick="trackClick()">Medicube Deep Vita C Ampoule</a></div>
                             <div class="product-size">Sérum Vitamina C (30ml)</div>
@@ -225,56 +223,53 @@
                 <!-- Fila 2: CeraVe -->
                 <tr>
                     <td class="product-col">
-                        <img src="image_3.png" alt="CeraVe Loción Hidratante Rostro" class="product-img">
+                        <span class="product-img-placeholder" aria-hidden="true">C</span>
                         <div>
                             <div class="product-name"><a href="https://amzn.to/4y5joyX" target="_blank" rel="nofollow noopener" onclick="trackClick()">CeraVe Loción Hidratante Rostro</a></div>
                             <div class="product-size">Crema Hidratante Noche (52 ml)</div>
                         </div>
                     </td>
                     <td>Hidrata y ayuda a restaurar la barrera protectora del rostro. Textura ultra-ligera.</td>
-                    <td class="price-col">12,23€</td>
+                    <td class="price-col">Consultar</td>
                     <td class="link-col"><a href="https://amzn.to/4y5joyX" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
                 </tr>
                 <!-- Fila 3: La Roche-Posay -->
                 <tr>
                     <td class="product-col">
-                        <img src="image_5.png" alt="La Roche-Posay Gel Effaclar" class="product-img">
+                        <span class="product-img-placeholder" aria-hidden="true">L</span>
                         <div>
                             <div class="product-name"><a href="https://amzn.to/3SD1cO4" target="_blank" rel="nofollow noopener" onclick="trackClick()">La Roche-Posay Gel Effaclar +M</a></div>
                             <div class="product-size">Gel Limpiador Purificante (400 ml)</div>
                         </div>
                     </td>
                     <td>Específico para pieles grasas con tendencia acneica. Purifica, anti-impurezas, limpia suavemente.</td>
-                    <td class="price-col">19,78€</td>
+                    <td class="price-col">Consultar</td>
                     <td class="link-col"><a href="https://amzn.to/3SD1cO4" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
                 </tr>
                  <!-- Fila 4: Cetaphil -->
                 <tr>
                     <td class="product-col">
-                        <img src="image_7.png" alt="Cetaphil Set Rutina" class="product-img">
+                        <span class="product-img-placeholder" aria-hidden="true">C</span>
                         <div>
                             <div class="product-name"><a href="https://amzn.to/4wTfwA7" target="_blank" rel="nofollow noopener" onclick="trackClick()">Cetaphil Rutina Set</a></div>
                             <div class="product-size">Crema 453g + Mini Limpiadora 29ml</div>
                         </div>
                     </td>
                     <td>Set completo para el cuidado de piel sensible. Hidratación profunda para rostro y cuerpo.</td>
-                    <td class="price-col">12,99€</td>
+                    <td class="price-col">Consultar</td>
                     <td class="link-col"><a href="https://amzn.to/4wTfwA7" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
                 </tr>
                 <!-- Fila 5: Eucerin -->
                 <tr>
                     <td class="product-col">
-                        <img src="image_9.png" alt="Eucerin Hyaluron-Filler Recarga" class="product-img">
+                        <span class="product-img-placeholder" aria-hidden="true">E</span>
                         <div>
                             <div class="product-name"><a href="https://amzn.to/4x1Qdfk" target="_blank" rel="nofollow noopener" onclick="trackClick()">Eucerin Hyaluron-Filler Recarga</a></div>
                             <div class="product-size">Recarga Crema de Día FPS 15 (50 ml)</div>
                         </div>
                     </td>
                     <td>Tratamiento facial antiedad con Ácido Hialurónico. Opción ecológica con 90% menos de plástico.</td>
-                    <td class="price-col">
-                        25,47€
-                        <span class="price-discount">(-10% dto.)</span>
-                    </td>
+                    <td class="price-col">Consultar</td>
                     <td class="link-col"><a href="https://amzn.to/4x1Qdfk" target="_blank" rel="nofollow noopener" onclick="trackClick()">Ver en Amazon</a></td>
                 </tr>
             </tbody>

@@ -3,284 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Ofertas flash de Amazon | CholloCesta</title>
-  <meta name="description" content="Descubre ofertas flash y chollos seleccionados de Amazon en CholloCesta. Comprueba siempre el precio y la disponibilidad antes de comprar.">
-  <meta name="theme-color" content="#111827">
-
+  <title>Ofertas Amazon comprobadas hoy | CholloCesta</title>
+  <meta name="description" content="Ofertas y chollos de Amazon comprobados el 3 de octubre de 2026: secador Remington, Finish, limpiador de lavadora y una oferta Prime Samsung.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://chollocesta.github.io/ofertas.html">
+  <meta property="og:title" content="Ofertas Amazon comprobadas | CholloCesta">
+  <meta property="og:description" content="Selección de ofertas con precios comprobados y condiciones transparentes.">
+  <meta property="og:url" content="https://chollocesta.github.io/ofertas.html">
+  <meta property="og:type" content="website">
   <style>
-    :root {
-      --dark: #111827;
-      --muted: #667085;
-      --bg: #f6f7f9;
-      --line: #e5e7eb;
-      --accent: #f59e0b;
-      --green: #16a34a;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Arial, sans-serif;
-      background: var(--bg);
-      color: #172033;
-      line-height: 1.5;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    header {
-      background: var(--dark);
-      color: #fff;
-    }
-
-    nav {
-      max-width: 1100px;
-      margin: auto;
-      padding: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .brand {
-      font-size: 24px;
-      font-weight: 900;
-      letter-spacing: -.6px;
-    }
-
-    .brand span {
-      color: var(--accent);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 15px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: #cbd5e1;
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .nav-links a:hover {
-      color: var(--accent);
-    }
-
-    .hero {
-      background: linear-gradient(145deg, #111827 0%, #1f2937 100%);
-      color: #fff;
-      padding: 42px 16px;
-      text-align: center;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      background: rgba(245, 158, 11, .15);
-      color: #fbbf24;
-      border: 1px solid rgba(245, 158, 11, .3);
-      padding: 5px 12px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-
-    .hero h1 {
-      font-size: clamp(28px, 6vw, 42px);
-      line-height: 1.1;
-      margin-bottom: 12px;
-    }
-
-    .hero p {
-      max-width: 620px;
-      margin: auto;
-      color: #d1d5db;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-      padding: 32px 16px 48px;
-    }
-
-    .intro {
-      color: var(--muted);
-      margin-bottom: 24px;
-    }
-
-    .deal-card {
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 22px;
-      max-width: 680px;
-      margin: 0 auto 22px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, .04);
-    }
-
-    .deal-tag {
-      display: inline-block;
-      background: #fef3c7;
-      color: #92400e;
-      padding: 4px 9px;
-      border-radius: 999px;
-      font-size: 11px;
-      font-weight: 800;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-    }
-
-    .deal-card h2 {
-      color: var(--dark);
-      font-size: 21px;
-      margin-bottom: 10px;
-    }
-
-    .deal-card p {
-      color: var(--muted);
-      margin-bottom: 14px;
-    }
-
-    .price {
-      color: var(--green);
-      font-size: 25px;
-      font-weight: 900;
-      margin-bottom: 4px;
-    }
-
-    .checked,
-    .note {
-      display: block;
-      color: var(--muted);
-      font-size: 12px;
-      margin-bottom: 14px;
-    }
-
-    .button {
-      display: inline-block;
-      background: #d97706;
-      color: #fff;
-      font-weight: 800;
-      padding: 10px 15px;
-      border-radius: 7px;
-    }
-
-    .button:hover {
-      filter: brightness(.95);
-    }
-
-    .back {
-      display: inline-block;
-      margin-top: 10px;
-      color: #475569;
-      font-weight: 700;
-    }
-
-    footer {
-      background: var(--dark);
-      color: #cbd5e1;
-      padding: 24px 16px;
-      text-align: center;
-      font-size: 12px;
-    }
-
-    footer p {
-      max-width: 800px;
-      margin: 8px auto;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        justify-content: center;
-      }
-
-      .nav-links {
-        justify-content: center;
-      }
-    }
+    :root{--dark:#111827;--muted:#667085;--bg:#f6f7f9;--line:#e5e7eb;--accent:#f59e0b;--green:#15803d}
+    *{box-sizing:border-box;margin:0;padding:0}body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:#172033;line-height:1.6}a{text-decoration:none;color:inherit}
+    header{background:var(--dark);color:#fff}nav{max-width:1100px;margin:auto;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:24px;font-weight:900;letter-spacing:-.6px}.brand span{color:var(--accent)}.nav-links{display:flex;gap:15px;align-items:center;flex-wrap:wrap}.nav-links a{font-size:14px;font-weight:600;color:#cbd5e1}.nav-links a:hover{color:var(--accent)}
+    .hero{background:linear-gradient(145deg,#111827,#1f2937);color:#fff;text-align:center;padding:42px 16px}.hero h1{font-size:clamp(28px,6vw,42px);line-height:1.1;margin:10px auto 12px}.hero p{max-width:720px;margin:auto;color:#d1d5db}.eyebrow{display:inline-block;color:#fbbf24;background:#f59e0b26;border:1px solid #f59e0b55;border-radius:999px;padding:5px 12px;font-size:12px;font-weight:800}
+    main{max-width:1050px;margin:auto;padding:30px 16px 48px}.intro{color:var(--muted);margin-bottom:20px}.event{background:#fff7db;border:1px solid #f4ce69;border-radius:14px;padding:18px 20px;margin-bottom:22px;color:#713f12}.event strong{color:#78350f}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;display:flex;flex-direction:column;box-shadow:0 5px 16px #1018280a}.tag{align-self:flex-start;background:#fef3c7;color:#92400e;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800;margin-bottom:10px}.card h2{font-size:19px;line-height:1.3;margin-bottom:10px;color:var(--dark)}.card p{color:var(--muted);font-size:14px;margin-bottom:12px}.price{color:var(--green);font-size:25px;font-weight:900;margin-top:auto}.small{font-size:12px;color:var(--muted);margin:3px 0 13px}.button{display:inline-block;text-align:center;background:#d97706;color:#fff;padding:10px 14px;border-radius:8px;font-weight:800}.button:hover{filter:brightness(.95)}.policy{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:24px;color:var(--muted);font-size:14px}.back{display:inline-block;margin:20px 0;color:#334155;font-weight:700}footer{background:var(--dark);color:#cbd5e1;text-align:center;padding:24px 16px;font-size:12px}footer p{max-width:850px;margin:8px auto}@media(max-width:600px){nav,.nav-links{justify-content:center}}
   </style>
 </head>
-
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="brand">🛒 Chollo<span>Cesta</span></a>
-
-      <div class="nav-links">
-        <a href="index.html">Inicio</a>
-        <a href="ofertas.html">Ofertas flash</a>
-        <a href="aspirador.html">Robots Aspiradores</a>
-        <a href="valoraciones.html">Top Valoraciones</a>
-        <a href="secadores.html">Secadores</a>
-        <a href="https://t.me/CholloCesta"
-           target="_blank"
-           rel="nofollow noopener">Telegram</a>
-      </div>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <span class="eyebrow">🔥 CHOLLOCesta · OFERTAS</span>
-    <h1>Ofertas flash y chollos</h1>
-    <p>Una selección de ofertas de Amazon. Revisa siempre el precio final y la disponibilidad antes de comprar.</p>
+<header><nav>
+  <a href="index.html" class="brand">Chollo<span>Cesta</span></a>
+  <div class="nav-links"><a href="index.html">Inicio</a><a href="belleza.html">Belleza</a><a href="ofertas.html">Ofertas</a><a href="limpieza.html">Limpieza</a><a href="lavadoras-secadoras.html">Lavadoras</a><a href="secadores.html">Secadores</a><a href="https://t.me/CholloCesta" target="_blank" rel="nofollow noopener">Telegram</a></div>
+</nav></header>
+<section class="hero"><span class="eyebrow">REVISADO EL 03/10/2026</span><h1>Ofertas de Amazon seleccionadas</h1><p>Precios consultados en Amazon.es. Comprueba el importe final, vendedor, disponibilidad y gastos de entrega antes de comprar.</p></section>
+<main>
+  <p class="intro">Selección breve de productos con valoraciones altas cuando la oferta y la ficha consultada lo permiten. Los precios y las condiciones promocionales cambian y no están garantizados.</p>
+  <aside class="event"><strong>Fiesta de Ofertas Prime: 6 y 7 de octubre de 2026.</strong> Amazon ya muestra algunas ofertas anticipadas. Parte de los precios puede ser exclusiva para clientes Prime; revisa las condiciones de cada ficha. La fecha de la campaña no garantiza que un producto concreto tenga descuento.</aside>
+  <section class="grid" aria-label="Ofertas vigentes consultadas">
+    <article class="card"><span class="tag">Cuidado capilar · valoración 4,6/5</span><h2>Remington Ionic Dry 2200 D3198</h2><p>Secador iónico de 2200 W. Ficha, precio y disponibilidad comprobados en Amazon el 03/10/2026.</p><div class="price">18,04 €</div><small class="small">La valoración puede cambiar. Comprueba el precio final.</small><a class="button" href="https://link.amazon/B01gCsgSB" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a></article>
+    <article class="card"><span class="tag">Lavavajillas · valoración 4,7/5</span><h2>Finish Quantum Infinity Shine · 83 cápsulas</h2><p>Precio revisado en la ficha de Amazon.es el 03/10/2026: aproximadamente 0,17 € por cápsula.</p><div class="price">14,49 €</div><small class="small">Formato de 83 unidades; compara el coste por lavado.</small><a class="button" href="https://www.amazon.es/dp/B09PYLZSQX?tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a></article>
+    <article class="card"><span class="tag">Mantenimiento de lavadora · 4,6/5</span><h2>Dr. Beckmann Limpia Lavadoras Complete Care · 250 ml</h2><p>Limpiador para el mantenimiento del tambor y la lavadora. Precio y ficha comprobados el 03/10/2026.</p><div class="price">4,10 €</div><small class="small">Consulta las instrucciones y compatibilidad en el envase.</small><a class="button" href="https://www.amazon.es/dp/B00XAFKEZS?tag=chollocesta-21" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a></article>
+    <article class="card"><span class="tag">Oferta anticipada · solo Prime</span><h2>Samsung WW90CGC04DTEEC · lavadora 9 kg</h2><p>Amazon mostraba 338,99 € como precio de oferta para clientes Prime; 356,99 € como precio sin la oferta en la consulta del 03/10/2026. No se destaca su valoración, inferior al umbral que solemos priorizar.</p><div class="price">338,99 € <span style="font-size:13px;color:#667085">con Prime</span></div><small class="small">Vendedor Amazon, en stock durante la consulta. Confirma entrega, instalación y condiciones.</small><a class="button" href="https://link.amazon/B02pILhAI" target="_blank" rel="nofollow sponsored noopener">Ver en Amazon →</a></article>
   </section>
-
-  <main>
-    <p class="intro">
-      Añadimos aquí ofertas seleccionadas de distintas categorías.
-      Los precios y el stock pueden cambiar rápidamente.
-    </p>
-
-    <article class="deal-card">
-      <span class="deal-tag">Belleza · Protector solar</span>
-
-      <h2>La Roche-Posay Anthelios UV-MUNE 400 SPF50+ (50 ml)</h2>
-
-      <p>
-        Fluido facial invisible con Mexoryl 400.
-        Resistente al agua, al sudor y a la arena.
-      </p>
-
-      <div class="price">12,70 €</div>
-      <small class="checked">Precio indicado el 23/09/2026</small>
-      <small class="note">
-        Amazon puede cambiar el precio, la disponibilidad y las condiciones de entrega.
-      </small>
-
-      <a href="https://amzn.to/3VLX0wA"
-         class="button"
-         target="_blank"
-         rel="nofollow sponsored noopener">
-        Ver oferta en Amazon →
-      </a>
-    </article>
-
-    <a href="index.html" class="back">← Volver a CholloCesta</a>
-  </main>
-
-  <footer>
-    <p>
-      <em>
-        En calidad de afiliado de Amazon, CholloCesta obtiene ingresos por
-        las compras adscritas que cumplen los requisitos aplicables.
-      </em>
-    </p>
-    <p>Los precios y la disponibilidad pueden cambiar en Amazon.</p>
-    <p>&copy; 2026 CholloCesta. Todos los derechos reservados.</p>
-  </footer>
+  <section class="policy"><strong>Cómo elegimos:</strong> contrastamos la ficha disponible, precio, condición de la promoción y valoraciones. Cuando una oferta depende de Prime lo indicamos. Ningún precio ni stock está garantizado y el precio válido es el que aparece en Amazon al tramitar el pedido. Algunos enlaces son de afiliado: CholloCesta puede recibir ingresos por compras que cumplan las condiciones aplicables, sin coste adicional para ti.</section>
+  <a href="index.html" class="back">← Volver a CholloCesta</a>
+</main>
+<footer><p><em>En calidad de afiliado de Amazon, CholloCesta obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables.</em></p><p>Precios, stock y valoraciones sujetos a cambios. Contenido revisado el 03/10/2026.</p><p>© 2026 CholloCesta.</p></footer>
 </body>
 </html>
