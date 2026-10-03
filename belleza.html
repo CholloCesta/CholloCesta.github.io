@@ -684,8 +684,30 @@
     <p style="margin-top:15px;">
       &copy; 2026 CholloCesta. Todos los derechos reservados.
     </p>
+    <p id="belleza-visitas" aria-live="polite" style="margin-top:15px;">
+      Visitas a esta página: cargando…
+    </p>
   </div>
 </footer>
+
+<script>
+  (function () {
+    const contador = document.getElementById("belleza-visitas");
+    fetch("https://countapi.mileshilliard.com/api/v1/hit/chollocesta_belleza_visits_2026", { cache: "no-store" })
+      .then(respuesta => {
+        if (!respuesta.ok) throw new Error("Contador no disponible");
+        return respuesta.json();
+      })
+      .then(datos => {
+        const visitas = Number(datos.value);
+        if (!Number.isFinite(visitas)) throw new Error("Respuesta no válida");
+        contador.textContent = "Visitas a esta página: " + new Intl.NumberFormat("es-ES").format(visitas);
+      })
+      .catch(() => {
+        contador.textContent = "Contador de visitas no disponible ahora";
+      });
+  })();
+</script>
 
 </body>
 </html>
