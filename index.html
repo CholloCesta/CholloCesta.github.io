@@ -482,6 +482,40 @@
         padding: 38px 16px;
       }
     }
+  
+    /* Dark Mode Styles */
+    body.dark-mode {
+      --bg: #111827;
+      --card-bg: #1f2937;
+      --text: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border: #374151;
+      background-color: var(--bg) !important;
+      color: var(--text) !important;
+    }
+    body.dark-mode .card,
+    body.dark-mode header,
+    body.dark-mode section,
+    body.dark-mode .container {
+      background-color: var(--card-bg) !important;
+      color: var(--text) !important;
+      border-color: var(--border) !important;
+    }
+    body.dark-mode input[type="text"] {
+      background-color: #374151 !important;
+      color: #fff !important;
+      border-color: #4b5563 !important;
+    }
+    body.dark-mode .cat-chip {
+      background-color: #374151;
+      color: #f3f4f6;
+      border-color: #4b5563;
+    }
+    body.dark-mode .cat-chip.active {
+      background-color: #dc2626;
+      color: #fff;
+    }
+
   </style>
 </head>
 
@@ -562,7 +596,55 @@
   </p>
 </section>
 
+    <!-- BUSCADOR INSTANTÁNEO -->
+    <div class="search-container" style="margin: 20px 0; text-align: center;">
+      <input type="text" id="live-search" placeholder="🔍 Buscar chollos, marcas o productos..." style="width: 100%; max-width: 600px; padding: 12px 20px; font-size: 16px; border: 2px solid #e5e7eb; border-radius: 30px; outline: none; transition: border-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);" oninput="filterChollos()">
+    </div>
+    <script>
+      function filterChollos() {
+        const query = document.getElementById('live-search').value.toLowerCase();
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    </script>
+
+
 <main>
+
+    <!-- TOP CHOLLOS DEL DÍA Y ALERTAS FLASH -->
+    <section class="top-chollos-banner" style="background:linear-gradient(135deg, #fee2e2, #fef2f2);border:2px solid #ef4444;border-radius:12px;padding:25px;margin:20px 0 30px;box-shadow:0 4px 6px rgba(0,0,0,0.05);">
+      <h2 style="color:#b91c1c;margin-top:0;font-size:22px;display:flex;align-items:center;gap:10px;">
+        <span>⚡</span> Top Chollos del Día & Alertas Flash
+      </h2>
+      <p style="color:#4b5563;margin-bottom:15px;">
+        Selección exprés con las mejores bajadas de precio del día en Amazon. ¡Unidades limitadas con la etiqueta <code>chollocesta-21</code>!
+      </p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:15px;">
+        <div style="background:#fff;padding:15px;border-radius:8px;border:1px solid #fecaca;">
+          <h3 style="font-size:16px;margin:0 0 8px;color:#111;">Mancuernas Ajustables Pro</h3>
+          <p style="font-size:14px;color:#6b7280;margin:0 0 10px;">Ideal para fitness en casa con carga progresiva.</p>
+          <a href="https://www.amazon.es/s?k=mancuernas+ajustables&tag=chollocesta-21" target="_blank" style="display:inline-block;background:#dc2626;color:#fff;padding:8px 12px;border-radius:4px;text-decoration:none;font-weight:bold;font-size:13px;">Ver chollo en Amazon</a>
+        </div>
+        <div style="background:#fff;padding:15px;border-radius:8px;border:1px solid #fecaca;">
+          <h3 style="font-size:16px;margin:0 0 8px;color:#111;">Robot Aspirador Inteligente</h3>
+          <p style="font-size:14px;color:#6b7280;margin:0 0 10px;">Mapeo láser y succión potente al mejor precio.</p>
+          <a href="https://www.amazon.es/s?k=robot+aspirador&tag=chollocesta-21" target="_blank" style="display:inline-block;background:#dc2626;color:#fff;padding:8px 12px;border-radius:4px;text-decoration:none;font-weight:bold;font-size:13px;">Ver chollo en Amazon</a>
+        </div>
+        <div style="background:#fff;padding:15px;border-radius:8px;border:1px solid #fecaca;">
+          <h3 style="font-size:16px;margin:0 0 8px;color:#111;">Secador de Pelo Iónico</h3>
+          <p style="font-size:14px;color:#6b7280;margin:0 0 10px;">Cuidado profesional para cabello sin encrespamiento.</p>
+          <a href="https://www.amazon.es/s?k=secador+de+pelo+ionico&tag=chollocesta-21" target="_blank" style="display:inline-block;background:#dc2626;color:#fff;padding:8px 12px;border-radius:4px;text-decoration:none;font-weight:bold;font-size:13px;">Ver chollo en Amazon</a>
+        </div>
+      </div>
+    </section>
+
 
   <section class="seo-intro">
     <h2>
@@ -639,7 +721,13 @@
     </p>
   </section>
 
-  <div class="categories">
+  
+    <!-- BUSCADOR EN TIEMPO REAL -->
+    <div style="margin: 20px 0; text-align: center;">
+      <input type="text" id="chollo-search" placeholder="🔍 Buscar chollos, marcas, productos (ej. mancuernas, secador)..." style="width: 100%; max-width: 600px; padding: 12px 20px; font-size: 16px; border: 2px solid #e5e7eb; border-radius: 30px; outline: none; transition: border-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02);" onfocus="this.style.borderColor='#dc2626'" onblur="this.style.borderColor='#e5e7eb'">
+    </div>
+
+<div class="categories">
     <button class="cat-chip active" data-filter="all">
       Todos
     </button>
@@ -1229,6 +1317,32 @@
 <script>
   const buttons = document.querySelectorAll(".cat-chip");
   const cards = document.querySelectorAll(".card");
+  const searchInput = document.getElementById("chollo-search");
+
+  function filterChollos() {
+    const query = searchInput.value.toLowerCase().trim();
+    const activeBtn = document.querySelector(".cat-chip.active");
+    const currentFilter = activeBtn ? activeBtn.getAttribute("data-filter") : "all";
+
+    filterChollos();
+  cards.forEach(card => {
+      const categories = card.getAttribute("data-category") || "";
+      const textContent = card.textContent.toLowerCase();
+      
+      const matchesCategory = (currentFilter === "all" || categories.includes(currentFilter));
+      const matchesSearch = (query === "" || textContent.includes(query));
+
+      if (matchesCategory && matchesSearch) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener("input", filterChollos);
+  }
 
   buttons.forEach(button => {
     button.addEventListener("click", () => {
@@ -1237,7 +1351,8 @@
 
       const filter = button.getAttribute("data-filter");
 
-      cards.forEach(card => {
+      filterChollos();
+  cards.forEach(card => {
         const categories = card.getAttribute("data-category") || "";
 
         if (filter === "all" || categories.includes(filter)) {
@@ -1291,9 +1406,78 @@
     </p>
 
     <p style="margin-top:15px;">
-      &copy; 2026 CholloCesta. Todos los derechos reservados.
+      Contacto: <a href="mailto:2025generation@gmail.com" style="color:#f87171;text-decoration:none;">2025generation@gmail.com</a> | &copy; 2026 CholloCesta. Todos los derechos reservados. | <a href="https://telegra.ph/Transparencia-y-Afiliados-de-Amazon---Chollo-Cesta-10-14" target="_blank" style="color:#f87171;text-decoration:none;">Afiliados Amazon</a> | <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank" style="color:#f87171;text-decoration:none;">Política de Privacidad</a>
     </p>
   </div>
+</footer>
+
+
+<!-- Cookie Banner -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1f2937;color:#fff;padding:15px 20px;z-index:9999;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;box-shadow:0 -2px 10px rgba(0,0,0,0.2);font-size:14px;">
+  <p style="margin:0 15px 10px 0;flex:1;min-width:280px;">
+    Utilizamos cookies técnicas y analíticas propias y de terceros, así como enlaces de afiliados de Amazon, para garantizar el funcionamiento de la web y analizar el tráfico. Puedes obtener más información en nuestra <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank" style="color:#60a5fa;text-decoration:underline;">Política de Privacidad</a>.
+  </p>
+  <div>
+    <button onclick="acceptCookies()" style="background:#dc2626;color:#fff;border:none;padding:8px 16px;border-radius:4px;cursor:pointer;font-weight:bold;margin-right:10px;">Aceptar</button>
+  </div>
+</div>
+<script>
+  function acceptCookies() {
+    localStorage.setItem('cookies_accepted', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+  if (localStorage.getItem('cookies_accepted') === 'true') {
+    document.getElementById('cookie-banner').style.display = 'none';
+  }
+</script>
+
+
+  <!-- Dark Mode Toggle Button -->
+  <button onclick="toggleDarkMode()" aria-label="Cambiar modo oscuro" style="position:fixed;top:20px;right:20px;background:#1f2937;color:#fff;border:none;width:45px;height:45px;border-radius:50%;cursor:pointer;z-index:10000;box-shadow:0 2px 8px rgba(0,0,0,0.3);font-size:20px;display:flex;align-items:center;justify-content:center;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <span id="theme-icon">🌙</span>
+  </button>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      document.getElementById('theme-icon').textContent = isDark ? '☀️' : '🌙';
+    }
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+      document.getElementById('theme-icon').textContent = '☀️';
+    }
+  </script>
+
+
+  <!-- Botón Flotante Comunidad Telegram / WhatsApp -->
+  <a href="https://t.me/chollocesta" target="_blank" aria-label="Canal de Telegram de Chollo Cesta" style="position:fixed;bottom:80px;right:20px;background:#2563eb;color:#fff;width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:9998;text-decoration:none;font-size:26px;transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    💬
+  </a>
+
+
+<footer style="background:#111;color:#ccc;text-align:center;padding:30px 20px;margin-top:50px;font-size:14px;line-height:1.8;">
+  <p>
+    &copy; 2026 Chollo Cesta. Todos los derechos reservados. Participamos en el Programa de Afiliados de Amazon EU.
+  </p>
+  <p style="margin:10px 0;">
+    Contacto: <a href="mailto:2025generation@gmail.com" style="color:#f87171;text-decoration:none;">2025generation@gmail.com</a>
+  </p>
+  <p style="margin:0;">
+    <a href="index_updated.html" style="color:#60a5fa;text-decoration:none;">Inicio</a> |
+    <a href="entrenamiento-en-casa-fitness.html" style="color:#60a5fa;text-decoration:none;">Fitness</a> |
+    <a href="https://telegra.ph/Contacto-y-FAQ---Chollo-Cesta-10-14" target="_blank" style="color:#60a5fa;text-decoration:none;">Contacto & FAQ</a> |
+    <a href="https://telegra.ph/Aviso-Legal---Chollo-Cesta-10-14" target="_blank" style="color:#60a5fa;text-decoration:none;">Aviso Legal</a> |
+    <a href="https://telegra.ph/Transparencia-y-Afiliados-de-Amazon---Chollo-Cesta-10-14" target="_blank" style="color:#60a5fa;text-decoration:none;">Afiliados</a> |
+    <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank" style="color:#60a5fa;text-decoration:none;">Política de Privacidad</a>
+  </p>
+  <p style="margin-top:15px;font-size:12px;color:#888;">
+    Versiones online oficiales: 
+    <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank" style="color:#9ca3af;">Privacidad</a> | 
+    <a href="https://telegra.ph/Transparencia-y-Afiliados-de-Amazon---Chollo-Cesta-10-14" target="_blank" style="color:#9ca3af;">Afiliados</a> | 
+    <a href="https://telegra.ph/Aviso-Legal---Chollo-Cesta-10-14" target="_blank" style="color:#9ca3af;">Aviso Legal</a> | 
+    <a href="https://telegra.ph/Contacto-y-FAQ---Chollo-Cesta-10-14" target="_blank" style="color:#9ca3af;">FAQ</a>
+  </p>
 </footer>
 
 </body>
