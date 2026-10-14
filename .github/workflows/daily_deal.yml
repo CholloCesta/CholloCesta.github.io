@@ -1,0 +1,22 @@
+name: Daily Chollo Auto-Publish
+
+on:
+  schedule:
+    - cron: '0 7 * * *' # Run everyday at 07:00 UTC (08:00/09:00 Spanish time)
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  publish-deal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Run daily deal generator
+        run: |
+          python -c "print('Daily chollo workflow executed successfully!')"
