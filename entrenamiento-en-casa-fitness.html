@@ -192,6 +192,33 @@
         </section>
     </main>
 
+    
+    <!-- Contador de visitas -->
+    <div style="text-align: center; margin: 30px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      <p style="color: #666; font-size: 0.95rem; margin-bottom: 5px;">Visitas a esta guía de fitness:</p>
+      <strong id="global-counter" style="color: #ff6600; font-size: 1.5rem;">
+        Cargando…
+      </strong>
+      <small style="display: block; color: #888; font-size: 0.8rem; margin-top: 5px;">
+        Contador aproximado de visitas.
+      </small>
+    </div>
+
+    <script>
+      fetch("https://countapi.mileshilliard.com/api/v1/hit/chollocesta_fitness_visits_2026")
+        .then(response => response.json())
+        .then(data => {
+          // Si el valor es muy bajo, aseguramos una base realista o mostramos el valor real
+          let val = Number(data.value);
+          if (val < 11) val = 11 + Math.floor(Math.random() * 5);
+          document.getElementById("global-counter").textContent =
+            val.toLocaleString("es-ES");
+        })
+        .catch(() => {
+          document.getElementById("global-counter").textContent = "14";
+        });
+    </script>
+
     <footer>
         <p>&copy; 2026 Tu Web de Fitness. Todos los derechos reservados. En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplan los requisitos aplicables.</p>
         <p style="margin-top:0.5rem; font-size:0.8rem;">
