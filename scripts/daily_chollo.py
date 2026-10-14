@@ -22,7 +22,6 @@ CATEGORIZED_DEALS = [
     {
         "category": "🏃 Deporte y Salud",
         "title": "🏃 ¡CHOLLO FITNESS! Smartwatch Deportivo con Pulsómetro y SpO2",
-        "id": "fit",
         "description": "Monitor de sueño, 100+ modos deportivos, resistencia al agua IP68 y notificaciones inteligentes.",
         "url": "https://www.amazon.es/dp/B0C3X9YYYY"
     },
@@ -39,20 +38,11 @@ def main():
     url_afiliado = f"{deal['url']}?tag=chollocesta-21"
     
     mensaje = (
-        f"<b>{deal['title']}</b>
-
-"
-        f"{deal['description']}
-
-"
-        f"🏷 <b>Categoría:</b> {deal['category']}
-"
-        f"💶 <b>¡Precio chollo verificado!</b>
-
-"
-        f"👉 <a href='{url_afiliado}'>Ver oferta en Amazon</a>
-
-"
+        f"<b>{deal['title']}</b>\n\n"
+        f"{deal['description']}\n\n"
+        f"🏷 <b>Categoría:</b> {deal['category']}\n"
+        f"💶 <b>¡Precio chollo verificado!</b>\n\n"
+        f"👉 <a href='{url_afiliado}'>Ver oferta en Amazon</a>\n\n"
         f"🔔 <i>CholloCesta · Las mejores ofertas diarias de Amazon</i>"
     )
     
