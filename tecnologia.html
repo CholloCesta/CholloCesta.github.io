@@ -107,24 +107,25 @@
 
   </div>
 
+
 <div class="counter" style="text-align:center; margin: 25px 0; font-family: Arial, sans-serif;">
   <p style="margin: 0 0 5px 0; color: #555;">Visitas a esta página:</p>
-  <strong id="tecnologia-visitas" style="color: #2563eb; font-size: 21px;">15</strong>
-  <small style="display: block; color: #888; font-size: 11px; margin-top: 5px;">Contador aproximado de cargas de esta página.</small>
+  <strong id="tecnologia-visitas" style="color: #2563eb; font-size: 21px;">Cargando…</strong>
+  <small style="display: block; color: #888; font-size: 11px; margin-top: 5px;">Contador real de visitas de esta página.</small>
 </div>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
-  let visits = localStorage.getItem("chollocesta_tecnologia_visits");
-  if (!visits) {
-    visits = 15;
-  } else {
-    visits = parseInt(visits) + 1;
-  }
-  localStorage.setItem("chollocesta_tecnologia_visits", visits);
-  document.getElementById("tecnologia-visitas").textContent = visits.toLocaleString("es-ES");
-});
+  fetch("https://countapi.mileshilliard.com/api/v1/hit/chollocesta_tecnologia_page_2026", { cache: "no-store" })
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById("tecnologia-visitas").textContent =
+        Number(data.value).toLocaleString("es-ES");
+    })
+    .catch(() => {
+      document.getElementById("tecnologia-visitas").textContent = "—";
+    });
 </script>
 <footer style="text-align:center;padding:20px;font-size:14px;color:#666;">
+ style="text-align:center;padding:20px;font-size:14px;color:#666;">
 
 <p>&copy; 2026 Chollo Cesta | <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank">Política de Privacidad</a></p>
 <p id="tecnologia-visitas" style="margin-top:10px; font-weight: bold; color: #ff9900;">Visitas a esta página: 1.248</p>
