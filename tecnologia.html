@@ -116,21 +116,52 @@
       </div>
     </div>
 
-    <!-- APARTADO BELLEZA -->
-    <h3 class="subcategory-title">💄 Belleza</h3>
+    <!-- APARTADO BELLEZA / SECADORES -->
+    <h3 class="subcategory-title">💄 Secadores y Cuidado Personal</h3>
     <div class="grid">
       <div class="card">
         <div>
           <span class="tag">chollocesta-21</span>
-          <div class="title">Secador de Pelo iónico profesional / Cuidado Personal</div>
-          <div class="price">Oferta Destacada</div>
-          <div class="desc">Descubre las mejores ofertas en dispositivos de belleza, cuidado capilar y tecnología de aseo personal con los precios más competitivos de Amazon.</div>
+          <div class="title">Remington Ionic Dry 2200 D3198</div>
+          <div class="price">18,04 €</div>
+          <div class="desc">Secador de pelo iónico de 2.200 W con función iónica antiestática, 3 temperaturas y 2 velocidades, incluye difusor y concentrador.</div>
         </div>
-        <a href="https://www.amazon.es/s?k=belleza+cuidado+personal&tag=chollocesta-21" class="btn" target="_blank">Ver en Amazon</a>
+        <a href="https://www.amazon.es/dp/B014W921OM?tag=chollocesta-21" class="btn" target="_blank">Ver en Amazon</a>
+      </div>
+      
+      <div class="card">
+        <div>
+          <span class="tag">chollocesta-21</span>
+          <div class="title">Cecotec Bamba IoniCare 5200</div>
+          <div class="price">22,90 €</div>
+          <div class="desc">Secador de pelo profesional de 2.300 W con caudal de aire extremo, ionizador real y selector de aire frío.</div>
+        </div>
+        <a href="https://www.amazon.es/dp/B07Y8K5B4W?tag=chollocesta-21" class="btn" target="_blank">Ver en Amazon</a>
       </div>
     </div>
 
   </div>
-<footer style="text-align:center;padding:20px;font-size:14px;color:#666;"><p>&copy; Chollo Cesta | <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank">Política de Privacidad</a></p></footer>
+<footer style="text-align:center;padding:20px;font-size:14px;color:#666;">
+  <p>&copy; 2026 Chollo Cesta | <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank">Política de Privacidad</a></p>
+  <p id="tecnologia-visitas" style="margin-top:10px;">Visitas a esta página: cargando…</p>
+</footer>
+<script>
+  (function () {
+    const contador = document.getElementById("tecnologia-visitas");
+    fetch("https://countapi.mileshilliard.com/api/v1/hit/chollocesta_tecnologia_visits_2026", { cache: "no-store" })
+      .then(respuesta => {
+        if (!respuesta.ok) throw new Error("Contador no disponible");
+        return respuesta.json();
+      })
+      .then(datos => {
+        const visitas = Number(datos.value);
+        if (!Number.isFinite(visitas)) throw new Error("Respuesta no válida");
+        contador.textContent = "Visitas a esta página: " + new Intl.NumberFormat("es-ES").format(visitas);
+      })
+      .catch(() => {
+        contador.textContent = "Contador de visitas no disponible ahora";
+      });
+  })();
+</script>
 </body>
 </html>
