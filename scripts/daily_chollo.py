@@ -3,7 +3,7 @@ import os
 import random
 import requests
 
-BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8776194715:AAE4C8wtMkCJvQGb2RBR9XI3vGqGbnHuSEQ")
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN_HERE")
 CHANNEL_ID = "@CholloCesta"
 
 CATEGORIZED_DEALS = [
