@@ -4,6 +4,9 @@ import random
 import requests
 
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+if not BOT_TOKEN:
+    raise ValueError("TELEGRAM_BOT_TOKEN environment variable is not set!")
+
 CHANNEL_ID = "@CholloCesta"
 
 CATEGORIZED_DEALS = [
@@ -34,10 +37,6 @@ CATEGORIZED_DEALS = [
 ]
 
 def main():
-    if not BOT_TOKEN:
-        print("Error: TELEGRAM_BOT_TOKEN environment variable not set.")
-        return
-
     deal = random.choice(CATEGORIZED_DEALS)
     url_afiliado = f"{deal['url']}?tag=chollocesta-21"
     
