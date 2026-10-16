@@ -17,6 +17,12 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Run daily deal generator
+      - name: Install dependencies
         run: |
-          python -c "print('Daily chollo workflow executed successfully!')"
+          pip install requests
+
+      - name: Run daily deal generator
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        run: |
+          python scripts/daily_chollo.py
