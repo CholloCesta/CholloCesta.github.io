@@ -3,33 +3,33 @@ import os
 import random
 import requests
 
-BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "YOUR_TELEGRAM_BOT_TOKEN_HERE")
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "8776194715:AAE4C8wtMkCJvQGb2RBR9XI3vGqGbnHuSEQ")
 CHANNEL_ID = "@CholloCesta"
 
 CATEGORIZED_DEALS = [
     {
         "category": "⚡ Tecnología y Electrónica",
-        "title": "⚡ ¡CHOLLO TECNOLOGÍA! Auriculares Inalámbricos Bluetooth 5.3 con Cancelación de Ruido",
-        "description": "Sonido Hi-Fi, estuche de carga rápida con pantalla LED y 40h de autonomía. ¡Uno de los productos más vendidos en Amazon!",
-        "url": "https://www.amazon.es/dp/B0B5X4XXXX"
+        "title": "⚡ ¡CHOLLO TECH! Amazon Fire TV Stick con mando por voz Alexa",
+        "description": "Disfruta de streaming en Full HD, miles de apps y canales como Netflix, Prime Video, YouTube y Disney+. ¡Imprescindible en tu tele!",
+        "url": "https://www.amazon.es/dp/B08C1W5N87"
     },
     {
         "category": "🏠 Hogar y Cocina Inteligente",
-        "title": "🏠 ¡OFERTA HOGAR! Freidora de Aire Sin Aceite 5.5L con Panel táctil LED",
-        "description": "Cocina más sano con un 85% menos de grasa. 8 programas preestablecidos y gran capacidad para toda la familia.",
-        "url": "https://www.amazon.es/dp/B08N5WRWNW"
+        "title": "🏠 ¡OFERTA HOGAR! Cecotec Aspirador Escoba Sin Cable Conga Rockstar",
+        "description": "Máxima potencia de succión, diseño 3 en 1 (vertical, escoba y mano) con tecnología digital brushless. ¡Limpieza sin esfuerzo!",
+        "url": "https://www.amazon.es/dp/B07VZZZJZZ"
     },
     {
         "category": "🏃 Deporte y Salud",
-        "title": "🏃 ¡CHOLLO FITNESS! Smartwatch Deportivo con Pulsómetro y SpO2",
-        "description": "Monitor de sueño, 100+ modos deportivos, resistencia al agua IP68 y notificaciones inteligentes.",
-        "url": "https://www.amazon.es/dp/B0C3X9YYYY"
+        "title": "🏃 ¡CHOLLO FITNESS! Xiaomi Smart Band 8 Pulsera de Actividad",
+        "description": "Pantalla AMOLED de 1.62", más de 150 modos deportivos, seguimiento avanzado de frecuencia cardíaca y sueño. ¡Batería de larga duración!",
+        "url": "https://www.amazon.es/dp/B0C8PY8Q9W"
     },
     {
         "category": "🔥 Chollos Flash / Top Ventas",
-        "title": "🔥 ¡OFERTA FLASH AMAZON! Enchufe Inteligente WiFi Compatible con Alexa y Google Assistant",
-        "description": "Controla tus electrodomésticos por voz y programa horarios de encendido con consumo energético en tiempo real.",
-        "url": "https://www.amazon.es/dp/B09XYZ1234"
+        "title": "🔥 ¡OFERTA TOP! Bombilla LED Inteligente WiFi RGB Compatible con Alexa",
+        "description": "Regula intensidad, cambia de color por voz o app móvil, crea ambientes únicos y ahorra en tu factura de la luz.",
+        "url": "https://www.amazon.es/dp/B09982W8XX"
     }
 ]
 
@@ -41,8 +41,8 @@ def main():
         f"<b>{deal['title']}</b>\n\n"
         f"{deal['description']}\n\n"
         f"🏷 <b>Categoría:</b> {deal['category']}\n"
-        f"💶 <b>¡Precio chollo verificado!</b>\n\n"
-        f"👉 <a href='{url_afiliado}'>Ver oferta en Amazon</a>\n\n"
+        f"💶 <b>¡Precio chollo verificado en Amazon!</b>\n\n"
+        f"👉 <a href='{url_afiliado}'>🛒 Ver oferta y comprar en Amazon</a>\n\n"
         f"🔔 <i>CholloCesta · Las mejores ofertas diarias de Amazon</i>"
     )
     
