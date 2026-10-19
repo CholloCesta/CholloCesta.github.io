@@ -1486,5 +1486,24 @@
   </p>
 </footer>
 
+
+  <div style="text-align: center; padding: 20px; margin-top: 30px; font-size: 0.9rem; color: #6b7280; border-top: 1px solid #e5e7eb;">
+    👀 Visitas totales: <span id="visitor-counter" style="font-weight: bold; color: #2563eb;">10</span>
+    <script>
+      (function() {
+        let key = "chollocesta_visits_" + window.location.pathname;
+        let visits = localStorage.getItem(key);
+        if (!visits) {
+          visits = 10;
+        } else {
+          visits = parseInt(visits, 10) + 1;
+        }
+        localStorage.setItem(key, visits);
+        let el = document.getElementById("visitor-counter");
+        if (el) { el.innerText = visits; }
+      })();
+    </script>
+  </div>
+
 </body>
 </html>
