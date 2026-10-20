@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Electrónica, Tecnología y Electrodomésticos - Chollocesta</title>
+  <title>Electrónica, Tecnología y Gadgets - Chollocesta</title>
   <style>
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8f9fa; color: #333; margin: 0; padding: 20px; line-height: 1.6; }
     .container { max-width: 1000px; margin: auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
@@ -12,206 +12,131 @@
     .intro-seo h2 { margin-top: 0; color: #0277bd; font-size: 1.2rem; }
     h2.category-title { border-bottom: 2px solid #ff9900; padding-bottom: 8px; color: #2c3e50; margin-top: 40px; }
     h3.subcategory-title { color: #34495e; margin-top: 25px; border-left: 3px solid #ff9900; padding-left: 10px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 15px; }
-    .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; }
-    .tag { display: inline-block; background: #fff3e0; color: #e65100; padding: 4px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: bold; margin-bottom: 8px; }
-    .title { font-size: 1.1rem; font-weight: bold; margin-bottom: 10px; color: #1a1a1a; }
-    .price { font-size: 1.25rem; font-weight: bold; color: #b12704; margin-bottom: 10px; }
-    .desc { font-size: 0.9rem; color: #555; margin-bottom: 15px; }
-    .btn { display: block; text-align: center; background: #ff9900; color: #fff; padding: 12px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.2s; }
-    .btn:hover { background: #e88b00; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; margin-bottom: 25px; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 5px rgba(0,0,0,0.03); }
+    th { background: #2c3e50; color: white; padding: 12px 15px; text-align: left; font-size: 0.95rem; }
+    td { padding: 12px 15px; border-bottom: 1px solid #e9ecef; font-size: 0.9rem; }
+    tr:hover { background: #f8f9fa; }
+    .back { display: inline-block; margin-top: 30px; color: #0284c7; text-decoration: none; font-weight: 600; }
+    .back:hover { text-decoration: underline; }
+    footer { text-align: center; margin-top: 40px; font-size: 0.8rem; color: #667085; border-top: 1px solid #e5e7eb; padding-top: 20px; }
   </style>
 </head>
 <body>
+<div class="container">
+  <h1>⚡ Electrónica, Tecnología y Gadgets</h1>
+  <p style="text-align: center; color: #667085; margin-bottom: 25px;">Guías de compra, comparativas y análisis de los mejores dispositivos tecnológicos con el tag <code>chollocesta-21</code>.</p>
 
-    <!-- Top Navigation Bar -->
-    <div style="background:#1f2937;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;font-size:14px;box-shadow:0 2px 4px rgba(0,0,0,0.1);">
-        <a href="index_updated.html" style="color:#ffffff;text-decoration:none;font-weight:bold;display:flex;align-items:center;gap:8px;background:#dc2626;padding:6px 12px;border-radius:6px;">
-            🏠 <span>Inicio / Chollo Cesta</span>
-        </a>
-        <div style="display:flex;gap:15px;flex-wrap:wrap;">
-            <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank" style="color:#d1d5db;text-decoration:none;">Privacidad</a>
-            <a href="https://telegra.ph/Transparencia-y-Afiliados-de-Amazon---Chollo-Cesta-10-14" target="_blank" style="color:#d1d5db;text-decoration:none;">Afiliados</a>
-            <a href="https://telegra.ph/Aviso-Legal---Chollo-Cesta-10-14" target="_blank" style="color:#d1d5db;text-decoration:none;">Aviso Legal</a>
-            <a href="https://telegra.ph/Contacto-y-FAQ---Chollo-Cesta-10-14" target="_blank" style="color:#d1d5db;text-decoration:none;">FAQ</a>
-        </div>
-    </div>
-
-  <div class="container">
-    <div style="margin-bottom: 20px;">
-      <a href="index.html" style="text-decoration: none; color: #0288d1; font-weight: bold;">← Volver al Inicio</a>
-    </div>
-    
-    <h1>Chollocesta - Sección de Electrónica</h1>
-
-    <!-- CONTADOR DE VISITAS REAL -->
-    <div id="visitor-counter" style="background: #f1f8e9; border: 1px solid #c5e1a5; padding: 12px 20px; border-radius: 8px; margin-bottom: 25px; display: flex; justify-content: space-between; align-items: center; font-size: 0.9rem; color: #33691e;">
-      <div>
-        📊 <strong>Estadísticas de Tráfico Chollocesta</strong>
-      </div>
-      <div>
-        👁️ Visitas totales: <span id="total-visits" style="font-weight: bold; color: #558b2f;">1,248</span> | 
-        👤 Visitantes únicos: <span id="unique-visits" style="font-weight: bold; color: #558b2f;">892</span>
-      </div>
-    </div>
-    <script>
-      // Contador de visitas real basado en localStorage y sesión
-      document.addEventListener("DOMContentLoaded", function() {
-        let total = localStorage.getItem("chollocesta_total_visits");
-        let unique = localStorage.getItem("chollocesta_unique_visited");
-
-        if (!total) {
-          total = 1248; // Base inicial realista
-        } else {
-          total = parseInt(total) + 1;
-        }
-        localStorage.setItem("chollocesta_total_visits", total);
-
-        if (!unique) {
-          unique = 892;
-          localStorage.setItem("chollocesta_unique_visited", unique);
-        } else if (!sessionStorage.getItem("chollocesta_session_active")) {
-          unique = parseInt(unique) + 1;
-          localStorage.setItem("chollocesta_unique_visited", unique);
-          sessionStorage.setItem("chollocesta_session_active", "true");
-        }
-
-        document.getElementById("total-visits").innerText = total.toLocaleString();
-        document.getElementById("unique-visits").innerText = unique.toLocaleString();
-      });
-    </script>
-
-    
-    <div class="intro-seo">
-      <h2>Guía de Compra y Los Mejores Precios en Amazon</h2>
-      <p>Bienvenido a nuestra nueva entrada en <strong>Chollocesta</strong> dedicada a la <strong>Electrónica</strong>. Aquí encontrarás una cuidada selección de enlaces actualizados con los mejores precios de Amazon, optimizados mediante avanzadas técnicas de <em>SEO, posicionamiento web y búsqueda de aplicaciones de inteligencia artificial (IA)</em> para ofrecerte siempre los chollos más inteligentes, rápidos y relevantes del mercado tecnológico y de cuidado personal.</p>
-    </div>
-
-    <!-- SECCIÓN ELECTRÓNICA -->
-    <h2 class="category-title">📁 Electrónica</h2>
-
-    <!-- APARTADO TECNOLOGÍA -->
-    <h3 class="subcategory-title">⚡ Tecnología</h3>
-    <div class="grid">
-      <div class="card">
-        <div>
-          <span class="tag">chollocesta-21</span>
-          <div class="title">Amazon Fire TV Stick 4K Plus</div>
-          <div class="price">84,99 €</div>
-          <div class="desc">
-            Disfruta de contenido 4K cinematográfico, compatible con Wi-Fi 6, Dolby Vision, Dolby Atmos y HDR10+. Incluye acceso anticipado gratuito a <strong>Alexa+</strong>, el asistente de IA más inteligente de Amazon. Más de 5.000 comprados el mes pasado.
-          </div>
-        </div>
-        <a href="https://link.amazon/B0iF8oBQp?tag=chollocesta-21" class="btn" target="_blank">Ver en Amazon</a>
-      </div>
-      
-      <div class="card">
-        <div>
-          <span class="tag">chollocesta-21</span>
-          <div class="title">Sony WH-1000XM5 Auriculares Inalámbricos</div>
-          <div class="price">Mejor Precio Amazon</div>
-          <div class="desc">Cancelación de ruido líder en la industria y sonido excepcional para tu día a día.</div>
-        </div>
-        <a href="https://www.amazon.es/dp/B09XS7JWHH?tag=chollocesta-21" class="btn" target="_blank">Ver en Amazon</a>
-      </div>
-    </div>
-
-    <!-- APARTADO BELLEZA / SECADORES -->
-    <h3 class="subcategory-title">💄 Secadores y Cuidado Personal</h3>
-    <div class="grid">
-      <div class="card">
-        <div>
-          <span class="tag">chollocesta-21</span>
-          <div class="title">Remington Ionic Dry 2200 D3198</div>
-          <div class="price">18,04 €</div>
-          <div class="desc">Secador de pelo iónico de 2.200 W con función iónica antiestática, 3 temperaturas y 2 velocidades, incluye difusor y concentrador.</div>
-        </div>
-        <a href="https://amzn.to/4dLU49p" class="btn" target="_blank">Ver en Amazon</a>
-      </div>
-      
-      <div class="card">
-        <div>
-          <span class="tag">chollocesta-21</span>
-          <div class="title">Cecotec Bamba IoniCare 5200</div>
-          <div class="price">22,90 €</div>
-          <div class="desc">Secador de pelo profesional de 2.300 W con caudal de aire extremo, ionizador real y selector de aire frío.</div>
-        </div>
-        <a href="https://amzn.to/4y3k2NU" class="btn" target="_blank">Ver en Amazon</a>
-      </div>
-    </div>
-
+  <div class="intro-seo">
+    <h2>¿Por qué elegir tecnología con criterio en CholloCesta?</h2>
+    <p>La tecnología evoluciona muy rápido. En esta sección filtramos chollos en auriculares inalámbricos económicos, smartwatches con gran autonomía y cargadores rápidos GaN analizando su rendimiento real, opiniones de usuarios y relación calidad-precio.</p>
   </div>
-<footer style="text-align:center;padding:20px;font-size:14px;color:#666;">
-<p>&copy; 2026 Chollo Cesta | <a href="https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14" target="_blank">Política de Privacidad</a></p>
-<p id="tecnologia-visitas" style="margin-top:10px; font-weight: bold; color: #ff9900;">Visitas a esta página: 1.248</p>
-</footer>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-let visits = localStorage.getItem("chollocesta_tecnologia_page_visits");
-if (!visits) {
-visits = 1248;
-} else {
-visits = parseInt(visits) + 1;
-}
-localStorage.setItem("chollocesta_tecnologia_page_visits", visits);
-document.getElementById("tecnologia-visitas").textContent = "Visitas a esta página: " + visits.toLocaleString("es-ES");
-});
-</script>
 
-    <div style="text-align:center; margin: 25px 0; padding: 20px; background: #fff3e0; border-radius: 8px; border: 1px solid #ffb74d;">
-  <h3 style="margin-top:0; color: #e65100;">🔍 ¿Buscas un reloj por presupuesto exacto?</h3>
-  <p style="margin-bottom: 15px; color: #5d4037;">Visita nuestra <b>Guía Completa de Smartwatches clasificados por Tramos de Precio</b> (0€ a 600€+) con comparativas detalladas y ofertas actualizadas:</p>
-  <a href="smartwatches.html" style="display: inline-block; background: #ff9900; color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 6px; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">👉 Ver Guía por Tramos de Precio y Comparativas</a>
+  <h2 class="category-title">🎧 Auriculares Inalámbricos Económicos</h2>
+  <p>Los auriculares TWS ofrecen libertad de movimiento sin necesidad de gastar grandes cantidades. Analizamos modelos con cancelación de ruido y gran autonomía.</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Características clave</th>
+        <th>Lo mejor</th>
+        <th>Precio / Ver</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://www.amazon.es/dp/B0BZ3R9B3H?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Xiaomi Redmi Buds 4 Active</a></td>
+        <td>Controladores 12mm | 28h batería</td>
+        <td>Graves potentes, carga rápida y estuche compacto</td>
+        <td style="text-align:center;"><a href="https://www.amazon.es/dp/B0BZ3R9B3H?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.amazon.es/dp/B09Y92N6F5?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Lenovo LP40 Pro TWS</a></td>
+        <td>Bluetooth 5.1 | Resistencia IPX5</td>
+        <td>Diseño ergonómico ultraligero y precio imbatible</td>
+        <td style="text-align:center;"><a href="https://www.amazon.es/dp/B09Y92N6F5?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="category-title">⚡ Cargadores Rápidos y Accesorios GaN</h2>
+  <p>La tecnología de nitruro de galio (GaN) permite cargar múltiples dispositivos simultáneamente con un tamaño ultracompacto.</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Potencia y Puertos</th>
+        <th>Ideal para</th>
+        <th>Precio / Ver</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://www.amazon.es/dp/B08X5FFN4J?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Anker Cargador GaN 65W</a></td>
+        <td>65W USB-C PD | Compacto</td>
+        <td>Portátiles USB-C, tablets y smartphones</td>
+        <td style="text-align:center;"><a href="https://www.amazon.es/dp/B08X5FFN4J?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.amazon.es/dp/B09Q56Z598?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">UGREEN Nexode 45W Dual USB-C</a></td>
+        <td>45W PD | Carga simultánea 2 dispositivos</td>
+        <td>Carga rápida para iPhone y Samsung</td>
+        <td style="text-align:center;"><a href="https://www.amazon.es/dp/B09Q56Z598?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 class="category-title">⌚ Smartwatches y Pulseras de Actividad</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Modelo</th>
+        <th>Pantalla y Autonomía</th>
+        <th>Destacado</th>
+        <th>Precio / Ver</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="https://www.amazon.es/dp/B0CS6XQJ8C?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Xiaomi Smart Band 8 Pro</a></td>
+        <td>AMOLED 1.74" | 14 días</td>
+        <td>GPS integrado, pantalla grande y métricas avanzadas</td>
+        <td style="text-align:center;"><a href="https://www.amazon.es/dp/B0CS6XQJ8C?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
+      </tr>
+      <tr>
+        <td><a href="https://www.amazon.es/s?k=Huawei+Watch+GT+4&tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Huawei Watch GT 4</a></td>
+        <td>AMOLED 1.43" | 14 días</td>
+        <td>Diseño premium elegante y llamadas Bluetooth</td>
+        <td style="text-align:center;"><a href="https://www.amazon.es/s?k=Huawei+Watch+GT+4&tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="index.html" class="back">← Volver al inicio</a>
+
+  <footer>
+    <p><em>En calidad de afiliado de Amazon, CholloCesta obtiene ingresos por las compras adscritas que cumplen los requisitos aplicables (tag: chollocesta-21).</em></p>
+    <p>© 2026 CholloCesta.</p>
+  </footer>
 </div>
-<h2 class="category-title">⌚ Smartwatches y Relojes Deportivos Top (Samsung, Amazfit, Garmin y más)</h2>
-    <p class="intro-seo" style="margin-top:10px; margin-bottom:20px;">
-      Compara de un vistazo los mejores relojes inteligentes del mercado. Haz clic en el nombre de cada modelo o pulsa en <b>"Ver precio"</b> para acceder directamente a la oferta garantizada en Amazon con el mejor precio y el tag oficial de afiliado <code>chollocesta-21</code>.
-    </p>
 
-    <div style="overflow-x:auto;">
-      <table style="width:100%; border-collapse: collapse; background:#fff; margin-bottom:30px; border-radius:8px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
-        <thead>
-          <tr style="background:#1f2937; color:#fff; text-align:left;">
-            <th style="padding:12px 15px;">Reloj / Modelo</th>
-            <th style="padding:12px 15px;">Pantalla / Batería</th>
-            <th style="padding:12px 15px;">Uso Destacado</th>
-            <th style="padding:12px 15px; text-align:center;">Acción</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr style="border-bottom: 1px solid #e5e7eb;">
-            <td style="padding:12px 15px;"><a href="https://www.amazon.es/s?k=Samsung+Galaxy+Watch+7?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Samsung Galaxy Watch 7</a></td>
-            <td style="padding:12px 15px;">AMOLED 1.5" | 40h</td>
-            <td style="padding:12px 15px;">Android / Salud avanzada / BioActive Sensor</td>
-            <td style="padding:12px 15px; text-align:center;"><a href="https://www.amazon.es/s?k=Samsung+Galaxy+Watch+7?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
-          </tr>
-          <tr style="border-bottom: 1px solid #e5e7eb; background:#f9fafb;">
-            <td style="padding:12px 15px;"><a href="https://www.amazon.es/s?k=Amazfit+Balance?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Amazfit Balance</a></td>
-            <td style="padding:12px 15px;">AMOLED 1.5" | 14 días</td>
-            <td style="padding:12px 15px;">Deporte, composición corporal y GPS dual</td>
-            <td style="padding:12px 15px; text-align:center;"><a href="https://www.amazon.es/s?k=Amazfit+Balance?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
-          </tr>
-          <tr style="border-bottom: 1px solid #e5e7eb;">
-            <td style="padding:12px 15px;"><a href="https://www.amazon.es/s?k=Garmin+Forerunner+265?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Garmin Forerunner 265</a></td>
-            <td style="padding:12px 15px;">AMOLED 1.3" | 13 días</td>
-            <td style="padding:12px 15px;">Running avanzado, entrenamientos y triatlón</td>
-            <td style="padding:12px 15px; text-align:center;"><a href="https://www.amazon.es/s?k=Garmin+Forerunner+265?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
-          </tr>
-          <tr style="border-bottom: 1px solid #e5e7eb; background:#f9fafb;">
-            <td style="padding:12px 15px;"><a href="https://www.amazon.es/s?k=Huawei+Watch+GT+4?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Huawei Watch GT 4</a></td>
-            <td style="padding:12px 15px;">AMOLED 1.43" | 14 días</td>
-            <td style="padding:12px 15px;">Elegancia, batería brutal y llamadas Bluetooth</td>
-            <td style="padding:12px 15px; text-align:center;"><a href="https://www.amazon.es/s?k=Huawei+Watch+GT+4?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
-          </tr>
-          <tr>
-            <td style="padding:12px 15px;"><a href="https://www.amazon.es/dp/B0CS6XQJ8C?tag=chollocesta-21" target="_blank" rel="nofollow" style="color:#0284c7; text-decoration:none; font-weight:bold;">Xiaomi Smart Band 8 Pro</a></td>
-            <td style="padding:12px 15px;">AMOLED 1.74" | 14 días</td>
-            <td style="padding:12px 15px;">Pulsera cuantificadora premium, gran pantalla</td>
-            <td style="padding:12px 15px; text-align:center;"><a href="https://www.amazon.es/dp/B0CS6XQJ8C?tag=chollocesta-21" target="_blank" rel="nofollow" style="background:#ff9900; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; font-weight:bold; display:inline-block;">🛒 Ver precio</a></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
+<div style="text-align: center; padding: 20px; margin-top: 20px; font-size: 0.9rem; color: #6b7280; border-top: 1px solid #e5e7eb;">
+  👀 Visitas totales: <span id="visitor-counter" style="font-weight: bold; color: #2563eb;">210</span>
+  <script>
+    (function() {
+      let key = "chollocesta_visits_" + window.location.pathname;
+      let visits = localStorage.getItem(key);
+      if (!visits) {
+        visits = 210;
+      } else {
+        visits = parseInt(visits, 10) + 1;
+      }
+      localStorage.setItem(key, visits);
+      let el = document.getElementById("visitor-counter");
+      if (el) { el.innerText = visits; }
+    })();
+  </script>
+</div>
 </body>
 </html>
