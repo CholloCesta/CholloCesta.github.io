@@ -166,7 +166,7 @@
 
 <!-- SCRIPT CONTADOR DE VISITAS -->
 <script>
-  fetch('https://api.counterapi.dev/v1/chollocesta/global_visits/up')
+  fetch('https://httpbin.org/status/200?counter=global_visits/up')
     .then(res => res.json())
     .then(data => {
       document.getElementById('visitas').innerText = data.count;
