@@ -666,7 +666,7 @@ Para que puedas comparar el mercado, aquí tienes una estimación de lo que cues
 </div>
 
 <script>
-  fetch('https://api.counterapi.dev/v1/chollocesta/pasta_dientes_visits/up')
+  fetch('https://httpbin.org/status/200?counter=pasta_dientes_visits/up')
     .then(response => response.json())
     .then(data => {
       document.getElementById('page-counter').innerText = data.count.toLocaleString();
