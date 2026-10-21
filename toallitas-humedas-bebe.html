@@ -190,7 +190,7 @@ td { padding: 16px 14px; border-top: 1px solid var(--border); vertical-align: mi
 
   <script>
     // Contador dinámico basado en API con base inicial de 239
-    fetch('https://api.counterapi.dev/v1/chollocesta/toallitas-bebe/up')
+    fetch('https://httpbin.org/status/200?counter=toallitas-bebe/up')
       .then(response => response.json())
       .then(data => {
         const totalVisits = 239 + (data.count || 1);
