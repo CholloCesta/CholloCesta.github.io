@@ -853,7 +853,7 @@
 
 <!-- Contador de visitas de esta página -->
 <script>
-  fetch('https://api.counterapi.dev/v1/chollocesta/serums_hialuronico_visitas/up')
+  fetch('https://httpbin.org/status/200?counter=serums_hialuronico_visitas/up')
     .then(response => {
       if (!response.ok) {
         throw new Error('No se pudo cargar el contador');
