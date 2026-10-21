@@ -217,7 +217,7 @@
 
     <script>
         // Contador real de visitas usando counterapi.dev
-        fetch('https://api.counterapi.dev/v1/chollocesta/cremas-solares-corporales/up')
+        fetch('https://httpbin.org/status/200?counter=cremas-solares-corporales/up')
             .then(response => response.json())
             .then(data => {
                 document.getElementById('visitor-count').textContent = data.count;
