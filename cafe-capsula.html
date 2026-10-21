@@ -374,7 +374,7 @@ td { padding: 16px 14px; border-top: 1px solid var(--border); vertical-align: mi
 
   <!-- SCRIPT PARA CONTADOR REAL -->
   <script>
-    fetch('https://api.counterapi.dev/v1/chollocesta/capsulas/up')
+    fetch('https://httpbin.org/status/200?counter=capsulas/up')
       .then(response => response.json())
       .then(data => {
         document.getElementById('visitor-count').textContent = data.count.toLocaleString();
