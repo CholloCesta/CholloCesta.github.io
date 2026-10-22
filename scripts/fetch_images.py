@@ -20,6 +20,8 @@ import time
 import unicodedata
 import requests
 
+ESTILO_PRODUCTO = {"lavavajillas"}
+
 UA = "CholloCestaBot/1.0 (https://chollocesta.github.io; 2025generation@gmail.com)"
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
@@ -52,7 +54,7 @@ CATEGORIAS = {
     "serum":         ("face serum skincare bottle", "Sérum facial",                   "Sérum facial"),
     "perfume":       ("perfume fragrance bottle",    "Perfume",                        "Perfume"),
     "ambientador":   ("diffuser reed incense home fragrance", "Ambientador",         "Ambientador"),
-    "lavavajillas":  ("dishwasher kitchen",         "Lavavajillas",                   "Lavavajillas"),
+    "lavavajillas":  ("Finish Quantum",              "Envase de Finish Quantum, pastillas de lavavajillas de la misma gama", "Pastillas de lavavajillas"),
     "lavadora":      ("washing machine laundry",    "Lavadora",                       "Lavadora"),
     "detergente":    ("laundry detergent",          "Detergente",                     "Detergente"),
     "limpieza":      ("cleaning spray products",    "Productos de limpieza",          "Limpieza"),
@@ -153,6 +155,7 @@ def main():
             continue
         catalogo[cat] = {
             "archivo": "img/" + fname,
+            "estilo": "producto" if cat in ESTILO_PRODUCTO else "",
             "titulo": titulo,
             "alt": alt,
             "autor": elegido["autor"],
