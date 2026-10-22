@@ -178,13 +178,9 @@ class ProductAdvertisingAPI(object):
         p = (listings[0].get("Price") or {}).get("Amount")
         return p
 
-    @staticmethod
-    def item_url(item):
-        return (item.get("DetailPageURL") or "").replace("amazon.es", self_marketplace(item))
-
-
-def self_marketplace(item):
-    return "amazon.es"
+    def item_url(self, item):
+        """URL del producto en el marketplace de la consulta (DetailPageURL de la API)."""
+        return item.get("DetailPageURL") or ""
 
 
 if __name__ == "__main__":
