@@ -29,6 +29,11 @@ CSS = """
   .cat-hero img{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/7}
   .cat-hero figcaption{font-size:12px;color:#6b7280;padding:9px 14px;line-height:1.5}
   .cat-hero figcaption a{color:#0284c7;text-decoration:none}
+  /* ---- Imágenes de producto real (foto del producto con licencia libre) ---- */
+  .cat-img.product{background:#fff}
+  .cat-img.product img{object-fit:contain;background:#fff;aspect-ratio:auto;max-height:240px;padding:12px}
+  .cat-hero.product{background:#fff;border-color:#e2e8f0}
+  .cat-hero.product img{object-fit:contain;background:#fff;aspect-ratio:auto;max-height:420px;padding:16px}
 """
 
 # página -> (categoría, modo)  modo: cards | hero | none
@@ -107,18 +112,25 @@ def cat_from_text(text):
 
 def figure(cat, img, cls="cat-img"):
     v = img[cat]
+    producto = v.get("estilo") == "producto"
+    extra = " product" if producto else ""
+    cap = ("Imagen del producto de la misma gama (ilustrativa) · " if producto
+           else "Imagen ilustrativa de la categoría · ")
     return (
-        '<figure class="%s">'
+        '<figure class="%s%s">'
         '<img src="%s" alt="%s" loading="lazy" width="640" height="400">'
-        '<figcaption>Imagen ilustrativa de la categoría · '
+        '<figcaption>%s'
         '<a href="creditos-imagenes.html">Créditos y licencia</a></figcaption>'
         '</figure>'
-    ) % (cls, v["archivo"], v["alt"])
+    ) % (cls, extra, v["archivo"], v["alt"], cap)
 
 
 def add_css(html):
-    if "cat-hero{" in html:
+    if ".cat-hero.product" in html:
         return html
+    # quitar el bloque anterior para no duplicar reglas
+    html = re.sub(r"\s*/\* ---- Imágenes de categoría con licencia libre ---- \*/"
+                  r".*?\.cat-hero figcaption a\{color:#0284c7;text-decoration:none\}", "", html, flags=re.S)
     m = re.search(r"</style>", html)
     if not m:
         return html
@@ -230,7 +242,7 @@ def inject_cards(html, cat, img):
 def inject_hero(html, cat, img):
     if cat not in img:
         return html
-    if 'class="cat-hero"' in html:
+    if 'class="cat-hero' in html:
         return html
     m = re.search(r"(<h1[^>]*>.*?</h1>)", html, re.S)
     if not m:
