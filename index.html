@@ -516,7 +516,6 @@
       color: #fff;
     }
 
-  
   /* ---- Imágenes de categoría con licencia libre ---- */
   .cat-img{margin:0 0 14px 0;border-radius:12px;overflow:hidden;background:#f3f4f6;border:1px solid #e5e7eb}
   .cat-img img{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/10}
@@ -526,6 +525,11 @@
   .cat-hero img{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/7}
   .cat-hero figcaption{font-size:12px;color:#6b7280;padding:9px 14px;line-height:1.5}
   .cat-hero figcaption a{color:#0284c7;text-decoration:none}
+  /* ---- Imágenes de producto real (foto del producto con licencia libre) ---- */
+  .cat-img.product{background:#fff}
+  .cat-img.product img{object-fit:contain;background:#fff;aspect-ratio:auto;max-height:240px;padding:12px}
+  .cat-hero.product{background:#fff;border-color:#e2e8f0}
+  .cat-hero.product img{object-fit:contain;background:#fff;aspect-ratio:auto;max-height:420px;padding:16px}
 </style>
 </head>
 
@@ -1186,7 +1190,7 @@
         <a href="lavavajillas-1.html"><svg class="card-art" viewBox="0 0 120 100" aria-hidden="true"><use href="#icon-dishwasher"></use></svg></a>
       </div>
 
-      <div class="card-body"><figure class="cat-img"><img src="img/lavavajillas.jpg" alt="Lavavajillas con vajilla" loading="lazy" width="640" height="400"><figcaption>Imagen ilustrativa de la categoría · <a href="creditos-imagenes.html">Créditos y licencia</a></figcaption></figure>
+      <div class="card-body"><figure class="cat-img product"><img src="img/lavavajillas.jpg" alt="Envase de Finish Quantum, pastillas de lavavajillas de la misma gama" loading="lazy" width="640" height="640"><figcaption>Imagen del producto de la misma gama (ilustrativa) · <a href="creditos-imagenes.html">Créditos y licencia</a></figcaption></figure>
         <span class="badge">HOGAR · LIMPIEZA</span>
 
         <h3>Pastillas para lavavajillas</h3>
