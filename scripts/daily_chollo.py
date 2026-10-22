@@ -3,7 +3,6 @@ import os
 import random
 import requests
 
-# Fallback token hardcoded for CholloCestaBot to ensure GitHub Actions workflows never fail due to missing secrets
 # El token NUNCA se escribe en el repositorio: se lee del secreto de GitHub Actions
 # TELEGRAM_BOT_TOKEN (Settings > Secrets and variables > Actions).
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
