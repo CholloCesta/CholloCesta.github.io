@@ -111,13 +111,14 @@
   },
   "lavavajillas": {
     "archivo": "img/lavavajillas.jpg",
-    "titulo": "Lavavajillas",
-    "alt": "Lavavajillas con vajilla",
-    "titulo_original": "Dishwasher loaded with clean dishes at a home kitchen in the evening.jpg",
-    "autor": "Shixart1985",
-    "licencia": "CC BY 2.0",
-    "licencia_url": "",
-    "fuente": "https://commons.wikimedia.org/wiki/File:Dishwasher_loaded_with_clean_dishes_at_a_home_kitchen_in_the_evening.jpg"
+    "titulo": "Pastillas de lavavajillas",
+    "alt": "Envase de Finish Quantum, pastillas de lavavajillas de la misma gama",
+    "titulo_original": "Finish Quantum Max.jpg",
+    "autor": "Julia.saniewska",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Finish_Quantum_Max.jpg",
+    "estilo": "producto"
   },
   "lavadora": {
     "archivo": "img/lavadora.jpg",
