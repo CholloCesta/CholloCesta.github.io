@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Sustituye los logotipos/imagenes de categoria por la FOTO REAL del producto (PA-API 5.0).
+"""Sustituye los logotipos / imagenes de categoria por la FOTO REAL del producto (PA-API 5.0).
+
+El emparejado se hace por indice de figura (ver data/productos_paapi.json), no por
+busqueda de texto, porque el enlace de Amazon puede ser un enlace corto amzn.to.
 
 Reglas de Amazon que esta script respeta:
   - la imagen se enlaza al producto (envoltorio <a> con el enlace de afiliado),
-  - no se reescala con recorte (object-fit: contain, sin distortions),
+  - no se recorta ni se distorsiona (object-fit: contain),
   - la imagen se sirve desde la URL que devuelve la API (no se almacena ni se copia),
-  - se mantiene el pie "Imagen del producto - Amazon" con enlace al producto.
+  - el pie indica "Imagen del producto - Amazon" con enlace al articulo.
 
 Uso:  python scripts/apply_paapi_images.py [--dry-run]
 """
@@ -16,6 +19,8 @@ RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATOS = os.path.join(RAIZ, "data", "paapi_imagenes.json")
 CATALOGO = os.path.join(RAIZ, "data", "productos_paapi.json")
 TAG = os.environ.get("PAAPI_PARTNER_TAG", "chollocesta-21")
+
+FIG = re.compile(r'<figure class="cat-img[^"]*">.*?</figure>', re.S)
 
 CSS = (
     ".cat-img.paapi{background:#fff;padding:0}"
@@ -41,7 +46,10 @@ def main():
     datos = cargar(DATOS)
     catalogo = cargar(CATALOGO)
     if not datos:
-        print("Sin data/paapi_imagenes.json: ejecuta antes scripts/paapi_fetch_images.py")
+        print("Falta data/paapi_imagenes.json: ejecuta antes scripts/paapi_fetch_images.py")
+        return 2
+    if not catalogo:
+        print("Falta data/productos_paapi.json")
         return 2
 
     total = 0
@@ -52,41 +60,38 @@ def main():
         with open(ruta, encoding="utf-8") as f:
             html = f.read()
         original = html
-        usados = set()
         for it in items:
-            asin = it["asin"]
-            if asin in usados:
-                continue
+            asin = it.get("asin")
             info = datos.get(asin)
             if not info or not info.get("imagen"):
                 continue
-            usados.add(asin)
-            enlace = f"https://www.amazon.es/dp/{asin}?tag={TAG}"
-            alt = (info.get("titulo") or it.get("nombre") or asin)[:120]
-            fig = (f'<figure class="cat-img paapi">'
-                   f'<a href="{enlace}" target="_blank" rel="nofollow sponsored noopener">'
-                   f'<img src="{info["imagen"]}" alt="{alt}" loading="lazy"></a>'
-                   f'<figcaption>Imagen del producto - Amazon - '
-                   f'<a href="{enlace}" target="_blank" rel="nofollow sponsored noopener">Ver el art&iacute;culo</a>'
-                   f'</figcaption></figure>')
-            # sustituye la figura que sigue al enlace de ese ASIN
-            patron = re.compile(
-                r'<figure class="cat-img[^"]*">.*?</figure>(?=(?:(?!<figure).)*?' + re.escape(asin) + r')',
-                re.S)
-            html, n = patron.subn(fig, html, count=1)
-            if n == 0:
-                # fallback: primera figura de la pagina cuyo bloque contenga el ASIN
+            idx = it.get("figura")
+            if idx is None:
                 continue
+            figuras = list(FIG.finditer(html))
+            if idx >= len(figuras):
+                continue
+            m = figuras[idx]
+            enlace = "https://www.amazon.es/dp/%s?tag=%s" % (asin, TAG)
+            alt = (info.get("titulo") or it.get("nombre") or asin)[:120]
+            alt = alt.replace('"', "&quot;")
+            fig = ('<figure class="cat-img paapi">'
+                   '<a href="%s" target="_blank" rel="nofollow sponsored noopener">'
+                   '<img src="%s" alt="%s" loading="lazy"></a>'
+                   '<figcaption>Imagen del producto - Amazon - '
+                   '<a href="%s" target="_blank" rel="nofollow sponsored noopener">Ver el art&iacute;culo</a>'
+                   '</figcaption></figure>') % (enlace, info["imagen"], alt, enlace)
+            html = html[:m.start()] + fig + html[m.end():]
             total += 1
         if html != original:
             if CSS not in html:
                 html = html.replace("</style>", CSS + "\n</style>", 1)
             if args.dry_run:
-                print(f"[dry-run] {pagina}: {total} productos con foto real (acumulado)")
+                print("[dry-run] %s: %d productos con foto real (acumulado %d)" % (pagina, len(items), total))
             else:
                 with open(ruta, "w", encoding="utf-8") as f:
                     f.write(html)
-                print(f"Actualizado {pagina}")
+                print("Actualizado", pagina)
     print("Total productos con foto real de PA-API:", total)
     return 0
 
