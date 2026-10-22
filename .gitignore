@@ -1,0 +1,6 @@
+# Credenciales y datos generados por la PA-API (nunca se versionan)
+data/paapi_imagenes.json
+data/imagenes_paapi.json
+data/paapi_catalog.json
+*.env
+secrets/
