@@ -4,7 +4,11 @@ import random
 import requests
 
 # Fallback token hardcoded for CholloCestaBot to ensure GitHub Actions workflows never fail due to missing secrets
-BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN") or "8776194715:AAE4C8wtMkCJvQGb2RBR9XI3vGqGbnHuSEQ"
+# El token NUNCA se escribe en el repositorio: se lee del secreto de GitHub Actions
+# TELEGRAM_BOT_TOKEN (Settings > Secrets and variables > Actions).
+BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+if not BOT_TOKEN:
+    raise SystemExit("Falta el secreto TELEGRAM_BOT_TOKEN en GitHub Actions. No se publica nada.")
 
 CHANNEL_ID = "@CholloCesta"
 
