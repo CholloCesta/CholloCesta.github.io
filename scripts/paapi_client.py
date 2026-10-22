@@ -70,7 +70,7 @@ def peticion(operacion, payload, host=None, region=None, marketplace=None):
 
     encabezados_a_firmar = {"host": host, "x-amz-date": amzdate, "x-amz-target": operacion}
     canonical = "\n".join(f"{k}:{encabezados_a_firmar[k]}" for k in sorted(encabezados_a_firmar))
-   signed_headers = ";".join(sorted(encabezados_a_firmar))
+    signed_headers = ";".join(sorted(encabezados_a_firmar))
     peticion_canonica = "\n".join([
         "POST", "/", "", canonical, signed_headers, hash_carga,
     ])
