@@ -1,216 +1,274 @@
 {
  "ambientador.html": [
   {
+   "figura": 0,
    "nombre": "🔥 Chollo Destacado Air Wick Essential Mist – Difusor con luz Aroma Flo",
    "asin": "B0F9LD6GVB"
   },
   {
+   "figura": 1,
+   "nombre": "Air Wick Essential Mist Difusor aceites esenciales + luz",
+   "asin": "B0F9LD6GVB"
+  },
+  {
+   "figura": 2,
    "nombre": "Air Wick Freshmatic Spray automático · Oasis Turquesa",
    "asin": "B01MZ4GOIF"
   },
   {
+   "figura": 3,
    "nombre": "Ambi Pur 3Volution Recambio 4x20ml · 3 aromas",
    "asin": "B09JRWHYMC"
   },
   {
+   "figura": 4,
    "nombre": "Don Algodon Mikado Difusor varillas · Rosa de Bulgaria / Lavanda",
    "asin": "B09ZGM837R"
   }
  ],
  "aspirador.html": [
   {
+   "figura": 0,
    "nombre": "iRobot Roomba 115 Combo 189,00 € 349,00 € (-46%) Descripción: Una alte",
    "asin": "B0GQVG2D3Z"
   },
   {
+   "figura": 1,
    "nombre": "Cecotec Conga M90 Dark 158,99 € Descuento masivo (-65%) Descripción: P",
    "asin": "B0GHS6BTJ4"
   },
   {
+   "figura": 2,
    "nombre": "Roborock QV 35A Set 299,98 € Oferta Flash (-50%) 🔥 ¡Chollo Top! -9% po",
    "asin": "B0DSLBN5FS"
   },
   {
+   "figura": 3,
    "nombre": "Xiaomi H50 329,99 € Oferta Flash (-17%) 📉 ¡Buen momento! Por debajo de",
    "asin": "B0GHM34LVQ"
   }
  ],
  "cafe-capsula.html": [
   {
+   "figura": 2,
    "nombre": "L'OR Espresso Café Colombia",
    "asin": "B0F4K4RCJK"
   },
   {
+   "figura": 3,
    "nombre": "STARBUCKS Espresso Roast (100 Cápsulas)",
    "asin": "B0D31YQPX7"
   },
   {
+   "figura": 8,
    "nombre": "Caffè Borbone Mezcla Roja (Compatible) ⭐ MÁS ECONÓMICA",
    "asin": "B07NVVWY6X"
   }
  ],
  "cremas-solares-corporales.html": [
   {
+   "figura": 0,
    "nombre": "Delial Garnier Protector Leche",
    "asin": "B078WTSHCF"
   },
   {
+   "figura": 1,
+   "nombre": "Nivea Sun Protect & Bronze",
+   "asin": "B078WTSHCF"
+  },
+  {
+   "figura": 2,
    "nombre": "PIZ BUIN Allergy Protector Solar Corporal (Pack de 2)",
    "asin": "B0CCJH4FFM"
   },
   {
+   "figura": 3,
    "nombre": "NIVEA SUN Protects and Cools Spray Solar",
    "asin": "B00X9ZDZUK"
   },
   {
+   "figura": 4,
    "nombre": "Hawaiian Tropic Glowing Protection Ultra Radiance (Pack de 2)",
    "asin": "B0GSWRFHN3"
   }
  ],
  "cuidado-facial.html": [
   {
+   "figura": 0,
    "nombre": "M Medicube Deep Vita C Ampoule Sérum Vitamina C (30ml)",
    "asin": "B0DBF65JYY"
   },
   {
+   "figura": 1,
    "nombre": "C CeraVe Loción Hidratante Rostro Crema Hidratante Noche (52 ml)",
    "asin": "B07C5XYT19"
   },
   {
+   "figura": 2,
    "nombre": "L La Roche-Posay Gel Effaclar +M Gel Limpiador Purificante (400 ml)",
    "asin": "B003JSEGNC"
   },
   {
+   "figura": 3,
    "nombre": "C Cetaphil Rutina Set Crema 453g + Mini Limpiadora 29ml",
    "asin": "B0FC3Y1Z61"
   },
   {
+   "figura": 4,
    "nombre": "E Eucerin Hyaluron-Filler Recarga Recarga Crema de Día FPS 15 (50 ml)",
    "asin": "B0BTMWXT9J"
   }
  ],
  "index.html": [
   {
+   "figura": 1,
    "nombre": "Lavavajillas · 4,7/5 Finish Quantum Infinity Shine, 83 cápsulas Format",
    "asin": "B09PYLZSQX"
   },
   {
+   "figura": 2,
    "nombre": "Limpieza · lavadora · 4,6/5 Dr. Beckmann Limpia Lavadoras, 250 ml Limp",
    "asin": "B00XAFKEZS"
   }
  ],
  "ofertas.html": [
   {
+   "figura": 0,
    "nombre": "🤖 ROBOT ASPIRADOR Xiaomi Robot Vacuum E10 Aspiración potente de 4000Pa",
    "asin": "B0BRY29Q4X"
   }
  ],
  "panales-talla-4.html": [
   {
+   "figura": 1,
    "nombre": "Dodot Sensitive",
    "asin": "B07M98CG63"
   },
   {
+   "figura": 2,
    "nombre": "Huggies Extra Care",
    "asin": "B0F9Z5KTS2"
   },
   {
+   "figura": 3,
    "nombre": "Chelino Nature",
    "asin": "B0916SLRWS"
   },
   {
+   "figura": 4,
    "nombre": "Amazon Mama Bear Ultra",
    "asin": "B084N3ZZX8"
   }
  ],
  "pasta-dientes.html": [
   {
+   "figura": 4,
    "nombre": "⭐ Signal Protección Anticaries Amazon 100 ml 1,28 € 1,28 € / 100ml 🛒 V",
    "asin": "B00XAARLFE"
   },
   {
+   "figura": 5,
    "nombre": "Licor del Polo Original Amazon 75 ml 1,79 € 2,39 € / 100ml 🛒 Ver en Am",
    "asin": "B00X9UN6SG"
   }
  ],
  "serums-acido-hialuronico.html": [
   {
+   "figura": 0,
    "nombre": "🧴 The Ordinary Hyaluronic Acid 2% + B5 30 ml · con ceramidas",
    "asin": "B01MYEZPC8"
   },
   {
+   "figura": 1,
    "nombre": "🌿 Sérum Ácido Hialurónico Bio BIONOBLE 100 ml · formato ahorro",
    "asin": "B0F48SG31N"
   },
   {
+   "figura": 2,
    "nombre": "💧 Vichy Minéral 89 75 ml · ácido hialurónico y agua volcánica",
    "asin": "B0B34WTXCB"
   },
   {
+   "figura": 3,
    "nombre": "✨ L'Oréal Paris Revitalift Filler 30 ml · ácido hialurónico y PDRN",
    "asin": "B08B21PRLM"
   },
   {
+   "figura": 4,
    "nombre": "💦 Sérum 4 pesos moleculares 100 ml · con péptidos, niacinamida y vitam",
    "asin": "B0F7XWXF1F"
   }
  ],
  "smartwatches.html": [
   {
+   "figura": 0,
    "nombre": "Más Vendido Xiaomi Redmi Watch 4 ~ 69,99 € - 99,99 € Pantalla AMOLED u",
    "asin": "B0CTHW9WR2"
   },
   {
+   "figura": 1,
    "nombre": "Deporte & Batería Amazfit Active ~ 99,00 € - 129,00 € Diseño elegante ",
    "asin": "B0CKZ73L2R"
   },
   {
+   "figura": 2,
    "nombre": "Autonomía Dual & WearOS OnePlus Watch 2 / OnePlus Watch 4 ~ 249,00 € -",
    "asin": "B0CVX7C39H"
   },
   {
+   "figura": 3,
    "nombre": "Recomendado CholloCesta Huawei Watch GT 4 (46mm / 41mm) ~ 169,00 € - 2",
    "asin": "B0CFZ9K195"
   },
   {
+   "figura": 4,
    "nombre": "Salud & Bienestar Amazfit Balance ~ 199,00 € - 249,00 € Análisis de co",
    "asin": "B0CFR4NFXH"
   },
   {
+   "figura": 5,
    "nombre": "Deporte Avanzado Garmin Venu 3 / Forerunner 265 ~ 349,00 € - 449,00 € ",
    "asin": "B0CB94Z68N"
   },
   {
+   "figura": 6,
    "nombre": "Ecosystem Apple / Samsung Apple Watch Series 9 / Galaxy Watch 7 ~ 379,",
    "asin": "B0CHX37X98"
   },
   {
+   "figura": 7,
    "nombre": "Aventura Extrema Apple Watch Ultra 2 ~ 849,00 € - 899,00 € Caja de tit",
    "asin": "B0CHX2T1QZ"
   },
   {
+   "figura": 8,
    "nombre": "Multideporte Pro Garmin Fenix 8 / Epix Pro Gen 2 ~ 999,00 € - 1.199,00",
    "asin": "B003JSEGNC"
   }
  ],
  "toallitas-humedas-bebe.html": [
   {
+   "figura": 0,
    "nombre": "by Amazon Toallitas Refrescantes (Sin Perfume) 18 paquetes de 56 uds",
    "asin": "B085LQVHV8"
   },
   {
+   "figura": 1,
    "nombre": "Nyleve Baby Wipes con Aloe Vera 24 paquetes de 72 uds",
    "asin": "B0HG5V6DDL"
   },
   {
+   "figura": 2,
    "nombre": "Huggies Pure (99% Agua Pura) 18 paquetes de 56 uds",
    "asin": "B0111AIZ68"
   },
   {
+   "figura": 3,
    "nombre": "Dodot Toallitas Bebé Pure Aqua 18 paquetes de 48 uds",
    "asin": "B09GPJHCQL"
   },
   {
+   "figura": 4,
    "nombre": "Naïf Toallitas Húmedas Sin Plástico (Aloe Vera) 3 paquetes de 54 uds",
    "asin": "B0F7HQT6TS"
   }
