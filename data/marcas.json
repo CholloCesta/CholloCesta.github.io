@@ -1,0 +1,282 @@
+{
+  "airwick": {
+    "marca": "Air Wick",
+    "archivo": "img/marcas/airwick.png",
+    "licencia": "Public domain",
+    "autor": "Reckitt Benckiser",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Air_Wick_logo.png"
+  },
+  "amazon": {
+    "marca": "Amazon",
+    "archivo": "img/marcas/amazon.png",
+    "licencia": "Public domain",
+    "autor": "Amazon.com, Inc., Koto, and NaN (typeface creator)",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Amazon_2024.svg"
+  },
+  "anker": {
+    "marca": "Anker",
+    "archivo": "img/marcas/anker.png",
+    "licencia": "Public domain",
+    "autor": "Anker",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Anker_logo.svg"
+  },
+  "apple": {
+    "marca": "Apple",
+    "archivo": "img/marcas/apple.png",
+    "licencia": "Public domain",
+    "autor": "Original:  Rob Janoff",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Apple_logo_black.svg"
+  },
+  "asus": {
+    "marca": "ASUS",
+    "archivo": "img/marcas/asus.png",
+    "licencia": "Public domain",
+    "autor": "Asus",
+    "fuente": "https://commons.wikimedia.org/wiki/File:ASUS_Corporate_Logo.svg"
+  },
+  "beautyofjoseon": {
+    "marca": "Beauty of Joseon",
+    "archivo": "img/marcas/beautyofjoseon.png",
+    "licencia": "Public domain",
+    "autor": "Government of Joseon",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Joseon_logo_(soj.ooO).png"
+  },
+  "cerave": {
+    "marca": "CeraVe",
+    "archivo": "img/marcas/cerave.png",
+    "licencia": "Public domain",
+    "autor": "Wikimedia Commons",
+    "fuente": "https://commons.wikimedia.org/wiki/File:CeraVe_logo.png"
+  },
+  "cetaphil": {
+    "marca": "Cetaphil",
+    "archivo": "img/marcas/cetaphil.png",
+    "licencia": "CC BY-SA 4.0",
+    "autor": "Cetaphil Thailand",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Cetaphil_Thailand_Logo.png"
+  },
+  "colgate": {
+    "marca": "Colgate",
+    "archivo": "img/marcas/colgate.png",
+    "licencia": "Public domain",
+    "autor": "The original uploader was Vargklo at English Wikipedia.",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Colgate_logo.svg"
+  },
+  "coosur": {
+    "marca": "Coosur",
+    "archivo": "img/marcas/coosur.png",
+    "licencia": "CC BY-SA 4.0",
+    "autor": "Acesur1840",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Coosur_500x500.png"
+  },
+  "eucerin": {
+    "marca": "Eucerin",
+    "archivo": "img/marcas/eucerin.png",
+    "licencia": "Public domain",
+    "autor": "Eucerin",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Eucerin_logo.svg"
+  },
+  "garnier": {
+    "marca": "Garnier",
+    "archivo": "img/marcas/garnier.png",
+    "licencia": "Public domain",
+    "autor": "L'Oreal",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Garnier_wordmark.svg"
+  },
+  "google": {
+    "marca": "Google Pixel",
+    "archivo": "img/marcas/google.png",
+    "licencia": "Public domain",
+    "autor": "NiloGlock",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Pixel_2_wordmark.svg"
+  },
+  "hawaiiantropic": {
+    "marca": "Hawaiian Tropic",
+    "archivo": "img/marcas/hawaiiantropic.png",
+    "licencia": "Public domain",
+    "autor": "EDGEWELL",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Hawaiian_Tropic_brand_logo.svg"
+  },
+  "headshoulders": {
+    "marca": "Head & Shoulders",
+    "archivo": "img/marcas/headshoulders.png",
+    "licencia": "Public domain",
+    "autor": "Unknown authorUnknown author",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Head%26shoulders-Logo.svg"
+  },
+  "hp": {
+    "marca": "HP",
+    "archivo": "img/marcas/hp.png",
+    "licencia": "Public domain",
+    "autor": "HP Inc.",
+    "fuente": "https://commons.wikimedia.org/wiki/File:HP_logo_2012.svg"
+  },
+  "huggies": {
+    "marca": "Huggies",
+    "archivo": "img/marcas/huggies.png",
+    "licencia": "CC BY-SA 4.0",
+    "autor": "WesdsMe3",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Huggies_logo.svg"
+  },
+  "institutoespanol": {
+    "marca": "Instituto Español",
+    "archivo": "img/marcas/institutoespanol.png",
+    "licencia": "Public domain",
+    "autor": "Instituto Español",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Instituto_Espa%C3%B1ol_(logo).png"
+  },
+  "jbl": {
+    "marca": "JBL",
+    "archivo": "img/marcas/jbl.png",
+    "licencia": "Public domain",
+    "autor": "JBL",
+    "fuente": "https://commons.wikimedia.org/wiki/File:JBL_logo.svg"
+  },
+  "laneige": {
+    "marca": "Laneige",
+    "archivo": "img/marcas/laneige.jpg",
+    "licencia": "CC BY 2.5",
+    "autor": "Laneige",
+    "fuente": "https://commons.wikimedia.org/wiki/File:LANEIGE_%EC%8B%A0%EA%B7%9C%EB%A1%9C%EA%B3%A0_%ED%95%98%EB%8A%98.jpg"
+  },
+  "laroche-posay": {
+    "marca": "La Roche-Posay",
+    "archivo": "img/marcas/laroche-posay.png",
+    "licencia": "Public domain",
+    "autor": "Unknown authorUnknown author",
+    "fuente": "https://commons.wikimedia.org/wiki/File:La_Roche-Posay_(brand).svg"
+  },
+  "lenovo": {
+    "marca": "Lenovo",
+    "archivo": "img/marcas/lenovo.png",
+    "licencia": "Public domain",
+    "autor": "Original:  Lenovo Group\nDerivative work:  Fry1989",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Lenovo-Logo.svg"
+  },
+  "lg": {
+    "marca": "LG",
+    "archivo": "img/marcas/lg.png",
+    "licencia": "CC BY-SA 4.0",
+    "autor": "Alter73",
+    "fuente": "https://commons.wikimedia.org/wiki/File:LG_Electronics_logo.png"
+  },
+  "logitech": {
+    "marca": "Logitech",
+    "archivo": "img/marcas/logitech.png",
+    "licencia": "Public domain",
+    "autor": "Logitech",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Logitech_logo.svg"
+  },
+  "lor": {
+    "marca": "L'OR",
+    "archivo": "img/marcas/lor.png",
+    "licencia": "CC BY-SA 4.0",
+    "autor": "Goodwillgames",
+    "fuente": "https://commons.wikimedia.org/wiki/File:L%27OR_logo.png"
+  },
+  "loreal": {
+    "marca": "L'Oréal Paris",
+    "archivo": "img/marcas/loreal.png",
+    "licencia": "Public domain",
+    "autor": "L'Oréal",
+    "fuente": "https://commons.wikimedia.org/wiki/File:L%27Or%C3%A9al_logo.svg"
+  },
+  "marshall": {
+    "marca": "Marshall",
+    "archivo": "img/marcas/marshall.png",
+    "licencia": "Public domain",
+    "autor": "en:User:Asenine",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Marshall_logo.svg"
+  },
+  "nescafe": {
+    "marca": "Nescafé Dolce Gusto",
+    "archivo": "img/marcas/nescafe.png",
+    "licencia": "Public domain",
+    "autor": "Unknown authorUnknown author",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Nescafe_dolcegusto_logo.png"
+  },
+  "nespresso": {
+    "marca": "Nespresso",
+    "archivo": "img/marcas/nespresso.png",
+    "licencia": "Public domain",
+    "autor": "Unknown authorUnknown author",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Nespresso_logo.png"
+  },
+  "nivea": {
+    "marca": "NIVEA",
+    "archivo": "img/marcas/nivea.png",
+    "licencia": "Public domain",
+    "autor": "Beiersdof AG",
+    "fuente": "https://commons.wikimedia.org/wiki/File:NIVEA_logo_2021.svg"
+  },
+  "oralb": {
+    "marca": "Oral-B",
+    "archivo": "img/marcas/oralb.png",
+    "licencia": "Public domain",
+    "autor": "Wikimedia Commons",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Oral-B_logo.svg"
+  },
+  "pantene": {
+    "marca": "Pantene",
+    "archivo": "img/marcas/pantene.png",
+    "licencia": "Public domain",
+    "autor": "Procter &amp; Gamble",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Pantene.svg"
+  },
+  "poco": {
+    "marca": "POCO",
+    "archivo": "img/marcas/poco.png",
+    "licencia": "Public domain",
+    "autor": "Xiaomi Inc.",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Poco_Logo_Transparent.png"
+  },
+  "samsung": {
+    "marca": "Samsung",
+    "archivo": "img/marcas/samsung.png",
+    "licencia": "CC BY 4.0",
+    "autor": "Samsung",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Samsung_logo.svg"
+  },
+  "sonos": {
+    "marca": "Sonos",
+    "archivo": "img/marcas/sonos.png",
+    "licencia": "Public domain",
+    "autor": "Unknown authorUnknown author",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Sonos_(Unternehmen)_logo.svg"
+  },
+  "sony": {
+    "marca": "Sony",
+    "archivo": "img/marcas/sony.png",
+    "licencia": "Public domain",
+    "autor": "Yasuo Kuroki, Sony",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Sony_logo.svg"
+  },
+  "starbucks": {
+    "marca": "Starbucks",
+    "archivo": "img/marcas/starbucks.png",
+    "licencia": "Public domain",
+    "autor": "Starbucks Corporation",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Starbucks-wordmark-green.svg"
+  },
+  "ue": {
+    "marca": "Ultimate Ears",
+    "archivo": "img/marcas/ue.png",
+    "licencia": "Public domain",
+    "autor": "Ultimate Ears",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Ultimate_Ears_logo.png"
+  },
+  "vichy": {
+    "marca": "Vichy",
+    "archivo": "img/marcas/vichy.jpg",
+    "licencia": "CC BY-SA 2.0",
+    "autor": "Thalia Gylonno",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Logo_Vichy_mon_amour.jpg"
+  },
+  "xiaomi": {
+    "marca": "Xiaomi",
+    "archivo": "img/marcas/xiaomi.png",
+    "licencia": "Public domain",
+    "autor": "Xiaomi",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Xiaomi_logo_(2021-).svg"
+  }
+}
