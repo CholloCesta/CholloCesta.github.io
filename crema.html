@@ -482,7 +482,17 @@
             color: var(--text-secondary);
             line-height: 1.65;
         }
-    </style>
+    
+  /* ---- Imágenes de categoría con licencia libre ---- */
+  .cat-img{margin:0 0 14px 0;border-radius:12px;overflow:hidden;background:#f3f4f6;border:1px solid #e5e7eb}
+  .cat-img img{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/10}
+  .cat-img figcaption{font-size:11px;color:#6b7280;padding:6px 9px;line-height:1.4;background:#fff}
+  .cat-img figcaption a{color:#0284c7;text-decoration:none}
+  .cat-hero{margin:20px 0 26px 0;border-radius:16px;overflow:hidden;border:1px solid #e5e7eb;background:#fff}
+  .cat-hero img{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:16/7}
+  .cat-hero figcaption{font-size:12px;color:#6b7280;padding:9px 14px;line-height:1.5}
+  .cat-hero figcaption a{color:#0284c7;text-decoration:none}
+</style>
 </head>
 <body>
 
@@ -503,6 +513,7 @@
                 </div>
 
                 <h1>Neutrogena Hydro Boost Gel de Agua a 8,71€: precio mínimo histórico en Amazon</h1>
+  <figure class="cat-hero"><img src="img/crema.jpg" alt="Tarro de crema cosmética" loading="lazy" width="640" height="400"><figcaption>Imagen ilustrativa de la categoría · <a href="creditos-imagenes.html">Créditos y licencia</a></figcaption></figure>
 
                 <p>Encontrar una crema hidratante facial que cumpla con todo lo que le pedimos parece una misión imposible: que hidrate de verdad, que no engrase, que se absorba al instante y que, por supuesto, no nos cueste un ojo de la cara.</p>
 
@@ -610,7 +621,8 @@
     <footer class="site-footer">
         <p>© 2026 CholloCesta · Tu portal de confianza para los mejores chollos<br>
         <a href="index.html">Inicio</a> · Los enlaces pueden ser de afiliados</p>
-    </footer>
+     <a href="creditos-imagenes.html">Créditos de imágenes</a>
+  </footer></footer>
 
     <script>
         fetch('https://httpbin.org/status/200?count=neutrogena-hydro-boost')
