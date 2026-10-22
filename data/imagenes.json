@@ -1,0 +1,252 @@
+{
+  "smartwatch": {
+    "archivo": "img/smartwatch.jpg",
+    "titulo": "Reloj inteligente",
+    "alt": "Reloj inteligente en la muñeca",
+    "titulo_original": "A child wears a smartwatch on her wrist while picking grass.jpg",
+    "autor": "Shixart1985",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg"
+  },
+  "movil": {
+    "archivo": "img/movil.jpg",
+    "titulo": "Teléfono móvil",
+    "alt": "Teléfono móvil",
+    "titulo_original": "File:Hand holding smartphone with blank white screen.jpg",
+    "autor": "Santeri Viinamäki",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Hand_holding_smartphone_with_blank_white_screen.jpg"
+  },
+  "portatil": {
+    "archivo": "img/portatil.jpg",
+    "titulo": "Portátil",
+    "alt": "Portátil",
+    "titulo_original": "Man Holding Laptop Computer Typing While Dog Watches",
+    "autor": "Image Catalog",
+    "licencia": "cc0",
+    "licencia_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fuente": "https://www.flickr.com/photos/132795455@N08/17783465600"
+  },
+  "auriculares": {
+    "archivo": "img/auriculares.jpg",
+    "titulo": "Auriculares inalámbricos",
+    "alt": "Auriculares inalámbricos",
+    "titulo_original": "Headphones Earbuds",
+    "autor": "Piotr Lohunko",
+    "licencia": "cc0",
+    "licencia_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fuente": "https://stocksnap.io/photo/headphones-earbuds-DTPML21WLD"
+  },
+  "altavoz": {
+    "archivo": "img/altavoz.jpg",
+    "titulo": "Altavoz Bluetooth",
+    "alt": "Altavoz Bluetooth",
+    "titulo_original": "R.O.GNT Bluetooth Speaker 0601 Weiß",
+    "autor": "GBPublic_PR",
+    "licencia": "by",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0/",
+    "fuente": "https://www.flickr.com/photos/83620044@N06/8485492376"
+  },
+  "aspirador": {
+    "archivo": "img/aspirador.jpg",
+    "titulo": "Robot aspirador",
+    "alt": "Robot aspirador",
+    "titulo_original": "RVC3N Robotic Vacuum Cleaner 'Kreng' on the job",
+    "autor": "dvanzuijlekom",
+    "licencia": "by-sa",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "fuente": "https://www.flickr.com/photos/52365139@N05/8499549941"
+  },
+  "secador": {
+    "archivo": "img/secador.jpg",
+    "titulo": "Secador de pelo",
+    "alt": "Secador de pelo",
+    "titulo_original": "Hair dryer",
+    "autor": "Magnus Manske",
+    "licencia": "by-sa",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "fuente": "https://commons.wikimedia.org/w/index.php?curid=42759"
+  },
+  "crema": {
+    "archivo": "img/crema.jpg",
+    "titulo": "Crema cosmética",
+    "alt": "Tarro de crema cosmética",
+    "titulo_original": "Cream in round container.jpg",
+    "autor": "stux",
+    "licencia": "CC0",
+    "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Cream_in_round_container.jpg"
+  },
+  "serum": {
+    "archivo": "img/serum.jpg",
+    "titulo": "Sérum facial",
+    "alt": "Frasco de sérum facial",
+    "titulo_original": "Cosmético en frasco aplicador (imagen de Openverse)",
+    "autor": "Openverse / autor no especificado",
+    "licencia": "CC0",
+    "licencia_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fuente": "https://openverse.org/"
+  },
+  "perfume": {
+    "archivo": "img/perfume.jpg",
+    "titulo": "Perfume",
+    "alt": "Frascos de perfume",
+    "titulo_original": "Perfume Bottles",
+    "autor": "Vetiver Aromatics",
+    "licencia": "by-sa",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "fuente": "https://www.flickr.com/photos/64483003@N02/6782333397"
+  },
+  "ambientador": {
+    "archivo": "img/ambientador.jpg",
+    "titulo": "Ambientador",
+    "alt": "Difusor de varillas",
+    "titulo_original": "File:Reed diffuser.jpg",
+    "autor": "Alex Tang",
+    "licencia": "cc0",
+    "licencia_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fuente": "https://commons.wikimedia.org/w/index.php?curid=56224537"
+  },
+  "lavavajillas": {
+    "archivo": "img/lavavajillas.jpg",
+    "titulo": "Lavavajillas",
+    "alt": "Lavavajillas con vajilla",
+    "titulo_original": "Dishwasher loaded with clean dishes at a home kitchen in the evening.jpg",
+    "autor": "Shixart1985",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Dishwasher_loaded_with_clean_dishes_at_a_home_kitchen_in_the_evening.jpg"
+  },
+  "lavadora": {
+    "archivo": "img/lavadora.jpg",
+    "titulo": "Lavadora",
+    "alt": "Lavadora",
+    "titulo_original": "Washing machine agitator",
+    "autor": "BrokenSphere",
+    "licencia": "by-sa",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "fuente": "https://commons.wikimedia.org/w/index.php?curid=3544309"
+  },
+  "detergente": {
+    "archivo": "img/detergente.jpg",
+    "titulo": "Detergente",
+    "alt": "Perlas de detergente",
+    "titulo_original": "Detergent - Persil Megaperls 03.jpg",
+    "autor": "Kritzolina",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Detergent_-_Persil_Megaperls_03.jpg"
+  },
+  "limpieza": {
+    "archivo": "img/limpieza.jpg",
+    "titulo": "Productos de limpieza",
+    "alt": "Kit de limpieza del hogar",
+    "titulo_original": "File:Mohkam Mopping.jpg",
+    "autor": "Hardeep Singh from Vancouver, Canada",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Mohkam_Mopping.jpg"
+  },
+  "capsulas-cafe": {
+    "archivo": "img/capsulas-cafe.jpg",
+    "titulo": "Cápsulas de café",
+    "alt": "Cápsulas de café",
+    "titulo_original": "Nespresso-capsules AB-01.jpg",
+    "autor": "Chepry 💬 ( Andrzej Barabasz ) 📷 🇵🇱",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Nespresso-capsules_AB-01.jpg"
+  },
+  "cafe-molido": {
+    "archivo": "img/cafe-molido.jpg",
+    "titulo": "Café molido",
+    "alt": "Café molido molido",
+    "titulo_original": "Coarsely grounded coffee beans in white bowl.png",
+    "autor": "Alorin",
+    "licencia": "CC BY 4.0",
+    "licencia_url": "",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Coarsely_grounded_coffee_beans_in_white_bowl.png"
+  },
+  "barista": {
+    "archivo": "img/barista.jpg",
+    "titulo": "Cafetera de espresso",
+    "alt": "Cafetera de espresso",
+    "titulo_original": "Cafetera de espresso (Openverse)",
+    "autor": "DanLacher (Openverse)",
+    "licencia": "CC BY 2.0",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0/",
+    "fuente": "https://openverse.org/"
+  },
+  "aceite": {
+    "archivo": "img/aceite.jpg",
+    "titulo": "Aceite de oliva",
+    "alt": "Botella de aceite de oliva",
+    "titulo_original": "Bottle of olive oil.jpg",
+    "autor": "margenauer from Pixabay",
+    "licencia": "CC0",
+    "licencia_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Bottle_of_olive_oil.jpg"
+  },
+  "panales": {
+    "archivo": "img/panales.jpg",
+    "titulo": "Pañales para bebé",
+    "alt": "Bebé con pañal",
+    "titulo_original": "Baby diaper",
+    "autor": "Kyle Flood from Victoria, British Columbia, Canada",
+    "licencia": "by-sa",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "fuente": "https://commons.wikimedia.org/w/index.php?curid=3750538"
+  },
+  "dientes": {
+    "archivo": "img/dientes.jpg",
+    "titulo": "Higiene dental",
+    "alt": "Pasta de dientes en el cepillo",
+    "titulo_original": "Toothbrush, Toothpaste, Dental Care (571741) (cropped)",
+    "autor": "Steve Buissinne, South Africa",
+    "licencia": "cc0",
+    "licencia_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+    "fuente": "https://commons.wikimedia.org/w/index.php?curid=91360345"
+  },
+  "fitness": {
+    "archivo": "img/fitness.jpg",
+    "titulo": "Fitness en casa",
+    "alt": "Mancuernas de gym",
+    "titulo_original": "dumbbells_adjusted",
+    "autor": "jerryonlife",
+    "licencia": "by",
+    "licencia_url": "https://creativecommons.org/licenses/by/2.0/",
+    "fuente": "https://www.flickr.com/photos/34909987@N07/3265269814"
+  },
+  "regalo": {
+    "archivo": "img/regalo.jpg",
+    "titulo": "Regalos",
+    "alt": "Cajas de regalo",
+    "titulo_original": "Colourful gift boxes wrapped in shiny paper with ribbons, arranged on a soft white surface. The warm lighting adds a cozy, festive mood. This joyful Christmas scene was photographed in Kozhikode, Kerala.",
+    "autor": "Bigul Malayi",
+    "licencia": "cc0",
+    "licencia_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fuente": "https://wordpress.org/photos/photo/120694383a/"
+  },
+  "toallitas": {
+    "archivo": "img/toallitas.jpg",
+    "titulo": "Toallitas para bebé",
+    "alt": "Toallita húmeda",
+    "titulo_original": "File:Disinfectant wipes.jpg",
+    "autor": "MrBeastRapper",
+    "licencia": "CC BY-SA 4.0",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Disinfectant_wipes.jpg"
+  },
+  "champu": {
+    "archivo": "img/champu.jpg",
+    "titulo": "Champú",
+    "alt": "Botella de champú",
+    "titulo_original": "File:Shampoo Bottle made of PLA-Blend Bio-Flex.jpg",
+    "autor": "F. Kesselring, FKuR Willich",
+    "licencia": "CC BY-SA 3.0 de",
+    "licencia_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "fuente": "https://commons.wikimedia.org/wiki/File:Shampoo_Bottle_made_of_PLA-Blend_Bio-Flex.jpg"
+  }
+}
