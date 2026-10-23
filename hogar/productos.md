@@ -38,3 +38,7 @@ Selección de los productos más vendidos:
 - **Descripción:** Control de peso y composición corporal.
 - [Ver en Amazon](https://www.amazon.es/dp/B07P82R4R5?tag=chollocesta-21)
 
+
+
+<!-- Contador de visitas -->
+<div id="counter">Visitantes únicos: <img src="https://hit.yey.es/count?id=chollocesta-hogar" alt="counter"></div>
