@@ -38,3 +38,7 @@ Selección de los productos más vendidos:
 - **Descripción:** Limpiador facial sónico inteligente.
 - [Ver en Amazon](https://www.amazon.es/dp/B08B3N64Z7?tag=chollocesta-21)
 
+
+
+<!-- Contador de visitas -->
+<div id="counter">Visitantes únicos: <img src="https://hit.yey.es/count?id=chollocesta-belleza" alt="counter"></div>
