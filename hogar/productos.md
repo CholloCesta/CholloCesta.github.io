@@ -28,3 +28,13 @@ Selección de los productos más vendidos:
 - **Descripción:** Flexo moderno con carga inalámbrica.
 - [Ver en Amazon](https://www.amazon.es/dp/B07Z7G25X1?tag=chollocesta-21)
 
+### Enchufe Inteligente TP-Link
+![Imagen](https://m.media-amazon.com/images/I/61k1jD0p79L._AC_SL1500_.jpg)
+- **Descripción:** Controla tus aparatos desde el móvil.
+- [Ver en Amazon](https://www.amazon.es/dp/B07PLMHL5H?tag=chollocesta-21)
+
+### Báscula Inteligente Xiaomi
+![Imagen](https://m.media-amazon.com/images/I/61sJm5X92GL._AC_SL1500_.jpg)
+- **Descripción:** Control de peso y composición corporal.
+- [Ver en Amazon](https://www.amazon.es/dp/B07P82R4R5?tag=chollocesta-21)
+
