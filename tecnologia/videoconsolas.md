@@ -16,3 +16,15 @@ Bienvenido a la selección de CholloCesta.
 
 ---
 [Política de Privacidad](https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14) | [Transparencia y Afiliados](https://telegra.ph/Transparencia-y-Afiliados-de-Amazon---Chollo-Cesta-10-14)
+
+### Xbox Series S
+![Imagen](https://m.media-amazon.com/images/I/71V23sM61-L._AC_SL1500_.jpg)
+- **Descripción:** Consola compacta y potente para Game Pass.
+- [Ver en Amazon](https://www.amazon.es/dp/B08G9J44WB?tag=chollocesta-21)
+
+
+### Mario Kart 8 Deluxe (Switch)
+![Imagen](https://m.media-amazon.com/images/I/81x51H40L5L._AC_SL1500_.jpg)
+- **Descripción:** El imprescindible para cualquier Switch.
+- [Ver en Amazon](https://www.amazon.es/dp/B01N22770P?tag=chollocesta-21)
+
