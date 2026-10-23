@@ -43,3 +43,7 @@ Selección de los mejores productos para tu entrenamiento:
 - **Descripción:** Tonifica todo tu cuerpo en cualquier lugar.
 - [Ver en Amazon](https://www.amazon.es/dp/B07Y5C335K?tag=chollocesta-21)
 
+
+
+<!-- Contador de visitas -->
+<div id="counter">Visitantes únicos: <img src="https://hit.yey.es/count?id=chollocesta-deporte" alt="counter"></div>
