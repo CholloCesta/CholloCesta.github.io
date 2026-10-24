@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prueba Técnica Imágenes</title>
+</head>
+<body>
+    <h1>Prueba de Carga Dinámica</h1>
+    <div id="product-container" data-asin="B098RL69NQ">
+        <h3>Nintendo Switch OLED (Cargando imagen...)</h3>
+        <img id="product-img" src="" alt="Producto" style="width:200px;">
+    </div>
+
+    <script>
+        // Simulamos la carga dinámica. 
+        // En una web real de afiliados, se usaría un script de Amazon SiteStrip
+        // o una llamada a la API. Aquí forzamos la carga directa para ver si el tema lo bloquea.
+        const img = document.getElementById('product-img');
+        img.src = 'https://m.media-amazon.com/images/I/511T4f24cWL._AC_SL1500_.jpg';
+        img.onerror = function() {
+            this.src = 'https://via.placeholder.com/200?text=Bloqueado';
+            console.error('Imagen bloqueada por CSP');
+        };
+    </script>
+</body>
+</html>
