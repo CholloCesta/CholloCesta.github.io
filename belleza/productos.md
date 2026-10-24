@@ -1,4 +1,11 @@
-<a href="../index.html" style="text-decoration:none; color:black;"><h1>CholloCesta</h1></a>
+
+<style>
+    body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; color: #333; }
+    .header-box { background: #ff5722; padding: 20px; text-align: center; color: white; }
+    .product-card { background: white; padding: 15px; margin: 10px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .btn-amazon { background-color: #ff9900; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; display: inline-block; }
+</style>
+<a href="../index.html" style="text-decoration:none; color:black;"><div class="header-box"><a href="../index.html" style="color:white; text-decoration:none;"><h1>CholloCesta</h1></a></div></a>
 
 # Belleza y Cuidado Personal
 
