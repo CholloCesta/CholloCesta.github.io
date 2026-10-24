@@ -726,5 +726,14 @@
   })();
 </script>
 
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var images = document.querySelectorAll('img[data-src]');
+    images.forEach(function(img) {
+        img.src = img.getAttribute('data-src');
+    });
+});
+</script>
 </body>
 </html>
