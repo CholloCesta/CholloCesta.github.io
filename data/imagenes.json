@@ -1,6 +1,6 @@
 {
   "smartwatch": {
-    "archivo": "img/smartwatch.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg",
     "titulo": "Reloj inteligente",
     "alt": "Reloj inteligente en la mu\u00f1eca",
     "titulo_original": "A child wears a smartwatch on her wrist while picking grass.jpg",
@@ -10,7 +10,7 @@
     "fuente": "https://commons.wikimedia.org/wiki/File:A_child_wears_a_smartwatch_on_her_wrist_while_picking_grass.jpg"
   },
   "movil": {
-    "archivo": "img/movil.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Hand_holding_smartphone_with_blank_white_screen.jpg",
     "titulo": "Tel\u00e9fono m\u00f3vil",
     "alt": "Tel\u00e9fono m\u00f3vil",
     "titulo_original": "File:Hand holding smartphone with blank white screen.jpg",
@@ -70,7 +70,7 @@
     "fuente": "https://commons.wikimedia.org/w/index.php?curid=42759"
   },
   "crema": {
-    "archivo": "img/crema.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Cream_in_round_container.jpg",
     "titulo": "Crema cosm\u00e9tica",
     "alt": "Tarro de crema cosm\u00e9tica",
     "titulo_original": "Cream in round container.jpg",
@@ -110,7 +110,7 @@
     "fuente": "https://commons.wikimedia.org/w/index.php?curid=56224537"
   },
   "lavavajillas": {
-    "archivo": "img/lavavajillas.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Finish_Quantum_Max.jpg",
     "titulo": "Pastillas de lavavajillas",
     "alt": "Envase de Finish Quantum, pastillas de lavavajillas de la misma gama",
     "titulo_original": "Finish Quantum Max.jpg",
@@ -131,7 +131,7 @@
     "fuente": "https://commons.wikimedia.org/w/index.php?curid=3544309"
   },
   "detergente": {
-    "archivo": "img/detergente.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Detergent_-_Persil_Megaperls_03.jpg",
     "titulo": "Detergente",
     "alt": "Perlas de detergente",
     "titulo_original": "Detergent - Persil Megaperls 03.jpg",
@@ -141,7 +141,7 @@
     "fuente": "https://commons.wikimedia.org/wiki/File:Detergent_-_Persil_Megaperls_03.jpg"
   },
   "limpieza": {
-    "archivo": "img/limpieza.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Mohkam_Mopping.jpg",
     "titulo": "Productos de limpieza",
     "alt": "Kit de limpieza del hogar",
     "titulo_original": "File:Mohkam Mopping.jpg",
@@ -151,7 +151,7 @@
     "fuente": "https://commons.wikimedia.org/wiki/File:Mohkam_Mopping.jpg"
   },
   "capsulas-cafe": {
-    "archivo": "img/capsulas-cafe.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Nespresso-capsules_AB-01.jpg",
     "titulo": "C\u00e1psulas de caf\u00e9",
     "alt": "C\u00e1psulas de caf\u00e9",
     "titulo_original": "Nespresso-capsules AB-01.jpg",
@@ -161,7 +161,7 @@
     "fuente": "https://commons.wikimedia.org/wiki/File:Nespresso-capsules_AB-01.jpg"
   },
   "cafe-molido": {
-    "archivo": "img/cafe-molido.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Coarsely_grounded_coffee_beans_in_white_bowl.png",
     "titulo": "Caf\u00e9 molido",
     "alt": "Caf\u00e9 molido molido",
     "titulo_original": "Coarsely grounded coffee beans in white bowl.png",
@@ -181,7 +181,7 @@
     "fuente": "https://openverse.org/"
   },
   "aceite": {
-    "archivo": "img/aceite.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Bottle_of_olive_oil.jpg",
     "titulo": "Aceite de oliva",
     "alt": "Botella de aceite de oliva",
     "titulo_original": "Bottle of olive oil.jpg",
@@ -231,7 +231,7 @@
     "fuente": "https://wordpress.org/photos/photo/120694383a/"
   },
   "toallitas": {
-    "archivo": "img/toallitas.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Disinfectant_wipes.jpg",
     "titulo": "Toallitas para beb\u00e9",
     "alt": "Toallita h\u00fameda",
     "titulo_original": "File:Disinfectant wipes.jpg",
@@ -241,7 +241,7 @@
     "fuente": "https://commons.wikimedia.org/wiki/File:Disinfectant_wipes.jpg"
   },
   "champu": {
-    "archivo": "img/champu.jpg",
+    "archivo": "https://commons.wikimedia.org/wiki/File:Shampoo_Bottle_made_of_PLA-Blend_Bio-Flex.jpg",
     "titulo": "Champ\u00fa",
     "alt": "Botella de champ\u00fa",
     "titulo_original": "File:Shampoo Bottle made of PLA-Blend Bio-Flex.jpg",
