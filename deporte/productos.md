@@ -1,68 +1,49 @@
-<a href="../index.html" style="text-decoration:none; color:black;"><h1>CholloCesta</h1></a>
-
 # Deporte y Salud
 
-Selección de los mejores productos para tu entrenamiento:
+Aquí tienes los mejores equipamientos clasificados por tu disciplina favorita:
 
-### Esterilla de Yoga Antideslizante
-![Imagen](https://m.media-amazon.com/images/I/71c6t4Y0F+L._AC_SL1500_.jpg)
-- **Descripción:** Base cómoda y antideslizante para tus rutinas.
-- [Ver en Amazon](https://www.amazon.es/dp/B07T2P7R4L?tag=chollocesta-21)
+<style>
+    .subcat { margin-top: 20px; border-top: 2px solid #eee; padding-top: 10px; }
+    .product-card { display: inline-block; width: 200px; margin: 10px; border: 1px solid #ddd; padding: 10px; border-radius: 5px; text-align: center; }
+    .product-card img { width: 100px; height: auto; display: block; margin: 0 auto; }
+</style>
 
-### Pesas Rusas (Kettlebells)
-![Imagen](https://m.media-amazon.com/images/I/71YyM2o12jL._AC_SL1500_.jpg)
-- **Descripción:** Perfectas para entrenamiento de fuerza en casa.
-- [Ver en Amazon](https://www.amazon.es/dp/B07Y5C335K?tag=chollocesta-21)
+## ⚽ Fútbol
+<div class="subcat">
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71YyM2o12jL._AC_SL1500_.jpg" alt="Balón">
+    <h3>Balón Profesional</h3>
+    <a href="https://www.amazon.es/dp/B08G9J44WB?tag=chollocesta-21">Ver en Amazon</a>
+  </div>
+</div>
 
-### Smartwatch Deportivo
-![Imagen](https://m.media-amazon.com/images/I/71624rD166L._AC_SL1500_.jpg)
-- **Descripción:** Monitoriza tu actividad, ritmo cardíaco y sueño.
-- [Ver en Amazon](https://www.amazon.es/dp/B09V7N8V33?tag=chollocesta-21)
+## 🚲 Ciclismo
+<div class="subcat">
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71c6t4Y0F+L._AC_SL1500_.jpg" alt="Casco">
+    <h3>Casco Ciclismo</h3>
+    <a href="https://www.amazon.es/dp/B07PJVMZY9?tag=chollocesta-21">Ver en Amazon</a>
+  </div>
+</div>
+
+## 🎾 Tenis
+<div class="subcat">
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/71624rD166L._AC_SL1500_.jpg" alt="Raqueta">
+    <h3>Raqueta Tenis</h3>
+    <a href="https://www.amazon.es/dp/B07Y5C335K?tag=chollocesta-21">Ver en Amazon</a>
+  </div>
+</div>
+
+## 🏔️ Montaña
+<div class="subcat">
+  <div class="product-card">
+    <img src="https://m.media-amazon.com/images/I/511T4f24cWL._AC_SL1500_.jpg" alt="Mochila">
+    <h3>Mochila Senderismo</h3>
+    <a href="https://www.amazon.es/dp/B098RL69NQ?tag=chollocesta-21">Ver en Amazon</a>
+  </div>
+</div>
 
 ---
-[Política de Privacidad](https://telegra.ph/Política-de-Privacidad---Chollo-Cesta-10-14)
-
-### Cinta de Correr Plegable Fitfiu
-![Imagen](https://m.media-amazon.com/images/I/71YyM2o12jL._AC_SL1500_.jpg)
-- **Descripción:** Ideal para caminar y correr en casa.
-- [Ver en Amazon](https://www.amazon.es/dp/B0892H1Q8S?tag=chollocesta-21)
-
-
-### Set de Mancuernas Ajustables
-![Imagen](https://m.media-amazon.com/images/I/716b7w6T57L._AC_SL1500_.jpg)
-- **Descripción:** Entrenamiento de fuerza versátil y compacto.
-- [Ver en Amazon](https://www.amazon.es/dp/B07PJVMZY9?tag=chollocesta-21)
-
-
-### Foam Roller de Masaje
-![Imagen](https://m.media-amazon.com/images/I/71c6t4Y0F+L._AC_SL1500_.jpg)
-- **Descripción:** Perfecto para recuperación muscular.
-- [Ver en Amazon](https://www.amazon.es/dp/B07T2P7R4L?tag=chollocesta-21)
-
-
-### Set de Bandas Elásticas
-![Imagen](https://m.media-amazon.com/images/I/71624rD166L._AC_SL1500_.jpg)
-- **Descripción:** Tonifica todo tu cuerpo en cualquier lugar.
-- [Ver en Amazon](https://www.amazon.es/dp/B07Y5C335K?tag=chollocesta-21)
-
-
-
 <!-- Contador de visitas -->
 <div id="counter">Visitantes únicos: <img src="https://hit.yey.es/count?id=chollocesta-deporte" alt="counter"></div>
-### Esterilla de Yoga antideslizante
-![Imagen](https://m.media-amazon.com/images/I/71YyM2o12jL._AC_SL1500_.jpg)
-- **Descripción:** Antideslizante y extra gruesa para mayor comodidad.
-- [Ver en Amazon](https://www.amazon.es/dp/B0892H1Q8S?tag=chollocesta-21)
-
-
-### Set de Bandas Elásticas de Resistencia
-![Imagen](https://m.media-amazon.com/images/I/716b7w6T57L._AC_SL1500_.jpg)
-- **Descripción:** 5 niveles de resistencia para todo tipo de ejercicios.
-- [Ver en Amazon](https://www.amazon.es/dp/B07PJVMZY9?tag=chollocesta-21)
-
-
-### Mancuernas ajustables de 20kg
-![Imagen](https://m.media-amazon.com/images/I/71c6N7Fh+sL._AC_SL1500_.jpg)
-- **Descripción:** El equipo esencial para fortalecer tus músculos en casa.
-- [Ver en Amazon](https://www.amazon.es/dp/B07T2P7R4L?tag=chollocesta-21)
-
