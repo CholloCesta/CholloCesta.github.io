@@ -49,3 +49,20 @@ Selección de los mejores productos para tu entrenamiento:
 
 <!-- Contador de visitas -->
 <div id="counter">Visitantes únicos: <img src="https://hit.yey.es/count?id=chollocesta-deporte" alt="counter"></div>
+### Esterilla de Yoga antideslizante
+![Imagen](https://m.media-amazon.com/images/I/71YyM2o12jL._AC_SL1500_.jpg)
+- **Descripción:** Antideslizante y extra gruesa para mayor comodidad.
+- [Ver en Amazon](https://www.amazon.es/dp/B0892H1Q8S?tag=chollocesta-21)
+
+
+### Set de Bandas Elásticas de Resistencia
+![Imagen](https://m.media-amazon.com/images/I/716b7w6T57L._AC_SL1500_.jpg)
+- **Descripción:** 5 niveles de resistencia para todo tipo de ejercicios.
+- [Ver en Amazon](https://www.amazon.es/dp/B07PJVMZY9?tag=chollocesta-21)
+
+
+### Mancuernas ajustables de 20kg
+![Imagen](https://m.media-amazon.com/images/I/71c6N7Fh+sL._AC_SL1500_.jpg)
+- **Descripción:** El equipo esencial para fortalecer tus músculos en casa.
+- [Ver en Amazon](https://www.amazon.es/dp/B07T2P7R4L?tag=chollocesta-21)
+
