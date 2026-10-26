@@ -135,5 +135,37 @@
     .catch(error => console.log('Error al sumar visita'));
 </script>
 
+
+<!-- Contador de visitas compartido e independiente para esta página -->
+<script data-zapia-page-counter>
+(() => {
+  const slug = (location.pathname.split('/').pop() || 'index.html').replace(/\.html?$/i, '').replace(/[^a-z0-9_-]/gi, '_') || 'index';
+  const legacyKeys = { index: 'chollocesta_home_visits_2026', belleza: 'chollocesta_belleza_visits_2026', electronica: 'chollocesta_electronica_page_2026', moviles: 'chollocesta_moviles_page_2026', regalos: 'chollocesta_regalos_pageviews_2026', secadores: 'chollocesta_secadores_page_2026' };
+  const counterKey = legacyKeys[slug] || `chollocesta_page_${slug}_visits_2026`;
+  const candidateSelectors = '#global-counter, #visitor-counter, #gift-counter, #visit-count, #visitCount, #visitorCount, #visit-counter, #visitas-counter, #page-counter, #page-visits, #belleza-visitas, #visitas, #visitCounter, #visitorCounter';
+  let targets = Array.from(document.querySelectorAll(candidateSelectors)).filter(el => !/unique|click/i.test(el.id));
+  if (!targets.length) {
+    const box = document.createElement('div');
+    box.id = 'zapia-page-views';
+    box.style.cssText = 'text-align:center;padding:18px;margin:24px auto;max-width:1120px;font-size:.92rem;color:#6b7280;border-top:1px solid #e5e7eb';
+    box.innerHTML = '👀 Visitas a esta página: <strong data-zapia-count>cargando…</strong>';
+    (document.querySelector('footer') || document.body).appendChild(box);
+    targets = [box.querySelector('[data-zapia-count]')];
+  } else {
+    targets = targets.map(el => {
+      if (/^(DIV|P)$/i.test(el.tagName) && el.querySelector('span,strong')) return el.querySelector('span,strong');
+      return el;
+    });
+  }
+  fetch('https://countapi.mileshilliard.com/api/v1/hit/' + encodeURIComponent(counterKey), {cache:'no-store'})
+    .then(res => { if (!res.ok) throw new Error('counter unavailable'); return res.json(); })
+    .then(data => {
+      const value = Number(data.value);
+      if (!Number.isFinite(value)) throw new Error('invalid counter');
+      targets.forEach(el => { if (el) el.textContent = value.toLocaleString('es-ES'); });
+    })
+    .catch(() => targets.forEach(el => { if (el) el.textContent = 'No disponible'; }));
+})();
+</script>
 </body>
 </html>
