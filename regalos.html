@@ -189,7 +189,7 @@
 <div class="footer-links"><a href="index.html">Inicio</a><a href="privacidad.html">Privacidad</a><a href="cookies.html">Cookies</a></div></footer>
 <section class="counter" aria-label="Contador de visitas"><p>Visitas a esta guía</p><strong id="gift-counter" aria-live="polite">Cargando…</strong><small>Visitas totales registradas en esta página.</small></section>
 <script>
-  fetch("https://countapi.mileshilliard.com/api/v1/hit/chollocesta_regalos_visits_2026")
+  fetch("https://countapi.mileshilliard.com/api/v1/hit/chollocesta_regalos_pageviews_2026")
     .then(response => { if (!response.ok) throw new Error("Contador no disponible"); return response.json(); })
     .then(data => {
       const counter = document.getElementById("gift-counter");
