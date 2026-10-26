@@ -50,8 +50,16 @@
     
     <h1>🎁 Guía Definitiva de Regalos CholloCesta</h1>
 
-<!-- Contador de visitas -->
-<div id="counter">Visitantes únicos: <img src="https://hit.yey.es/count?id=chollocesta-regalos" alt="counter"></div>
+
+<div id="visit-counter" style="text-align: center; font-size: 0.9em; margin-top: 20px;">
+    Visitantes: <span id="count">Cargando...</span>
+</div>
+<script>
+fetch('https://api.countapi.xyz/hit/chollocesta/regalos')
+  .then(response => response.json())
+  .then(data => document.getElementById('count').innerText = data.value);
+</script>
+
   <figure class="cat-hero"><img src="img/regalo.jpg" alt="Cajas de regalo" loading="lazy" width="640" height="400"><figcaption>Imagen ilustrativa de la categoría · <a href="creditos-imagenes.html">Créditos y licencia</a></figcaption></figure>
     <div class="subtitle">Encuentra el regalo perfecto para cualquier ocasión, ajustado a todos los bolsillos con las mejores ofertas de Amazon.</div>
 
