@@ -141,18 +141,14 @@
 <div style="text-align: center; padding: 20px; margin-top: 20px; font-size: 0.9rem; color: #6b7280; border-top: 1px solid #e5e7eb;">
   👀 Visitas totales: <span id="visitor-counter" style="font-weight: bold; color: #2563eb;">210</span>
   <script>
-    (function() {
-      let key = "chollocesta_visits_" + window.location.pathname;
-      let visits = localStorage.getItem(key);
-      if (!visits) {
-        visits = 210;
-      } else {
-        visits = parseInt(visits, 10) + 1;
-      }
-      localStorage.setItem(key, visits);
-      let el = document.getElementById("visitor-counter");
-      if (el) { el.innerText = visits; }
-    })();
+    fetch("https://countapi.mileshilliard.com/api/v1/hit/chollocesta_tecnologia_pageviews_2026", { cache: "no-store" })
+      .then(response => { if (!response.ok) throw new Error("Counter unavailable"); return response.json(); })
+      .then(data => {
+        const el = document.getElementById("visitor-counter");
+        if (el && Number.isFinite(Number(data.value))) el.textContent = Number(data.value).toLocaleString("es-ES");
+        else throw new Error("Invalid counter response");
+      })
+      .catch(() => { const el = document.getElementById("visitor-counter"); if (el) el.textContent = "No disponible"; });
   </script>
 </div>
 </body>
