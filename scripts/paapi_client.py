@@ -109,20 +109,29 @@ class ProductAdvertisingAPI(object):
 
     # -- interno -------------------------------------------------------
     def _request(self, operation, extra):
+        # PA-API 5.0 recibe operaciones JSON mediante POST en /paapi5/<operation>.
         path = "/paapi5/" + operation.lower()
-        query = {
-            "Operation": operation,
+        payload_obj = {
             "PartnerTag": self.partner_tag,
             "PartnerType": "Associates",
             "Marketplace": self.marketplace_id,
         }
-        query.update(extra)
-        auth, headers, cq = sign_request(
-            "GET", self.host, path, query,
-            {"accept-encoding": "identity", "user-agent": "CholloCesta/1.0"},
-            "", self.access_key, self.secret_key, self.region, SERVICE)
-        url = f"https://{self.host}{path}?{cq}"
-        r = self.session.get(url, headers=headers, timeout=self.timeout)
+        payload_obj.update(extra)
+        payload = json.dumps(payload_obj, ensure_ascii=False, separators=(",", ":"))
+        target = f"com.amazon.paapi5.v1.ProductAdvertisingAPIv1.{operation}"
+        request_headers = {
+            "content-encoding": "amz-1.0",
+            "content-type": "application/json; charset=utf-8",
+            "host": self.host,
+            "user-agent": "CholloCesta/1.0",
+            "x-amz-target": target,
+        }
+        auth, headers, _ = sign_request(
+            "POST", self.host, path, {}, request_headers,
+            payload, self.access_key, self.secret_key, self.region, SERVICE)
+        headers["authorization"] = auth
+        url = f"https://{self.host}{path}"
+        r = self.session.post(url, data=payload.encode("utf-8"), headers=headers, timeout=self.timeout)
         if r.status_code == 200:
             return r.json()
         try:
