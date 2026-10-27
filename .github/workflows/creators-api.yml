@@ -1,9 +1,7 @@
-name: Creators API - imágenes de productos para perros
+name: Creators API - imágenes de productos para perros (manual)
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17 7 * * *"
 
 permissions:
   contents: write
