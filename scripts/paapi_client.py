@@ -131,15 +131,20 @@ class ProductAdvertisingAPI(object):
             payload, self.access_key, self.secret_key, self.region, SERVICE)
         headers["authorization"] = auth
         url = f"https://{self.host}{path}"
-        r = self.session.post(url, data=payload.encode("utf-8"), headers=headers, timeout=self.timeout)
-        if r.status_code == 200:
-            return r.json()
-        try:
-            body = r.json()
-            err = (body.get("Errors") or [{}])[0]
-            raise PAAPIError(err.get("Code", f"HTTP{r.status_code}"), err.get("Message", r.text[:300]))
-        except ValueError:
-            raise PAAPIError(f"HTTP{r.status_code}", r.text[:300])
+        # Reintento corto para respuestas temporales del endpoint PA-API.
+        for attempt in range(4):
+            r = self.session.post(url, data=payload.encode("utf-8"), headers=headers, timeout=self.timeout)
+            if r.status_code == 200:
+                return r.json()
+            if r.status_code in (429, 500, 502, 503, 504) and attempt < 3:
+                time.sleep(2 ** attempt)
+                continue
+            try:
+                body = r.json()
+                err = (body.get("Errors") or [{}])[0]
+                raise PAAPIError(err.get("Code", f"HTTP{r.status_code}"), err.get("Message", r.text[:300]))
+            except ValueError:
+                raise PAAPIError(f"HTTP{r.status_code}", r.text[:300])
 
     # -- publico -------------------------------------------------------
     def get_items(self, asins, resources=RESOURCES):
