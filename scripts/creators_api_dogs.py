@@ -95,8 +95,19 @@ def search(token: str, category: str, keywords: str) -> dict | None:
         if response.status_code in (429, 500, 502, 503, 504) and attempt < 3:
             time.sleep(2 ** attempt)
             continue
-        # Avoid printing response body: it may contain identifiers or other account metadata.
-        fail(f"Creators API devolvió HTTP {response.status_code} en la búsqueda {category}; revisa acceso, marketplace y credenciales.")
+        # Report only the API's documented error code/message; never dump headers or credentials.
+        detail = ""
+        try:
+            body = response.json()
+            errors = body.get("errors") or body.get("Errors") or []
+            if errors:
+                error = errors[0]
+                code = error.get("code") or error.get("Code") or ""
+                message = error.get("message") or error.get("Message") or ""
+                detail = f" ({code}: {message})" if code or message else ""
+        except (ValueError, TypeError, AttributeError):
+            pass
+        fail(f"Creators API devolvió HTTP {response.status_code} en la búsqueda {category}{detail}")
     return None
 
 
