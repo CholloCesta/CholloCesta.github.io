@@ -1,10 +1,8 @@
-name: PA-API - fotos reales de producto
+name: PA-API obsoleta (ejecución diaria pausada)
 
 on:
+  # Migración pendiente a Creators API: desactivado el cron de PA-API 5.0.
   workflow_dispatch:
-  schedule:
-    # diario a las 7:17 (hora baja de trafico de la API)
-    - cron: "17 7 * * *"
 
 jobs:
   actualizar:
