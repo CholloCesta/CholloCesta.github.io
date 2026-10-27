@@ -3,6 +3,7 @@
 import html
 import json
 import os
+import re
 import sys
 import time
 from pathlib import Path
@@ -35,12 +36,15 @@ def fail(message: str) -> None:
 def get_access_token() -> str:
     if not CLIENT_ID or not CLIENT_SECRET or not VERSION:
         fail("Faltan secretos CREATORS_API_CREDENTIAL_ID, CREATORS_API_CREDENTIAL_SECRET o CREATORS_API_VERSION en GitHub Actions.")
-    if VERSION.startswith("3."):
+    # A few mobile views label this field Version but may expose a prefix such as
+    # "Version 3.2"; select the OAuth endpoint by the numeric version, never print secrets.
+    match = re.search(r"(?:^|[^0-9])(3\.[0-9]+)(?:$|[^0-9])", VERSION)
+    if match:
         token_url = "https://api.amazon.co.uk/auth/o2/token"
-    elif VERSION.startswith("2."):
+    elif re.search(r"(?:^|[^0-9])2\.[0-9]+(?:$|[^0-9])", VERSION):
         token_url = "https://api.amazon.com/auth/o2/token"
     else:
-        fail("Versión de credencial no reconocida; usa la versión europea asignada en Amazon Creators API (normalmente 3.2).")
+        fail("Versión de credencial no reconocida; para Amazon España debe ser la europea (por ejemplo, 3.2). Comprueba el secreto CREATORS_API_VERSION.")
     response = requests.post(token_url, json={
         "grant_type": "client_credentials",
         "client_id": CLIENT_ID,
