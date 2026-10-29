@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los mejores productos de belleza en Amazon (2025) — Chollo Festa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Belleza en Chollo Festa</h1>
+        <div id="visitas">Visitas totales: <span id="count">...</span></div>
+    </header>
+    <nav id="filtros">
+        <button onclick="filtrar('todos')">Todos</button>
+        <button onclick="filtrar('skincare')">Skincare</button>
+        <button onclick="filtrar('maquillaje')">Maquillaje</button>
+    </nav>
+    <div id="grid-productos" class="grid">
+        <!-- Los productos se cargarán aquí vía JS -->
+    </div>
+    <script src="https://api.countapi.xyz/hit/chollofesta/belleza?callback=cb"></script>
+    <script>function cb(response) { document.getElementById('count').innerText = response.value; }</script>
+    <script src="script.js"></script>
+</body>
+</html>
