@@ -31,6 +31,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main
           git add data/belleza_productos.json
           git commit -m "chore: auto-update belleza products" || exit 0
-          git push
+          git push origin main
