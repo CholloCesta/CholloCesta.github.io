@@ -1,0 +1,26 @@
+{
+  "skincare": [
+    {
+      "query": "s\u00e9rum vitamina c",
+      "status": "error",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "query": "crema hidratante cerave",
+      "status": "error",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ],
+  "maquillaje": [
+    {
+      "query": "base maquillaje",
+      "status": "error",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "query": "labial",
+      "status": "error",
+      "error": "Expecting value: line 1 column 1 (char 0)"
+    }
+  ]
+}
