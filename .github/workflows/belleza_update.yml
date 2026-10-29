@@ -2,8 +2,11 @@ name: Actualizar Productos Belleza
 
 on:
   schedule:
-    - cron: '0 8 * * *' # Se ejecuta diariamente a las 08:00
+    - cron: '0 8 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
