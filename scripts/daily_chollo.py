@@ -14,32 +14,32 @@ CHANNEL_ID = "@CholloCesta"
 CATEGORIZED_DEALS = [
     {
         "category": "⚡ Tecnología y Electrónica",
-        "title": "⚡ ¡CHOLLO TECH! Amazon Fire TV Stick con mando por voz Alexa",
-        "description": "Disfruta de streaming en Full HD, miles de apps y canales como Netflix, Prime Video, YouTube y Disney+. ¡Imprescindible en tu tele!",
+        "title": "⚡ CHOLLO TECH! Amazon Fire TV Stick con mando por voz Alexa",
+        "description": "Disfruta de streaming en Full HD, miles de apps y canales como Netflix, Prime Video, YouTube y Disney+. Imprescindible en tu tele!",
         "url": "https://www.amazon.es/dp/B08C1W5N87"
     },
     {
         "category": "🏠 Hogar y Cocina Inteligente",
-        "title": "🏠 ¡OFERTA HOGAR! Cecotec Aspirador Escoba Sin Cable Conga Rockstar",
-        "description": "Máxima potencia de succión, diseño 3 en 1 (vertical, escoba y mano) con tecnología digital brushless. ¡Limpieza sin esfuerzo!",
+        "title": "🏠 OFERTA HOGAR! Cecotec Aspirador Escoba Sin Cable Conga Rockstar",
+        "description": "Máxima potencia de succión, diseño 3 en 1 (vertical, escoba y mano) con tecnología digital brushless. Limpieza sin esfuerzo!",
         "url": "https://www.amazon.es/dp/B07VZZZJZZ"
     },
     {
         "category": "🏃 Deporte y Salud",
-        "title": "🏃 ¡CHOLLO FITNESS! Xiaomi Smart Band 8 Pulsera de Actividad",
-        "description": "Pantalla AMOLED de 1.62", más de 150 modos deportivos, seguimiento avanzado de frecuencia cardíaca y sueño. ¡Batería de larga duración!",
+        "title": "🏃 CHOLLO FITNESS! Xiaomi Smart Band 8 Pulsera de Actividad",
+        "description": "Pantalla AMOLED de 1.62", más de 150 modos deportivos, seguimiento avanzado de frecuencia cardíaca y sueño. Batería de larga duración!",
         "url": "https://www.amazon.es/dp/B0C8PY8Q9W"
     },
     {
         "category": "🔥 Chollos Flash / Top Ventas",
-        "title": "🔥 ¡OFERTA TOP! Bombilla LED Inteligente WiFi RGB Compatible con Alexa",
+        "title": "🔥 OFERTA TOP! Bombilla LED Inteligente WiFi RGB Compatible con Alexa",
         "description": "Regula intensidad, cambia de color por voz o app móvil, crea ambientes únicos y ahorra en tu factura de la luz.",
         "url": "https://www.amazon.es/dp/B09982W8XX"
     },
     {
         "category": "🎁 Regalos y Amigo Invisible",
-        "title": "🎁 ¡IDEA REGALO! Organizadores de Cables y Bridas Magnéticas para Escritorio",
-        "description": "El accesorio perfecto y económico (menos de 10€) para mantener tu espacio de trabajo ordenado y sin enredos. ¡Ideal para regalo!",
+        "title": "🎁 IDEA REGALO! Organizadores de Cables y Bridas Magnéticas para Escritorio",
+        "description": "El accesorio perfecto y económico (menos de 10€) para mantener tu espacio de trabajo ordenado y sin enredos. Ideal para regalo!",
         "url": "https://www.amazon.es/s?k=organizador+de+cables+escritorio"
     }
 ]
@@ -52,7 +52,7 @@ def main():
         f"<b>{deal['title']}</b>\n\n"
         f"{deal['description']}\n\n"
         f"🏷 <b>Categoría:</b> {deal['category']}\n"
-        f"💶 <b>¡Precio chollo verificado en Amazon!</b>\n\n"
+        f"💶 <b>Precio chollo verificado en Amazon!</b>\n\n"
         f"👉 <a href='{url_afiliado}'>🛒 Ver oferta y comprar en Amazon</a>\n\n"
         f"🔔 <i>CholloCesta · Las mejores ofertas diarias de Amazon</i>"
     )
