@@ -26,7 +26,7 @@ CATEGORIZED_DEALS = [
     },
     {
         "category": "🏃 Deporte y Salud",
-        "title": "🏃 CHOLLO FITNESS! Xiaomi Smart Band 8 Pulsera de Actividad",
+        "title": "🏃 CHOLLO FITNESS! Xiaomi Smart Band 8 Pulsera de Actividad Pulsera",
         "description": "Pantalla AMOLED de 1.62 Pulgadas más de 150 modos deportivos, seguimiento avanzado de frecuencia cardíaca y sueño. Batería de larga duración!",
         "url": "https://www.amazon.es/dp/B0C8PY8Q9W"
     },
