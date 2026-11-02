@@ -448,14 +448,13 @@ h1{font-size:30px}
 <a href="index.html" class="back">← Volver al inicio</a>
 
 <h1>🧴 Champús: Comparativa de Precios, Descuentos y Formatos Ahorro</h1>
-  <figure class="cat-hero"><img src="img/champu.jpg" alt="Botella de champú" loading="lazy" width="640" height="400"><figcaption>Imagen ilustrativa de la categoría · <a href="creditos-imagenes.html">Créditos y licencia</a></figcaption></figure>
 
 <p class="intro">
 Comparamos el precio por cada 100 ml en champús de marcas líderes (H&S, Fructis, Pantene) y opciones de marca propia en Amazon.
 </p>
 
 <p class="updated">
-🔄 Precios orientativos actualizados el 25 de agosto de 2026. <em>Nota: Los precios en Amazon fluctúan frecuentemente.</em>
+🔄 Precios orientativos. <em>Amazon puede cambiar precios y disponibilidad; comprueba siempre el importe final antes de comprar.</em>
 </p>
 
 <!-- RECOMENDACIÓN / DESTACADO -->
@@ -465,8 +464,8 @@ Comparamos el precio por cada 100 ml en champús de marcas líderes (H&S, Fructi
 <p>La opción con mejor relación calidad-precio en formato grande con rebaja aplicada.</p>
 
 <div class="bigprice">
-<strong>8,99 €</strong>
-<span>· 0,90 € / 100 ml (¡Chollo verificado!)</span>
+<strong>14,99 €</strong>
+<span>· 0,94 € / 100 ml (formato 2 × 800 ml)</span>
 </div>
 
 <div class="buttons">
@@ -687,63 +686,35 @@ En el cuidado capilar, los formatos grandes (como botellas de 600 ml o 1 litro) 
 </div>
 
 
-<!-- CONTADOR DE VISITAS -->
-<div style="text-align: center; margin: 30px 0 10px; font-family: sans-serif;">
-  <p style="font-size: 14px; color: #666; margin-bottom: 5px;">🔥 Visitas en esta guía:</p>
-  <span id="page-counter" style="font-size: 20px; font-weight: bold; color: #2563eb;">Cargando...</span>
-</div>
-
-<script>
-  fetch('https://httpbin.org/status/200?counter=champu_visits/up')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('page-counter').innerText = data.count.toLocaleString();
-    })
-    .catch(error => {
-      document.getElementById('page-counter').innerText = "Disponible pronto";
-    });
-</script>
-
 <footer>
-<p>© 2026 <strong>CholloCesta</strong> · Compra inteligente | 
-   <a href="politica-privacidad.html">Política de Privacidad</a> | 
-   <a href="aviso-legal.html">Aviso Legal</a> | 
-   <a href="afiliados.html">Afiliados Amazon</a>
-</p>
-<p style="margin-top:5px; font-size:11px;">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Tag: chollocesta-21</p>
- <a href="creditos-imagenes.html">Créditos de imágenes</a>
-  </footer></footer>
-
-
-<!-- Contador de visitas compartido e independiente para esta página -->
+  <div style="max-width:950px;margin:auto;">
+    <div style="margin-bottom:16px;">
+      <p style="color:#fff;font-weight:700;margin-bottom:5px;">Visitas a esta guía</p>
+      <span id="page-counter" aria-live="polite">Cargando…</span>
+      <p style="font-size:11px;margin-top:4px;">Contador aproximado de visitas a esta página.</p>
+    </div>
+    <p>© 2026 <strong>CholloCesta</strong> · Compra inteligente</p>
+    <p style="margin-top:8px;">
+      <a href="index.html">Inicio</a> ·
+      <a href="politica-privacidad.html">Política de privacidad</a> ·
+      <a href="aviso-legal.html">Aviso legal</a> ·
+      <a href="afiliados.html">Transparencia y afiliados Amazon</a>
+    </p>
+    <p style="margin-top:10px;font-size:11px;">En calidad de afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Como participante del Programa de Afiliados de Amazon EU, puedo recibir una comisión por compras que cumplan sus condiciones, sin coste adicional para ti. Tag: chollocesta-21.</p>
+  </div>
+</footer>
 <script data-zapia-page-counter>
 (() => {
-  const slug = (location.pathname.split('/').pop() || 'index.html').replace(/\.html?$/i, '').replace(/[^a-z0-9_-]/gi, '_') || 'index';
-  const legacyKeys = { index: 'chollocesta_home_visits_2026', belleza: 'chollocesta_belleza_visits_2026', electronica: 'chollocesta_electronica_page_2026', moviles: 'chollocesta_moviles_page_2026', regalos: 'chollocesta_regalos_pageviews_2026', secadores: 'chollocesta_secadores_page_2026' };
-  const counterKey = legacyKeys[slug] || `chollocesta_page_${slug}_visits_2026`;
-  const candidateSelectors = '#global-counter, #visitor-counter, #gift-counter, #visit-count, #visitCount, #visitorCount, #visit-counter, #visitas-counter, #page-counter, #page-visits, #belleza-visitas, #visitas, #visitCounter, #visitorCounter';
-  let targets = Array.from(document.querySelectorAll(candidateSelectors)).filter(el => !/unique|click/i.test(el.id));
-  if (!targets.length) {
-    const box = document.createElement('div');
-    box.id = 'zapia-page-views';
-    box.style.cssText = 'text-align:center;padding:18px;margin:24px auto;max-width:1120px;font-size:.92rem;color:#6b7280;border-top:1px solid #e5e7eb';
-    box.innerHTML = '👀 Visitas a esta página: <strong data-zapia-count>cargando…</strong>';
-    (document.querySelector('footer') || document.body).appendChild(box);
-    targets = [box.querySelector('[data-zapia-count]')];
-  } else {
-    targets = targets.map(el => {
-      if (/^(DIV|P)$/i.test(el.tagName) && el.querySelector('span,strong')) return el.querySelector('span,strong');
-      return el;
-    });
-  }
+  const counterKey = 'chollocesta_page_champu_visits_2026';
+  const counter = document.getElementById('page-counter');
   fetch('https://countapi.mileshilliard.com/api/v1/hit/' + encodeURIComponent(counterKey), {cache:'no-store'})
-    .then(res => { if (!res.ok) throw new Error('counter unavailable'); return res.json(); })
+    .then(response => { if (!response.ok) throw new Error('Contador no disponible'); return response.json(); })
     .then(data => {
       const value = Number(data.value);
-      if (!Number.isFinite(value)) throw new Error('invalid counter');
-      targets.forEach(el => { if (el) el.textContent = value.toLocaleString('es-ES'); });
+      if (!Number.isFinite(value)) throw new Error('Valor inválido');
+      counter.textContent = value.toLocaleString('es-ES');
     })
-    .catch(() => targets.forEach(el => { if (el) el.textContent = 'No disponible'; }));
+    .catch(() => { counter.textContent = 'No disponible temporalmente'; });
 })();
 </script>
 </body>
