@@ -693,22 +693,11 @@ En el cuidado capilar, los formatos grandes (como botellas de 600 ml o 1 litro) 
   <span id="page-counter" style="font-size: 20px; font-weight: bold; color: #2563eb;">Cargando...</span>
 </div>
 
-<script>
-  fetch('https://httpbin.org/status/200?counter=champu_visits/up')
-    .then(response => response.json())
-    .then(data => {
-      document.getElementById('page-counter').innerText = data.count.toLocaleString();
-    })
-    .catch(error => {
-      document.getElementById('page-counter').innerText = "Disponible pronto";
-    });
-</script>
-
 <footer>
 <p>© 2026 <strong>CholloCesta</strong> · Compra inteligente</p>
 <p style="margin-top:5px; font-size:11px;">En calidad de Afiliado de Amazon, obtengo ingresos por las compras adscritas que cumplen los requisitos aplicables. Tag: chollocesta-21</p>
  <a href="creditos-imagenes.html">Créditos de imágenes</a>
-  </footer></footer>
+  </footer>
 
 
 <!-- Contador de visitas compartido e independiente para esta página -->
