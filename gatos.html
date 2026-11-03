@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía de Compras y Mejores Ofertas para Gatos 2026 | CholloCesta</title>
-    <meta name="description" content="Guía experta de alimentación, cuidado y accesorios para gatos. Encuentra los mejores piensos, ofertas en Amazon y productos mejor valorados para tu felino.">
-    <meta name="keywords" content="mejores piensos para gatos, comida para gatos ofertas Amazon, rascadores gatos chollos, productos cuidado felino mejor valorados">
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guía de Compras y Mejores Ofertas para Gatos 2026 | CholloCesta</title>
+<meta content="Guía experta de alimentación, cuidado y accesorios para gatos. Encuentra los mejores piensos, ofertas en Amazon y productos mejor valorados para tu felino." name="description"/>
+<meta content="mejores piensos para gatos, comida para gatos ofertas Amazon, rascadores gatos chollos, productos cuidado felino mejor valorados" name="keywords"/>
+<style>
         :root { --primary: #ff9900; --dark: #333; --light: #f4f4f4; }
         body { font-family: sans-serif; line-height: 1.6; color: var(--dark); margin: 0; padding: 0; }
         header { background: #fff; padding: 2rem; text-align: center; border-bottom: 2px solid var(--primary); }
@@ -18,48 +19,20 @@
         .cta { display: inline-block; background: var(--primary); color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
         footer { background: var(--light); padding: 20px; text-align: center; margin-top: 40px; font-size: 0.9em; }
     </style>
-</head>
+<style data-chollocesta-unified="">footer.cc-site-footer{background:#111827;color:#fff;text-align:center;padding:20px 16px;margin-top:32px;font: .93rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}footer.cc-site-footer a{color:#fff}footer.cc-site-footer .cc-counter{color:#d1d5db;border-top:1px solid #374151;margin:14px auto 0;padding-top:12px;max-width:1120px}</style><style data-chollocesta-unified-global="">body{background-color:#f5f7fa!important;color:#172033}a:not(.btn):not(.cta){color:#c2410c}footer.cc-site-footer{background:#111827!important;color:#fff!important}footer.cc-site-footer a{color:#fff!important}footer.cc-site-footer p{margin:.45em auto}</style></head>
 <body>
 <header>
-    <h1>Guía de Compras y Mejores Ofertas para Gatos en 2026</h1>
-    <p>La nutrición y el confort son clave para un gato feliz. Aquí tienes nuestra selección de productos destacados.</p>
+<h1>Guía de Compras y Mejores Ofertas para Gatos en 2026</h1>
+<p>La nutrición y el confort son clave para un gato feliz. Aquí tienes nuestra selección de productos destacados.</p>
 </header>
 <div class="container">
-    <h2>Productos destacados para Gatos</h2>
-    <div id="products-container" class="grid">
-        <!-- Los productos se cargarán dinámicamente vía JS -->
-    </div>
+<h2>Productos destacados para Gatos</h2>
+<div class="grid" id="products-container">
+<!-- Los productos se cargarán dinámicamente vía JS -->
 </div>
-<footer>
-    <div class="legal-disclaimer">
-        <p><strong>CholloCesta participa en el Programa de Afiliados de Amazon EU.</strong> Al comprar a través de nuestros enlaces, obtenemos una pequeña comisión.</p>
-        <nav>
-            <a href="/politica-privacidad.html">Política de Privacidad</a> | 
-            <a href="/aviso-legal.html">Aviso Legal</a> | 
-            <a href="/politica-privacidad.html">Información sobre cookies</a>
-        </nav>
-    </div>
-    <div id="counter">
-        <img src="https://hits.sh/chollocesta.github.io/categoria-gatos.svg" alt="Contador de visitas">
-    </div>
-</footer>
-<script>
-async function loadProducts() {
-    const response = await fetch('/data/productos_gatos.json');
-    const products = await response.json();
-    const container = document.getElementById('products-container');
-    products.forEach(p => {
-        const card = document.createElement('div');
-        card.className = 'card';
-        card.innerHTML = `
-            <img src="${p.image}" alt="${p.title}" loading="lazy" class="product-img">
-            <h3>${p.title}</h3>
-            <a href="${p.url}" class="cta" target="_blank" rel="nofollow">Ver oferta</a>
-        `;
-        container.appendChild(card);
-    });
-}
-loadProducts();
-</script>
-</body>
+</div>
+<footer class="cc-site-footer">
+<p>Como afiliado de Amazon, CholloCesta obtiene ingresos por las compras que cumplen los requisitos aplicables, sin coste adicional para el comprador.</p><p class="cc-legal-links"><a href="index.html">Inicio</a> · <a href="politica-privacidad.html">Privacidad</a> · <a href="aviso-legal.html">Aviso legal</a> · <a href="afiliados.html">Afiliados</a></p><p>© 2026 CholloCesta. Todos los derechos reservados.</p><p class="cc-counter">Visitas a esta página: <strong data-zapia-count="">cargando…</strong></p></footer>
+<script>const box=document.getElementById('products-container');box.innerHTML='<p>La selección de productos para gatos se está actualizando. Vuelve a consultar más tarde o revisa las ofertas vigentes en <a href="https://www.amazon.es/gp/goldbox?tag=chollocesta-21" rel="nofollow sponsored">Amazon</a>.</p>';</script>
+<script data-zapia-page-counter="">(()=>{const el=document.querySelector('[data-zapia-count]');fetch('https://countapi.mileshilliard.com/api/v1/hit/'+encodeURIComponent('chollocesta_page_gatos_visits_2026'),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json()}).then(d=>{const n=Number(d.value);el.textContent=Number.isFinite(n)?n.toLocaleString('es-ES'):'No disponible'}).catch(()=>{el.textContent='No disponible'})})();</script></body>
 </html>
