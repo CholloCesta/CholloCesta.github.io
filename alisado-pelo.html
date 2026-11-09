@@ -22,13 +22,8 @@
       --background: #f7faf8;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -60,8 +55,8 @@
 
     .brand {
       color: var(--ink);
-      font-weight: 850;
       font-size: 1.08rem;
+      font-weight: 850;
       text-decoration: none;
     }
 
@@ -70,13 +65,8 @@
       font-size: .94rem;
     }
 
-    nav a {
-      margin-right: 16px;
-    }
-
-    main {
-      padding: 32px 0 56px;
-    }
+    nav a { margin-right: 16px; }
+    main { padding: 32px 0 56px; }
 
     .eyebrow {
       margin: 0;
@@ -147,9 +137,7 @@
       text-decoration: none;
     }
 
-    .quicklinks a:hover {
-      background: var(--soft);
-    }
+    .quicklinks a:hover { background: var(--soft); }
 
     h2 {
       margin: 38px 0 8px;
@@ -186,9 +174,7 @@
       box-shadow: 0 4px 16px rgb(37 50 58 / 5%);
     }
 
-    .card p {
-      margin: 7px 0 12px;
-    }
+    .card p { margin: 7px 0 12px; }
 
     .tag {
       align-self: flex-start;
@@ -201,8 +187,7 @@
       font-weight: 750;
     }
 
-    .small,
-    .card .muted {
+    .small {
       color: var(--muted);
       font-size: .92rem;
     }
@@ -219,22 +204,15 @@
       text-decoration: none;
     }
 
-    .button:hover {
-      background: var(--accent-dark);
-    }
-
-    .card .button {
-      margin-top: auto;
-    }
+    .button:hover { background: var(--accent-dark); }
+    .card .button { margin-top: auto; }
 
     .source {
       color: var(--muted);
       font-size: .88rem;
     }
 
-    .source a {
-      margin-right: 6px;
-    }
+    .source a { margin-right: 6px; }
 
     .bestfor {
       padding: 11px 13px;
@@ -243,8 +221,7 @@
       font-size: .94rem;
     }
 
-    .warning,
-    .tip {
+    .warning, .tip {
       margin: 22px 0;
       padding: 16px 18px;
       border-radius: 10px;
@@ -309,9 +286,7 @@
       font-size: .9rem;
     }
 
-    footer a {
-      margin-right: 12px;
-    }
+    footer a { margin-right: 12px; }
 
     .counter {
       margin-top: 18px;
@@ -323,36 +298,20 @@
       font-size: .86rem;
     }
 
-    .counter strong {
-      color: var(--ink);
-    }
+    .counter strong { color: var(--ink); }
 
     @media (max-width: 680px) {
-      .grid,
-      .steps {
-        grid-template-columns: 1fr;
-      }
-
-      .wrap {
-        width: min(100% - 24px, 1000px);
-      }
-
-      main {
-        padding-top: 25px;
-      }
+      .grid, .steps { grid-template-columns: 1fr; }
+      .wrap { width: min(100% - 24px, 1000px); }
+      main { padding-top: 25px; }
 
       nav a {
         display: inline-block;
         margin: 4px 12px 4px 0;
       }
 
-      .card {
-        padding: 18px;
-      }
-
-      .affiliate {
-        font-size: .9rem;
-      }
+      .card { padding: 18px; }
+      .affiliate { font-size: .9rem; }
     }
   </style>
 </head>
@@ -361,6 +320,7 @@
   <header>
     <div class="wrap">
       <a class="brand" href="https://chollocesta.github.io/index.html">CholloCesta</a>
+
       <nav aria-label="Navegación principal">
         <a href="https://chollocesta.github.io/index.html">Inicio</a>
         <a href="https://chollocesta.github.io/belleza.html">Belleza</a>
@@ -755,11 +715,19 @@
 
   <footer>
     <div class="wrap">
-      CholloCesta ·
-      <a href="https://chollocesta.github.io/belleza.html">Volver a Belleza</a> ·
-      <a href="https://chollocesta.github.io/index.html">Inicio</a>
+      <p>
+        CholloCesta ·
+        <a href="https://chollocesta.github.io/belleza.html">Volver a Belleza</a> ·
+        <a href="https://chollocesta.github.io/index.html">Inicio</a>
+      </p>
 
-      <!-- Clave exclusiva de esta página. No reutilizar la clave global ni la de otras guías. -->
+      <p>
+        <a href="https://chollocesta.github.io/politica-privacidad.html">Política de privacidad</a> ·
+        <a href="https://chollocesta.github.io/aviso-legal.html">Aviso legal</a> ·
+        <a href="https://chollocesta.github.io/afiliados.html">Afiliación y transparencia</a>
+      </p>
+
+      <!-- Clave exclusiva de esta página: no reutilizar la clave global ni la de otras guías. -->
       <section class="counter" id="page-counter" aria-live="polite" role="status">
         <strong>Visitas registradas a esta guía:</strong>
         <span id="page-counter-value">Cargando…</span>
@@ -772,34 +740,30 @@
 
   <script>
     (() => {
-      // Mismo servicio de contador que emplean otras páginas de CholloCesta,
-      // con una clave nueva y exclusiva de alisado-pelo.html.
-      const key = 'chollocesta_page_alisado_pelo_visits_2026';
-      const valueEl = document.getElementById('page-counter-value');
+      // Clave nueva y exclusiva de alisado-pelo.html.
+      // No sustituir por la clave global ni por la de otra página.
+      const key = "chollocesta_page_alisado_pelo_visits_2026";
+      const valueEl = document.getElementById("page-counter-value");
 
       fetch(
-        'https://countapi.mileshilliard.com/api/v1/hit/' +
-        encodeURIComponent(key),
-        { cache: 'no-store' }
+        "https://countapi.mileshilliard.com/api/v1/hit/" + encodeURIComponent(key),
+        { cache: "no-store" }
       )
         .then(response => {
-          if (!response.ok) {
-            throw new Error('counter unavailable');
-          }
+          if (!response.ok) throw new Error("counter unavailable");
           return response.json();
         })
         .then(data => {
           const value = Number(data.value);
-
           if (!Number.isFinite(value) || value < 0) {
-            throw new Error('invalid counter');
+            throw new Error("invalid counter");
           }
 
           valueEl.textContent =
-            new Intl.NumberFormat('es-ES').format(value);
+            new Intl.NumberFormat("es-ES").format(value);
         })
         .catch(() => {
-          valueEl.textContent = 'No disponible temporalmente';
+          valueEl.textContent = "No disponible temporalmente";
         });
     })();
   </script>
