@@ -594,24 +594,7 @@
     en Amazon sin perder tiempo.
   </p>
 </section>
-<!-- BUSCADOR INSTANTÁNEO -->
-<div class="search-container" style="margin: 20px 0; text-align: center;">
-<input id="live-search" oninput="filterChollos()" placeholder="🔍 Buscar chollos, marcas o productos..." style="width: 100%; max-width: 600px; padding: 12px 20px; font-size: 16px; border: 2px solid #e5e7eb; border-radius: 30px; outline: none; transition: border-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);" type="text"/>
-</div>
-<script>
-      function filterChollos() {
-        const query = document.getElementById('live-search').value.toLowerCase();
-        const cards = document.querySelectorAll('.card');
-        cards.forEach(card => {
-          const text = card.textContent.toLowerCase();
-          if (text.includes(query)) {
-            card.style.display = '';
-          } else {
-            card.style.display = 'none';
-          }
-        });
-      }
-    </script>
+
 <main>
 <!-- TOP CHOLLOS DEL DÍA Y ALERTAS FLASH -->
 <section class="top-chollos-banner" style="background:linear-gradient(135deg, #fee2e2, #fef2f2);border:2px solid #ef4444;border-radius:12px;padding:25px;margin:20px 0 30px;box-shadow:0 4px 6px rgba(0,0,0,0.05);">
@@ -708,9 +691,14 @@
 </p>
 </section>
 <!-- BUSCADOR EN TIEMPO REAL -->
-<div style="margin: 20px 0; text-align: center;">
-<input id="chollo-search" onblur="this.style.borderColor='#e5e7eb'" onfocus="this.style.borderColor='#dc2626'" placeholder="🔍 Buscar chollos, marcas, productos (ej. mancuernas, secador)..." style="width: 100%; max-width: 600px; padding: 12px 20px; font-size: 16px; border: 2px solid #e5e7eb; border-radius: 30px; outline: none; transition: border-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02);" type="text"/>
-</div>
+<!-- BUSCADOR EN TIEMPO REAL Y AMAZON -->
+    <div style="margin: 20px 0; text-align: center;">
+      <form action="https://www.amazon.es/s" method="GET" target="_blank" style="display: inline-flex; width: 100%; max-width: 700px; gap: 8px; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <input type="text" id="chollo-search" name="k" placeholder="🔍 Buscar chollos, marcas, productos (ej. mancuernas, secador)..." style="flex: 1; min-width: 280px; padding: 12px 20px; font-size: 16px; border: 2px solid #e5e7eb; border-radius: 30px; outline: none; transition: border-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02);" onfocus="this.style.borderColor='#dc2626'" onblur="this.style.borderColor='#e5e7eb'">
+        <input type="hidden" name="tag" value="chollocesta-21">
+        <button type="submit" class="btn" style="background: #febd69; color: #111; padding: 12px 20px; border-radius: 30px; border: 1px solid #fcd200; font-weight: bold; cursor: pointer; font-size: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); white-space: nowrap;">Buscar en Amazon</button>
+      </form>
+    </div>
 <div class="categories">
 <button class="cat-chip active" data-filter="all">
       Todos
@@ -1207,19 +1195,18 @@
 <a class="btn" href="regalos.html" style="background:#d97706;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:bold;margin-top:10px;">Ver Guía Completa de Regalos →</a>
 </section>
 </main>
-<!-- Filtros de categorías -->
+<!-- Filtros de categorías y buscador -->
 <script>
   const buttons = document.querySelectorAll(".cat-chip");
   const cards = document.querySelectorAll(".card");
   const searchInput = document.getElementById("chollo-search");
 
   function filterChollos() {
-    const query = searchInput.value.toLowerCase().trim();
+    const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
     const activeBtn = document.querySelector(".cat-chip.active");
     const currentFilter = activeBtn ? activeBtn.getAttribute("data-filter") : "all";
 
-    filterChollos();
-  cards.forEach(card => {
+    cards.forEach(card => {
       const categories = card.getAttribute("data-category") || "";
       const textContent = card.textContent.toLowerCase();
       
@@ -1227,8 +1214,10 @@
       const matchesSearch = (query === "" || textContent.includes(query));
 
       if (matchesCategory && matchesSearch) {
+        card.classList.remove("hidden");
         card.style.display = "";
       } else {
+        card.classList.add("hidden");
         card.style.display = "none";
       }
     });
@@ -1242,19 +1231,7 @@
     button.addEventListener("click", () => {
       buttons.forEach(item => item.classList.remove("active"));
       button.classList.add("active");
-
-      const filter = button.getAttribute("data-filter");
-
       filterChollos();
-  cards.forEach(card => {
-        const categories = card.getAttribute("data-category") || "";
-
-        if (filter === "all" || categories.includes(filter)) {
-          card.classList.remove("hidden");
-        } else {
-          card.classList.add("hidden");
-        }
-      });
     });
   });
 </script>
