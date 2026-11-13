@@ -691,14 +691,34 @@
 </p>
 </section>
 <!-- BUSCADOR EN TIEMPO REAL -->
-<!-- BUSCADOR EN TIEMPO REAL Y AMAZON -->
-    <div style="margin: 20px 0; text-align: center;">
-      <form action="https://www.amazon.es/s" method="GET" target="_blank" style="display: inline-flex; width: 100%; max-width: 700px; gap: 8px; justify-content: center; align-items: center; flex-wrap: wrap;">
-        <input type="text" id="chollo-search" name="k" placeholder="🔍 Buscar chollos, marcas, productos (ej. mancuernas, secador)..." style="flex: 1; min-width: 280px; padding: 12px 20px; font-size: 16px; border: 2px solid #e5e7eb; border-radius: 30px; outline: none; transition: border-color 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.02);" onfocus="this.style.borderColor='#dc2626'" onblur="this.style.borderColor='#e5e7eb'">
-        <input type="hidden" name="tag" value="chollocesta-21">
-        <button type="submit" class="btn" style="background: #febd69; color: #111; padding: 12px 20px; border-radius: 30px; border: 1px solid #fcd200; font-weight: bold; cursor: pointer; font-size: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); white-space: nowrap;">Buscar en Amazon</button>
-      </form>
-    </div>
+<form
+  id="chollo-search-form"
+  action="https://www.amazon.es/s"
+  method="get"
+  target="_blank"
+  rel="noopener"
+  style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin:20px 0;"
+>
+  <input
+    id="chollo-search"
+    name="k"
+    type="search"
+    placeholder="🔍 Busca productos aquí o pulsa para buscar en Amazon…"
+    aria-label="Buscar productos"
+    style="width:100%; max-width:600px; padding:12px 20px; font-size:16px; border:2px solid #e5e7eb; border-radius:30px; outline:none;"
+  />
+
+  <input type="hidden" name="tag" value="chollocesta-21" />
+
+  <button
+    type="submit"
+    style="padding:12px 20px; border:0; border-radius:30px; background:#dc2626; color:#fff; font-size:16px; font-weight:bold; cursor:pointer;"
+  >
+    Buscar en Amazon
+  </button>
+</form>
+
+<p id="chollo-search-status" aria-live="polite" style="text-align:center; color:#6b7280;"></p>
 <div class="categories">
 <button class="cat-chip active" data-filter="all">
       Todos
@@ -1200,11 +1220,14 @@
   const buttons = document.querySelectorAll(".cat-chip");
   const cards = document.querySelectorAll(".card");
   const searchInput = document.getElementById("chollo-search");
+  const statusEl = document.getElementById("chollo-search-status");
 
   function filterChollos() {
     const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
     const activeBtn = document.querySelector(".cat-chip.active");
     const currentFilter = activeBtn ? activeBtn.getAttribute("data-filter") : "all";
+
+    let visibleCount = 0;
 
     cards.forEach(card => {
       const categories = card.getAttribute("data-category") || "";
@@ -1216,11 +1239,24 @@
       if (matchesCategory && matchesSearch) {
         card.classList.remove("hidden");
         card.style.display = "";
+        visibleCount++;
       } else {
         card.classList.add("hidden");
         card.style.display = "none";
       }
     });
+
+    if (statusEl) {
+      if (query !== "") {
+        if (visibleCount > 0) {
+          statusEl.textContent = `Se encontraron ${visibleCount} chollo(s) en esta página para "${searchInput.value.trim()}".`;
+        } else {
+          statusEl.textContent = `No hay chollos en esta página para "${searchInput.value.trim()}". ¡Pulsa "Buscar en Amazon" para ver más ofertas!`;
+        }
+      } else {
+        statusEl.textContent = "";
+      }
+    }
   }
 
   if (searchInput) {
