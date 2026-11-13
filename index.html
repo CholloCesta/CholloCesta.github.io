@@ -1215,62 +1215,7 @@
 <a class="btn" href="regalos.html" style="background:#d97706;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;display:inline-block;font-weight:bold;margin-top:10px;">Ver Guía Completa de Regalos →</a>
 </section>
 </main>
-<!-- Filtros de categorías y buscador -->
-<script>
-  const buttons = document.querySelectorAll(".cat-chip");
-  const cards = document.querySelectorAll(".card");
-  const searchInput = document.getElementById("chollo-search");
-  const statusEl = document.getElementById("chollo-search-status");
 
-  function filterChollos() {
-    const query = searchInput ? searchInput.value.toLowerCase().trim() : "";
-    const activeBtn = document.querySelector(".cat-chip.active");
-    const currentFilter = activeBtn ? activeBtn.getAttribute("data-filter") : "all";
-
-    let visibleCount = 0;
-
-    cards.forEach(card => {
-      const categories = card.getAttribute("data-category") || "";
-      const textContent = card.textContent.toLowerCase();
-      
-      const matchesCategory = (currentFilter === "all" || categories.includes(currentFilter));
-      const matchesSearch = (query === "" || textContent.includes(query));
-
-      if (matchesCategory && matchesSearch) {
-        card.classList.remove("hidden");
-        card.style.display = "";
-        visibleCount++;
-      } else {
-        card.classList.add("hidden");
-        card.style.display = "none";
-      }
-    });
-
-    if (statusEl) {
-      if (query !== "") {
-        if (visibleCount > 0) {
-          statusEl.textContent = `Se encontraron ${visibleCount} chollo(s) en esta página para "${searchInput.value.trim()}".`;
-        } else {
-          statusEl.textContent = `No hay chollos en esta página para "${searchInput.value.trim()}". ¡Pulsa "Buscar en Amazon" para ver más ofertas!`;
-        }
-      } else {
-        statusEl.textContent = "";
-      }
-    }
-  }
-
-  if (searchInput) {
-    searchInput.addEventListener("input", filterChollos);
-  }
-
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      buttons.forEach(item => item.classList.remove("active"));
-      button.classList.add("active");
-      filterChollos();
-    });
-  });
-</script>
 <!-- Contador de visitas -->
 <div class="counter">
 <p>Visitas a CholloCesta:</p>
@@ -1390,6 +1335,70 @@
     })
     .catch(() => targets.forEach(el => { if (el) el.textContent = 'No disponible'; }));
 })();
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("chollo-search");
+  const searchForm = document.getElementById("chollo-search-form");
+  const status = document.getElementById("chollo-search-status");
+  const cards = Array.from(document.querySelectorAll(".card"));
+  const buttons = Array.from(document.querySelectorAll(".cat-chip"));
+
+  function aplicarFiltros() {
+    const query = (searchInput?.value || "").trim().toLocaleLowerCase("es");
+    const activeButton = document.querySelector(".cat-chip.active");
+    const category = activeButton?.getAttribute("data-filter") || "all";
+    let visible = 0;
+
+    cards.forEach(function (card) {
+      const text = card.textContent.toLocaleLowerCase("es");
+      const categories = card.getAttribute("data-category") || "";
+      const matchesText = !query || text.includes(query);
+      const matchesCategory = category === "all" || categories.includes(category);
+      const show = matchesText && matchesCategory;
+
+      card.style.display = show ? "" : "none";
+      if (show) visible++;
+    });
+
+    if (status) {
+      if (query && visible === 0) {
+        status.textContent =
+          "No hay tarjetas que coincidan. Pulsa «Buscar en Amazon» para buscar el artículo allí.";
+      } else if (query) {
+        status.textContent =
+          visible + (visible === 1 ? " resultado en esta página. " : " resultados en esta página. ") +
+          "Pulsa «Buscar en Amazon» para ampliar la búsqueda.";
+      } else {
+        status.textContent = "";
+      }
+    }
+  }
+
+  searchInput?.addEventListener("input", aplicarFiltros);
+
+  searchForm?.addEventListener("submit", function (event) {
+    if (!searchInput || !searchInput.value.trim()) {
+      event.preventDefault();
+      searchInput?.focus();
+      if (status) status.textContent = "Escribe qué producto quieres buscar.";
+    }
+    // Si hay texto, el formulario abre Amazon.es con la consulta y el tag afiliado.
+  });
+
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function () {
+      buttons.forEach(function (item) {
+        item.classList.remove("active");
+      });
+      button.classList.add("active");
+      aplicarFiltros();
+    });
+  });
+
+  aplicarFiltros();
+});
 </script>
 </body>
 </html>
